@@ -1,0 +1,175 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  padding: 3rem 6rem;
+}
+
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 0;
+  padding: 2.8rem;
+  height: 100%;
+}
+
+.card-first {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-second {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-third {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-img-top {
+  width: 80px;
+  padding: 0 1rem 0 0;
+}
+
+.card-body {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.card-text {
+  margin-top: 2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+
+.card-footer {
+  margin-top: 6rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-top: 0;
+}
+
+.btn {
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  font-size: 15px;
+  padding: 0.7rem 1.8rem;
+}
+
+.btn-primary {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card-first .btn-primary {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-second .btn-primary {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-third .btn-primary {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-first .btn-primary:hover {
+  background-color: hsl(31, 77%, 52%);
+  border-color: #fff;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-second .btn-primary:hover {
+  background-color: hsl(184, 100%, 22%);
+  border-color: #fff;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-third .btn-primary:hover {
+  background-color: hsl(179, 100%, 13%);
+  border-color: #fff;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-first .btn-primary:focus {
+  background-color: hsl(31, 77%, 52%);
+  border-color: #fff;
+  color: #fff;
+}
+
+.card-second .btn-primary:focus {
+  background-color: hsl(184, 100%, 22%);
+  border-color: #fff;
+  color: #fff;
+}
+
+.card-third .btn-primary:focus {
+  background-color: hsl(179, 100%, 13%);
+  border-color: #fff;
+  color: #fff;
+}
+
+.attribution {
+  margin-bottom: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 991px) {
+  .card-first {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+  }
+  .card-second {
+    border-top-right-radius: 0.5rem;
+  }
+  .card-third {
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .card-footer {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+  .card-first {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+  .card-second {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-third {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .card-footer {
+    margin-top: 1.5rem;
+  }
+}
