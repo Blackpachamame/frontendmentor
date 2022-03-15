@@ -19,7 +19,7 @@ body {
   background-size: cover;
 }
 
-h2 {
+h1 {
   font-family: var(--bs-poppins);
   font-weight: 600;
   line-height: 1.5;
