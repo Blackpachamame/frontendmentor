@@ -34,8 +34,8 @@ Sus usuarios deberían poder:
 
 ### Links
 
-- [URL de la solución](github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/3-column-preview-card-component-main)
-- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/3-column-preview-card-component-main/)
+- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/3-column-preview-card-component)
+- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/3-column-preview-card-component/)
 
 ## Mi Procedimiento
 
@@ -43,7 +43,6 @@ Sus usuarios deberían poder:
 
 - HTML5
 - CSS3
-- Flexbox
 - Bootstrap 5
 
 ### Lo que aprendí
