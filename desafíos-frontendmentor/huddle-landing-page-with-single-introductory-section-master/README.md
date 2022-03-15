@@ -33,8 +33,8 @@ Sus usuarios deberían poder:
 
 ### Links
 
-- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/huddle-landing-page-with-a-single-introductory-section)
-- [URL del sitio en vivo](https://blackpachamame.github.io/huddle-landing-page-with-a-single-introductory-section/)
+- [URL de la solución](github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/huddle-landing-page-with-a-single-introductory-section)
+- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/huddle-landing-page-with-a-single-introductory-section/)
 
 ## Mi Procedimiento
 

@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component solution
 
-Esta es una solución al [desafío del componente de tarjeta de vista previa de 3 columnas en Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la construcción de proyectos realistas.
+Esta es una solución al desafío [3-column preview card component solution](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la construcción de proyectos realistas.
 
 ## Tabla de contenido
 
@@ -34,8 +34,8 @@ Sus usuarios deberían poder:
 
 ### Links
 
-- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/3-column-preview-card-component-main)
-- [URL del sitio en vivo](https://blackpachamame.github.io/3-column-preview-card-component-main/)
+- [URL de la solución](github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/3-column-preview-card-component-main)
+- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/3-column-preview-card-component-main/)
 
 ## Mi Procedimiento
 
