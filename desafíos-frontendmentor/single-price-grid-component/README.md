@@ -5,8 +5,8 @@
 </div>
 <br>
 <img src="design/desktop-preview.jpg"></img>
-<br>
 <div align="center">
+<img src="design/desktop-preview.jpg"></img>
   <h3>
     <a href="https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/" color="white">
       En Vivo
