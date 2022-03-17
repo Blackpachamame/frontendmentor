@@ -4,7 +4,6 @@
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">frontendmentor.io</a>.
 </div>
 <br>
-<img src="design/desktop-preview.jpg"></img>
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
