@@ -1,6 +1,12 @@
 <h1 align="center">Single price grid component</h1>
 
 <div align="center">
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">frontendmentor.io</a>.
+</div>
+<br>
+<img src="design/desktop-preview.jpg"></img>
+<br>
+<div align="center">
   <h3>
     <a href="https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/" color="white">
       En Vivo
@@ -15,11 +21,6 @@
     </a>
   </h3>
 </div>
-<div align="center">
-   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">frontendmentor.io</a>.
-</div>
-
-<img src="design/desktop-preview.jpg"></img>
 
 ## Tabla de contenido
 
