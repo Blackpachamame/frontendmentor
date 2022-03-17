@@ -3,10 +3,10 @@
 <div align="center">
   <h3>
     <a href="https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/" color="white">
-      Sitio en Vivo
+      En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-QfXrSGu5A">
+    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-con-flexbox-td0f0peF4">
       Solución
     </a>
    <span> | </span>
@@ -19,12 +19,12 @@
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">frontendmentor.io</a>.
 </div>
 
+<img src="design/desktop-preview.jpg"></img>
+
 ## Tabla de contenido
 
 - [Descripción](#descripción)
   - [Desafío](#desafío)
-  - [Diseño Previo](#diseño-previo)
-  - [Links](#links)
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Desarrollo continuo](#desarrollo-continuo)
@@ -43,15 +43,6 @@ Sus usuarios deberían poder:
 
 - Ver el diseño óptimo según el tamaño de la pantalla de su dispositivo
 - Aplicar efecto hover cuando el usuario se desplaza sobre el botón de Sign Up.
-
-### Diseño Previo
-
-![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
-
-### Links
-
-- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/single-price-grid-component)
-- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/)
 
 ## Mi Procedimiento
 
