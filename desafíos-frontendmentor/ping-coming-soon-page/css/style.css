@@ -137,25 +137,25 @@ input {
 }
 
 /** Dashboard **/
-article.dashboard {
+figure.dashboard {
   width: 85%;
   max-width: 35rem;
   margin: 0 auto;
 }
 
-article.dashboard img {
+figure.dashboard img {
   width: 100%;
   height: auto;
 }
 
 /* FOOTER */
-.social-media ul li {
+ul.social-media li {
   display: inline-block;
   list-style-type: none;
   padding: 0 0.3rem;
 }
 
-.social-media a.icon-media {
+ul.social-media li span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@ article.dashboard img {
   transition: background-color 0.5s ease 0s, border-color 0.5s ease 0s;
 }
 
-.social-media a.icon-media:hover {
+ul.social-media li span:hover {
   background-color: var(--blue);
   border-color: var(--blue);
   color: var(--white);
