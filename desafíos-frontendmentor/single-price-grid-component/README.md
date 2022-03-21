@@ -1,21 +1,21 @@
 <h1 align="center">Single price grid component</h1>
 
 <div align="center">
-   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/" target="_blank">frontendmentor.io</a>.
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
 </div>
 <br>
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/" target="_blank">
+    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/single-price-grid-component/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-con-flexbox-td0f0peF4" target="_blank">
+    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-con-flexbox-td0f0peF4">
       Solución
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank">
+    <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">
       Desafío
     </a>
   </h3>
