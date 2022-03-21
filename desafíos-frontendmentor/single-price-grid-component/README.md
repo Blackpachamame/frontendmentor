@@ -1,7 +1,7 @@
 <h1 align="center">Single price grid component</h1>
 
 <div align="center">
-   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/" target="_blank">frontendmentor.io</a>.
 </div>
 <br>
 <div align="center">
