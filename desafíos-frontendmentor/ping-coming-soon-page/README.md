@@ -1,7 +1,7 @@
 <h1 align="center">Ping coming soon page</h1>
 
 <div align="center">
-   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">frontendmentor.io</a>.
+   Esta es una solución al desafío de <a href="www.frontendmentor.io/" target="_blank">frontendmentor.io</a>.
 </div>
 <br>
 <div align="center">
@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-con-flexbox-td0f0peF4">
+    <a href="https://www.frontendmentor.io/solutions/ping-coming-soon-page-con-flexbox-57bttc1yd">
       Solución
     </a>
    <span> | </span>
