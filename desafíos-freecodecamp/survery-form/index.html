@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survery Form</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">Club Bananas Boys</h1>
+        <p id="description">¡Únete a nuestro equipo!</p>
+    </header>
+    <main id="main">
+        <form id="survey-form" action="">
+            <!-- Nombre -->
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre"
+                    required="">
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email"
+                    required="">
+            </div>
+            <!-- Número -->
+            <div class="form-group">
+                <label id="number-label" for="number">Número</label>
+                <input type="number" name="number" id="number" class="form-control"
+                    placeholder="Ingresa un número de camiseta" min="1" max="99">
+            </div>
+            <!-- Categoría -->
+            <div class="form-group">
+                <p>¿A que categoría perteneces?</p>
+                <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Selecciona tu categoría</option>
+                    <option value="cebollita">Cebollita</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="cuarta">Cuarta</option>
+                    <option value="tercera">Tercera</option>
+                    <option value="segunda">Segunda</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="primera">Primera</option>
+                </select>
+            </div>
+            <!-- Nivel -->
+            <div class="form-group">
+                <p>¿Cuál crees que es tu nivel de juego?</p>
+                <label>
+                    <input name="user-recommend" value="novato" type="radio" class="input-radio"
+                        checked="">Novato</label>
+                <label>
+                    <input name="user-recommend" value="intermedio" type="radio" class="input-radio"
+                        checked="">Intermedio</label>
+                <label>
+                    <input name="user-recommend" value="alto" type="radio" class="input-radio" checked="">Alto</label>
+                <label>
+                    <input name="user-recommend" value="messi" type="radio" class="input-radio" checked="">Messi</label>
+            </div>
+            <!-- Posición -->
+            <div class="form-group">
+                <p>¿En qué posiciones sueles jugar?</p>
+                <label>
+                    <input name="prefer" value="arquero" type="checkbox" class="input-checkbox">Arquero
+                </label>
+                <label>
+                    <input name="prefer" value="centro-defensor" type="checkbox" class="input-checkbox">Centro
+                    Defensor
+                </label>
+                <label>
+                    <input name="prefer" value="lateral-derecho" type="checkbox" class="input-checkbox">Lateral
+                    Derecho
+                </label>
+                <label>
+                    <input name="prefer" value="lateral-izquierdo" type="checkbox" class="input-checkbox">Lateral
+                    Izquierdo
+                </label>
+                <label>
+                    <input name="prefer" value="mediocampo" type="checkbox" class="input-checkbox">Mediocampo
+                </label>
+                <label>
+                    <input name="prefer" value="wing-derecho" type="checkbox" class="input-checkbox">Wing
+                    Derecho
+                </label>
+                <label>
+                    <input name="prefer" value="wing-izquierdo" type="checkbox" class="input-checkbox">Wing
+                    Izquierdo
+                </label>
+                <label>
+                    <input name="prefer" value="delantero" type="checkbox" class="input-checkbox">Delantero
+                </label>
+            </div>
+            <!-- Comentario -->
+            <div class="form-group">
+                <p>¿Deseas realizar un comentario?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Ingresa un comentario..."></textarea>
+            </div>
+            <!-- Botón -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

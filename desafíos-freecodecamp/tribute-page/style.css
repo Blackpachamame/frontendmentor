@@ -1,0 +1,58 @@
+#main {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #171b20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p#description {
+  margin: 0;
+}
+
+#img-div {
+  background-color: #293038;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#tribute-info p {
+  margin: 30px 10px;
+}
+
+ul#premios li {
+  text-align: initial;
+  line-height: 2;
+}
+
+#tribute-link {
+  color: #987dd4;
+}
+
+#tribute-link:hover {
+  color: #6f8197;
+}
