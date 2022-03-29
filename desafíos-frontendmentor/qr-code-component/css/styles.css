@@ -33,12 +33,13 @@ body {
 #conteiner {
   max-width: 21rem;
   background-color: var(--white);
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
+    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
+    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
+    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
   overflow: hidden;
 }
 
@@ -49,14 +50,14 @@ body {
 #figure img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
 }
 
 #description {
   padding: 0 2rem 2.3rem;
 }
 
-#description h3 {
+#description h1 {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--darkgblue);

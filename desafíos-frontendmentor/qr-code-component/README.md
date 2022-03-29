@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/qr-code-component-con-flexbox-57bttc1yd">
+    <a href="https://www.frontendmentor.io/solutions/qr-code-component-flexbox-B1304Mx79">
       Solución
     </a>
    <span> | </span>
