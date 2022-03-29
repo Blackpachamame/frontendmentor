@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayishgblue: hsl(220, 15%, 55%);
+  --darkgblue: hsl(218, 44%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--font-outfit);
+  text-align: center;
+  background-color: var(--light-gray);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#conteiner {
+  max-width: 21rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.3rem 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+#figure {
+  padding: 1rem;
+}
+
+#figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#description {
+  padding: 0 2rem 2.3rem;
+}
+
+#description h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--darkgblue);
+}
+
+#description p {
+  margin-top: 1rem;
+  color: var(--grayishgblue);
+}
