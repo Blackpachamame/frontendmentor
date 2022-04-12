@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Langind Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="https://i.imgur.com/dHSeUw1.png" alt="logo">
+        <nav id="nav-bar">
+            <input id="nav-toggle" type="checkbox">
+            <ul class="navbar-items">
+                <li><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+                <li><a class="nav-link" href="#show">Show</a></li>
+                <li><a class="nav-link" href="#suscribirse">Suscribirse</a></li>
+            </ul>
+            <label for="nav-toggle" class="btn-menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </label>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="quienes-somos">
+            <div class="titulo">
+                <h1>Les Luthiers Shows</h1>
+                <p><i>Unen canto con humor</i></p>
+            </div>
+            <div class="descripcion">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa accusamus atque velit!
+                    Natus molestias ea nemo aut distinctio est odit id, necessitatibus perspiciatis veniam tempore
+                    magnam corporis, voluptatum iure!
+                    Natus, voluptate nihil voluptatum accusantium delectus voluptatem pariatur explicabo numquam eaque
+                    assumenda vel. Mollitia ullam eius cupiditate atque? Qui asperiores blanditiis iste doloremque modi.
+                    Ipsum impedit voluptatum sequi enim voluptatibus!
+                    Assumenda amet minima blanditiis, molestias, distinctio placeat quas eaque sapiente eligendi alias
+                    voluptatibus eveniet quibusdam. Molestias corporis accusamus nisi cum dignissimos eius nostrum aut
+                    possimus veniam a quia, eum fugiat?
+                    Unde non et praesentium error deleniti aliquam quod ad ut repellendus quam earum adipisci corrupti
+                    recusandae doloremque inventore, eius nesciunt, quasi tempora voluptatem! Soluta repudiandae magnam,
+                    sapiente praesentium necessitatibus fugit.</p>
+            </div>
+        </section>
+        <section id="show">
+            <h3>Shows en Vivo</h3>
+            <!-- Video -->
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/RbRSEY2f7Yo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="suscribirse">
+            <h3>Suscribete para recibir descuentos</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <!-- Email -->
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email"
+                        required>
+                    <button type="submit" id="submit" class="submit-button">
+                        Suscribirse
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
