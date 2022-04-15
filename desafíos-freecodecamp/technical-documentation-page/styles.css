@@ -13,10 +13,33 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.8rem;
+  color: rgb(17, 17, 17);
   line-height: 1.5;
+  display: flex;
+}
+
+nav#navbar {
+  border-right: 2px solid #ccc;
+}
+
+nav#navbar header,
+nav#navbar a {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav#navbar a {
+  color: rgb(17, 17, 17);
+  border-bottom: 1px;
+  text-decoration: none;
 }
 
 main#main {
   width: 80%;
   margin: 12rem 0 5rem;
+}
+
+section.main-section ul li {
+  list-style: none;
 }
