@@ -12,57 +12,215 @@
 <body>
     <nav id="navbar">
         <header>Descripcion Temas</header>
-        <a class="nav-link" href="#tema_1">Tema 1</a>
-        <a class="nav-link" href="#tema_2">Tema 2</a>
-        <a class="nav-link" href="#tema_3">Tema 3</a>
-        <a class="nav-link" href="#tema_4">Tema 4</a>
-        <a class="nav-link" href="#tema_5">Tema 5</a>
+        <ul>
+            <li><a class="nav-link" href="#tema_1">¿Qué es Javascript?</a></li>
+            <li><a class="nav-link" href="#tema_2">Dificultad</a></li>
+            <li><a class="nav-link" href="#tema_3">Consola</a></li>
+            <li><a class="nav-link" href="#tema_4">Glosario general</a></li>
+            <li><a class="nav-link" href="#tema_5">Comentarios</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
+        <section id="introduccion" class="main-section">
+            <header>Introducción</header>
+            <article>
+                <p>Cualquier página web de Internet está construída, como mínimo, por HTML (un lenguaje de marcas) y CSS
+                    (un lenguaje de estilos). El primero de ellos permite construir todo el marcado de la página
+                    (contenido e información) mediante etiquetas HTML y dotándo de semántica a la información mediante
+                    la naturaleza de dichas etiquetas. Posteriormente, el segundo de ellos permite darle estilo a la
+                    página y construir una interfaz visual más agradable para el usuario.</p>
+                <p>Sin embargo, utilizar sólo y exclusivamente HTML y CSS en una página nos limita considerablemente. Si
+                    bien es cierto que con estos dos lenguajes podemos hacer un gran abanico de cosas, hay otras que
+                    serían totalmente imposibles, o al menos, mucho más fáciles de realizar si tuvieramos un lenguaje de
+                    programación a nuestra disposición. Y en este punto es donde aparece Javascript.</p>
+            </article>
+        </section>
         <section id="tema_1" class="main-section">
-            <header>Tema 1</header>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <code>un codigo</code>
-            <ul>
-                <li>una lista</li>
-            </ul>
+            <header>¿Qué es Javascript?</header>
+            <article>
+                <p>Javascript es un lenguaje de programación, o lo que es lo mismo, un mecanismo con el que podemos
+                    decirle a nuestro navegador que tareas debe realizar, en que orden y cuantas veces (por ejemplo).
+                </p>
+                <p>Muchas de las tareas que realizamos con HTML y CSS se podrían realizar con Javascript. De hecho, es
+                    muy probable que al principio nos parezca que es mucho más complicado hacerlo con Javascript, y que
+                    por lo tanto no merece la pena. Sin embargo, con el tiempo veremos que Javascript nos ofrece una
+                    mayor flexibilidad y un abanico de posibilidades más grande, y que bien usadas, pueden ahorrarnos
+                    bastante tiempo.</p>
+                <p>Para comprenderlo, un ejemplo muy sencillo sería el siguiente:</p>
+                <p>Imaginemos que tenemos que crear una lista de números desde el 1 hasta el
+                    500. Hacerlo solamente con HTML sería muy tedioso, ya que tendríamos que copiar y
+                    pegar esas filas varias veces hasta llegar a 500. Sin embargo, mediante Javascript, podemos decirle
+                    al navegador que escriba el primer párrafo <code class="code-inline">&lt;p&gt;</code>, que luego
+                    escriba el mismo pero
+                    sumándole uno al número. Y que esto lo repita hasta llegar a 500.</p>
+                <p>De esta forma y con este sencillo ejemplo, con HTML habría que escribir 500 líneas mientras que con
+                    Javascript no serían más de 10 líneas.</p>
+            </article>
         </section>
         <section id="tema_2" class="main-section">
-            <header>Tema 2</header>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <code>un codigo</code>
-            <ul>
-                <li>una lista</li>
-            </ul>
+            <header>Dificultad</header>
+            <article>
+                <p>Aunque Javascript es ideal para muchos casos, es mucho más complicado aprender Javascript (o un
+                    lenguaje de programación en general) que aprender HTML o CSS, los cuales son mucho más sencillos de
+                    comprender. Antes debemos conocer varias cosas:</p>
+                <ul>
+                    <li>Para aprender Javascript debemos conocer el lenguaje Javascript, pero no podremos hacerlo si no
+                        sabemos programar. Se puede aprender a programar con Javascript, pero es recomendable tener una
+                        serie de fundamentos básicos de programación antes para que no nos resulte muy duro.</li>
+                    <li>Para aprender a programar antes debemos saber como «trabaja un ordenador». Programar no es más
+                        que decirle a una máquina que cosas debe hacer y como debe hacerlas. Eso significa que no
+                        podemos pasar por alto nada.</li>
+                    <li>Para darle órdenes a una máquina debemos tener claro que esas órdenes son correctas y harán lo
+                        que se supone que deben hacer. Si le indicamos a una máquina los pasos para resolver un
+                        problema, pero dichos pasos son erróneos, la máquina también hará mal el trabajo.</li>
+                </ul>
+                <p>Dicho esto, es necesario tener presente que aprender a programar es una tarea que no ocurre de un día
+                    para otro. Requiere tiempo, esfuerzo, acostumbrarse a cambiar la forma de pensar y practicar mucho.
+                </p>
+                <ul>
+                    <li>Puedes copiar un programa en segundos, pero eso no significa que lo entiendas.</li>
+                    <li>Puedes comprender un programa en minutos, pero eso no significa que lo puedas crear.</li>
+                    <li>Puedes crear un programa en horas, pero eso no significa que sepas programar.</li>
+                    <li>Puedes aprender a programar en semanas, pero eso no significa que no cometas errores.</li>
+                    <li>Puedes aprender a programar bien y sin demasiados errores en meses.</li>
+                </ul>
+                <p>Pero dominar la programación es una tarea que requiere años.</p>
+            </article>
         </section>
         <section id="tema_3" class="main-section">
-            <header>Tema 3</header>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <code>un codigo</code>
-            <ul>
-                <li>una lista</li>
-            </ul>
+            <header>Consola</header>
+            <article>
+                <p>Para acceder a la consola Javascript del navegador, podemos pulsar CTRL+SHIFT+I sobre la pestaña de
+                    la página web en cuestión, lo que nos llevará al Inspector de elementos del navegador. Este
+                    inspector es un panel de control general donde podemos ver varios aspectos de la página en la que
+                    nos encontramos: su etiquetado HTML, sus estilos CSS, etc...</p>
+                <p>Concretamente, a nosotros nos interesa una sección particular del inspector de elementos. Para ello,
+                    nos moveremos a la pestaña Console y ya nos encontraremos en la consola Javascript de la página.</p>
+                <p>En esta consola, podemos escribir funciones o sentencias de Javascript que estarán actuando en la
+                    página que se encuentra en la pestaña actual del navegador. De esta forma podremos observar los
+                    resultados que nos devuelve en la consola al realizar diferentes acciones.</p>
+                <p>El clásico primer ejemplo cuando se comienza a programar, es crear un programa que muestre por
+                    pantalla un texto, generalmente el texto «Hola Mundo». También podemos realizar, por ejemplo,
+                    operaciones numéricas. En la consola Javascript podemos hacer esto de forma muy sencilla:</p>
+                <code>console.log("Hola Mundo");
+                console.log(2 + 2);</code>
+                <p>En la primera línea, veremos que al pulsar enter nos muestra el texto «Hola Mundo». En la segunda
+                    línea, sin embargo, procesa la operación y nos devuelve 4. Para mostrar estos textos en la consola
+                    Javascript hemos utilizado la función console.log, pero existen varias más.</p>
+
+            </article>
         </section>
         <section id="tema_4" class="main-section">
-            <header>Tema 4</header>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <code>un codigo</code>
-            <ul>
-                <li>una lista</li>
-            </ul>
+            <header>Glosario general</header>
+            <article>
+                <ul>
+                    <li>Programa: En programación se suele llamar «programa» a el conjunto total de código que
+                        desarrollas. En Javascript, quizás el término más utilizado es aplicación web (cuando es un
+                        desarrollo con mucha cantidad de Javascript). También se suelen generalizar utilizando términos
+                        como «script» o «código Javascript».</li>
+                    <li>Algoritmo: Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para
+                        conseguir realizar una tarea satisfactoriamente y lograr un objetivo.</li>
+                    <li>Comentarios: Los comentarios en nuestro código son fragmentos de texto o anotaciones que el
+                        navegador ignora y no repercuten en el programa. Sirven para dejar por escrito detalles
+                        importantes para el programador. De esta forma cuando volvamos al código, nos será más rápido
+                        comprenderlo. Es una buena costumbre comentar en la medida de lo posible nuestro código.</li>
+                    <li>Indentación: Se llama indentar a la acción de colocar espacios o tabuladores antes del código,
+                        para indicar si nos encontramos dentro de un if, de un bucle, etc... Esta práctica es muy
+                        importante y necesaria, y más adelante profundizaremos en ella.</li>
+                    <li>Variables: Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una
+                        información determinada, de forma muy similar a las incógnitas en matemáticas. Un programa puede
+                        tener muchas variables, y cada una de ellas tendrá un nombre, un valor y un tipo de dato. El
+                        nombre se utiliza para diferenciarlas unas de otras y hacer referencia a ellas, el valor es la
+                        información que contienen y el tipo de dato es la naturaleza de ese valor. Se llaman variables
+                        porque podemos cambiarle su valor a lo largo del programa, según necesitemos.</li>
+                    <code>x = 5; // nombre: x, valor: 5, tipo de dato: número
+                            y = "Hola"; // nombre: y, valor: Hola, tipo de dato: texto
+                        </code>
+                    <li>Constantes: Es el mismo concepto de una variable, salvo que en este caso, la información que
+                        contiene es siempre la misma (no puede variar).</li>
+                    <li>Funciones: Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más
+                        grande, por lo que hay que buscar formas de organizarlo y mantenerlo lo más simple posible. Las
+                        funciones son agrupaciones de código que, entre otras cosas, evitan que tengamos que escribir
+                        varias veces lo mismo en nuestro código. Una función contendrá una o mas acciones a realizar y
+                        cada vez que ejecutemos una función, se realizarán todas ellas.</li>
+                    <li>Parámetros: Es el nombre que reciben las variables que se le pasan a las funciones. Muchas veces
+                        también se les denomina argumentos.</li>
+                    <li>Bucles: Cuando estamos programando, muchas veces necesitaremos realizar tareas repetitivas. Una
+                        de las ventajas de la programación es que permite automatizar acciones y no es necesario
+                        hacerlas varias veces. Los bucles permiten indicar el número de veces que se repetirá una
+                        acción. De esta forma, sólo la escribimos una vez en nuestro código, y simplemente indicamos el
+                        número de veces que queremos que se repita.</li>
+                    <li>Iteración: Cuando el programa está en un bucle repitiendo varias veces la misma tarea, cada una
+                        de esas repeticiones se denomina iteración.</li>
+                    <li>Librería: Muchas veces, desarrollamos código que resuelve tareas o problemas que,
+                        posteriormente, querremos reutilizar en otros programas. Cuando eso ocurre, en Javascript se
+                        suele empaquetar el código en lo que se llaman librerías, que no es más que código listo para
+                        que otros programadores puedan utilizarlo fácilmente en sus programas y beneficiarse de las
+                        tareas que resuelven de forma muy sencilla.</li>
+                </ul>
+            </article>
         </section>
         <section id="tema_5" class="main-section">
-            <header>Tema 5</header>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <code>un codigo</code>
-            <ul>
-                <li>una lista</li>
-            </ul>
+            <header>Comentarios</header>
+            <article>
+                <p>Cuando comenzamos a programar, por lo general, se nos suele decir que es una buena práctica mantener
+                    comentado nuestro código con anotaciones que faciliten la comprensión de las tareas que realizamos y
+                    los problemas que pretendemos solucionar, ya que el código que creamos no suele ser muy bueno, ni
+                    mucho menos descriptivo, ya que estamos en fase de aprendizaje.</p>
+                <p>A medida que conseguimos destreza programando, notaremos que los comentarios son cada vez más
+                    prescindibles, sin embargo, conviene no dejar de comentar, sino en su lugar, aprender a comentar
+                    mejor.</p>
+                <p>Una serie de consejos a tener presentes a la hora de dejar comentarios en nuestro código:</p>
+                <ul>
+                    <li>No comentes detalles redundantes. No escribas lo que haces, escribe por qué lo haces.</li>
+                    <li>Mejor nombres de variables/funciones/clases descriptivas que comentarios descriptivos.</li>
+                    <li>Sé conciso y concreto. Resume. No escribas párrafos si no es absolutamente necesario.</li>
+                    <li>Intenta usar siempre el mismo idioma y estilo de comentarios.</li>
+                    <li>Con el tiempo, los comentarios no se suelen mantener (modificar), el código sí.</li>
+                </ul>
+
+                <p>En Javascript existen dos tipos de comentarios: los comentarios de una sola línea y los comentarios
+                    de múltiples líneas.</p>
+                <ul>
+                    <li>El primero de ellos se caracteriza porque comienza con <code class="code-inline">//</code> y
+                        sólo comenta la linea
+                        actual desde donde se escribe.</li>
+                    <li>El segundo tipo se utiliza para hacer comentarios extensos que ocuparán varias líneas. Comienza
+                        por <code class="code-inline">/*</code> y comentará todo el texto que escribamos hasta que
+                        cerremos el comentario
+                        con un <code class="code-inline">*/</code>.</li>
+                </ul>
+                <p>Veamos un ejemplo:</p>
+                <code>// Comentarios cortos de una sola línea. Suelen explicar la línea siguiente.
+                    var a = 1;
+                    
+                    var x = 45; // También se utilizan al final de una línea.
+                    
+                    /* Por otro lado, existen los comentarios múltiples de varias líneas consecutivas.
+                       Suelen utilizarse para explicaciones largas que requieren bastante
+                       espacio porque se mencionan gran cantidad de cosas :-) */
+                    </code>
+            </article>
+        </section>
+        <section id="tema_6" class="main-section">
+            <header>Estructuras de Control</header>
+            <article>
+                <p>Al hacer un programa necesitaremos establecer condiciones o decisiones, donde buscamos que el
+                    navegador realice una acción A si se cumple una condición o una acción B si no se cumple. Este es el
+                    primer tipo de estructuras de control que encontraremos. Para ello existen varias estructuras de
+                    control.</p>
+                <p>Condicional If: Quizás, el más conocido de estos mecanismos de estructura de control es el if
+                    (condicional). Con él podemos indicar en el programa que se tome un camino sólo si se cumple la
+                    condición que establezcamos.</p>
+                <code>var nota = 7;
+                    console.log("He realizado mi examen.");
+                    
+                    // Condición (si nota es mayor o igual a 5)
+                    if (nota >= 5) {
+                      console.log("¡Estoy aprobado!");
+                    }
+                </code>
+            </article>
         </section>
     </main>
 </body>
