@@ -32,6 +32,10 @@ nav#navbar ul li {
   border-bottom: 1px solid #925c5c;
 }
 
+nav#navbar ul li:last-child {
+  border-bottom: none;
+}
+
 nav#navbar ul li a.nav-link {
   display: block;
   padding: 10px 30px;
@@ -56,6 +60,7 @@ main#main-doc p {
 nav#navbar header {
   margin: 1rem;
   text-align: center;
+  font-weight: 700;
 }
 
 section.main-section article {

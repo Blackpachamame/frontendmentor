@@ -11,13 +11,14 @@
 
 <body>
     <nav id="navbar">
-        <header>Descripcion Temas</header>
+        <header>JavaScript</header>
         <ul>
             <li><a class="nav-link" href="#tema_1">¿Qué es Javascript?</a></li>
             <li><a class="nav-link" href="#tema_2">Dificultad</a></li>
             <li><a class="nav-link" href="#tema_3">Consola</a></li>
-            <li><a class="nav-link" href="#tema_4">Glosario general</a></li>
+            <li><a class="nav-link" href="#tema_4">Glosario General</a></li>
             <li><a class="nav-link" href="#tema_5">Comentarios</a></li>
+            <li><a class="nav-link" href="#tema_6">Estructuras de Control</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -111,7 +112,7 @@
             </article>
         </section>
         <section id="tema_4" class="main-section">
-            <header>Glosario general</header>
+            <header>Glosario General</header>
             <article>
                 <ul>
                     <li>Programa: En programación se suele llamar «programa» a el conjunto total de código que
@@ -209,8 +210,10 @@
                     navegador realice una acción A si se cumple una condición o una acción B si no se cumple. Este es el
                     primer tipo de estructuras de control que encontraremos. Para ello existen varias estructuras de
                     control.</p>
-                <p>Condicional If: Quizás, el más conocido de estos mecanismos de estructura de control es el if
-                    (condicional). Con él podemos indicar en el programa que se tome un camino sólo si se cumple la
+                <p><b>Condicional If</b>: Quizás, el más conocido de estos mecanismos de estructura de
+                    control
+                    es el if
+                    (condicional). Con él liodemos indicar en el programa que se tome un camino sólo si se cumple la
                     condición que establezcamos.</p>
                 <code>var nota = 7;
                     console.log("He realizado mi examen.");
@@ -220,6 +223,82 @@
                       console.log("¡Estoy aprobado!");
                     }
                 </code>
+                <p>En este caso, como el valor de nota es superior a 5, nos aparecerá en la consola el mensaje
+                    «¡Estoy aprobado!». Sin embargo, si modificamos en la primera línea el valor de nota a un valor
+                    inferior a 5, no nos aparecerá ese mensaje.</p>
+                <p>
+                    <b>Condicional If / else</b>: Pero se puede dar el caso que queramos establecer una
+                    alternativa a una condición. Para eso utilizamos el if seguido de un else. Con esto podemos
+                    establecer una acción A si se cumple la condición, y una acción B si no se cumple.
+                </p>
+                <p>Vamos a modificar el ejemplo anterior para mostrar también un mensaje cuando estamos suspendidos,
+                    pero en este caso, en lugar de mostrar el mensaje directamente con un console.log vamos a guardar
+                    ese texto en una nueva variable calificacion:</p>
+                <code>var nota = 7;
+                    console.log("He realizado mi examen. Mi resultado es el siguiente:");
+                    
+                    // Condición
+                    if (nota < 5) {
+                      // Acción A (nota es menor que 5)
+                      calificacion = "suspendido";
+                    } else {
+                      // Acción B: Cualquier otro caso a A (nota es mayor o igual que 5)
+                      calificacion = "aprobado";
+                    }
+                    
+                    console.log("Estoy", calificacion);
+                </code>
+                <p>En este caso, como el valor de nota es superior a 5, nos aparecerá en la consola el mensaje «¡Estoy
+                    aprobado!». Sin embargo, si modificamos en la primera línea el valor de nota a un valor inferior a
+                    5, no nos aparecerá ese mensaje.</p>
+                <p><b>Condicional If / else</b>: Pero se puede dar el caso que queramos establecer una alternativa a una
+                    condición. Para eso utilizamos el if seguido de un else. Con esto podemos establecer una acción A si
+                    se cumple la condición, y una acción B si no se cumple.</p>
+                <p>Vamos a modificar el ejemplo anterior para mostrar también un mensaje cuando estamos suspendidos,
+                    pero en este caso, en lugar de mostrar el mensaje directamente con un <code
+                        class="code-inline">console.log</code> vamos a guardar
+                    ese texto en una nueva variable calificacion:</p>
+                <code>var nota = 7;
+                        console.log("He realizado mi examen. Mi resultado es el siguiente:");
+                        
+                        // Condición
+                        if (nota < 5) {
+                          // Acción A (nota es menor que 5)
+                          calificacion = "suspendido";
+                        } else {
+                          // Acción B: Cualquier otro caso a A (nota es mayor o igual que 5)
+                          calificacion = "aprobado";
+                        }
+                        
+                        console.log("Estoy", calificacion);
+                </code>
+                <p>Nuevamente, en este ejemplo comprobaremos que podemos conseguir que se muestre el mensaje Estoy
+                    aprobado o Estoy suspendido dependiendo del valor que tenga la variable nota. La diferencia con el
+                    ejemplo anterior es que creamos una nueva variable que contendrá un valor determinado dependiendo de
+                    la condición del If.</p>
+                <p>Por último, el console.log del final, muestra el contenido de la variable calificacion,
+                    independientemente de que sea el primer caso o el segundo.</p>
+                <code>var nota = 7;
+                        console.log("He realizado mi examen. Mi resultado es el siguiente:");
+                        
+                        // Condición
+                        if (nota < 5) {
+                          // Acción A (nota es menor que 5)
+                          calificacion = "suspendido";
+                        }
+                        if (nota >= 5) {
+                          // Acción B (nota es mayor o igual que 5)
+                          calificacion = "aprobado";
+                        }
+                        
+                        console.log("Estoy", calificacion);
+                </code>
+                <p>Este nuevo ejemplo, es equivalente al ejemplo anterior. Si nos fijamos bien, la única diferencia
+                    respecto al anterior es que estamos realizando dos if independientes: uno para comprobar si está
+                    suspendido y otro para comprobar si está aprobado.</p>
+                <p>Pero aunque son equivalentes, no son exactamente iguales, ya que en el ejemplo que vimos
+                    anteriormente sólo existe un if, y por lo tanto, sólo se realiza una comprobación. En este ejemplo
+                    que vemos ahora, se realizan dos if, y por lo tanto, dos comprobaciones.</p>
             </article>
         </section>
     </main>
