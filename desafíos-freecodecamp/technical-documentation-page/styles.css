@@ -17,32 +17,67 @@ body {
   line-height: 1.5;
 }
 
+/* NAVBAR */
 nav#navbar {
   position: fixed;
-  border-right: 2px solid #ccc;
+  border-right: 2px solid rgb(236, 215, 18);
   min-width: 290px;
   top: 0px;
   left: 0px;
   width: 300px;
   height: 100%;
+  background-color: rgb(17, 20, 40);
+  color: #fff;
 }
 
-nav#navbar ul li {
+nav#navbar ul.navbar-items li {
   position: relative;
-  border-bottom: 1px solid #925c5c;
+  border-bottom: 1px solid rgb(236, 215, 18);
 }
 
-nav#navbar ul li:last-child {
+nav#navbar ul.navbar-items li:last-child {
   border-bottom: none;
 }
 
-nav#navbar ul li a.nav-link {
+nav#navbar ul.navbar-items li a.nav-link {
   display: block;
   padding: 10px 30px;
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
+nav#navbar ul.navbar-items li a.nav-link:hover {
+  color: rgb(223, 223, 223);
+}
+
+nav#navbar header {
+  margin: 1rem;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -80px;
+}
+
+nav .btn-menu {
+  position: absolute;
+  display: none;
+  right: 5%;
+}
+
+nav .btn-menu .barra {
+  width: 30px;
+  height: 5px;
+  background-color: rgb(17, 20, 40);
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* MAIN */
 main#main-doc {
   position: absolute;
   margin-left: 310px;
@@ -57,12 +92,6 @@ main#main-doc p {
   margin: 1em 0;
 }
 
-nav#navbar header {
-  margin: 1rem;
-  text-align: center;
-  font-weight: 700;
-}
-
 section.main-section article {
   margin: 2rem;
 }
@@ -74,7 +103,7 @@ section.main-section article ul {
 section.main-section article code {
   display: block;
   white-space: pre-line;
-  background-color: #f7f7f7;
+  background-color: rgb(247, 247, 247);
   padding: 1.5rem 2rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -90,4 +119,72 @@ section.main-section article code.code-inline {
   color: rgb(103, 103, 221);
   font-family: monospace;
   font-weight: 700;
+}
+
+/** MEDIA QUERY **/
+
+@media (max-width: 911px) {
+  nav#navbar {
+    width: 100%;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7rem;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    max-height: 75px;
+    background-color: rgb(236, 215, 18);
+  }
+  main#main-doc {
+    margin-left: 0;
+    margin-top: 75px;
+  }
+  nav .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .navbar-items {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 75px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(17, 20, 40, 0.9);
+    justify-content: space-evenly;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .navbar-items a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .navbar-items {
+    bottom: 0;
+  }
+  nav .btn-menu {
+    display: block;
+  }
+  /* Rotamos las barras para que formen una cruz */
+  nav :checked ~ .btn-menu .barra:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .btn-menu .barra:nth-child(2) {
+    opacity: 0;
+  }
+  nav :checked ~ .btn-menu .barra:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav#navbar header {
+    margin: 0;
+    color: rgb(17, 20, 40);
+  }
 }

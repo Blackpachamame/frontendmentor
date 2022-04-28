@@ -12,8 +12,9 @@
 <body>
     <nav id="navbar">
         <header>JavaScript</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+        <input id="nav-toggle" type="checkbox">
+        <ul class="navbar-items">
+            <li><a class="nav-link" href="#Introducción">Introducción</a></li>
             <li><a class="nav-link" href="#¿Qué_es_Javascript?">¿Qué es Javascript?</a></li>
             <li><a class="nav-link" href="#Dificultad">Dificultad</a></li>
             <li><a class="nav-link" href="#Consola">Consola</a></li>
@@ -21,10 +22,15 @@
             <li><a class="nav-link" href="#Comentarios">Comentarios</a></li>
             <li><a class="nav-link" href="#Estructuras_de_Control">Estructuras de Control</a></li>
         </ul>
+        <label for="nav-toggle" class="btn-menu">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </label>
     </nav>
     <main id="main-doc">
-        <section id="Introduccion" class="main-section">
-            <header>Introduccion</header>
+        <section id="Introducción" class="main-section">
+            <header>Introducción</header>
             <article>
                 <p>Cualquier página web de Internet está construída, como mínimo, por HTML (un lenguaje de marcas) y CSS
                     (un lenguaje de estilos). El primero de ellos permite construir todo el marcado de la página
