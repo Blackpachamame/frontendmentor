@@ -7,9 +7,9 @@
   --color-orange: hsl(34, 97%, 64%);
   --color-blue: hsl(212, 86%, 64%);
   --color-white: hsl(0, 0%, 100%);
-  --color-very-dark-blue: hsl(234, 12%, 34%);
-  --color-grayish-blue: hsl(229, 6%, 66%);
-  --color-very-light-gray: rgb(250, 250, 250);
+  --color-very-dark-blue: rgb(76, 78, 97);
+  --color-grayish-blue: rgb(163, 165, 174);
+  --color-very-light-gray: hsl(0, 0%, 98%);
 }
 
 * {
@@ -75,12 +75,9 @@ article.card {
   border-top: 4px solid;
   padding: 1.9rem 2.2rem 2.2rem;
   position: relative;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
-    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
-    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
-    0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
+  box-shadow: 0px 15px 20px -4px rgba(177, 200, 227, 0.4);
+  -webkit-box-shadow: 0px 15px 20px -4px rgba(177, 200, 227, 0.4);
+  -moz-box-shadow: 0px 15px 20px -4px rgba(177, 200, 227, 0.4);
 }
 
 article.card.card-1 {
