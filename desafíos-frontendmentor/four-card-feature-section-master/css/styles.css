@@ -68,6 +68,7 @@ section.card {
   border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
   border-top: 4px solid;
   padding: 2.2rem;
+  position: relative;
   /* width: 350px; */
   -webkit-box-shadow: 0 4px 8px 0 rgba(19, 19, 19, 0.02),
     0 6px 1.3rem 0 rgba(26, 26, 26, 0.19);
@@ -103,14 +104,15 @@ h2.card-header {
 }
 
 p.card-main {
-  margin-bottom: 2.7rem;
+  margin-bottom: 6rem;
   font-size: 0.9rem;
   line-height: 1.8;
 }
 
 img.card-footer {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  right: 2.2rem;
+  bottom: 2.2rem;
 }
 
 @media (max-width: 991px) {
@@ -126,18 +128,27 @@ img.card-footer {
   #main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
   }
-  section.card.card-1,
+  section.card.card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
   section.card.card-3 {
     grid-column: 1;
+    grid-row: 2;
   }
-  section.card.card-2,
+  section.card.card-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
   section.card.card-4 {
     grid-column: 2;
+    grid-row: 2;
   }
   section.card.card-1,
   section.card.card-4 {
-    grid-row: initial;
+    align-self: initial;
   }
 }
 
@@ -151,15 +162,30 @@ img.card-footer {
   }
   #main {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     padding: 0 0.8rem;
   }
-  section.card.card-1,
-  section.card.card-2,
-  section.card.card-3,
+  section.card.card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  section.card.card-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  section.card.card-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
   section.card.card-4 {
-    grid-column: initial;
+    grid-column: 1;
+    grid-row: 4;
   }
   section.card {
     padding: 1.8rem;
+  }
+  img.card-footer {
+    right: 1.8rem;
+    bottom: 1.8rem;
   }
 }
