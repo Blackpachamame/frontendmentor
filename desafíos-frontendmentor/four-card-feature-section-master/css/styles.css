@@ -65,7 +65,7 @@ h2 {
 
 section.card {
   background-color: var(--color-very-light-gray);
-  border-radius: 0.3rem;
+  border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
   border-top: 4px solid;
   padding: 2.2rem;
   /* width: 350px; */
@@ -151,11 +151,15 @@ img.card-footer {
   }
   #main {
     grid-template-columns: 1fr;
+    padding: 0 0.8rem;
   }
   section.card.card-1,
   section.card.card-2,
   section.card.card-3,
   section.card.card-4 {
     grid-column: initial;
+  }
+  section.card {
+    padding: 1.8rem;
   }
 }
