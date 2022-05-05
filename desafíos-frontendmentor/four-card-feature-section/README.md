@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/four-card-feature-section-B1304Mx79">
+    <a href="https://www.frontendmentor.io/solutions/usando-css-grid-por-primera-vez-rkodO5eU9">
       Solución
     </a>
    <span> | </span>
