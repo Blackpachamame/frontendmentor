@@ -36,19 +36,21 @@ main#main {
   justify-content: center;
 }
 
-main#main p {
+main#main p.tooltip {
   color: var(--color-sandybrown);
   font-size: 2.5rem;
   cursor: pointer;
 }
 
-main#main p span {
-  color: red;
-  display: none;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  display: inline-block;
 }
 
-main#main p span:hover {
-  display: block;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  display: none;
+  color: red;
 }
 
 a {
@@ -63,6 +65,8 @@ h3 {
 
 h1 {
   font-size: 4.5rem;
+  margin-bottom: 4rem;
+  margin-top: 7.5rem;
 }
 
 h2 {
