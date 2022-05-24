@@ -110,7 +110,6 @@ section#contact a#profile-link:hover {
   display: grid;
   gap: 4rem;
   grid-auto-flow: dense;
-  /* grid-auto-rows: 22rem; */
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
 }
 
@@ -130,6 +129,11 @@ section#contact a#profile-link:hover {
   border-radius: 0.5rem;
 }
 
+.project-title h3 a:hover {
+  color: var(--color-sandybrown);
+}
+
+/* HEADER */
 nav#navbar {
   width: 100%;
   display: flex;
