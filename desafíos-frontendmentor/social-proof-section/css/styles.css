@@ -23,19 +23,29 @@ html {
 body {
   font-family: var(--ff-spartan);
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
 }
 
-h1,
-h2 {
+h1 {
   color: var(--color-very-dark-magenta);
 }
 
-#title h1 {
+#title-conteiner {
+  width: 70%;
+}
+
+#title-conteiner h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-#title p {
+#title-conteiner p {
   font-size: 1.1rem;
   color: var(--color-dark-grayish-magenta);
 }
@@ -44,15 +54,40 @@ h2 {
   font-size: 1rem;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "top top top"
+    "bottom bottom bottom";
+}
+
+#top-conteiner {
+  grid-area: top;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cards-conteiner {
+  grid-area: bottom;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
 /* STARTS */
 .starts-body {
   background-color: var(--color-light-grayish-magenta);
   width: 31.5rem;
   padding: 1.2rem 2rem;
-  margin: 1rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
+}
+
+.starts-body > h2 {
+  color: var(--color-very-dark-magenta);
 }
 
 .starts-img {
@@ -62,4 +97,23 @@ h2 {
 
 .starts-img img {
   padding-right: 0.5rem;
+}
+
+/* CARDS */
+div#cards-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+article.card {
+  background-color: var(--color-very-dark-magenta);
+  border-radius: 0.5rem;
+  padding: 2.5rem 2rem;
+  color: var(--color-white);
+}
+
+.card-title > h2 > span {
+  color: var(--color-soft-pink);
+  font-weight: 400;
 }
