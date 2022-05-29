@@ -11,11 +11,11 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/usando-css-grid-por-primera-vez-rkodO5eU9">
+    <a href="https://www.frontendmentor.io/solutions/aprendiendo-metodologa-bem-EDqfXl3ccN">
       Solución
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/social-proof-section-weK1eFYK">
+    <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA">
       Desafío
     </a>
   </h3>
