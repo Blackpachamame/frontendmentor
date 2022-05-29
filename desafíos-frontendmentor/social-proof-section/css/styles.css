@@ -37,49 +37,46 @@ body {
   width: 80%;
 }
 
-main {
+.main {
   display: grid;
   grid-template-columns: 32rem 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas:
-    "title starts"
+    "header stars"
     "card card";
   margin: 8rem 0 10.4rem;
-}
-
-h1 {
-  color: var(--color-very-dark-magenta);
 }
 
 h2 {
   font-size: 0.8rem;
 }
 
-/* TITLE */
-#title-conteiner {
-  grid-area: title;
+/* HEADER */
+.header {
+  grid-area: header;
 }
 
-#title-conteiner h1 {
+.header__h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
+  color: var(--color-very-dark-magenta);
   margin-bottom: 1rem;
 }
 
-#title-conteiner p {
+.header__p {
   color: var(--color-dark-grayish-magenta);
   font-weight: 500;
 }
 
-/* STARTS */
-#starts-conteiner {
-  grid-area: starts;
+/* RATED */
+.rated {
+  grid-area: stars;
   justify-self: end;
   margin-bottom: 5rem;
 }
 
-.starts-body {
+.rated__conteiner {
   background-color: var(--color-light-grayish-magenta);
   width: 28rem;
   padding: 1.3rem 2rem;
@@ -90,39 +87,39 @@ h2 {
   align-items: center;
 }
 
-.starts-body > h2 {
+.rated__h2 {
   color: var(--color-very-dark-magenta);
 }
 
-.starts-img {
+.rated__stars {
   margin-right: 1.6rem;
 }
 
-.starts-img img {
+.rated__img {
   padding-right: 0.3rem;
 }
 
-.starts-img img:nth-last-child(1) {
+.rated__img:nth-last-child(1) {
   padding-right: 0;
 }
 
-.starts-body.start-1 {
+.rated__conteiner.rated__conteiner--translateX-1 {
   transform: translateX(-6rem);
 }
 
-.starts-body.start-2 {
+.rated__conteiner.rated__conteiner--translateX-2 {
   transform: translateX(-3rem);
 }
 
-/* CARDS */
-#cards-conteiner {
+/* CARD */
+.card {
   display: grid;
   grid-area: card;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-article.card {
+.card__article {
   background-color: var(--color-very-dark-magenta);
   border-radius: 0.5rem;
   padding: 2.5rem 2rem;
@@ -130,60 +127,60 @@ article.card {
   color: var(--color-white);
 }
 
-.card-header {
+.card__header {
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
 }
 
-.card-title > h2 > span {
+.card__span {
   color: var(--color-soft-pink);
   font-weight: 400;
   display: block;
 }
 
-.card-img {
+.card__figure {
   margin-right: 1.6rem;
 }
 
-.card-img > img {
+.card__img {
   width: 2.6rem;
   border-radius: 50%;
 }
 
-.card.card-2 {
+.card__article--translateY-2 {
   transform: translateY(1.2rem);
 }
 
-.card.card-3 {
+.card__article--translateY-3 {
   transform: translateY(2.4rem);
 }
 
 /* MEDIA QUERY */
 @media (max-width: 1240px) {
-  .starts-body.start-1 {
+  .rated__conteiner.rated__conteiner--translateX-1 {
     transform: initial;
   }
 
-  .starts-body.start-2 {
+  .rated__conteiner.rated__conteiner--translateX-2 {
     transform: initial;
   }
 }
 
 @media (max-width: 1130px) {
-  main {
+  .main {
     margin: 7rem 0;
   }
   #top-conteiner {
     grid-template-columns: 1fr 1fr;
   }
-  #starts-conteiner {
+  .rated {
     margin-left: 1rem;
   }
-  .card.card-2 {
+  .card__article--translateY-2 {
     transform: initial;
   }
-  .card.card-3 {
+  .card__article--translateY-3 {
     transform: initial;
   }
 }
@@ -192,57 +189,57 @@ article.card {
   body {
     width: 85%;
   }
-  main {
+  .main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-      "title"
-      "starts"
+      "header"
+      "stars"
       "card";
     align-items: center;
     justify-items: center;
   }
-  #title-conteiner {
+  .header {
     text-align: center;
     margin-bottom: 2rem;
     width: 80%;
   }
-  #starts-conteiner {
+  .rated {
     width: 100%;
     margin-bottom: 2rem;
     margin-left: 0;
   }
-  .starts-body {
+  .rated__conteiner {
     width: 100%;
     flex-direction: column;
     line-height: inherit;
     padding: 1rem;
   }
-  .starts-img {
+  .rated__stars {
     margin-right: 0;
     margin-bottom: 0.5rem;
   }
-  .starts-body > h2 {
+  .rated__h2 {
     line-height: 0.7;
   }
-  #cards-conteiner {
+  .card {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 425px) {
-  #title-conteiner {
+  .header {
     width: 100%;
   }
-  #title-conteiner h1 {
+  .header__h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
-  #title-conteiner p {
+  .header__p {
     font-size: 0.9rem;
   }
-  article.card {
+  .card__article {
     padding: 2.5rem 2.2rem;
   }
   h2 {
