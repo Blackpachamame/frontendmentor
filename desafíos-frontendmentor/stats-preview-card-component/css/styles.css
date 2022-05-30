@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --ff-inter: "Inter", sans-serif;
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --color-very-dark-blue: hsl(233, 47%, 7%);
+  --color-dark-desaturated-blue: hsl(244, 38%, 16%);
+  --color-soft-violet: hsl(277, 64%, 61%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-slightly-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-slightly-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-inter);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  line-height: 1.7;
+  background-color: var(--color-very-dark-blue);
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  place-content: center;
+}
+
+.main {
+  background-color: var(--color-dark-desaturated-blue);
+  border-radius: 0.7rem;
+  width: 111rem;
+  display: grid;
+  grid-template-columns: 1fr 54rem;
+  grid-template-rows: 44.6rem;
+  grid-template-areas: "stat header";
+  overflow: hidden;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header__figure {
+  background-color: var(--color-soft-violet);
+}
+
+.header__img {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.stat {
+  grid-area: stat;
+  padding: 7rem 12rem 6.5rem 7.2rem;
+}
+
+.stat__h1 {
+  font-size: 3.5rem;
+  line-height: 1.25;
+  margin-bottom: 2.4rem;
+}
+
+.h1__span--color-violet {
+  color: var(--color-soft-violet);
+}
+
+.stat__p {
+  color: var(--color-slightly-paragraph);
+}
+
+.stat__ul {
+  margin-top: 7rem;
+  display: flex;
+  gap: 6rem;
+}
+
+.stat__li {
+  list-style: none;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.stat__name--uppercase {
+  display: block;
+  font-family: var(--ff-lexend);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-slightly-headings);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}

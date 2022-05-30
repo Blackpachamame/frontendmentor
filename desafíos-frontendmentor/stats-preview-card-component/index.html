@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Stats preview card component</title>
 </head>
+
 <body>
 
-  Get insights that help your business grow.
+  <main class="main">
+    <header class="header">
+      <figure class="header__figure">
+        <img class="header__img" src="images/image-header-desktop.jpg" alt="">
+      </figure>
+    </header>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <section class="stat">
+      <h1 class="stat__h1">
+        Get <span class="h1__span--color-violet">insights</span> that help your business grow.
+      </h1>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <p class="stat__p">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <ul class="stat__ul">
+        <li class="stat__li">10k+
+          <span class="stat__name--uppercase">companies</span>
+        </li>
+        <li class="stat__li">314
+          <span class="stat__name--uppercase">templates</span>
+        </li>
+        <li class="stat__li">12M+
+          <span class="stat__name--uppercase">queries</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
 </body>
+
 </html>
