@@ -97,3 +97,51 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
+
+/* MEDIA QUERYS */
+@media (max-width: 1110px) {
+  body {
+    text-align: center;
+  }
+
+  .main {
+    width: initial;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 33rem;
+    grid-template-rows: 24rem auto;
+    grid-template-areas:
+      "header"
+      "stat";
+  }
+
+  .header__figure {
+    background-color: var(--color-soft-violet);
+    height: 24rem;
+    width: 100%;
+  }
+
+  .header__img {
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    height: 24rem;
+    width: 100%;
+  }
+
+  .stat {
+    padding: 4rem 3.5rem 3.4rem;
+  }
+
+  .stat__h1 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat__ul {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+  }
+}
