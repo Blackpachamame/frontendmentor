@@ -42,6 +42,9 @@ body {
   grid-template-rows: 44.6rem;
   grid-template-areas: "stat header";
   overflow: hidden;
+  box-shadow: 0px 10px 5px -5px rgba(54, 54, 54, 0.05);
+  -webkit-box-shadow: 0px 10px 5px -5px rgba(54, 54, 54, 0.05);
+  -moz-box-shadow: 0px 10px 5px -5px rgba(54, 54, 54, 0.05);
 }
 
 .header {
