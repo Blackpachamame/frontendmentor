@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main class="main">
+    <div class="card">
+      <header class="card__header">
+        <figure class="card__figure">
+          <img class="card__img" src="images/bg-pattern-card.svg" alt="">
+        </figure>
+      </header>
+      <div class="card__body">
+        <figure class="card-body__figure">
+          <img class="card-body__img" src="images/image-victor.jpg" alt="victor">
+        </figure>
+        <h1 class="card__h1">Victor Crest
+          <span class="card__span">26</span>
+        </h1>
+        <h2 class="card__h2">London</h2>
+      </div>
+      <div class="card__footer">
+        <div class="card__stat">
+          80K
+          Followers
+        </div>
+        <div class="card__stat">
+          803K
+          Likes
+        </div>
+        <div class="card__stat">
+          1.4K
+          Photos
+        </div>
+      </div>
+    </div>
+  </main>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
