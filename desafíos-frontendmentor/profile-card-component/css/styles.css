@@ -130,3 +130,10 @@ body {
   letter-spacing: 0.15rem;
   margin-top: 0.3rem;
 }
+
+/* MEDIA QUERYS */
+@media (max-width: 375px) {
+  .card {
+    width: 30rem;
+  }
+}

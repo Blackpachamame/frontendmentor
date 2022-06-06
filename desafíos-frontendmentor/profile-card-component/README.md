@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/profile-card-component-EDqfXl3ccN">
+    <a href="https://www.frontendmentor.io/solutions/profile-card-component-using-bem-E4E879IdsG">
       Solución
     </a>
    <span> | </span>
