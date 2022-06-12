@@ -147,6 +147,12 @@ ul li {
   fill: var(--white);
 }
 
+.card__svg-facebook:hover path,
+.card__svg-twitter:hover path,
+.card__svg-pinterest:hover path {
+  fill: var(--light-grayish-blue);
+}
+
 /* POPOVERS */
 .card__popovers {
   display: flex;
