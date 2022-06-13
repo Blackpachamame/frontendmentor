@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main class="main">
+    <header class="header">
+      <figure class="header__figure">
+        <img class="header__img" src="images/illustration-woman-online-desktop.svg"
+          alt="illustration-woman-online-desktop">
+      </figure>
+    </header>
+    <div class="faq">
+      <h1 class="faq__h1">Faq</h1>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <details class="faq__details">
+        <summary class="faq__summary">
+          How many team members can I invite?
+        </summary>
+        <p class="faq__p">
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </p>
+      </details>
+      <details class="faq__details">
+        <summary class="faq__summary">What is the maximum file upload size?</summary>
+        <p class="faq__p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </details>
+      <details class="faq__details">
+        <summary class="faq__summary">How do I reset my password?</summary>
+        <p class="faq__p">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </details>
+      <details class="faq__details">
+        <summary class="faq__summary">Can I cancel my subscription?</summary>
+        <p class="faq__p">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </details>
+      <details class="faq__details">
+        <summary class="faq__summary">Do you provide additional support?</summary>
+        <p class="faq__p">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </details>
+    </div>
+  </main>
 </body>
+
 </html>
