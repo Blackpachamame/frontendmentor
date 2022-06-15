@@ -5,7 +5,7 @@
   --soft-red: hsl(14, 88%, 65%);
   --soft-violet: hsl(273, 75%, 66%);
   --soft-blue: hsl(240, 73%, 65%);
-  --vry-dark-grayish-blue: hsl(237, 12%, 33%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
   --dark-grayish-blue: hsl(240, 6%, 50%);
   --light-grayish-blue: hsl(240, 5%, 91%);
   --white: hsl(0, 0%, 100%);
@@ -60,11 +60,11 @@ svg {
 .header {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: -58.3rem 69.5%;
+  background-position: -57.7rem 68%;
   overflow: hidden;
 }
 
-.header__figure-box {
+.figure-box {
   transform: translate(-9.3rem, 20.5rem);
   position: absolute;
   z-index: 10;
@@ -72,6 +72,42 @@ svg {
 
 .header__figure-woman {
   transform: translate(-8.4rem, 7rem);
-  /* position: absolute;
-  z-index: 5; */
+}
+
+.faq {
+  padding: 6.5rem 8rem 5rem 0.5rem;
+}
+
+.faq__h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 2.5rem;
+}
+
+.faq__details {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.faq__summary {
+  font-size: 1.4rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.faq__summary:hover {
+  color: var(--soft-red);
+}
+
+details > summary:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+details[open] > summary:first-of-type {
+  list-style-type: disclosure-open;
+}
+
+.faq__p {
+  margin-top: 1rem;
 }
