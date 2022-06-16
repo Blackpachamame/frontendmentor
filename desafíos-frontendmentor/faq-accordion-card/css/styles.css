@@ -49,11 +49,11 @@ svg {
 .main {
   background-color: var(--white);
   width: 92rem;
-  height: 50.9rem;
+  min-height: 50.9rem;
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 47.2rem 44.8rem;
-  grid-template-rows: 50.9rem;
+  /* grid-template-rows: 50.9rem; */
   position: relative;
 }
 
@@ -93,6 +93,7 @@ svg {
 .faq__summary {
   font-size: 1.4rem;
   color: var(--very-dark-grayish-blue);
+  cursor: pointer;
 }
 
 .faq__summary:hover {
@@ -105,7 +106,8 @@ details > summary:first-of-type {
 }
 
 details[open] > summary:first-of-type {
-  list-style-type: disclosure-open;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
 }
 
 .faq__p {
