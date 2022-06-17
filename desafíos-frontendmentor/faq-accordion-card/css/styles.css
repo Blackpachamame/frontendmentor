@@ -103,11 +103,16 @@ svg {
 details > summary:first-of-type {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 details[open] > summary:first-of-type {
   font-weight: 700;
   color: var(--very-dark-desaturated-blue);
+}
+
+details[open] > summary:first-of-type > span.faq__arrow img.faq__img-arrow {
+  transform: rotate(180deg);
 }
 
 .faq__p {
