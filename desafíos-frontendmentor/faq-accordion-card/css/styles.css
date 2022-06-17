@@ -64,7 +64,7 @@ svg {
   overflow: hidden;
 }
 
-.figure-box {
+.main__figure-box {
   transform: translate(-9.3rem, 20.5rem);
   position: absolute;
   z-index: 10;
