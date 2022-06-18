@@ -132,6 +132,7 @@ ul li {
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
 }
 
 .card__share:hover {
@@ -189,6 +190,10 @@ ul li {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+.card__li {
+  cursor: pointer;
 }
 
 .card__popovers-arrow {
