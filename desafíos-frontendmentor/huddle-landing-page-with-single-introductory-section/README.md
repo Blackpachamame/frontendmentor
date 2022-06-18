@@ -63,4 +63,5 @@ Hace un tiempo que no hacía nada de programación, así que está fue una buena
 
 ## Autor
 
+- Github - [Blackpachamame](https://github.com/Blackpachamame)
 - Frontend Mentor - [@Blackpachamame](https://www.frontendmentor.io/profile/Blackpachamame)
