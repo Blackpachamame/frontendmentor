@@ -50,17 +50,17 @@ svg {
   background-color: var(--white);
   width: 92rem;
   min-height: 50.9rem;
+  margin: 5rem 0;
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 47.2rem 44.8rem;
-  /* grid-template-rows: 50.9rem; */
   position: relative;
 }
 
 .header {
   background-image: url(../images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: -57.7rem 68%;
+  background-position: -57.7rem -29.5rem;
   overflow: hidden;
 }
 

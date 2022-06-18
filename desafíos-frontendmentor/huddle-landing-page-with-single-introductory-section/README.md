@@ -1,13 +1,30 @@
-# Frontend Mentor - Huddle landing page with single introductory section
+<h1 align="center">Huddle landing page with single introductory section</h1>
 
-Esta es una solución al desafío [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la construcción de proyectos realistas.
+<div align="center">
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
+</div>
+<br>
+<div align="center">
+<img src="design/desktop-preview.jpg"></img>
+  <h3>
+    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/huddle-landing-page-with-single-introductory-section/">
+      En Vivo
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/solutions/desafo-huddle-con-bootstrap-5-aCWuRWCIc">
+      Solución
+    </a>
+   <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0">
+      Desafío
+    </a>
+  </h3>
+</div>
 
 ## Tabla de contenido
 
 - [Descripción](#descripción)
   - [Desafío](#desafío)
-  - [Diseño Previo](#diseño-previo)
-  - [Links](#links)
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Desarrollo continuo](#desarrollo-continuo)
@@ -26,15 +43,6 @@ Sus usuarios deberían poder:
 
 - Ver el diseño óptimo según el tamaño de la pantalla de su dispositivo
 - Ver estados de desplazamiento para elementos interactivos
-
-### Diseño Previo
-
-![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
-
-### Links
-
-- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/huddle-landing-page-with-single-introductory-section)
-- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/huddle-landing-page-with-single-introductory-section/)
 
 ## Mi Procedimiento
 

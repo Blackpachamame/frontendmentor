@@ -1,13 +1,30 @@
-# Frontend Mentor - 3-column preview card component solution
+<h1 align="center">3-column preview card component solution</h1>
 
-Esta es una solución al desafío [3-column preview card component solution](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la construcción de proyectos realistas.
+<div align="center">
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
+</div>
+<br>
+<div align="center">
+<img src="design/desktop-preview.jpg"></img>
+  <h3>
+    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/3-column-preview-card-component/">
+      En Vivo
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/solutions/html-css-y-bootstrap-5-2tRaio0gn">
+      Solución
+    </a>
+   <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-">
+      Desafío
+    </a>
+  </h3>
+</div>
 
 ## Tabla de contenido
 
 - [Descripción](#descripción)
   - [Desafío](#desafío)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Lo que aprendí](#lo-que-aprendí)
@@ -27,15 +44,6 @@ Sus usuarios deberían poder:
 
 - Ver el diseño óptimo según el tamaño de la pantalla de su dispositivo
 - Ver estados de desplazamiento para elementos interactivos
-
-### Screenshot
-
-![](./images/my-desktop-preview.jpg)
-
-### Links
-
-- [URL de la solución](https://github.com/Blackpachamame/Blackpachamame.github.io/tree/main/desafíos-frontendmentor/3-column-preview-card-component)
-- [URL del sitio en vivo](https://blackpachamame.github.io/desafíos-frontendmentor/3-column-preview-card-component/)
 
 ## Mi Procedimiento
 
