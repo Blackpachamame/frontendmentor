@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/faq-accordion-card">
+    <a href="https://www.frontendmentor.io/solutions/faq-accordion-card-using-bem-L0u-jSlnG5">
       Solución
     </a>
    <span> | </span>
