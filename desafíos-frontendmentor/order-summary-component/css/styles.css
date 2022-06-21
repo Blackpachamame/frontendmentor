@@ -8,6 +8,7 @@
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
   --white: hsl(0, 0%, 100%);
+  --pale-hover: hsl(245, 83%, 68%);
 }
 
 * {
@@ -113,7 +114,7 @@ button {
 }
 
 .card-body__a:hover {
-  color: var(--desaturated-blue);
+  color: var(--pale-hover);
 }
 
 .card-body__content-button {
@@ -129,14 +130,14 @@ button {
   color: var(--white);
   background-color: var(--bright-blue);
   border: 1px solid var(--bright-blue);
-  box-shadow: 0px 20px 20px 0px rgba(220, 220, 250, 0.9);
-  -webkit-box-shadow: 0px 20px 20px 0px rgba(220, 220, 250, 0.9);
-  -moz-box-shadow: 0px 20px 20px 0px rgba(220, 220, 250, 0.9);
+  box-shadow: 0px 20px 20px 0px rgba(118, 108, 241, 0.3);
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(118, 108, 241, 0.3);
+  -moz-box-shadow: 0px 20px 20px 0px rgba(118, 108, 241, 0.3);
 }
 
 .card-body__button-proceed:hover {
-  border-color: var(--desaturated-blue);
-  background-color: var(--desaturated-blue);
+  border-color: var(--pale-hover);
+  background-color: var(--pale-hover);
 }
 
 .card-body__button-cancel {
