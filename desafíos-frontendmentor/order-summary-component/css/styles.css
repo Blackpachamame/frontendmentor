@@ -45,6 +45,7 @@ button {
   font-weight: 700;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
 
 .card {
@@ -108,6 +109,11 @@ button {
 .card-body__a {
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.card-body__a:hover {
+  color: var(--desaturated-blue);
 }
 
 .card-body__content-button {
@@ -128,6 +134,15 @@ button {
   -moz-box-shadow: 0px 20px 20px 0px rgba(220, 220, 250, 0.9);
 }
 
+.card-body__button-proceed:hover {
+  border-color: var(--desaturated-blue);
+  background-color: var(--desaturated-blue);
+}
+
 .card-body__button-cancel {
   color: var(--desaturated-blue);
+}
+
+.card-body__button-cancel:hover {
+  color: var(--dark-blue);
 }
