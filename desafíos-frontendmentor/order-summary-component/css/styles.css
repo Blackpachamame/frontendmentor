@@ -155,6 +155,10 @@ button {
 
 /* MEDIA QUERYS */
 @media (max-width: 451px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
   .card {
     width: 32.7rem;
     height: 56.7rem;
