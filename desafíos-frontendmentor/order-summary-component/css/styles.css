@@ -58,6 +58,11 @@ button {
   overflow: hidden;
 }
 
+.card-header__img {
+  height: auto;
+  width: 100%;
+}
+
 .card-body {
   padding: 4.4rem 4.7rem 4.7rem;
 }
@@ -146,4 +151,54 @@ button {
 
 .card-body__button-cancel:hover {
   color: var(--dark-blue);
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 451px) {
+  .card {
+    width: 32.7rem;
+    height: 56.7rem;
+  }
+
+  .card-header__figure {
+    height: 16rem;
+  }
+
+  .card-body {
+    padding: 3.2rem 2.5rem;
+  }
+
+  .card-body__h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.65rem;
+  }
+
+  .card-body__p {
+    margin-bottom: 2.4rem;
+    line-height: 1.57;
+  }
+
+  .card-body__change {
+    padding: 1.6rem;
+  }
+
+  .card-body__h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-body__span {
+    margin-top: 0.3rem;
+  }
+
+  .card-body__a {
+    font-size: 1.3rem;
+  }
+
+  .card-body__content-button {
+    margin-top: 2.4rem;
+  }
+
+  .card-body__button-proceed {
+    margin-bottom: 2.4rem;
+  }
 }
