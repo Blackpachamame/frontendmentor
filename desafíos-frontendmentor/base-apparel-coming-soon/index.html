@@ -11,30 +11,31 @@
 
 <body>
 
-  <header class="header">
-    <figure class="header__figure">
-      <img class="header__logo" src="images/logo.svg" alt="logo">
-    </figure>
-  </header>
-
   <main class="main">
 
+    <header class="header">
+      <figure class="header__figure">
+        <img class="header__logo" src="images/logo.svg" alt="logo">
+      </figure>
+    </header>
+
     <div class="portada">
-      <figure class="portada__figure">
+      <figure class="portada__figure-desktop">
         <img class="portada__desktop" src="images/hero-desktop.jpg" alt="portada-desktop">
       </figure>
-      <figure class="portada__figure">
+      <figure class="portada__figure-mobile">
         <img class="portada__mobile" src="images/hero-mobile.jpg" alt="portada-mobile">
       </figure>
     </div>
 
-    <div class="body">
-      <h1 class="body__h1">We're coming soon</h1>
-      <p class="body__p">Hello fellow shoppers! We're currently building our new fashion store.
+    <form class="form">
+      <h1 class="form__h1"><span class="form__span">We're</span> coming soon</h1>
+      <p class="form__p">Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
-      <input class="body__input" type="email" placeholder="Email Address">
-    </div>
+      <input class="form__input" type="email" placeholder="Email Address">
+      <button class="form__submit" type="submit"></button>
+    </form>
 
   </main>
 
