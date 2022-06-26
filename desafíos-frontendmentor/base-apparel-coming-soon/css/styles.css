@@ -46,24 +46,48 @@ figure {
   grid-template-columns: 830px 610px;
   grid-template-rows: 24.3rem auto;
   grid-template-areas:
-    "header portada"
+    "logo portada"
     "form portada";
 }
 
-.header {
-  grid-area: header;
+/* LOGO */
+.logo {
+  grid-area: logo;
   padding: 7rem 16rem 14rem;
 }
 
+/* PORTADA */
 .portada {
   grid-area: portada;
 }
 
-.form {
-  grid-area: form;
-  padding: 0 16rem 14rem;
-}
-
 .portada__figure-mobile {
   display: none;
+}
+
+/* FORM */
+.form {
+  grid-area: form;
+  padding: 0 22rem 14rem 16rem;
+}
+
+.form__h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--dark-grayish-red);
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+}
+
+.form__span {
+  font-weight: 300;
+  color: var(--desaturated-red);
+}
+
+.form__p {
+  color: var(--desaturated-red);
+  line-height: 1.6;
+  margin-bottom: 4rem;
 }
