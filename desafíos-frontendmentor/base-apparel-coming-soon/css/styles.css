@@ -91,3 +91,49 @@ figure {
   line-height: 1.6;
   margin-bottom: 4rem;
 }
+
+.form__container-input {
+  position: relative;
+  height: 5.6rem;
+  width: 44.5rem;
+}
+
+.form__input {
+  border-radius: 5rem;
+  width: 44.5rem;
+  height: 5.6rem;
+  border-color: hsl(0, 36%, 70%, 0.7);
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  background: transparent;
+}
+
+.form__input::placeholder {
+  color: hsl(0, 36%, 70%, 0.5);
+  font-family: var(--fs);
+  font-size: 1.6rem;
+  padding-left: 3rem;
+}
+
+.form__submit {
+  width: 10rem;
+  height: 5.6rem;
+  border-radius: 5rem;
+  border-width: 0;
+  background: url(../images/icon-arrow.svg), var(--bg-2);
+  background-repeat: no-repeat;
+  background-position: 52%;
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
+  -moz-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
+  cursor: pointer;
+}
+
+.form__input:active {
+  border-width: 2px;
+  border-color: var(--soft-red);
+  background: url(../images/icon-error.svg) 30rem center no-repeat, transparent;
+}
