@@ -125,6 +125,7 @@ figure {
   background-repeat: no-repeat;
   background-position: 52%;
   position: absolute;
+  top: 0;
   right: 0;
   box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
   -webkit-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
@@ -136,4 +137,21 @@ figure {
   border-width: 2px;
   border-color: var(--soft-red);
   background: url(../images/icon-error.svg) 30rem center no-repeat, transparent;
+}
+
+.form__error {
+  display: none;
+  margin: 1rem 0 0 3rem;
+  font-size: 1.4rem;
+  color: var(--soft-red);
+}
+
+.form__submit:hover {
+  background: url(../images/icon-arrow.svg), rgba(248, 191, 191, 0.8);
+  background-repeat: no-repeat;
+  background-position: 52%;
+  box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
+  -moz-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
+  cursor: pointer;
 }
