@@ -155,3 +155,65 @@ figure {
   -moz-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
   cursor: pointer;
 }
+
+@media (max-width: 1023px) {
+  body {
+    background: none;
+    display: grid;
+    place-content: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 37.5rem;
+    grid-template-rows: 8.4rem 25rem 46.6rem;
+    grid-template-areas:
+      "logo"
+      "portada"
+      "form";
+    background: var(--bg-1);
+  }
+
+  .logo {
+    padding: 3rem;
+  }
+  .logo__img {
+    height: 2.3rem;
+    width: auto;
+  }
+
+  .portada__figure-mobile {
+    display: block;
+  }
+  .portada__figure-desktop {
+    display: none;
+  }
+
+  .form {
+    padding: 6.6rem 3.2rem;
+    text-align: center;
+  }
+  .form__h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .form__p {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+  }
+  .form__container-input {
+    width: 31.1rem;
+    height: 4.8rem;
+  }
+  .form__input {
+    width: 31.1rem;
+    height: 4.8rem;
+  }
+  .form__input::placeholder {
+    font-size: 1.4rem;
+  }
+  .form__submit {
+    width: 6.4rem;
+    height: 4.8rem;
+  }
+}
