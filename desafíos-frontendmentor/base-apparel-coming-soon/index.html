@@ -28,7 +28,7 @@
       </figure>
     </div>
 
-    <form class="form">
+    <form class="form" action="#" novalidate>
       <h1 class="form__h1"><span class="form__span">We're</span> coming soon</h1>
       <p class="form__p">Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.
@@ -36,11 +36,13 @@
       <div class="form__container-input">
         <input class="form__input" type="email" placeholder="Email Address">
         <button class="form__submit" type="submit"></button>
-        <p class="form__error">Please provide a valid email</p>
+        <p id="error" class="form__error">Please provide a valid email</p>
       </div>
     </form>
 
   </main>
+
+  <script src="js/app.js"></script>
 
 </body>
 

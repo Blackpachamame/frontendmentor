@@ -133,7 +133,7 @@ figure {
   cursor: pointer;
 }
 
-.form__input:active {
+.error-border {
   border-width: 2px;
   border-color: var(--soft-red);
   background: url(../images/icon-error.svg) 30rem center no-repeat, transparent;
