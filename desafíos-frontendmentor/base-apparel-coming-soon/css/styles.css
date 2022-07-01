@@ -99,21 +99,37 @@ figure {
 }
 
 .form__input {
-  border-radius: 5rem;
   width: 44.5rem;
   height: 5.6rem;
+  padding-left: 3rem;
   border-color: hsl(0, 36%, 70%, 0.7);
   border-style: solid;
   border-width: 1px;
+  border-radius: 5rem;
   position: relative;
   background: transparent;
+}
+
+.form__input-error {
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--soft-red);
+  border-radius: 5rem;
+  background: url(../images/icon-error.svg) 30rem center no-repeat, transparent;
+  position: relative;
+}
+
+.form__error {
+  display: none;
+  margin: 1rem 0 0 3rem;
+  font-size: 1.4rem;
+  color: var(--soft-red);
 }
 
 .form__input::placeholder {
   color: hsl(0, 36%, 70%, 0.5);
   font-family: var(--fs);
   font-size: 1.6rem;
-  padding-left: 3rem;
 }
 
 .form__submit {
@@ -131,19 +147,6 @@ figure {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
   -moz-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.6);
   cursor: pointer;
-}
-
-.error-border {
-  border-width: 2px;
-  border-color: var(--soft-red);
-  background: url(../images/icon-error.svg) 30rem center no-repeat, transparent;
-}
-
-.form__error {
-  display: none;
-  margin: 1rem 0 0 3rem;
-  font-size: 1.4rem;
-  color: var(--soft-red);
 }
 
 .form__submit:hover {
@@ -215,5 +218,8 @@ figure {
   .form__submit {
     width: 6.4rem;
     height: 4.8rem;
+  }
+  .form__error {
+    margin: 1rem 0 0 0;
   }
 }
