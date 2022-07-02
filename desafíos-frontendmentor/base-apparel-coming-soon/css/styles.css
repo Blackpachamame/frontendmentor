@@ -137,9 +137,7 @@ figure {
   height: 5.6rem;
   border-radius: 5rem;
   border-width: 0;
-  background: url(../images/icon-arrow.svg), var(--bg-2);
-  background-repeat: no-repeat;
-  background-position: 52%;
+  background: var(--bg-2);
   position: absolute;
   top: 0;
   right: 0;
@@ -149,10 +147,14 @@ figure {
   cursor: pointer;
 }
 
+.form__arrow {
+  position: absolute;
+  top: 18px;
+  left: 47px;
+}
+
 .form__submit:hover {
-  background: url(../images/icon-arrow.svg), rgba(248, 191, 191, 0.8);
-  background-repeat: no-repeat;
-  background-position: 52%;
+  background: rgba(248, 191, 191, 0.8);
   box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
   -webkit-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
   -moz-box-shadow: 0px 15px 30px 0px rgba(206, 151, 151, 0.8);
@@ -221,5 +223,9 @@ figure {
   }
   .form__error {
     margin: 1rem 0 0 0;
+  }
+  .form__arrow {
+    top: 14px;
+    left: 29px;
   }
 }
