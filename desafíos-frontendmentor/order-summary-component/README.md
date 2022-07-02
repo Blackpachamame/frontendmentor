@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/order-summary-component">
+    <a href="https://www.frontendmentor.io/solutions/order-summary-card-repasando-bem-A1xdzXNBjr">
       Solución
     </a>
    <span> | </span>
