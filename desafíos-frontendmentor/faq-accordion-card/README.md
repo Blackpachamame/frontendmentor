@@ -62,7 +62,7 @@ La etiqueta `details` en HTML se usa a menudo para crear un widget interactivo q
 
 ### Recursos útiles
 
-- [HTML <details> Tag](https://www.w3schools.com/tags/tag_details.asp) - Información y ejemplos de las etiquetas `details` y `summary`.
+- [HTML details Tag](https://www.w3schools.com/tags/tag_details.asp) - Información y ejemplos de las etiquetas `details` y `summary`.
 
 ## Autor
 
