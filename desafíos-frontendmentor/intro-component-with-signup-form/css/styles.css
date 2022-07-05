@@ -7,6 +7,7 @@
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -22,6 +23,8 @@ html {
 body {
   font-family: var(--fs);
   font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
   min-height: 100vh;
   background: url(../images/bg-intro-desktop.png) no-repeat, var(--red);
   display: grid;
@@ -49,7 +52,6 @@ svg {
 /* HEADER */
 .header {
   grid-area: header;
-  color: white;
 }
 
 .header__h1 {
@@ -66,4 +68,76 @@ svg {
 /* FORM */
 .main {
   grid-area: form;
+}
+
+.main__free {
+  width: 54rem;
+  padding: 1.9rem 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.span__free {
+  font-weight: 600;
+}
+
+.form {
+  width: 54rem;
+  padding: 4rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form__input {
+  width: 100%;
+  padding: 1.9rem 1.5rem 1.5rem 3rem;
+  margin-bottom: 2rem;
+  font-family: var(--fs);
+  font-weight: 600;
+  color: var(--dark-blue);
+  border: 1px solid rgb(222 222 222);
+  border-radius: 0.5rem;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+.form__button {
+  width: 100%;
+  padding: 2.2rem 2rem 1.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);
+  -webkit-box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);
+  -moz-box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);
+}
+
+.form__p {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+}
+
+.form__span {
+  font-weight: 700;
+  color: var(--red);
 }
