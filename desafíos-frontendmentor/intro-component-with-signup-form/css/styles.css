@@ -38,8 +38,7 @@ svg {
 }
 
 .container {
-  width: 111rem;
-  height: 55.8rem;
+  padding: 12rem 16.5rem;
   display: grid;
   align-items: center;
   justify-content: center;
