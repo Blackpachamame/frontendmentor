@@ -23,10 +23,14 @@
       <div class="main__free"><span class="span__free">Try it free 7 days</span> then $20/mo. thereafter</div>
 
       <form class="form" action="">
-        <input class="form__input" type="text" placeholder="First Name">
-        <input class="form__input" type="text" placeholder="Last Name">
-        <input class="form__input" type="email" placeholder="Email Address">
-        <input class="form__input" type="password" placeholder="Password">
+        <input id="firstName" class="form__input" type="text" placeholder="First Name">
+        <span id="errorFirstName" class="form__error">Please provide a valid first name</span>
+        <input id="lastName" class="form__input" type="text" placeholder="Last Name">
+        <span id="errorLasrName" class="form__error">Please provide a valid last name</span>
+        <input id="email" class="form__input" type="email" placeholder="Email Address">
+        <span id="errorEmail" class="form__errorEmail">Looks like this is not an email</span>
+        <input id="password" class="form__input" type="password" placeholder="Password">
+        <span id="errorPass" class="form__error">Please provide a valid password</span>
 
         <button class="form__button" type="submit">Claim your free trial</button>
 
@@ -37,6 +41,7 @@
     </main>
   </div>
 
+  <script src="js/app.js"></script>
 </body>
 
 </html>

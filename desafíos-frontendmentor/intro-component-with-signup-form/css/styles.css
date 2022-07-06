@@ -114,6 +114,27 @@ svg {
   border: 1px solid var(--blue);
 }
 
+.form__input-error {
+  margin-bottom: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--red);
+  color: var(--red);
+  background: url(../images/icon-error.svg) 40.5rem center no-repeat,
+    transparent;
+  position: relative;
+}
+
+.form__errorEmail {
+  display: none;
+  width: 100%;
+  text-align: end;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--red);
+}
+
 .form__button {
   width: 100%;
   padding: 2.2rem 2rem 1.5rem;
