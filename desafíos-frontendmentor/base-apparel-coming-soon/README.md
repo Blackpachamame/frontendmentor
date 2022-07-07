@@ -44,7 +44,7 @@ Sus usuarios deberían poder:
 - Ver el diseño óptimo para el sitio según el tamaño de pantalla de su dispositivo
 - Ver estados de desplazamiento para todos los elementos interactivos en la página
 - Reciba un mensaje de error cuando se envíe el formulario si:
-  - El campo de entrada está vacío.
+  - El campo de entrada está vacío
   - La dirección de correo electrónico no tiene el formato correcto
 
 ## Mi Procedimiento
@@ -59,7 +59,7 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Lo que aprendí es que se puede colocar una imagen de fondo al mismo tiempo que un color o degradado, haciendo uso del elemento `background`. Primero colocamos la url de la imagen, separamos con una coma y colocamos el color o degradado.
+Lo que aprendí es que se puede colocar una imagen de fondo al mismo tiempo que un color o degradado, haciendo uso del elemento `background`. En el siguiente orden: `url` `position` `repeat`, `color/degradado`.
 
 ### Recursos útiles
 
