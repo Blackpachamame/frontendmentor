@@ -125,7 +125,10 @@ svg {
   position: relative;
 }
 
-.form__errorEmail {
+.form__errorFirstName,
+.form__errorLastName,
+.form__errorEmail,
+.form__errorPassword {
   display: none;
   width: 100%;
   text-align: end;
@@ -147,6 +150,7 @@ svg {
   letter-spacing: 0.1rem;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);
   -webkit-box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);
   -moz-box-shadow: 0px 4px 0px 0px rgb(68, 177, 130);

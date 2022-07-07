@@ -1,29 +1,48 @@
-const notifyForm = document.querySelector("form");
-const inputField = document.querySelector("#email");
+const firstName = document.querySelector('#firstName');
+const lastName = document.querySelector('#lastName');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
 
-notifyForm.addEventListener("submit", (e) => {
-    const emailInput = inputField.value;
-    const errorMessage = document.querySelector(".form__errorEmail");
-    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    if (emailInput === "" || emailInput === null) {
-        errorMessage.style.display = "block";
-        inputField.classList.add("form__input-error");
-        errorMessage.innerHTML =
-            "Whoops! It looks like you forgot to add your email";
-        inputField.setAttribute("aria-invalid", "true");
-        inputField.setAttribute("aria-describedBy", "error");
-    } else if (!emailInput.match(emailRegex)) {
-        errorMessage.style.display = "block";
-        inputField.classList.add("form__input-error");
-        errorMessage.innerHTML = "Looks like this is not an email";
-        inputField.setAttribute("aria-invalid", "true");
-        inputField.setAttribute("aria-describedBy", "error");
-    } else {
-        errorMessage.style.display = "none";
-        inputField.classList.remove("form__input-error");
-        inputField.removeAttribute("aria-invalid");
-        inputField.removeAttribute("aria-describedBy");
-        inputField.value = "";
-    }
-    e.preventDefault();
+const firstNameError = document.querySelector('#errorFirstName');
+const lastNameError = document.querySelector('#errorLasrName');
+const emailError = document.querySelector('#errorEmail');
+const passError = document.querySelector('#errorPass');
+
+const button = document.querySelector('form');
+
+button.addEventListener('click', (event) => {
+    event.preventDefault();
+    validateEmpty(firstName.value, firstName, firstNameError, 'First Name');
+    validateEmpty(lastName.value, lastName, lastNameError, 'Last Name');
+    validateEmail(email.value, email, emailError)
+    validateEmpty(password.value, password, passError, 'Password');
 });
+
+function validateEmail(valueInput, divInput, divError) {
+    let regExp = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (regExp.test(valueInput) == true) {
+        hideError(divInput, divError);
+    } else {
+        showError(divInput, divError, 'Looks like this is not an email');
+    }
+}
+
+function validateEmpty(valueInput, divInput, divError, nameInput) {
+    if (valueInput.length == 0) {
+        showError(divInput, divError, '' + nameInput + 'cannot be empty');
+    } else {
+        hideError(divInput, divError);
+    }
+}
+
+function showError(divInput, divError, error) {
+    divError.style.display = "block";
+    divInput.classList.add("form__input-error");
+    divError.innerHTML = error;
+}
+
+function hideError(divInput, divError) {
+    divError.style.display = "none";
+    divInput.classList.remove("form__input-error");
+    divError.innerHTML = "";
+}
