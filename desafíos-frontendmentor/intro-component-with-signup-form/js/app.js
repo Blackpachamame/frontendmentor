@@ -10,7 +10,7 @@ const passError = document.querySelector('#errorPass');
 
 const button = document.querySelector('form');
 
-button.addEventListener('click', (event) => {
+button.addEventListener('submit', (event) => {
     event.preventDefault();
     validateEmpty(firstName.value, firstName, firstNameError, 'First Name');
     validateEmpty(lastName.value, lastName, lastNameError, 'Last Name');
