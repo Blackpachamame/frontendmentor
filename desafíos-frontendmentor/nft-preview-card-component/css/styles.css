@@ -23,6 +23,7 @@ html {
 body {
   font-family: var(--fs);
   font-size: 1.8rem;
+  color: var(--soft-blue);
   min-height: 100vh;
   background-color: var(--main-BG);
 }
@@ -31,4 +32,76 @@ img,
 svg,
 figure {
   display: block;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 35rem;
+  height: 59.6rem;
+  background-color: var(--card-BG);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__header {
+  width: 30.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card_img {
+  width: 100%;
+}
+
+.card__body {
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.card__h1 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.card__p {
+  margin-top: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.info__ethereum {
+  color: var(--cyan);
+}
+
+.card__footer {
+  display: flex;
+}
+
+.card__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.avatar__img {
+  width: 3.1rem;
 }
