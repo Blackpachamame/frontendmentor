@@ -26,6 +26,8 @@ body {
   color: var(--soft-blue);
   min-height: 100vh;
   background-color: var(--main-BG);
+  display: grid;
+  place-content: center;
 }
 
 img,
@@ -66,21 +68,21 @@ figure {
 }
 
 .card__h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--white);
 }
 
 .card__p {
   margin-top: 1.8rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .card__info {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   font-size: 1.6rem;
 }
 
@@ -89,7 +91,11 @@ figure {
 }
 
 .card__footer {
+  width: 100%;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .card__avatar {
@@ -104,4 +110,13 @@ figure {
 
 .avatar__img {
   width: 3.1rem;
+}
+
+.name__p {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.name__span {
+  color: var(--white);
 }
