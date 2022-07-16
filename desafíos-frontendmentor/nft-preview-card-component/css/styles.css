@@ -44,9 +44,10 @@ figure {
 .card {
   width: 35rem;
   height: 59.6rem;
+  margin: 5rem 0;
   background-color: var(--card-BG);
   border-radius: 1.5rem;
-  padding: 2.5rem;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +64,7 @@ figure {
 }
 
 .card__body {
-  margin-top: 2.5rem;
+  margin-top: 2.4rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -73,7 +74,7 @@ figure {
 }
 
 .card__p {
-  margin-top: 1.8rem;
+  margin-top: 1.7rem;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -95,7 +96,7 @@ figure {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
 }
 
 .card__avatar {
@@ -119,4 +120,40 @@ figure {
 
 .name__span {
   color: var(--white);
+}
+
+.info__ethereum,
+.info__clock {
+  display: flex;
+}
+
+.ethereum__icon,
+.clock__icon {
+  margin-right: 0.7rem;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 32.7rem;
+    height: 54.2rem;
+    background-color: var(--card-BG);
+    border-radius: 1.5rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__header {
+    width: 27.8rem;
+  }
+
+  .card__p {
+    margin-top: 1.3rem;
+  }
+
+  .card__info {
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
+  }
 }
