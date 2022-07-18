@@ -59,12 +59,32 @@ figure {
 
 .card__header {
   width: 30.2rem;
+  height: 30.2rem;
   border-radius: 1rem;
+  background-color: var(--cyan);
+  position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.card_img {
+.card__img {
   width: 100%;
+}
+
+.card__icon-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.card__header:hover .card__icon-view {
+  opacity: 1;
+}
+
+.card__header:hover .card__img {
+  opacity: 0.5;
 }
 
 .card__body {
@@ -75,6 +95,11 @@ figure {
 .card__h1 {
   font-size: 2.2rem;
   color: var(--white);
+  cursor: pointer;
+}
+
+.card__h1:hover {
+  color: var(--cyan);
 }
 
 .card__p {
@@ -124,6 +149,11 @@ figure {
 
 .name__span {
   color: var(--white);
+  cursor: pointer;
+}
+
+.name__span:hover {
+  color: var(--cyan);
 }
 
 .info__ethereum,
