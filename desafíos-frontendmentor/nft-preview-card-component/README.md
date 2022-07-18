@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/nft-preview-card-component">
+    <a href="https://www.frontendmentor.io/solutions/nft-preview-card-component-Qc3lo_vsvR">
       Solución
     </a>
    <span> | </span>

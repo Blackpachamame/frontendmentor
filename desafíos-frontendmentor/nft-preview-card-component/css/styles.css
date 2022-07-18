@@ -159,6 +159,7 @@ figure {
 .info__ethereum,
 .info__clock {
   display: flex;
+  align-items: center;
 }
 
 .ethereum__icon,
