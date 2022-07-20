@@ -122,7 +122,7 @@ figure {
   color: var(--white);
   background-color: var(--dark-cyan);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   padding: 1.6rem;
   cursor: pointer;
 }
@@ -184,6 +184,5 @@ figure {
 
   .info__button {
     margin-top: 1.6rem;
-    border-radius: 0.8rem;
   }
 }
