@@ -90,6 +90,19 @@ ul li {
   align-items: center;
 }
 
+.card__button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  margin-top: 3rem;
+}
+
 .card.card-rating {
   display: none;
 }
