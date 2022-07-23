@@ -35,3 +35,61 @@ svg,
 figure {
   display: block;
 }
+
+ul li {
+  list-style: none;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 41.2rem;
+  height: 41.6rem;
+  background-color: var(--dark-blue);
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.card__figure-star {
+  width: 4.6rem;
+  height: 4.6rem;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__h1 {
+  color: var(--white);
+  font-size: 2.78rem;
+}
+
+.card__p {
+  color: var(--light-grey);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.card__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__li {
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.card-rating {
+  display: none;
+}
