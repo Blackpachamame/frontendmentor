@@ -59,6 +59,7 @@ ul li {
   padding: 3rem;
 }
 
+/* Rating state */
 .card__figure-star {
   width: 4.6rem;
   height: 4.6rem;
@@ -128,6 +129,25 @@ ul li {
   background-color: var(--white);
 }
 
+/* Thank you state */
 .card.card-rating {
   display: none;
+}
+
+.card.card-rating {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  padding: 4.5rem 3.5rem;
+}
+
+.card__rating {
+  border-radius: 3rem;
+  background: var(--dark-blue);
+  padding: 0.7rem 1.8rem 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
 }
