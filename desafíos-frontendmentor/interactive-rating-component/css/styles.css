@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
-  --fs: "Overpass", sans-serif;
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
@@ -21,7 +20,7 @@ html {
 }
 
 body {
-  font-family: var(--fs);
+  font-family: "Overpass", sans-serif;
   font-size: 1.5rem;
   color: var(--orange);
   min-height: 100vh;
@@ -70,7 +69,8 @@ ul li {
   align-items: center;
 }
 
-.card__h1 {
+.card__h1,
+.card__h2 {
   color: var(--white);
   font-size: 2.78rem;
   margin-top: 3.5rem;
@@ -82,20 +82,23 @@ ul li {
   margin-top: 1rem;
 }
 
-.card__ul {
+.card__container-rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
 }
 
-.card__li {
+.card__button-rating {
   width: 5.2rem;
   height: 5.2rem;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--medium-grey);
   background-color: var(--dark-blue);
   border-radius: 50%;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,12 +106,18 @@ ul li {
   transition: 0.3s;
 }
 
-.card__li:hover {
+.card__button-rating:hover {
   color: var(--white);
   background-color: var(--orange);
 }
 
-.card__button {
+.card__button-rating:focus {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+/* SUBMIT */
+.card__button-submit {
   width: 100%;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -124,18 +133,14 @@ ul li {
   transition: 0.3s;
 }
 
-.card__button:hover {
+.card__button-submit:hover {
   color: var(--orange);
   background-color: var(--white);
 }
 
 /* Thank you state */
-.card.card-rating {
+.card.card__thank-you {
   display: none;
-}
-
-.card.card-rating {
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -143,11 +148,51 @@ ul li {
   padding: 4.5rem 3.5rem;
 }
 
-.card__rating {
+.card__rating-selected {
   border-radius: 3rem;
   background: var(--dark-blue);
   padding: 0.7rem 1.8rem 0.5rem;
   display: flex;
   align-items: center;
   margin-top: 3rem;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 425px) {
+  .card {
+    width: 32.7rem;
+    height: 36rem;
+    padding: 2.4rem;
+  }
+  .card__figure-star {
+    width: 4rem;
+    height: 4rem;
+  }
+  .card__h1,
+  .card__h2 {
+    font-size: 2.35rem;
+    margin-top: 2.2rem;
+  }
+  .card__p {
+    font-size: 1.4rem;
+  }
+  .card__container-rating {
+    margin-top: 2.6rem;
+  }
+  .card__button-rating {
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 1.5rem;
+  }
+  .card__button-submit {
+    margin-top: 2.5rem;
+  }
+  /* Thank you state */
+  .card.card__thank-you {
+    padding: 3.5rem 2.4rem 3rem;
+  }
+  .card__rating-selected {
+    padding: 0.7rem 1.2rem 0.5rem;
+    margin-top: 2.5rem;
+  }
 }
