@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/interactive-rating-component">
+    <a href="https://www.frontendmentor.io/solutions/interactive-rating-component-H3xQDHQPPE">
       Solución
     </a>
    <span> | </span>
@@ -63,6 +63,7 @@ Este desafío lo use para repasar los conceptos aprendidos en desafíos anterior
 
 - [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html) - En esta página se puede ir formando un box shadow para luego aplicarlo en el css.
 - [Mesher by CSS Hero](https://csshero.org/mesher/) - En esta página se puede ir formando gradientes para luego aplicarlo en el css.
+- [CodingTube](https://www.youtube.com/c/CodingTube) - Este canal me ayudo a guiarme con la parte de javascript de este desafío.
 
 ## Autor
 
