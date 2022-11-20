@@ -1,0 +1,12 @@
+{
+  "name": "frontendtpfinal",
+  "version": "0.0.1",
+  "description": "Trabajo Final de la carrera",
+  "author": "Grupo 7",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "2.5.0",
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}

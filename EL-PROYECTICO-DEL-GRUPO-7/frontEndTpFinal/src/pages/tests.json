@@ -1,0 +1,25 @@
+{
+  "estacionamientos": [
+     {
+      "nombre": "lala 1",
+      "precio": "129",
+      "lugar": "neuquen"
+    },
+    {
+      "nombre": "lala 2",
+      "precio": "119",
+      "lugar": "neuquen"
+    },
+    {
+      "nombre": "lala 3",
+      "precio": "123",
+      "lugar": "neuquen"
+    },
+    {
+      "nombre": "lala 4",
+      "precio": "129",
+      "lugar": "neuquen"
+    }
+
+  ]
+}

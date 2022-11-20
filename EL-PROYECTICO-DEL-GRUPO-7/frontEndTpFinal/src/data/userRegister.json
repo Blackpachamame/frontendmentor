@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Manuel",
+      "lastname": "Ortiz",
+      "email": "manuel@gmail.com",
+      "comment": "Hola, soy Manuel"
+    },
+    {
+      "name": "Luis",
+      "lastname": "Cañete",
+      "email": "luis@gmail.com",
+      "comment": "Hola, soy Luis"
+    },
+    {
+      "name": "Marcos",
+      "lastname": "Travaglini",
+      "email": "marcos@gmail.com",
+      "comment": "Hola, soy Marcos"
+    }
+  ]
+}
