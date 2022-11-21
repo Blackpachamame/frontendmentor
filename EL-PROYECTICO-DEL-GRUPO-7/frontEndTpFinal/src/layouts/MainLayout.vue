@@ -18,7 +18,7 @@
         </q-tabs>
         <!-- Boton Menú -->
         <div class="lt-md">
-          <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
+          <q-btn flat @click="drawer = !drawer" round dense icon="menu" aria-label="Menú Hamburguesa" />
         </div>
       </q-toolbar>
     </q-header>
@@ -28,14 +28,28 @@
         <q-scroll-area class="fit">
           <q-list>
 
-            <template v-for="(menuItem, index) in menuList" :key="index">
-              <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
-                <q-item-section>
-                  {{ menuItem.label }}
-                </q-item-section>
-              </q-item>
-              <q-separator :key="'sep' + index" v-if="menuItem.separator" />
-            </template>
+            <div class="q-pa-md">
+              <q-list>
+                <q-item clickable v-ripple :active="link === '/'" @click="link = '/'" active-class="my-menu-link">
+                  <q-item-section>Home</q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple :active="link === '#about'" @click="link = '#about'"
+                  active-class="my-menu-link">
+                  <q-item-section>About</q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple :active="link === '#contact'" @click="link = '#contact'"
+                  active-class="my-menu-link">
+                  <q-item-section>Contact</q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple :active="link === 'login'" @click="link = 'login'"
+                  active-class="my-menu-link">
+                  <q-item-section>Login</q-item-section>
+                </q-item>
+              </q-list>
+            </div>
 
           </q-list>
         </q-scroll-area>
@@ -78,6 +92,7 @@ export default {
       tab: ref(''),
       drawer: ref(false),
       menuList,
+      link: ref('/')
     };
   },
 };

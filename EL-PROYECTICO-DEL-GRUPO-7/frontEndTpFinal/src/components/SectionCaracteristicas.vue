@@ -3,7 +3,7 @@
   <section id="caracteristicas">
     <!-- Caracteristicas -->
     <div class="row justify-center q-my-xl">
-      <p class="col-12 text-h3 text-center">Características</p>
+      <h3 class="col-12 text-h3 text-center">Características</h3>
       <div class="col-12 row justify-center items-center q-gutter-x-md q-gutter-y-lg">
         <q-card flat style="max-width: 300px">
           <q-card-section horizontal class="row items-center">
@@ -37,3 +37,9 @@
     </div>
   </section>
 </template>
+
+<style lang="sass" scoped>
+@media(max-width: 600px)
+  .text-h3
+      font-size: 2.5rem
+</style>

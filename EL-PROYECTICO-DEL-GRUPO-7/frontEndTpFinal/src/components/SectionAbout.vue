@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-5 text-white q-px-md">
-                <p class="text-h3">About</p>
+                <h3 class="text-h3">About</h3>
                 <p>Nuestra plataforma esta diseñada para que le sirva particularmente a cada uno de los establecimientos
                     a administrar los servicios de estacionamiento que proveen así como una herramienta
                     para que los usuarios que deseen estacionar puedan hacerlo de manera más fácil y rápida.</p>
@@ -45,7 +45,7 @@
         text-align: center
 @media(max-width: 600px)
     .text-h3
-        font-size: 2rem
+        font-size: 2.5rem
 #about
     background: $primary
     background-image: url(../assets/separator-bottom.svg), linear-gradient($primary, $primary)

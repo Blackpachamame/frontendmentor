@@ -4,8 +4,6 @@
     <SectionBienvenida></SectionBienvenida>
     <!-- About -->
     <SectionAbout></SectionAbout>
-    <!-- Caracteristicas -->
-    <SectionCaracteristicas></SectionCaracteristicas>
     <!-- Contact -->
     <SectionContact></SectionContact>
   </q-page>
