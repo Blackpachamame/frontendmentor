@@ -54,7 +54,7 @@ export default route(() => {
       // <-- check for requiresAuth here
       if (store.login === 'login') {
         if (to.fullPath === '/login' || to.fullPath === '/register') {
-          next('/dashboard');
+          next('/dashboard/');
         } else {
           next();
         }
