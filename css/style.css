@@ -47,6 +47,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 section.conteiner-cards {
   margin: 3rem 0;
   gap: 3rem;
