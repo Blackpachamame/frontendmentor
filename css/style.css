@@ -48,7 +48,9 @@ h1 {
 }
 
 h2 {
+  font-size: 26px;
   text-align: center;
+  color: #6f79ff;
 }
 
 section.conteiner-cards {
