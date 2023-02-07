@@ -54,6 +54,11 @@ h2 {
   width: 100%;
 }
 
+h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
 section.conteiner-cards {
   margin: 3rem 0;
   gap: 3rem;
