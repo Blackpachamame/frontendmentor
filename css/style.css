@@ -59,6 +59,11 @@ h3 {
   text-align: center;
 }
 
+h4 a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 section.conteiner-cards {
   margin: 3rem 0;
   gap: 3rem;
