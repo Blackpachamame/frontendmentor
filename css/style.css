@@ -47,6 +47,23 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 26px;
+  text-align: center;
+  color: #6f79ff;
+  width: 100%;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+h4 a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 section.conteiner-cards {
   margin: 3rem 0;
   gap: 3rem;
