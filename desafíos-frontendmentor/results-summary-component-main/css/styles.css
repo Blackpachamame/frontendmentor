@@ -13,8 +13,8 @@
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
   /* Background and circle */
-  --light-slate-blue: hsla(252, 100%, 67%, 1);
-  --light-royal-blue: hsla(241, 81%, 54%, 1);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
   --violet-blue: hsla(256, 72%, 46%, 1);
   --persian-blue: hsla(241, 72%, 46%, 0);
 }
@@ -45,6 +45,10 @@ figure {
   display: block;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+
 .main {
   display: grid;
   place-content: center;
@@ -63,16 +67,16 @@ figure {
   -moz-box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
 }
 
-.card__header {
+.card__result {
   width: 36.8rem;
   height: 51.2rem;
-  padding: 3rem;
+  padding: 3.8rem 6rem;
   text-align: center;
   color: var(--white);
   background: var(--light-royal-blue);
   background: linear-gradient(
     0deg,
-    var(--light-royal-blue) 0%,
+    var(--light-royal-blue) 30%,
     var(--light-slate-blue) 100%
   );
   border-radius: 3rem;
@@ -82,7 +86,45 @@ figure {
   overflow: hidden;
 }
 
-.card__body {
+.card__circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  text-align: center;
+  background: var(--light-royal-blue);
+  background: linear-gradient(
+    0deg,
+    var(--light-royal-blue) 80%,
+    var(--light-slate-blue) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3.5rem 0px 2.8rem;
+}
+
+.card__circle-result {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.card__result-h2,
+.card__circle-total,
+.card__great-p {
+  color: var(--light-lavender);
+}
+
+.card__circle-total {
+  margin-top: -1rem;
+}
+
+.card__great-h1 {
+  font-size: 3.2rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.4rem;
+}
+
+.card__summary {
   width: 36.8rem;
   height: 51.2rem;
   padding: 3rem;
