@@ -192,6 +192,15 @@ h2 {
   background-color: var(--trasparent-cobalt-blue);
 }
 
+.info__reaction,
+.info__memory,
+.info__verbal,
+.info__visual {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
 .info__reaction {
   color: var(--light-red);
 }
