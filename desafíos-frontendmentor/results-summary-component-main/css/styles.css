@@ -9,10 +9,10 @@
   --orangey-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
-  --trasparent-light-red: hsla(0, 100%, 67%, 0.1);
-  --trasparent-orangey-yellow: hsla(39, 100%, 56%, 0.1);
-  --trasparent-green-teal: hsla(166, 100%, 37%, 0.1);
-  --trasparent-cobalt-blue: hsla(234, 85%, 45%, 0.1);
+  --trasparent-light-red: hsla(0, 100%, 67%, 0.06);
+  --trasparent-orangey-yellow: hsla(39, 100%, 56%, 0.06);
+  --trasparent-green-teal: hsla(166, 100%, 37%, 0.06);
+  --trasparent-cobalt-blue: hsla(234, 85%, 45%, 0.06);
   /* Neutral */
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(222, 100%, 96%);
@@ -61,27 +61,18 @@ h2 {
   font-size: 2.4rem;
 }
 
-.main {
-  display: grid;
-  place-content: center;
-}
-
 .card {
-  width: 73.6rem;
-  height: 51.2rem;
   background-color: var(--white);
   border-radius: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 51.2rem;
+  grid-template-columns: repeat(2, 36.8rem);
   box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
   -webkit-box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
   -moz-box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
 }
 
 .card__result {
-  width: 36.8rem;
-  height: 51.2rem;
   padding: 3.8rem 6rem;
   text-align: center;
   color: var(--white);
@@ -91,7 +82,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 
 .card__circle {
@@ -104,7 +94,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3.5rem 0px 2.8rem;
+  margin: 3.5rem 0 2.8rem;
 }
 
 .card__circle-result {
@@ -120,6 +110,7 @@ h2 {
 
 .card__circle-total {
   margin-top: -0.5rem;
+  opacity: 60%;
 }
 
 .card__great-h1 {
@@ -129,10 +120,7 @@ h2 {
 }
 
 .card__summary {
-  width: 36.8rem;
-  height: 51.2rem;
   padding: 3.8rem 4rem;
-  background: var(--white);
   border-radius: 0 3rem 3rem 0;
 }
 
@@ -147,24 +135,19 @@ h2 {
   text-align: left;
 }
 
-.card__body-button {
+.card__summary-button {
   color: var(--white);
   padding: 1.65rem;
+  width: 100%;
   border: none;
   border-radius: 4rem;
   background-color: var(--dark-gray-blue);
   cursor: pointer;
 }
 
-.card__body-button:hover {
+.card__summary-button:hover {
   background: var(--light-royal-blue);
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
-}
-
-.card__summary-h2,
-.card__summary-data,
-.card__body-button {
-  width: 100%;
 }
 
 .card__summary-reaction,
@@ -172,7 +155,6 @@ h2 {
 .card__summary-verbal,
 .card__summary-visual {
   font-weight: 700;
-  color: var(--dark-gray-blue);
   padding: 1.6rem;
   display: flex;
   justify-content: space-between;
@@ -216,4 +198,86 @@ h2 {
 
 .info__score {
   opacity: 50%;
+  margin-left: 0.3rem;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    border-radius: 0;
+    grid-template-rows: 35.6rem 45.3rem;
+    grid-template-columns: 37.5rem;
+  }
+
+  .card__result {
+    border-radius: 0 0 3rem 3rem;
+    padding: 2.4rem 4rem 4rem;
+  }
+
+  .card__circle {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 100%;
+    margin: 2.4rem 0 2.2rem;
+  }
+
+  .card__circle-total {
+    margin-top: 0;
+  }
+
+  .card__circle-result {
+    font-size: 5.4rem;
+  }
+
+  .card__great-h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .card__summary {
+    padding: 2.4rem 3rem 3rem;
+    border-radius: 0;
+  }
+
+  .card__summary-data {
+    margin: 2.5rem 0;
+  }
+
+  .card__summary-reaction,
+  .card__summary-memory,
+  .card__summary-verbal,
+  .card__summary-visual {
+    padding: 1.7rem;
+  }
+
+  .card__summary-button {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .card {
+    grid-template-rows: 35.6rem 45.3rem;
+    grid-template-columns: 32rem;
+  }
+
+  .card__result {
+    padding: 2.4rem;
+  }
+
+  .card__circle-result {
+    font-size: 5rem;
+  }
+
+  .card__summary {
+    padding: 2rem 1rem 3rem;
+  }
 }
