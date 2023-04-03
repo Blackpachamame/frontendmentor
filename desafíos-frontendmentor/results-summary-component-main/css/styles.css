@@ -1,6 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap'); */
+
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  font-weight: 800;
 }
 
 :root {
@@ -38,6 +51,7 @@ html {
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
   font-size: 1.8rem;
   color: var(--dark-gray-blue);
   min-height: 100vh;
@@ -99,7 +113,7 @@ h2 {
 
 .card__circle-result {
   font-size: 7rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .card__result-h2,
@@ -137,6 +151,7 @@ h2 {
 
 .card__summary-button {
   color: var(--white);
+  font-weight: 700;
   padding: 1.65rem;
   width: 100%;
   border: none;
@@ -154,7 +169,6 @@ h2 {
 .card__summary-memory,
 .card__summary-verbal,
 .card__summary-visual {
-  font-weight: 700;
   padding: 1.6rem;
   display: flex;
   justify-content: space-between;
@@ -194,6 +208,10 @@ h2 {
 }
 .info__visual {
   color: var(--cobalt-blue);
+}
+
+div:not([class]) {
+  font-weight: 700;
 }
 
 .info__score {
