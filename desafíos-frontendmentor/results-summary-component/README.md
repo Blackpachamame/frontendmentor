@@ -35,9 +35,16 @@
 
 ### Desafío
 
-Su desafío es construir este componente de tarjeta de perfil y lograr que se parezca lo más posible al diseño.
+Su desafío es construir este componente de resumen de resultados y acercarlo lo más posible al diseño.
 
 Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
+
+Proporcionamos los datos de los resultados en un archivo `data.json` local. Puede usar eso para agregar los resultados y el puntaje total dinámicamente si lo desea.
+
+Sus usuarios deberían poder:
+
+- Ver el diseño óptimo según el tamaño de la pantalla de su dispositivo.
+- Ver estados de desplazamiento para todos los elementos interactivos en la página.
 
 ## Mi Procedimiento
 
@@ -51,13 +58,13 @@ Puedes usar cualquier herramienta que te guste para ayudarte a completar el desa
 
 ### Lo que aprendí
 
-Aplicando `display: block` a la imagen o `line-height: 0` al contenedor de la imagen, sacamos el espacio extra que aparecer por debajo de la imagen y que ocupa espacio innecesario.
+Si uso el selector `span:not([class])` aplico los estilos a todos los span que no tengan class. Aun queda por revisar y aplicar `@font-face`.
 
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
-- [¿CÓMO nombrar CLASES en CSS? Usa BEM](https://www.youtube.com/watch?v=NucZM0GMRi4) - Aprendiendo la metodología BEM con Eduardo Fierro.
-- [NOMENCLATURAS en CSS](https://www.youtube.com/watch?v=lhEJkeCJ3As) - Aprendiendo nomenclaturas CSS con Eduardo Fierro.
+- [Flexbox y Grid CSS](https://www.youtube.com/watch?v=esjagdcozX0&list=PLx5xbrpW6nXg1tU6uj_BnbJryOeMXafNA) - Repasando Flexbox y Grid CSS con ManzDev.
+- [Lenguaje CSS](https://lenguajecss.com/css/) - Definiciones y detalles de CSS con ManzDev.
 
 ## Autor
 
