@@ -58,13 +58,14 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Si uso el selector `span:not([class])` aplico los estilos a todos los span que no tengan class. Aun queda por revisar y aplicar `@font-face`.
+Si uso el selector `span:not([class])` aplico los estilos a todos los span que no tengan class. Puedo descargar y usar `@font-face` para tener las fuentes que quiera ponerle a la página sin necesidad de importarlas o sin que el usuario necesite descargarlas.
 
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
 - [Flexbox y Grid CSS](https://www.youtube.com/watch?v=esjagdcozX0&list=PLx5xbrpW6nXg1tU6uj_BnbJryOeMXafNA) - Repasando Flexbox y Grid CSS con ManzDev.
 - [Lenguaje CSS](https://lenguajecss.com/css/) - Definiciones y detalles de CSS con ManzDev.
+- [Font-Face](https://www.youtube.com/watch?v=jhg2xas3av0) - ¡Carga MÁS RÁPIDO tu sitio web OPTIMIZANDO TIPOGRAFÍAS! ¡Olvídate de Google Fonts!
 
 ## Autor
 
