@@ -82,6 +82,13 @@ h2 {
   box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
   -webkit-box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
   -moz-box-shadow: 10px 25px 30px 0px rgba(235, 241, 255, 0.75);
+  animation-name: vibrate;
+  animation-duration: 2s;
+}
+@keyframes vibrate {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .card__result {
