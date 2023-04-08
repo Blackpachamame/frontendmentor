@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  /* Font */
+  --fs: "Barlow Semi Condensed", sans-serif;
+  /* Primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  /* Neutral */
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--fs);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: var(--white);
+  min-height: 100vh;
+  background-color: var(--light-grayish-blue);
+  display: grid;
+  place-content: center;
+}
+
+img,
+svg,
+figure {
+  display: block;
+}
+
+img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 1.8rem 0;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+/* 1110wt, 540w, 255w, 30w 24hgap --- 282h 266h*/
+.main {
+  width: 111rem;
+  margin: 6rem 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 28.2rem 26.6rem;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 2.4rem 3rem;
+}
+
+.card-daniel {
+  grid-area: daniel;
+}
+.card-jonathan {
+  grid-area: jonathan;
+}
+.card-jeanette {
+  grid-area: jeanette;
+}
+.card-patrick {
+  grid-area: patrick;
+}
+.card-kira {
+  grid-area: kira;
+}
+
+.card {
+  padding: 2.4rem 3.2rem 2.4rem 3.3rem;
+  border-radius: 1rem;
+}
+
+p {
+  opacity: 70%;
+}
+
+span {
+  font-size: 1.2rem;
+  opacity: 50%;
+}
+
+.card-daniel {
+  background-color: var(--moderate-violet);
+}
+
+.card-jonathan {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card-patrick {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card-jeanette,
+.card-kira {
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
+}
+
+.card__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card__name {
+  margin-left: 2rem;
+}
+
+/* @media (max-width: 1110px) {
+    #conteiner-description {
+      width: 50%;
+    }
+    div#conteiner-cards {
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "supervisor teambuilder"
+        "karma calculator";
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #conteiner-description {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #conteiner-description {
+      width: 100%;
+      padding: 0 1.8rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    div#conteiner-cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "supervisor"
+        "teambuilder"
+        "karma"
+        "calculator";
+      padding: 0 0.8rem;
+    }
+    img.card-footer {
+      right: 1.8rem;
+      bottom: 1.8rem;
+    }
+  } */
