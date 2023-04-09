@@ -42,24 +42,23 @@ figure {
   display: block;
 }
 
-img {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  border: 2px solid red;
-}
-
 h3 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 2rem;
-  margin: 1.8rem 0;
+  line-height: 2.4rem;
+  margin: 1.7rem 0 2.3rem;
+}
+
+.card-daniel__h3,
+.card-jonathan__h3 {
+  margin-bottom: 1.7rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  line-height: 1.2rem;
+  font-size: 1.3rem;
 }
-/* 1110wt, 540w, 255w, 30w 24hgap --- 282h 266h*/
+
 .main {
   width: 111rem;
   margin: 6rem 2.4rem;
@@ -89,16 +88,44 @@ h4 {
 }
 
 .card {
-  padding: 2.4rem 3.2rem 2.4rem 3.3rem;
+  padding: 2.4rem 3.7rem 2.8rem 3rem;
   border-radius: 1rem;
 }
 
-p {
+.card-daniel.card,
+.card-jonathan.card {
+  padding: 2.4rem 3.7rem 3.6rem 3rem;
+}
+
+.card-kira.card {
+  padding: 2.4rem 3.5rem 2.8rem 3rem;
+}
+
+img[class$="__img"] {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+img.card-daniel__img {
+  border-color: hsla(0, 0%, 100%, 0.3);
+}
+
+img.card-jonathan__img {
+  border-color: var(--very-dark-grayish-blue);
+}
+
+img.card-patrick__img {
+  border-color: var(--moderate-violet);
+}
+
+p[class$="__p"] {
   opacity: 70%;
 }
 
-span {
-  font-size: 1.2rem;
+span[class$="__span"] {
+  font-size: 1.1rem;
   opacity: 50%;
 }
 
@@ -127,50 +154,33 @@ span {
 }
 
 .card__name {
-  margin-left: 2rem;
+  margin-left: 1.8rem;
 }
 
-/* @media (max-width: 1110px) {
-    #conteiner-description {
-      width: 50%;
-    }
-    div#conteiner-cards {
-      width: 90%;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "supervisor teambuilder"
-        "karma calculator";
-      gap: 1.5rem;
-    }
+@media (max-width: 1110px) {
+  .main {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 28.2rem 26.6rem 26.6rem;
+    grid-template-areas:
+      "daniel daniel jonathan"
+      "jeanette patrick patrick"
+      "kira kira kira";
+    gap: 2.4rem 3rem;
   }
-  
-  @media (max-width: 767px) {
-    #conteiner-description {
-      width: 70%;
-    }
+}
+
+@media (max-width: 796px) {
+  .main {
+    margin: 4rem 2.4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "daniel daniel"
+      "jonathan jonathan"
+      "jeanette jeanette"
+      "patrick patrick"
+      "kira kira";
   }
-  
-  @media (max-width: 575px) {
-    #conteiner-description {
-      width: 100%;
-      padding: 0 1.8rem;
-    }
-    h1 {
-      font-size: 1.6rem;
-    }
-    div#conteiner-cards {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:
-        "supervisor"
-        "teambuilder"
-        "karma"
-        "calculator";
-      padding: 0 0.8rem;
-    }
-    img.card-footer {
-      right: 1.8rem;
-      bottom: 1.8rem;
-    }
-  } */
+}
