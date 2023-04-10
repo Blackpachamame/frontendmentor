@@ -28,7 +28,6 @@ body {
   font-family: var(--fs);
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 1.8rem;
   color: var(--white);
   min-height: 100vh;
   background-color: var(--light-grayish-blue);
@@ -45,14 +44,17 @@ figure {
 h3 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 2.4rem;
   margin: 1.7rem 0 2.3rem;
   position: relative;
 }
 
 .card-daniel__h3,
 .card-jonathan__h3 {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.6rem;
+}
+
+.card-kira__h3 {
+  margin-bottom: 1.6rem;
 }
 
 h4 {
@@ -63,7 +65,7 @@ h4 {
 
 .main {
   width: 111rem;
-  margin: 6rem 2.4rem;
+  margin: 2rem 2.4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 28.2rem 26.6rem;
@@ -133,6 +135,20 @@ p[class$="__p"] {
   opacity: 70%;
 }
 
+.card-daniel__p,
+.card-jonathan__p {
+  line-height: 1.81rem;
+}
+
+.card-patrick__p,
+.card-jeanette__p {
+  line-height: 1.4;
+}
+
+.card-kira__p {
+  line-height: 1.84rem;
+}
+
 span[class$="__span"] {
   font-size: 1.1rem;
   opacity: 50%;
@@ -194,6 +210,21 @@ span[class$="__span"] {
   }
 
   .pattern-quotation {
-    right: 4rem;
+    right: 2.4rem;
+  }
+
+  .card-daniel.card,
+  .card-jonathan.card,
+  .card-jeanette.card,
+  .card-kira.card {
+    padding: 2.4rem 3.3rem 3.6rem 3.3rem;
+  }
+
+  .card-daniel.card .card-daniel__p {
+    padding: 0 1.4rem 0 0;
+  }
+
+  .card-patrick.card {
+    padding: 2.4rem 3.2rem 3.6rem 3.3rem;
   }
 }
