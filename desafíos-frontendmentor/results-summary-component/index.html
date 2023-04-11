@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Results summary component</title>
 </head>
 
@@ -33,31 +33,31 @@
           <div class="card__summary-reaction">
             <div class="info__reaction">
               <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
-              <p>Reaction</p>
+              <h3>Reaction</h3>
             </div>
-            <div>80<span class="info__score"> / 100</span></div>
+            <p class="info__score"><span class="score-reaction"></span><span> / 100</span></p>
           </div>
 
           <div class="card__summary-memory">
             <div class="info__memory">
               <img src="assets/images/icon-memory.svg" alt="icon-memory">
-              <p>Memory</p>
+              <h3>Memory</h3>
             </div>
-            <div>92<span class="info__score"> / 100</span></div>
+            <p class="info__score"><span class="score-memory"></span><span> / 100</span>
           </div>
 
           <div class="card__summary-verbal">
             <div class="info__verbal"><img src="assets/images/icon-verbal.svg" alt="icon-verbal">
-              <p>Verbal</p>
+              <h3>Verbal</h3>
             </div>
-            <div>61<span class="info__score"> / 100</span></div>
+            <p class="info__score"><span class="score-verbal"></span><span> / 100</span></p>
           </div>
 
           <div class="card__summary-visual">
             <div class="info__visual"><img src="assets/images/icon-visual.svg" alt="icon-visual">
-              <p>Visual</p>
+              <h3>Visual</h3>
             </div>
-            <div>72<span class="info__score"> / 100</span></div>
+            <p class="info__score"><span class="score-visual"></span><span> / 100</span></p>
           </div>
         </div>
 
@@ -65,6 +65,8 @@
       </div>
     </card>
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 

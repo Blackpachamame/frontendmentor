@@ -1,18 +1,4 @@
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Hanken Grotesk";
-  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
-  font-weight: 800;
-}
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 :root {
   /* Primary */
@@ -71,6 +57,11 @@ h2 {
 
 h2 {
   font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .card {
@@ -237,12 +228,12 @@ h2 {
   color: var(--cobalt-blue);
 }
 
-div:not([class]) {
-  font-weight: 700;
+.info__score span:nth-last-child(1) {
+  opacity: 50%;
 }
 
 .info__score {
-  opacity: 50%;
+  font-weight: 700;
   margin-left: 0.3rem;
 }
 
