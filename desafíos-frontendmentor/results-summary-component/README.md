@@ -58,14 +58,17 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Si uso el selector `span:not([class])` aplico los estilos a todos los span que no tengan class. Puedo descargar y usar `@font-face` para tener las fuentes que quiera ponerle a la página sin necesidad de importarlas o sin que el usuario necesite descargarlas.
+- Si uso el selector `span:not([class])` aplico los estilos a todos los span que no tengan class.
+- Puedo descargar y usar `@font-face` para tener las fuentes que quiera ponerle a la página sin necesidad de importarlas.
+- La propiedad `font-display` determina como se van a cargar y mostrar las fuentes de un sitio web. Esta se especifica dentro del `@font-face` en conjunto con el resto de propiedades.
 
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
 - [Flexbox y Grid CSS](https://www.youtube.com/watch?v=esjagdcozX0&list=PLx5xbrpW6nXg1tU6uj_BnbJryOeMXafNA) - Repasando Flexbox y Grid CSS con ManzDev.
 - [Lenguaje CSS](https://lenguajecss.com/css/) - Definiciones y detalles de CSS con ManzDev.
-- [Font-Face](https://www.youtube.com/watch?v=jhg2xas3av0) - ¡Carga MÁS RÁPIDO tu sitio web OPTIMIZANDO TIPOGRAFÍAS! ¡Olvídate de Google Fonts!
+- [font-Face](https://www.youtube.com/watch?v=jhg2xas3av0) - ¡Carga MÁS RÁPIDO tu sitio web OPTIMIZANDO TIPOGRAFÍAS! ¡Olvídate de Google Fonts!
+- [font-display](https://filisantillan.com/bits/font-display/) - Descripción y explicación de los valores que puede tomar esta propiedad.
 
 ## Autor
 
