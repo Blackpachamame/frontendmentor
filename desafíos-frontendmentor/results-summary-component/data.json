@@ -1,20 +1,24 @@
 [
   {
+    "name": "reaction",
     "category": "Reaction",
     "score": 80,
     "icon": "./assets/images/icon-reaction.svg"
   },
   {
+    "name": "memory",
     "category": "Memory",
     "score": 92,
     "icon": "./assets/images/icon-memory.svg"
   },
   {
+    "name": "verbal",
     "category": "Verbal",
     "score": 61,
     "icon": "./assets/images/icon-verbal.svg"
   },
   {
+    "name": "visual",
     "category": "Visual",
     "score": 72,
     "icon": "./assets/images/icon-visual.svg"

@@ -1,17 +1,17 @@
+const summary = document.getElementById('summary-data');
+
 fetch('data.json')
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
-        console.log(data)
-        const reactionScore = document.querySelector('.score-reaction');
-        reactionScore.textContent = data[0].score;
-
-        const memoryScore = document.querySelector('.score-memory');
-        memoryScore.textContent = data[1].score;
-
-        const verbalScore = document.querySelector('.score-verbal');
-        verbalScore.textContent = data[2].score;
-
-        const visualScore = document.querySelector('.score-visual');
-        visualScore.textContent = data[3].score;
+        for (let i = 0; i < data.length; i += 1) {
+            summary.innerHTML += `
+        <div class="card__summary-${data[i].name}">
+            <div class="info__${data[i].name}">
+              <img src="${data[i].icon}" alt="icon-${data[i].name}">
+              <h3>${data[i].category}</h3>
+            </div>
+            <p class="info__score"><span class="score-${data[i].name}">${data[i].score}</span><span> / 100</span></p>
+          </div>
+    `
+        }
     })
-    .catch(error => console.error(error));
