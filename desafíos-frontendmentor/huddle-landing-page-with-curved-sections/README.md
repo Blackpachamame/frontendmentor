@@ -1,4 +1,4 @@
-<h1 align="center">Testimonials grid section</h1>
+<h1 align="center">Huddle landing page with curved sections</h1>
 
 <div align="center">
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/testimonials-grid-section-component/">
+    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/huddle-landing-page-with-curved-sections/">
       En Vivo
     </a>
     <span> | </span>
@@ -15,7 +15,7 @@
       Solución (Próximamente)
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">
+    <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2">
       Desafío
     </a>
   </h3>
@@ -35,13 +35,14 @@
 
 ### Desafío
 
-Su desafío es construir esta sección de cuadrícula de testimonios y lograr que se parezca lo más posible al diseño.
+Su desafío es construir esta página de destino y lograr que se parezca lo más posible al diseño.
 
 Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
 
 Sus usuarios deberían poder:
 
 - Ver el diseño óptimo para el sitio según el tamaño de pantalla de su dispositivo
+- Ver estados de desplazamiento para todos los elementos interactivos en la página
 
 ## Mi Procedimiento
 
@@ -50,18 +51,16 @@ Sus usuarios deberían poder:
 - HTML5
 - CSS3
 - Flexbox
-- CSS Grid
+- Grid
 - BEM
 
 ### Lo que aprendí
 
-Este desafío me sirvió para repasar algunas cosas de grid.
+Construyendo...
 
 ### Recursos útiles
 
-- [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
-- [¿CÓMO nombrar CLASES en CSS? Usa BEM](https://www.youtube.com/watch?v=NucZM0GMRi4) - Aprendiendo la metodología BEM con Eduardo Fierro.
-- [NOMENCLATURAS en CSS](https://www.youtube.com/watch?v=lhEJkeCJ3As) - Aprendiendo nomenclaturas CSS con Eduardo Fierro.
+- Construyendo...
 
 ## Autor
 
