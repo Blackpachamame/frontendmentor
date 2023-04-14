@@ -38,7 +38,7 @@ html {
 body {
   font-family: var(--ff-body);
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--very-dark-cyan);
   background-color: var(--white);
   display: flex;
@@ -48,7 +48,7 @@ body {
 
 h2 {
   font-family: var(--ff-headings);
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -167,20 +167,26 @@ section.data {
 }
 
 /* GROW & CONVERSATIONS */
-.grow__container {
+.grow__container,
+.users__container {
   background-color: var(--very-pale-blue);
 }
 
 .grow__container,
-.conversations__container {
+.conversations__container,
+.users__container {
   display: grid;
-  grid-template-columns: repeat(2, 53rem);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 5rem;
   justify-content: space-evenly;
 }
 
-.grow__p,
-.conversations__p {
-  width: 85%;
+.grow__figure,
+.conversations__figure,
+.users__figure,
+.grow__container-text,
+.conversations__container-text,
+.users__container-text {
+  padding: 0 7rem;
 }
