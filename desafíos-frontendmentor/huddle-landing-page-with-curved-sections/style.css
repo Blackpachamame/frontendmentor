@@ -89,13 +89,18 @@ h2 {
   -moz-box-shadow: 0px 0px 10px 1px rgba(255, 143, 216, 0.19);
 }
 
-/* STARTED */
+/* STARTED & BUILD */
 section.started {
   margin: 0 20rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section.build {
+  margin: 3rem 0;
+  text-align: center;
 }
 
 .started__h1 {
@@ -111,7 +116,8 @@ section.started {
   margin-bottom: 5rem;
 }
 
-.started__button {
+.started__button,
+.build__button {
   color: var(--white);
   background-color: var(--pink);
   padding: 2.8rem 11rem;
@@ -126,7 +132,12 @@ section.started {
   cursor: pointer;
 }
 
-.started__button:hover {
+.build__button {
+  margin-top: 2rem;
+}
+
+.started__button:hover,
+.build__button:hover {
   background-color: var(--light-pink);
 }
 
