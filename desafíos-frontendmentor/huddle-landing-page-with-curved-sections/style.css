@@ -46,6 +46,21 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-family: var(--ff-headings);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.main {
+  margin: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+/* HEADER */
 .header {
   width: 100%;
   padding: 8rem 6rem 8rem 8rem;
@@ -74,11 +89,9 @@ body {
   -moz-box-shadow: 0px 0px 10px 1px rgba(255, 143, 216, 0.19);
 }
 
-.main {
-  margin: 12rem;
-}
-
+/* STARTED */
 section.started {
+  margin: 0 20rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -93,9 +106,9 @@ section.started {
 }
 
 .started__p {
-  width: 45%;
+  width: 55%;
   font-size: 1.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .started__button {
@@ -119,13 +132,14 @@ section.started {
 
 .started__figure {
   width: 100%;
-  margin: 8rem;
+  margin: 8rem 8rem 0 8rem;
 }
 
+/* DATA */
 section.data {
+  margin: 0 12rem;
   display: flex;
   justify-content: space-around;
-  margin: 4rem 0;
 }
 
 .communities,
@@ -150,4 +164,23 @@ section.data {
   font-weight: 400;
   display: block;
   opacity: 50%;
+}
+
+/* GROW & CONVERSATIONS */
+.grow__container {
+  background-color: var(--very-pale-blue);
+}
+
+.grow__container,
+.conversations__container {
+  display: grid;
+  grid-template-columns: repeat(2, 53rem);
+  align-items: center;
+  padding: 5rem;
+  justify-content: space-evenly;
+}
+
+.grow__p,
+.conversations__p {
+  width: 85%;
 }
