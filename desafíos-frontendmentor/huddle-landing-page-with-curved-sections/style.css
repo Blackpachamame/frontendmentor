@@ -39,6 +39,7 @@ body {
   font-family: var(--ff-body);
   font-weight: 400;
   font-size: 1.6rem;
+  line-height: 1.4;
   color: var(--very-dark-cyan);
   background-color: var(--white);
   display: flex;
@@ -80,6 +81,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+svg.header__logo path:nth-child(2) {
+  fill: black;
 }
 
 .header__button {
@@ -220,7 +225,7 @@ section.data {
   background-color: var(--very-dark-cyan);
   display: grid;
   grid-template-columns: 375px 605px;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   justify-content: space-around;
 }
@@ -231,18 +236,17 @@ svg.footer__logo path {
 
 .contact__p,
 .newsletter__p {
-  width: 320px;
+  width: 350px;
   margin: 3rem 0;
-  font-size: 1.3rem;
-  font-weight: 600;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1.5rem;
 }
 
 .contact__phone,
 .contact__email {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -330,7 +334,7 @@ figure[class*="mobile"] {
     font-size: 1.4rem;
   }
   .header {
-    padding: 2.8rem 2.4rem;
+    padding: 2.4rem 2.4rem 0;
   }
 
   .header__button {
@@ -338,42 +342,60 @@ figure[class*="mobile"] {
     font-size: 1rem;
   }
 
-  .header__logo {
+  img.header__logo {
     height: 1.8rem;
     width: auto;
   }
 
+  .main {
+    gap: 5rem;
+  }
+
   section.started {
-    margin: 0 2.8rem;
+    margin: 0;
   }
   .started__h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin: 0 2.8rem 3rem;
   }
 
   .started__p {
-    width: 375px;
-    font-size: 1.3rem;
-    margin-bottom: 5rem;
+    width: 300px;
+    font-size: 1.4rem;
   }
 
   .started__button,
   .build__button {
-    padding: 1.3rem 5rem;
-    font-size: 1rem;
+    padding: 1.2rem 4rem;
+    font-size: 1.2rem;
   }
 
   section.data {
     flex-direction: column;
     align-items: center;
-    gap: 12rem;
+    margin: 8rem 0 0;
+    gap: 10rem;
   }
-  .communities__p,
+
+  .communities img {
+    width: 3rem;
+  }
+  .mesagges img {
+    width: 2.5rem;
+  }
+
+  .communities__p {
+    font-size: 6rem;
+  }
+
   .mesagges__p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
+
   .communities__span,
   .mesagges__span {
-    font-size: 2rem;
+    margin: 1rem 0 0;
+    font-size: 1.5rem;
   }
 
   .grow__container,
@@ -382,7 +404,12 @@ figure[class*="mobile"] {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    gap: 8rem;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .grow__container {
+    padding: 8rem 0 0;
   }
 
   .grow__container-text,
@@ -401,16 +428,48 @@ figure[class*="mobile"] {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .build__h2 {
+    font-size: 2.5rem;
+    line-height: initial;
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+  }
+
+  section.conversations {
+    margin-top: 8rem;
+  }
+
+  section.build {
+    margin: 3rem 0 8rem;
+  }
+
+  .footer__container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 375px;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0;
+  }
+
+  .contact {
+    order: 2;
+  }
+
+  .contact,
+  .newsletter {
+    padding: 0 2.8rem;
   }
 
   .contact__p,
   .newsletter__p {
-    margin: 1rem 0 3rem;
+    width: 300px;
+    font-size: 1.4rem;
   }
 
   .subscribe {
@@ -437,5 +496,17 @@ figure[class*="mobile"] {
   }
   figure[class*="mobile"] {
     display: block;
+  }
+
+  .contact__p {
+    margin: 1.6rem 0 4.5rem;
+  }
+
+  .contact__social {
+    margin: 5rem 0;
+  }
+
+  .contact__social i {
+    font-size: 2.5rem;
   }
 }
