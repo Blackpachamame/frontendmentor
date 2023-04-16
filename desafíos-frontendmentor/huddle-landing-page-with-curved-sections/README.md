@@ -28,7 +28,6 @@
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Lo que aprendí](#lo-que-aprendí)
-  - [Recursos útiles](#recursos-útiles)
 - [Autor](#autor)
 
 ## Descripción
@@ -56,11 +55,7 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Construyendo...
-
-### Recursos útiles
-
-- Construyendo...
+Este desafío lo use para repasar y practicar lo aprendido.
 
 ## Autor
 
