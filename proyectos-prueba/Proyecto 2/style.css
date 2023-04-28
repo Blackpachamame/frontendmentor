@@ -220,3 +220,9 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 375px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
