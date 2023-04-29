@@ -2,7 +2,6 @@
 
 :root {
   --white: rgb(255, 255, 255);
-  --orange: rgb(255, 165, 0);
   --crimson: rgb(255, 85, 117);
   /* --dark: #0d1117; */
   --blue-dark: rgb(21, 21, 32);
@@ -12,6 +11,9 @@
   --junior: rgb(170, 215, 66);
   --junior-card: rgb(32 60 43);
   --junior-card-footer: rgb(11 42 23);
+  --intermediate: rgb(241, 182, 4);
+  --avanced: rgb(244, 137, 37);
+  --guru: rgb(237, 44, 73);
 }
 
 * {
@@ -73,7 +75,6 @@ h2 {
   font-weight: 700;
   margin-bottom: 2rem;
 }
-
 .newbie h2 {
   color: var(--newbie);
 }
@@ -84,7 +85,6 @@ h2 {
 h2 span {
   text-underline-offset: 0.5rem;
 }
-
 .newbie__span {
   text-decoration: underline var(--newbie) dashed 3px;
 }
@@ -179,11 +179,6 @@ section {
 .junior .card-footer {
   background-color: var(--junior-card-footer);
 }
-
-/* .card-footer h3 a {
-  text-decoration: none;
-  color: var(--white);
-} */
 
 @media (max-width: 550px) {
   .main {
