@@ -1,17 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 :root {
-  --white: white;
-  --orange: orange;
-  --dark: #0d1117;
-  --blue-dark: #151520;
-  --crimson: crimson;
-  --violet: #856fff;
+  --white: rgb(255, 255, 255);
+  --orange: rgb(255, 165, 0);
+  --crimson: rgb(255, 85, 117);
+  /* --dark: #0d1117; */
+  --blue-dark: rgb(21, 21, 32);
+  --newbie: rgb(111, 121, 255);
+  --newbie-card: rgb(45, 40, 82);
+  --newbie-card-footer: rgb(31, 26, 70);
+  --junior: rgb(170, 215, 66);
+  --junior-card: rgb(32 60 43);
+  --junior-card-footer: rgb(11 42 23);
 }
 
 * {
   margin: 0;
   padding: 0;
+  font: inherit;
   box-sizing: border-box;
 }
 
@@ -21,70 +27,111 @@ html {
 
 body {
   font-family: "Play", sans-serif;
+  font-weight: 400;
   color: var(--crimson);
-  background-color: var(--white);
+  background-color: var(--blue-dark);
   min-height: 100vh;
 }
 
-main {
+.main {
   margin: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  row-gap: 5rem;
 }
 
-footer {
+.footer {
   margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+p.copyright {
+  font-size: 1.2rem;
+}
+
+img,
+svg,
+figure {
+  display: block;
+}
+
 h1 {
-  font-size: 3rem;
-  border-bottom: 2px dashed var(--crimson);
+  font-size: 3.5rem;
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 3rem;
+  text-decoration: underline var(--crimson) dashed 4px;
+  text-underline-offset: 0.5rem;
 }
 
 h2 {
-  font-size: 26px;
-  text-align: center;
-  color: #6f79ff;
-  width: 100%;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.newbie h2 {
+  color: var(--newbie);
+}
+.junior h2 {
+  color: var(--junior);
+}
+
+h2 span {
+  text-underline-offset: 0.5rem;
+}
+
+.newbie__span {
+  text-decoration: underline var(--newbie) dashed 3px;
+}
+.junior__span {
+  text-decoration: underline var(--junior) dashed 3px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
 }
 
 h4 a {
+  font-size: 1.5rem;
   color: var(--white);
   text-decoration: none;
 }
 
-section.conteiner-cards {
-  margin: 3rem 0;
+section {
+  margin: 3rem 0 0;
+}
+
+.card__container {
   gap: 3rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
 }
 
 .card {
-  margin: 2rem 0;
-  background-color: var(--white);
-  width: 20%;
-  min-width: 30rem;
-  /* border: 2px solid var(--crimson); */
-  border-radius: 5% 75% 0 0/ 10%;
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  filter: drop-shadow(0 0 0.5rem #686868);
+  filter: drop-shadow(0 0.5rem 0.5rem #0d1117);
   overflow: hidden;
+}
+
+.card__newbie {
+  background-color: var(--newbie-card);
+  border: 5px dashed var(--newbie);
+}
+.card__junior {
+  background-color: var(--junior-card);
+  border: 5px dashed var(--junior);
 }
 
 .card-image {
@@ -107,6 +154,10 @@ section.conteiner-cards {
   padding: 1rem;
 }
 
+.junior .card-title {
+  background-color: var(--junior-card);
+}
+
 .card-title h2 {
   color: var(--crimson);
   text-align: center;
@@ -117,36 +168,29 @@ section.conteiner-cards {
   display: flex;
   justify-content: center;
   align-items: end;
-  background-color: var(--crimson);
   color: var(--white);
+  background-color: var(--newbie-card-footer);
 }
 
-.card-footer h3 a {
+.newbie .card-footer {
+  color: var(--white);
+  background-color: var(--newbie-card-footer);
+}
+.junior .card-footer {
+  background-color: var(--junior-card-footer);
+}
+
+/* .card-footer h3 a {
   text-decoration: none;
   color: var(--white);
-}
+} */
 
-@media (max-width: 791px) {
-  .card {
-    width: 90%;
-    margin: 2rem 1rem;
-  }
-}
-
-@media (max-width: 450px) {
-  main {
+@media (max-width: 550px) {
+  .main {
     margin: 4rem 1rem;
   }
 
-  section.conteiner-cards {
-    margin: 3rem 0.5rem 2rem;
-  }
-
-  .card {
-    min-width: 90%;
-  }
-
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }

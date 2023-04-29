@@ -23,6 +23,7 @@
 
 ## Tabla de contenido
 
+- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)
@@ -57,11 +58,15 @@ Sus usuarios deberían poder:
 
 Este desafío me sirvió para repasar algunas cosas de grid.
 
+Esto no tiene que ver con este desafío, pero lo dejo por acá. La propiedad `text-underline-offset`
+me sirve para modificar la distancia de la linea de subrayado.
+
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
 - [¿CÓMO nombrar CLASES en CSS? Usa BEM](https://www.youtube.com/watch?v=NucZM0GMRi4) - Aprendiendo la metodología BEM con Eduardo Fierro.
 - [NOMENCLATURAS en CSS](https://www.youtube.com/watch?v=lhEJkeCJ3As) - Aprendiendo nomenclaturas CSS con Eduardo Fierro.
+- [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset) - Documentación de MDN Web Docs sobre `text-underline-offset`.
 
 ## Autor
 
