@@ -1,17 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Londrina+Solid:wght@300;400;900&family=Passion+One:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
 
 :root {
   /* Primary */
-  --ff-main: "Calistoga", cursive;
   --ff-londrina: "Londrina Solid", cursive;
-  --ff-passion: "Passion One", cursive;
   --white: hsl(0, 0%, 100%);
-  --pale-blue: hsl(232, 35%, 84%);
-  /* Gradients Background */
-  /* --light-slate-blue: hsl(252, 100%, 67%);
-  --light-royal-blue: hsl(241, 81%, 54%);
-  --violet-blue: hsla(256, 72%, 46%, 1);
-  --persian-blue: hsla(241, 72%, 46%, 0); */
+  --pale-pink: hsl(0deg 35% 84%);
 }
 
 * {
@@ -31,7 +24,7 @@ body {
   font-size: 1.8rem;
   letter-spacing: 1px;
   color: var(--white);
-  background-color: var(--pale-blue);
+  background-color: var(--pale-pink);
   display: grid;
   place-content: center;
 }
@@ -68,7 +61,7 @@ figure {
 
 h2 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   opacity: 80%;
 }
@@ -95,6 +88,9 @@ nav a:hover {
   background: linear-gradient(90deg, #d57589 0%, #ffc7a3 100%);
   border-radius: min(5vw, 50px);
   padding: 12% 5% 5%;
+  box-shadow: -20px 20px 30px 0px rgba(75, 6, 50, 0.5);
+  -webkit-box-shadow: -20px 20px 30px 0px rgba(75, 6, 50, 0.5);
+  -moz-box-shadow: -20px 20px 30px 0px rgba(75, 6, 50, 0.5);
 }
 
 /* .content::after {
