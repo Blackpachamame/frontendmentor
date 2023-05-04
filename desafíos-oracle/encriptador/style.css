@@ -35,14 +35,35 @@ html {
 
 body {
   font-family: var(--font-inter);
-  font-weight: 400;
   font-size: 1.6rem;
+  font-weight: 400;
   color: var(--gray-400);
   background-color: var(--light-blue-100);
+  padding: 4rem 4rem 4rem 8.4rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 40rem;
+  grid-template-rows: 1fr 1fr;
 }
 
 img,
 svg,
 figure {
   display: block;
+}
+
+.header {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 120px;
+  height: 48px;
+}
+
+.header .logo {
+  position: absolute;
+  left: 36.67%;
+  right: 37.43%;
+  top: 0%;
+  bottom: 0%;
 }
