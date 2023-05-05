@@ -73,3 +73,38 @@ figure {
   display: flex;
   flex-direction: column;
 }
+
+.container__advertencia {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.container__advertencia p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.container__btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.btn__encriptar,
+.btn__desencriptar {
+  padding: 2.4rem;
+  border: 1px solid var(--dark-blue-300);
+  border-radius: 2.4rem;
+}
+
+.btn__encriptar {
+  color: var(--white);
+  background-color: var(--dark-blue-300);
+}
+
+.btn__desencriptar {
+  color: var(--dark-blue-300);
+  background-color: var(--light-gray);
+}
