@@ -60,10 +60,16 @@ figure {
   height: 48px;
 }
 
-.header .logo {
+.header__logo {
   position: absolute;
   left: 36.67%;
   right: 37.43%;
   top: 0%;
   bottom: 0%;
+}
+
+.container {
+  padding: 12.8rem 8rem 3.2rem 15.6rem;
+  display: flex;
+  flex-direction: column;
 }
