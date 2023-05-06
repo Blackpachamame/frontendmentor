@@ -43,7 +43,6 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 40rem;
-  grid-template-rows: 1fr 1fr;
 }
 
 img,
@@ -72,6 +71,17 @@ figure {
   padding: 12.8rem 8rem 3.2rem 15.6rem;
   display: flex;
   flex-direction: column;
+}
+
+.container__textarea {
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--dark-blue-300);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
 }
 
 .container__advertencia {
