@@ -71,10 +71,11 @@ figure {
   padding: 12.8rem 8rem 3.2rem 15.6rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .main__textarea {
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 150%;
   color: var(--dark-blue-300);
   background-color: transparent;
@@ -107,7 +108,8 @@ button {
 }
 
 .btn__encriptar,
-.btn__desencriptar {
+.btn__desencriptar,
+.btn__copy {
   padding: 2.4rem;
   border: 1px solid var(--dark-blue-300);
   border-radius: 2.4rem;
@@ -131,15 +133,20 @@ button {
   background-color: var(--light-blue-200);
 }
 
-.muñeco {
+.muñeco,
+.sin-muñeco {
   background: var(--white);
   box-shadow: var(--box-shadow);
-  border-radius: 32px;
+  border-radius: 3.2rem;
   padding: 3.2rem;
+}
+
+.muñeco {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1.6rem;
 }
 
 .muñeco h3 {
@@ -147,8 +154,27 @@ button {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 120%;
-  margin-top: 3.2rem;
-}
-.muñeco p {
   margin-top: 1.6rem;
+}
+
+.sin-muñeco {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.2rem; */
+  display: none;
+}
+
+.sin-muñeco p {
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+
+.btn__copy {
+  color: var(--dark-blue-300);
+  background-color: var(--white);
+}
+
+.btn__copy:hover {
+  background-color: var(--light-blue-200);
 }
