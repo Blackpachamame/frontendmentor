@@ -67,13 +67,13 @@ figure {
   bottom: 0%;
 }
 
-.container {
+.main {
   padding: 12.8rem 8rem 3.2rem 15.6rem;
   display: flex;
   flex-direction: column;
 }
 
-.container__textarea {
+.main__textarea {
   font-size: 32px;
   line-height: 150%;
   color: var(--dark-blue-300);
@@ -102,6 +102,10 @@ figure {
   gap: 2.4rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn__encriptar,
 .btn__desencriptar {
   padding: 2.4rem;
@@ -114,7 +118,37 @@ figure {
   background-color: var(--dark-blue-300);
 }
 
+.btn__encriptar:hover {
+  background-color: var(--dark-blue-400);
+}
+
 .btn__desencriptar {
   color: var(--dark-blue-300);
-  background-color: var(--light-gray);
+  background-color: var(--light-blue-100);
+}
+
+.btn__desencriptar:hover {
+  background-color: var(--light-blue-200);
+}
+
+.muñeco {
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 32px;
+  padding: 3.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.muñeco h3 {
+  color: var(--gray-500);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 120%;
+  margin-top: 3.2rem;
+}
+.muñeco p {
+  margin-top: 1.6rem;
 }
