@@ -39,6 +39,7 @@ body {
   font-weight: 400;
   color: var(--gray-400);
   background-color: var(--light-blue-100);
+  min-height: 100vh;
   padding: 4rem 4rem 4rem 8.4rem;
   position: relative;
   display: grid;
@@ -53,10 +54,10 @@ figure {
 
 .header {
   position: absolute;
-  left: 40px;
-  top: 40px;
   width: 120px;
   height: 48px;
+  left: 40px;
+  top: 40px;
 }
 
 .header__logo {
@@ -83,6 +84,10 @@ figure {
   outline: none;
   resize: none;
   overflow: auto;
+}
+
+.main__container {
+  margin-top: 2rem;
 }
 
 .container__advertencia {
@@ -146,7 +151,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1.6rem;
+}
+
+.muñeco__vector {
+  margin-bottom: 1.6rem;
 }
 
 .muñeco h3 {
@@ -154,7 +164,6 @@ button {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 120%;
-  margin-top: 1.6rem;
 }
 
 .sin-muñeco {
@@ -177,4 +186,37 @@ button {
 
 .btn__copy:hover {
   background-color: var(--light-blue-200);
+}
+
+@media (max-width: 1110px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    min-height: 100vh;
+    padding: 4rem;
+  }
+
+  .header {
+    position: absolute;
+    width: 31.09px;
+    height: 46.37px;
+    left: 38px;
+    top: 70.42px;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 5.21%;
+    right: 90.74%;
+    top: 6.25%;
+    bottom: 89.8%;
+  }
+
+  .muñeco__vector {
+    display: none;
+  }
+
+  .main {
+    padding: 20rem 0 6.4rem;
+  }
 }
