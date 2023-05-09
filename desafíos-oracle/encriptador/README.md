@@ -1,6 +1,6 @@
-# Encriptador
+# $${\color{lightgreen}Encriptador}$$
 ¡Bienvenidas y bienvenidos a nuestro primer desafío!
-$${\color{lightgreen}Light \space Green}$$
+
 Durante estas cuatro semanas, vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
