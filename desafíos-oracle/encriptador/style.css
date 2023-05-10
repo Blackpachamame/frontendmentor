@@ -54,9 +54,7 @@ figure {
 
 .header {
   position: absolute;
-  width: 120px;
-  height: 48px;
-  left: 40px;
+  left: 84px;
   top: 40px;
 }
 
@@ -197,15 +195,11 @@ button {
   }
 
   .header {
-    position: absolute;
-    width: 31.09px;
-    height: 46.37px;
-    left: 38px;
-    top: 70.42px;
+    left: 40px;
+    top: 73.42px;
   }
 
   .header__logo {
-    position: absolute;
     left: 5.21%;
     right: 90.74%;
     top: 6.25%;
@@ -218,5 +212,37 @@ button {
 
   .main {
     padding: 20rem 0 6.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 2.4rem 1.6rem 4rem;
+  }
+
+  .header {
+    left: 16px;
+    top: 24px;
+  }
+
+  .header__logo {
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+  }
+
+  .main {
+    padding: 12.8rem 0 6.4rem;
+  }
+
+  .container__btn {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .muñeco,
+  .sin-muñeco {
+    margin-inline: 0.8rem;
   }
 }
