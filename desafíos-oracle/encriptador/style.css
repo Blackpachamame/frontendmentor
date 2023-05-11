@@ -136,28 +136,29 @@ button {
   background-color: var(--light-blue-200);
 }
 
-.muñeco,
-.sin-muñeco {
+.muñeco {
   background: var(--white);
   box-shadow: var(--box-shadow);
   border-radius: 3.2rem;
   padding: 3.2rem;
 }
 
-.muñeco {
+.con-muñeco {
+  /* height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.6rem; */
+  display: none;
 }
 
-.muñeco__vector {
+.con-muñeco__vector {
   margin-bottom: 1.6rem;
 }
 
-.muñeco h3 {
+.con-muñeco h3 {
   color: var(--gray-500);
   font-weight: 700;
   font-size: 2.4rem;
@@ -165,11 +166,11 @@ button {
 }
 
 .sin-muñeco {
-  /* display: flex;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3.2rem; */
-  display: none;
+  gap: 3.2rem;
 }
 
 .sin-muñeco p {
