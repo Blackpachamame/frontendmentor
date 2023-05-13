@@ -14,7 +14,8 @@
         <img class="header__logo" src="images/logo.svg" alt="logo">
     </header>
     <main class="main">
-        <textarea class="main__textarea" name="texto" id="texto">Ingrese el texto aquí</textarea>
+        <textarea class="main__textarea" name="texto" id="texto"
+            oninput="limpiarTexto(event)">Ingrese el texto aquí</textarea>
         <div class="main__container">
             <div class="container__advertencia">
                 <img src="images/vector.svg" alt="advertencia">
@@ -28,14 +29,14 @@
         </div>
     </main>
     <section class="muñeco">
-        <div class="con-muñeco">
+        <div class="muñeco__sin-mensaje">
             <img class="muñeco__vector" src="images/muñeco.svg" alt="muñeco">
             <h3>Ningún mensaje fue encontrado</h3>
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
-        <div class="sin-muñeco">
-            <p class="texto-encriptado">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button class="btn__copy">Copiar</button>
+        <div class="muñeco__con-mensaje">
+            <p class="muñeco__resultado" id="resultado"></p>
+            <button class="btn__copy" id="btnCopy" onclick="copiarTexto()">Copiar</button>
         </div>
     </section>
     <script src="script.js"></script>

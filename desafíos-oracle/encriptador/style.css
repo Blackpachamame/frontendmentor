@@ -143,7 +143,7 @@ button {
   padding: 3.2rem;
 }
 
-.con-muñeco {
+.muñeco__sin-mensaje {
   height: 100%;
   text-align: center;
   display: flex;
@@ -153,18 +153,18 @@ button {
   gap: 1.6rem;
 }
 
-.con-muñeco__vector {
+.muñeco__vector {
   margin-bottom: 1.6rem;
 }
 
-.con-muñeco h3 {
+.muñeco__sin-mensaje h3 {
   color: var(--gray-500);
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 120%;
 }
 
-.sin-muñeco {
+.muñeco__con-mensaje {
   /* height: 100%;
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@ button {
   display: none;
 }
 
-.sin-muñeco p {
+.muñeco__con-mensaje .muñeco__resultado {
   font-size: 2.4rem;
   line-height: 150%;
 }
@@ -243,7 +243,7 @@ button {
   }
 
   .muñeco,
-  .sin-muñeco {
+  .muñeco__con-mensaje {
     margin-inline: 0.8rem;
   }
 }
