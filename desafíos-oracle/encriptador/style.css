@@ -286,12 +286,22 @@ button {
   padding: 0.3rem;
   background-color: #00f8f8;
   border-radius: 10px / 30px;
-  border: 4px solid hsl(182.48deg 96.03% 29.61%);
+  /* border: 4px solid hsl(182.48deg 96.03% 29.61%); */
+  /* -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 248, 248, 0.9);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 248, 248, 0.9);
+  box-shadow: 0px 0px 10px 5px rgba(0, 248, 248, 0.9); */
 }
 
 .container--boton {
   padding: 3rem;
-  background: #00474a;
+  background-color: rgb(0, 71, 74);
+  background-color: rgb(0, 71, 74);
+  background-image: linear-gradient(
+      to bottom,
+      hsl(0deg 0% 0%),
+      rgb(0 80 80 / 90%)
+    ),
+    url(images/Honeycomb_texture.png);
   display: flex;
   justify-content: center;
   align-items: center;
