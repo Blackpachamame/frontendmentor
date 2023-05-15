@@ -38,7 +38,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--gray-400);
-  background-color: var(--light-blue-100);
+  background-color: rgb(2 11 20);
   min-height: 100vh;
   padding: 4rem 4rem 4rem 8.4rem;
   position: relative;
@@ -278,4 +278,92 @@ button {
   .muñeco__con-mensaje {
     margin-inline: 0.8rem;
   }
+}
+
+/* CSS */
+.container-all {
+  margin: 4rem;
+  padding: 0.3rem;
+  background-color: #00f8f8;
+  border-radius: 10px / 30px;
+  border: 4px solid hsl(182.48deg 96.03% 29.61%);
+}
+
+.container--boton {
+  padding: 3rem;
+  background: #00474a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  /* border: 2px solid rgb(0, 248, 248); */
+  border-radius: 10px / 30px;
+  position: relative;
+  clip-path: polygon(
+    0 0,
+    30% 0,
+    31% 5%,
+    69% 5%,
+    70% 0,
+    100% 0,
+    100% 100%,
+    70% 100%,
+    69% 95%,
+    31% 95%,
+    30% 100%,
+    0 100%
+  );
+}
+
+/* 3D Button */
+
+button.depth {
+  width: 70px;
+  height: 70px;
+  background: #444;
+  border: 2px solid #324758;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px 2px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 2px 4px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 2px 6px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 1px 8px hsla(0, 0%, 0%, 0.5),
+    inset 0 -4px 2px 4px hsla(0, 0%, 0%, 0.5),
+    inset 0 1px 1px 8px hsla(0, 0%, 100%, 0.25),
+    inset 0 -30px 30px hsla(0, 0%, 0%, 0.2), 0 -4px 8px 4px hsla(0, 0%, 0%, 0.5),
+    0 10px 10px hsla(0, 0%, 0%, 0.25), 0 0 2px 2px hsla(0, 0%, 0%, 0.2),
+    0 0 2px 4px hsla(0, 0%, 0%, 0.2), 0 0 2px 6px hsla(0, 0%, 0%, 0.2),
+    0 0 2px 8px hsla(0, 0%, 0%, 0.5), 0 1px 2px 8px hsla(0, 0%, 100%, 0.25),
+    0 -1px 2px 8px hsla(0, 0%, 0%, 0.5);
+  color: #84fcfd;
+  cursor: pointer;
+  text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.25),
+    0 -1px 1px hsla(0, 0%, 0%, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  background-color: #3d4955;
+}
+button.depth:hover,
+button.depth:focus {
+  color: #0ab;
+  text-shadow: 0 0 20px hsla(240, 75%, 75%, 0.5),
+    0 1px 1px hsla(0, 0%, 100%, 0.25), 0 -1px 1px hsla(0, 0%, 0%, 0.75);
+}
+button.depth:active {
+  box-shadow: inset 0 0 2px 2px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 2px 4px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 2px 6px hsla(0, 0%, 0%, 0.2),
+    inset 0 0 1px 7px hsla(0, 0%, 0%, 0.5),
+    inset 0 5px 15px 7px hsla(0, 0%, 0%, 0.15),
+    inset 0 -4px 2px 3px hsla(0, 0%, 0%, 0.5),
+    inset 0 1px 1px 7px hsla(0, 0%, 100%, 0.25),
+    inset 0 -30px 30px hsla(0, 0%, 0%, 0.1),
+    inset 0 30px 30px hsla(0, 0%, 0%, 0.2), 0 -4px 8px 4px hsla(0, 0%, 0%, 0.5),
+    0 5px 10px hsla(0, 0%, 0%, 0.25), 0 0 2px 2px hsla(0, 0%, 0%, 0.2),
+    0 0 2px 4px hsla(0, 0%, 0%, 0.2), 0 0 2px 6px hsla(0, 0%, 0%, 0.2),
+    0 0 2px 8px hsla(0, 0%, 0%, 0.5), 0 1px 2px 8px hsla(0, 0%, 100%, 0.25),
+    0 -1px 2px 8px hsla(0, 0%, 0%, 0.5);
+  line-height: 86px;
 }
