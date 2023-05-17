@@ -1,4 +1,4 @@
-const DICCIONARIO = { a: 'ai', e: 'enter', i: 'imes', o: 'ober', u: 'ufat' }
+const DICCIONARIO = { e: 'enter', i: 'imes', a: 'ai', o: 'ober', u: 'ufat' }
 const SINMENSAJE = document.getElementById('sinMensaje')
 const CONMENSAJE = document.getElementById('conMensaje')
 const RESULTADO = document.getElementById('resultado')
