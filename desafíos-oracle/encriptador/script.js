@@ -5,17 +5,18 @@ const RESULTADO = document.getElementById('resultado')
 const MENSAJE = document.getElementById('mensaje')
 let encriptado = true
 
-const encriptarMensaje = (text, type) => {
-    for (const key in DICCIONARIO) {
-        type === 'encriptar' ? (text = text.replaceAll(key, DICCIONARIO[key])) : (text = text.replaceAll(DICCIONARIO[key], key))
-    }
-    return text
-}
+// const encriptarMensaje = (text, type) => {
+//     for (const key in DICCIONARIO) {
+//         type === 'encriptar' ? (text = text.replaceAll(key, DICCIONARIO[key])) : (text = text.replaceAll(DICCIONARIO[key], key))
+//     }
+//     return text
+// }
 
-const encriptarMensaje2 = (text, type) => {
+const encriptarMensaje = (text, type) => {
     type === 'encriptar'
         ? (text = text.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat"))
-        : (text = text.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u"))
+        : (text = text.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u"));
+    return text
 }
 
 const mostrarResultado = (text) => {
@@ -30,4 +31,8 @@ const restringirTexto = (e) => {
     MENSAJE.value = e.target.value.replaceAll(/[^a-z\s]+/g, '')
 }
 
-const start = (type) => mostrarResultado(encriptarMensaje(MENSAJE.value, type))
+const start = (type) => {
+    MENSAJE.value.trim() === ""
+        ? (alert("¡Escriba algo salame!"))
+        : (mostrarResultado(encriptarMensaje(MENSAJE.value, type)));
+}
