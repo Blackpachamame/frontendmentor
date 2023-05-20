@@ -1,16 +1,8 @@
-const DICCIONARIO = { e: 'enter', i: 'imes', a: 'ai', o: 'ober', u: 'ufat' }
 const SINMENSAJE = document.getElementById('sinMensaje')
 const CONMENSAJE = document.getElementById('conMensaje')
 const RESULTADO = document.getElementById('resultado')
 const MENSAJE = document.getElementById('mensaje')
 let encriptado = true
-
-// const encriptarMensaje = (text, type) => {
-//     for (const key in DICCIONARIO) {
-//         type === 'encriptar' ? (text = text.replaceAll(key, DICCIONARIO[key])) : (text = text.replaceAll(DICCIONARIO[key], key))
-//     }
-//     return text
-// }
 
 const encriptarMensaje = (text, type) => {
     type === 'encriptar'
@@ -31,8 +23,8 @@ const restringirTexto = (e) => {
     MENSAJE.value = e.target.value.replaceAll(/[^a-z\s]+/g, '')
 }
 
-const start = (type) => {
+const tipo = (type) => {
     MENSAJE.value.trim() === ""
-        ? (alert("¡Escriba algo salame!"))
+        ? (alert("Debe ingresar un texto"))
         : (mostrarResultado(encriptarMensaje(MENSAJE.value, type)));
 }
