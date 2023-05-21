@@ -7,7 +7,7 @@ let encriptado = true
 const encriptarMensaje = (text, type) => {
     type === 'encriptar'
         ? (text = text.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat"))
-        : (text = text.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u"));
+        : (text = text.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u"));
     return text
 }
 
