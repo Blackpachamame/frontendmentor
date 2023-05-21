@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(111.8deg, #2b2f53 16.5%, #1d1c34 77.09%);
+}
+
+img,
+svg,
+figure {
+  display: block;
+}
+
+.main {
+  padding: 4rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logoDefault {
+  width: 46px;
+  height: 46px;
+
+  /* Colors */
+  background: radial-gradient(
+      109.99% 253.12% at 76.68% 66.67%,
+      rgba(96, 46, 166, 0.2) 0%,
+      rgba(201, 119, 214, 0.2) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay;
+  background: linear-gradient(
+    35.22deg,
+    #ffffff 33.61%,
+    rgba(255, 255, 255, 0.5) 89.19%
+  );
+
+  /* Bordes */
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    35.22deg,
+    #ffffff 33.61%,
+    rgba(255, 255, 255, 0.5) 89.19%
+  );
+
+  background: radial-gradient(
+      109.99% 253.12% at 76.68% 66.67%,
+      rgba(96, 46, 166, 0.2) 0%,
+      rgba(201, 119, 214, 0.2) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
