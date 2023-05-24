@@ -18,14 +18,14 @@
         <textarea class="main__textarea" name="mensaje" id="mensaje" oninput="restringirTexto(event)"
             placeholder="Ingrese el texto aquí"></textarea>
         <div class="main__container">
-            <div class="container__advertencia">
+            <div class="container__advertencia" id="advertencia">
                 <img src="./images/advertencia.svg" alt="advertencia">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
-            <!-- <div class="container__advertencia">
-                <img src="./images/advertencia.svg" alt="advertencia">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div> -->
+            <div class="container__advertencia--error invi" id="advertenciaError">
+                <img src="./images/error.svg" alt="error">
+                <p>Debe ingresar un texto</p>
+            </div>
             <div class="container__btn">
                 <button class="btn__encriptar" id="btnEncriptar" onclick="tipo('encriptar')">Encriptar</button>
                 <button class="btn__desencriptar" id="btnDesencriptar"

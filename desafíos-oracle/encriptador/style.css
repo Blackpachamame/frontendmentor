@@ -107,16 +107,22 @@ textarea {
   margin-top: 2rem;
 }
 
-.container__advertencia {
+.container__advertencia,
+.container__advertencia--error {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 1.6rem;
 }
 
-.container__advertencia p {
+.container__advertencia p,
+.container__advertencia--error p {
   font-size: 1.2rem;
   line-height: 1.8rem;
+}
+
+.container__advertencia--error p {
+  color: #bd1c1c;
 }
 
 .container__btn {
@@ -206,6 +212,10 @@ button {
 }
 
 .ocultar {
+  display: none !important;
+}
+
+.invi {
   display: none !important;
 }
 
