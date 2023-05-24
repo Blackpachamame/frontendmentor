@@ -24,6 +24,8 @@ const mostrarError = () => {
     if (MENSAJE.value.trim() === "") {
         ERROR.classList.remove('invi');
         ADVERTENCIA.classList.add('invi');
+        SINMENSAJE.classList.toggle('ocultar', !encriptado)
+        CONMENSAJE.classList.toggle('ocultar', encriptado)
     } else {
         ADVERTENCIA.classList.remove('invi');
         ERROR.classList.add('invi');
