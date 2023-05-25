@@ -34,6 +34,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 40rem;
+  justify-content: center;
 }
 
 img,
@@ -277,5 +278,20 @@ button {
   .muñeco,
   .muñeco__con-mensaje {
     margin-inline: 0.8rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .main__textarea,
+  .muñeco__con-mensaje .muñeco__resultado {
+    font-size: 1.8rem;
+  }
+
+  .muñeco {
+    padding: 2rem;
+  }
+
+  .muñeco__sin-mensaje h3 {
+    font-size: 2rem;
   }
 }
