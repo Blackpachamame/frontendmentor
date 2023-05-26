@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  <!-- Sign-up form start -->
+  <main class="main">
+    <!-- Sign-up form start -->
+    <section class="form">
+      <figure class="form__figure">
+        <img class="form__illustration" src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration sign up mobile">
+      </figure>
 
-  Stay updated!
+      <h1 class="form__h1">Stay updated!</h1>
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <p class="form__join">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      <ul class="form__ul">
+        <li class="form__li">Product discovery and building what matters</li>
+        <li class="form__li">Measuring to ensure updates are a success</li>
+        <li class="form__li">And much more!</li>
+      </ul>
 
-  Email address
-  email@company.com
+      <label for="">Email address</label>
+      <input type="email" name="" id="" placeholder="email@company.com">
 
-  Subscribe to monthly newsletter
+      <button class="form__subcribe">Subscribe to monthly newsletter</button>
+    </section>
 
-  <!-- Sign-up form end -->
+    <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+    <!-- Success message start -->
 
-  Thanks for subscribing!
+    <section class="message">
+      <h2 class="message__h2">Thanks for subscribing!</h2>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+      <p class="message__p">A confirmation email has been sent to <span class="email">ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
 
-  Dismiss message
+      <button class="message__button">Dismiss message</button>
+    </section>
 
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- Success message end -->
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
