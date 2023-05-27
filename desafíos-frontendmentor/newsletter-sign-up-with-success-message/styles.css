@@ -59,10 +59,15 @@ button {
   background-color: var(--dark-slate-grey);
   border: none;
   border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 .form__container {
   padding: 4rem 2rem;
+}
+
+.form__p {
+  margin-bottom: 2.5rem;
 }
 
 .form__ul .form__li {
@@ -76,4 +81,26 @@ button {
   content: url(assets/images/icon-list.svg);
   margin-right: 1.5rem;
   margin-top: 0.2rem;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.8rem;
+  margin-top: 3.5rem;
+}
+
+.form__input {
+  width: 100%;
+  height: 5.6rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--grey);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form__input::placeholder {
+  color: var(--grey);
 }
