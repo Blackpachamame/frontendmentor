@@ -3,10 +3,16 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --tomato: hsl(4, 100%, 67%);
+  --tomato-background: hsla(4, 100%, 67%, 0.17);
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
+  --gradient-button: linear-gradient(
+    90deg,
+    rgba(255, 83, 123, 1) 0%,
+    rgba(254, 104, 67, 1) 100%
+  );
 }
 
 * {
@@ -26,6 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--charcoal-grey);
+  background-color: var(--charcoal-grey);
   display: grid;
   place-content: center;
   min-height: 100vh;
@@ -51,6 +58,7 @@ figure {
 }
 
 button {
+  position: relative;
   width: 100%;
   height: 5.6rem;
   font-size: 1.6rem;
@@ -60,6 +68,32 @@ button {
   border: none;
   border-radius: 0.8rem;
   cursor: pointer;
+}
+
+button:hover {
+  background: var(--gradient-button);
+  z-index: 0;
+}
+
+button:hover::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--gradient-button);
+  transform: translate3d(0px, 10px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.form,
+.message {
+  background-color: var(--white);
 }
 
 .form__container {
@@ -91,6 +125,12 @@ button {
   margin-top: 3.5rem;
 }
 
+span.error {
+  display: none;
+  float: right;
+  color: var(--tomato);
+}
+
 .form__input {
   width: 100%;
   height: 5.6rem;
@@ -103,4 +143,37 @@ button {
 
 .form__input::placeholder {
   color: var(--grey);
+}
+
+.form__input.invalid {
+  color: var(--tomato);
+  background-color: var(--tomato-background);
+  border: 1px solid var(--tomato);
+}
+
+.form__input.invalid::placeholder {
+  color: var(--tomato);
+}
+
+.message {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message__container {
+  margin-top: 10rem;
+}
+
+.message__success {
+  margin-bottom: 4rem;
+}
+
+.message__email {
+  font-weight: 700;
+}
+
+.message__button {
+  margin-top: 25rem;
 }
