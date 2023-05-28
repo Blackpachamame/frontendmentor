@@ -66,7 +66,9 @@ A completar
 
 ### Recursos útiles
 
-A completar
+- [CSS Gradient](https://cssgradient.io)
+- [How to create a gradient shadow using CSS ?](https://www.geeksforgeeks.org/how-to-create-a-gradient-shadow-using-css/)
+- [CSS Shadows Gradients Collection](https://alvarotrigo.com/shadow-gradients/)
 
 ## Autor
 
