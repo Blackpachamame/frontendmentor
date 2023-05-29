@@ -23,7 +23,6 @@ function verificarMail(e) {
 }
 
 SUBMIT_BUTTON.addEventListener('click', (e) => {
-    console.log(valido)
     e.preventDefault()
     if (valido) {
         SECTION_MAIN.style.display = "none"
@@ -33,7 +32,6 @@ SUBMIT_BUTTON.addEventListener('click', (e) => {
 })
 
 DISMISS_BUTTON.addEventListener('click', (e) => {
-    console.log(valido)
     e.preventDefault()
     if (valido) {
         SECTION_MAIN.style.display = "grid"
