@@ -11,8 +11,8 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="#">
-      Solución (Próximamente)
+    <a href="https://www.frontendmentor.io/solutions/results-summary-component-55OrrUWGoe">
+      Solución
     </a>
    <span> | </span>
     <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV">
@@ -23,6 +23,7 @@
 
 ## Tabla de contenido
 
+- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)

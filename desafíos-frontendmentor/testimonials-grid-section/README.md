@@ -7,12 +7,12 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/testimonials-grid-section-component/">
+    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/testimonials-grid-section/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="#pendiente">
-      Solución (Próximamente)
+    <a href="https://www.frontendmentor.io/solutions/testimonials-grid-section-3irsEnxYKn">
+      Solución
     </a>
    <span> | </span>
     <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">
