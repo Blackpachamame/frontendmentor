@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message">
+    <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub">
       Solución
     </a>
    <span> | </span>
@@ -62,7 +62,7 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-A completar
+Aprendí a generar un hover con gradiente y sombra mediante el uso de pseudoelementos como `::after` o `::before`
 
 ### Recursos útiles
 
