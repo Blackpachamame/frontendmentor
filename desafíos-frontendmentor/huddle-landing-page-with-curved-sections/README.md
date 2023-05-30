@@ -11,8 +11,8 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="#pendiente">
-      Solución (Próximamente)
+    <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-0UOMkvOYgO">
+      Solución
     </a>
    <span> | </span>
     <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2">
@@ -23,6 +23,7 @@
 
 ## Tabla de contenido
 
+- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)

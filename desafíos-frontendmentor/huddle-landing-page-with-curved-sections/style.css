@@ -142,6 +142,7 @@ section.build {
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.31);
   -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.31);
+  transition: background-color 0.5s;
 }
 
 .build__button {
@@ -172,8 +173,8 @@ section.data {
   align-items: flex-start;
 }
 
-.communities__p,
-.mesagges__p {
+.communities__h4,
+.mesagges__h4 {
   margin-left: -0.4rem;
   font-size: 9.5rem;
   font-weight: 800;
@@ -284,6 +285,7 @@ section.data {
   border: 0;
   border-radius: 0.5rem;
   order: 2;
+  transition: background-color 0.5s;
 }
 
 .subscribe__button:hover {
@@ -411,11 +413,11 @@ figure[class*="mobile"] {
     width: 2.5rem;
   }
 
-  .communities__p {
+  .communities__h4 {
     font-size: 6rem;
   }
 
-  .mesagges__p {
+  .mesagges__h4 {
     font-size: 5rem;
   }
 
