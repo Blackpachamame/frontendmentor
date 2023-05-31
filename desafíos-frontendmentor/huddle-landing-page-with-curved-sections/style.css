@@ -160,7 +160,7 @@ section.build {
 }
 
 /* DATA */
-section.data {
+div.data {
   margin: 0 12rem;
   display: flex;
   justify-content: space-around;
@@ -173,8 +173,8 @@ section.data {
   align-items: flex-start;
 }
 
-.communities__h4,
-.mesagges__h4 {
+.communities__p,
+.mesagges__p {
   margin-left: -0.4rem;
   font-size: 9.5rem;
   font-weight: 800;
@@ -399,7 +399,7 @@ figure[class*="mobile"] {
     font-size: 1.2rem;
   }
 
-  section.data {
+  div.data {
     flex-direction: column;
     align-items: center;
     margin: 8rem 0 0;
@@ -413,11 +413,11 @@ figure[class*="mobile"] {
     width: 2.5rem;
   }
 
-  .communities__h4 {
+  .communities__p {
     font-size: 6rem;
   }
 
-  .mesagges__h4 {
+  .mesagges__p {
     font-size: 5rem;
   }
 
