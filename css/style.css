@@ -2,6 +2,7 @@
 
 :root {
   --white: rgb(255, 255, 255);
+  --white-hover: rgb(218, 218, 218);
   --crimson: rgb(255, 85, 117);
   /* --dark: #0d1117; */
   --blue-dark: rgb(21, 21, 32);
@@ -51,8 +52,17 @@ body {
   align-items: center;
 }
 
-p.copyright {
-  font-size: 1.2rem;
+.footer__p {
+  font-size: 1.4rem;
+}
+
+.footer__a {
+  color: var(--crimson);
+  text-decoration: none;
+}
+
+.footer__a:hover {
+  color: var(--guru);
 }
 
 img,
@@ -104,7 +114,12 @@ h4 a {
   text-decoration: none;
 }
 
+h4 a:hover {
+  color: var(--white-hover);
+}
+
 section {
+  width: 100%;
   margin: 3rem 0 0;
 }
 
