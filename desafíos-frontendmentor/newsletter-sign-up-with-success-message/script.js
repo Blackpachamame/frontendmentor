@@ -28,6 +28,7 @@ SUBMIT_BUTTON.addEventListener('click', (e) => {
         SECTION_MAIN.style.display = "none"
         SECTION_MESSAGE.style.display = "grid"
         USER_EMAIL.textContent = EMAIL.value
+        EMAIL.value = ""
     }
 })
 
