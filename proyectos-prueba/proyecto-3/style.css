@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  font-family: sans-serif;
+  font-size: 2rem;
   background: linear-gradient(111.8deg, #2b2f53 16.5%, #1d1c34 77.09%);
 }
 
@@ -69,4 +71,40 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btns {
+  margin-top: 2rem;
+}
+
+.btn-1 {
+  padding: 13px 60px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 48.05%,
+      rgba(255, 255, 255, 0.2) 48.9%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) -19.57%,
+      #ffffff 98.8%,
+      rgba(255, 255, 255, 0.222222) 130.43%
+    );
+  filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5));
+  border-radius: 1rem;
+  position: relative;
+  border: none;
+}
+
+.btn-1::after {
+  content: "";
+  position: absolute;
+  inset: -0.2rem;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.433075) 24.29%,
+    rgba(0, 0, 0, 0.3) 76.35%
+  );
+  border-radius: inherit;
 }
