@@ -25,7 +25,8 @@ figure {
   padding: 4rem;
 }
 
-.logos {
+.logos,
+.btns {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -74,7 +75,14 @@ figure {
 }
 
 .btns {
-  margin-top: 2rem;
+  /* Auto layout */
+  margin-top: 4rem;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border: 1px dashed #9747ff;
+  border-radius: 5px;
+  position: relative;
 }
 
 .btn-1 {
@@ -93,18 +101,88 @@ figure {
   filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5));
   border-radius: 1rem;
   position: relative;
-  border: none;
-}
-
-.btn-1::after {
-  content: "";
-  position: absolute;
-  inset: -0.2rem;
-  z-index: -1;
-  background: linear-gradient(
+  border: 1px solid;
+  border-image-source: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.433075) 24.29%,
+    rgba(255, 255, 255, 0.433075) 24.33%,
     rgba(0, 0, 0, 0.3) 76.35%
   );
-  border-radius: inherit;
+}
+
+.sparkers {
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  background: radial-gradient(
+      109.99% 253.12% at 76.68% 66.67%,
+      #602ea6 0%,
+      #c977d6 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: overlay;
+  /* background: linear-gradient(
+    35.22deg,
+    #ffffff 33.61%,
+    rgba(255, 255, 255, 0.5) 89.19%
+  ); */
+  border: 1px solid;
+  position: relative;
+  border-image-source: linear-gradient(
+    35.22deg,
+    #ffffff 33.61%,
+    rgba(255, 255, 255, 0.5) 89.19%
+  );
+  box-shadow: 0px 0px 30px 0px rgba(118, 61, 176, 1);
+}
+
+.img-sparkers {
+  position: absolute;
+  left: 26.56%;
+  right: 25%;
+  top: 28.12%;
+  bottom: 26.56%;
+
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-blend-mode: overlay;
+  mix-blend-mode: normal;
+}
+
+.sparkers-algo {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 100%;
+  bottom: -100%;
+
+  background: radial-gradient(
+      109.99% 253.12% at 76.68% 66.67%,
+      #602ea6 0%,
+      #c977d6 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  box-shadow: 0px 0px 30px 0px #763db0;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
