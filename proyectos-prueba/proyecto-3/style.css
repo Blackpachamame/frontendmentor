@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,11 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
-  background: linear-gradient(111.8deg, #2b2f53 16.5%, #1d1c34 77.09%);
+  color: black;
+  /* background: linear-gradient(111.8deg, #2b2f53 16.5%, #1d1c34 77.09%); */
+  background-color: #2b2f53;
 }
 
 img,
@@ -80,12 +84,13 @@ figure {
   display: flex;
   padding: 20px;
   gap: 20px;
+  /* background-color: #2b2f53; */
   border: 1px dashed #9747ff;
   border-radius: 5px;
   position: relative;
 }
 
-.btn-1 {
+/* .btn-1 {
   padding: 13px 60px;
   background: linear-gradient(
       180deg,
@@ -107,80 +112,50 @@ figure {
     rgba(255, 255, 255, 0.433075) 24.33%,
     rgba(0, 0, 0, 0.3) 76.35%
   );
-}
+} */
 
-.sparkers {
-  height: 64px;
-  width: 64px;
-  border-radius: 10px;
-  background: radial-gradient(
-      109.99% 253.12% at 76.68% 66.67%,
-      #602ea6 0%,
-      #c977d6 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  background-blend-mode: overlay;
-  /* background: linear-gradient(
-    35.22deg,
-    #ffffff 33.61%,
-    rgba(255, 255, 255, 0.5) 89.19%
-  ); */
-  border: 1px solid;
-  position: relative;
-  border-image-source: linear-gradient(
-    35.22deg,
-    #ffffff 33.61%,
-    rgba(255, 255, 255, 0.5) 89.19%
-  );
-  box-shadow: 0px 0px 30px 0px rgba(118, 61, 176, 1);
-}
-
-.img-sparkers {
-  position: absolute;
-  left: 26.56%;
-  right: 25%;
-  top: 28.12%;
-  bottom: 26.56%;
-
-  font-family: "SF Pro Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+.btn-1 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
   display: flex;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  margin: auto;
+  padding: 10px 60px;
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 48.05%,
+      rgba(255, 255, 255, 0.2) 48.9%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) -19.57%,
+      #ffffff 98.8%,
+      rgba(255, 255, 255, 0.222222) 130.43%
+    );
+  /* filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5)); */
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.5);
+}
 
+.btn-1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.3) 100%
+    rgba(255, 255, 255, 0.433075) 24.33%,
+    rgba(0, 0, 0, 0.3) 76.35%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-blend-mode: overlay;
-  mix-blend-mode: normal;
-}
-
-.sparkers-algo {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  bottom: -100%;
-
-  background: radial-gradient(
-      109.99% 253.12% at 76.68% 66.67%,
-      #602ea6 0%,
-      #c977d6 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
-  box-shadow: 0px 0px 30px 0px #763db0;
-  backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 10px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
 }
