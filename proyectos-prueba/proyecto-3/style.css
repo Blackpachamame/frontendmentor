@@ -134,17 +134,12 @@ button {
 
 .btn-1 {
   background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 48.05%,
-      rgba(255, 255, 255, 0.2) 48.9%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) -19.57%,
-      #ffffff 98.8%,
-      rgba(255, 255, 255, 0.222222) 130.43%
-    );
-  /* filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5)); */
+    180deg,
+    rgba(83, 87, 116, 1) 0%,
+    rgba(162, 164, 180, 1) 50%,
+    rgba(178, 179, 192, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
   background-clip: padding-box;
   border: 2px solid transparent;
   box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.5);
@@ -170,16 +165,12 @@ button {
 .btn-2 {
   color: white;
   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 48.05%,
-      rgba(0, 0, 0, 0.2) 48.9%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(49, 58, 91, 0) -19.57%,
-      #313a5b 98.8%,
-      rgba(49, 58, 91, 0.222222) 130.43%
-    );
+    180deg,
+    rgba(40, 44, 77, 1) 0%,
+    rgba(46, 53, 87, 1) 47%,
+    rgba(40, 46, 76, 1) 49%,
+    rgba(38, 46, 73, 1) 100%
+  );
   background-clip: padding-box;
   border: 2px solid transparent;
   box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.5);
@@ -197,7 +188,7 @@ button {
   border-radius: inherit;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.86615) 24.29%,
+    #7380e582 24.29%,
     rgba(0, 0, 0, 0.6) 76.35%
   );
 }
