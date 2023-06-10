@@ -82,7 +82,7 @@ figure {
   /* Auto layout */
   margin-top: 4rem;
   width: 256px;
-  height: 310px;
+  /* height: 310px; */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -92,30 +92,6 @@ figure {
   border-radius: 5px;
   position: relative;
 }
-
-/* .btn-1 {
-  padding: 13px 60px;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 48.05%,
-      rgba(255, 255, 255, 0.2) 48.9%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) -19.57%,
-      #ffffff 98.8%,
-      rgba(255, 255, 255, 0.222222) 130.43%
-    );
-  filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5));
-  border-radius: 1rem;
-  position: relative;
-  border: 1px solid;
-  border-image-source: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.433075) 24.33%,
-    rgba(0, 0, 0, 0.3) 76.35%
-  );
-} */
 
 button {
   width: 100%;
@@ -129,6 +105,33 @@ button {
   /* padding: 10px 60px; */
   position: relative;
   border-radius: 1rem;
+}
+
+.btn-prueba {
+  background: linear-gradient(180deg, #8b90b5 24.33%, rgb(255 255 255) 56.35%);
+  /* filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5)); */
+  border-radius: 1rem;
+  position: relative;
+  background-clip: padding-box;
+  border: 0px inset transparent;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.433075) 24.33%,
+    rgba(0, 0, 0, 0.3) 76.35%
+  );
+}
+
+.btn-prueba:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  /* margin: -2px; */
+  /* border-radius: inherit; */
+  background: rgb(193 27 27);
 }
 
 .btn-light {
