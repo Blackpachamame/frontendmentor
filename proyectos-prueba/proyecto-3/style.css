@@ -206,14 +206,11 @@ button {
       rgba(254, 200, 241, 0.9) -22.92%,
       rgba(237, 146, 215, 0) 26.73%
     ),
-    radial-gradient(82.83% 280.98% at 96.89% 70.83%, #f69ea3 0%, #e970c4 100%)
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    radial-gradient(82.83% 280.98% at 96.89% 70.83%, #f69ea3 0%, #e970c4 100%);
   background-blend-mode: overlay, normal;
-  box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.5), inset 0px -1px 8px #9375b6,
-    inset 0px 0px 5px #fface4;
+  box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.5);
   background-clip: padding-box;
   border: 2px solid transparent;
-  /* box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .btn-light-pink:before {
@@ -226,11 +223,7 @@ button {
   z-index: -1;
   margin: -2px;
   border-radius: inherit;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.433075) 24.33%,
-    rgba(0, 0, 0, 0.3) 76.35%
-  );
+  background: linear-gradient(180deg, #f8a4eb 24.33%, #e647ca 76.35%);
 }
 
 .btn-dark-pink {
