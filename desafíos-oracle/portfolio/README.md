@@ -4,50 +4,42 @@
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
 </p>
 
+¡Bienvenido al primer desafío del Challenge Fron End!
 
-### ¡Bienvenido al proyecto base del Portafolio ! Pasos principales:
----
-#### Marca este proyecto con una estrella ⭐
-#### Sigue las lecciones y las instrucciones de contenido 📚
-#### Visita la página del Desafío ¡Haciendo clic aquí! [Link del Challenge](https://www.aluracursos.com/challenges/oracle-one-front-end/portafolio) 📃
+En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
 
-### Analisando el repositorio!
----
-### Este es el repositorio base de nuestro proyecto, acá tendrás:
-#### 🔹index.html: Documento HTML concluído que puedes utilizar en tu proyecto. Las fuentes, los archivos CSS y Javascript ya están referenciados en el documento y todas las secciones contienen comentários que te ayudan a entender la estructura. Si quieres, puedes aventurarte y contruir tu propio HTML.
-#### 🔹style.css: Documento de CSS con instrucciones de estilo y algunas sugerencias de desarrollo.
-#### 🔹validacion.js: Documento vacío dónde vas a desarrollar tu lógica de programación para validar formularios usando Javascript.
+## Requisitos:
 
-#### Cuando clones o descargues el proyecto base, tendrás la siguiente presentación:
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
-</p>
+-   Debe tener un menú de navegación.
+-   Debe tener una imagen que se utilizará como banner.
+-   Debe contener una sección sobre mí.
+    
+    -   Debe tener una foto de perfil.
+    -   Debe incluir enlaces a sus redes sociales.
+    -   Debe tener sus datos personales:
+        
+         1) Nombre
+         2) Edad
+         3) Nacionalidad
+         4) Biografía
+        
+-   Debe tener una sección de Hobbies y Soft Skills. Por ejemplo:  
+	   - Pasatiempos: actividades que disfruta hacer.  
+	   - Habilidades blandas: comunicación, liderazgo, empatía…
+-   Debe tener una sección de formación y cursos.  
+    Aquí puedes poner las formaciones y cursos que has realizado, aunque no esté en el área de programación.
+-   Debe tener experiencia en la sección de programación.  
+    Aquí puedes poner los proyectos que ya has realizado anteriormente, como por ejemplo: los proyectos del retador principiante en programación.
+-   Debe tener un formulario de contacto con los siguientes campos:
+    
+	1) Correo electrónico
+     2) Nombre
+     3) Asunto
+     4) Mensaje
+    
+-   Debe tener un Pie de página con la información de la persona que desarrolló el portafolio.
+-   Es de extrema importancia que el portafolio sea responsivo, lo que quiere decir que debe adaptarse a los diferentes tamaños de pantallas, pudiendo ser desktop, tablet o celular.
 
+### Extras
 
-### ¿Cómo incluir mi proyecto en este Challenge?
----
-1) Publicar el proyecto en GitHub
-2) Publicarlo en GitHub Pages: [¿Cómo publicar mi proyecto con GitHub Pages?](https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site)
-3) Utiliza el tema/topic:
-
- - Grupo 4: **challengeoneportafolio4**
- - Grupo 5: **challengeoneportafolio5**
-
-Ve a la pestaña "Acerca" o "About" de tu proyecto en el menú de la izquierda dentro de tu repositorio de GitHub
-Incluye la etiqueta "**challengeoneportafolio4**" o "**challengeoneportafolio5**" dependiendo al grupo que pertenezcas.
-
-### ¿Cómo hago la entrega final de mi proyecto?
----
-4) Coloca tus datos en el formulario de entrega con el **link del proyecto publicado con GitHub Pages**
-
-🔹 [Link del formulario](https://lp.alura.com.br/alura-latam-entrega-challenge-one-esp-front-end)
-
-![image](https://user-images.githubusercontent.com/92184087/208179417-7965c06e-21d6-4174-b76a-95ec648edc00.png)
-
-
-5) Accede a tu correo electrónico para conseguir tu Insignia Exclusiva para este Challenge 🏆
-6) ¡No olvides publicar un link o un vídeo de tu proyecto en Linkedin! 🏁
-
-<a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
-<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-
+- La página debe contener un botón que le permita ver, en una nueva pestaña, una versión PDF de su currículum.
