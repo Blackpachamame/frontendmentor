@@ -4,27 +4,31 @@ en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
-ol, ul,li {
-    list-style: none;
+ol,
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -41,92 +45,79 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-
+section.menu {
 }
 
 /*Sección Title*/
 
-section.title{
-
+section.title {
 }
 
 /*Sección About*/
 
-section.about{
-
+section.about {
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+section.hobbies {
 }
 
 /* Experiencia Académica*/
 
-section.academic{
-
+section.academic {
 }
 
 /* experiencia*/
 
-section.experience{
-
+section.experience {
 }
 
 /*Contacto*/
 
-section.formcontato{
-
+section.formcontato {
 }
 
 /*footeer*/
 
-section.footer{
-   
+section.footer {
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
-
 /*Tablet*/
 @media (min-width: 768px) {
+  /* Menú */
 
-/* Menú */
+  /*title*/
 
-/*title*/
+  /*Skills*/
 
-/*Skills*/
+  /*Hobbies*/
 
-/*Hobbies*/
+  /*Formación Académica*/
 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+  /*Experiencia Profesional*/
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
+  /*Menu*/
 
-/*Menu*/
+  /*Titulo*/
 
-/*Titulo*/
+  /*Sección sobre mi*/
 
-/*Sección sobre mi*/
+  /*Skills*/
 
-/*Skills*/
+  /*Hobbies*/
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+  /*Formación Académica*/
 
-/*Experiencia Profesional*/
+  /*Experiencia Profesional*/
 
- /*Contacto*/
+  /*Contacto*/
 
-/*Footer*/
-
+  /*Footer*/
 }
