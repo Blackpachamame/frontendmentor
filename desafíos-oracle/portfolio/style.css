@@ -3,10 +3,11 @@
 
 :root {
   --font-family: "Raleway", sans-serif;
-  --color-texto: #464646;
-  --color-texto-hover: #000000;
-  --color-fondo: #f5f5f5;
-  --color-iconos: #2a7ae4;
+  --color-texto: rgb(70, 70, 70);
+  --color-texto-hover: rgb(0, 0, 0);
+  --color-fondo: rgb(245, 245, 245);
+  --color-fondo-section: rgb(234, 242, 253);
+  --color-iconos: rgb(42, 122, 228);
 }
 
 * {
@@ -116,7 +117,7 @@ section.formcontato {
 
 /*footeer*/
 
-section.footer {
+footer.footer {
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
