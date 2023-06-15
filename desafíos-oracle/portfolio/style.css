@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 :root {
-  --cor-de-fundo: #f5f5f5;
-  --cor-de-link: #000;
+  --font-family: "Raleway", sans-serif;
+  --color-texto: #464646;
+  --color-texto-hover: #000000;
+  --color-fondo: #f5f5f5;
+  --color-iconos: #2a7ae4;
 }
 
 * {
@@ -17,10 +21,17 @@ html {
 }
 
 body {
+  font-family: var(--font-family);
   font-size: 1.6rem;
-  background-color: var(--cor-de-fundo);
-  font-family: "Raleway";
-  line-height: 1;
+  font-weight: 400;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+img,
+svg,
+figure {
+  display: block;
 }
 
 ol,
@@ -31,24 +42,17 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
+.fa-2xl {
+  color: var(--color-iconos);
+}
 
 /*Sección Menu*/
 
 header.menu {
+  margin: 0 15.2rem;
+  padding: 3.2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,6 +61,27 @@ header.menu {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+h3.menu__title {
+  font-weight: 700;
+}
+
+.menu__list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.menu__list__item a {
+  color: var(--color-texto);
+  font-weight: 500;
+}
+.menu__list__item a:hover {
+  color: var(--color-texto-hover);
+}
+
+.menu__list__item:nth-last-child(1) a {
+  font-weight: 700;
 }
 
 /*Sección Title*/
