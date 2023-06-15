@@ -1,31 +1,34 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 :root {
-  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
   --cor-de-fundo: #f5f5f5;
   --cor-de-link: #000;
 }
 
-body {
-  box-sizing: border-box;
-  background-color: var(--cor-de-fundo);
-  font-family: "Raleway";
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
   line-height: 1;
 }
+
 ol,
 ul,
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: var(--cor-de-link);
@@ -45,7 +48,15 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu {
+header.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 /*Sección Title*/
