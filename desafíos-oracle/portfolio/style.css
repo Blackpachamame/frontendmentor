@@ -30,6 +30,12 @@ body {
   background-color: var(--color-fondo);
 }
 
+section.about,
+section.academic,
+section.formcontato {
+  background-color: var(--color-fondo-section);
+}
+
 img,
 svg,
 figure {
@@ -56,7 +62,8 @@ h2 {
   font-size: 3.2rem;
 }
 
-h3 {
+h3,
+.title__subsection {
   font-size: 2.2rem;
 }
 
@@ -79,7 +86,6 @@ a:hover {
 }
 
 /*Sección Menu*/
-
 header.menu {
   margin: 0 15.2rem;
   padding: 3.2rem 0;
@@ -107,39 +113,68 @@ header.menu {
   font-weight: 700;
 }
 
-/*Sección Title*/
+.title__container,
+.about__container,
+.skills__container,
+.hobbies__container,
+.academic__container,
+.experience__container,
+.formcontato__container {
+  margin: 0 15.2rem;
+}
 
+/*Sección Title*/
 section.title {
+  padding: 3.2rem 0;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.title__profile {
+  object-fit: contain;
+}
+
+.title__subsection {
+  margin-top: 2.4rem;
+}
+
+.title__network {
+  margin-top: 2.65rem;
+  display: flex;
+  gap: 3.2rem;
 }
 
 /*Sección About*/
+.about__container {
+  max-width: 75.1rem;
+  padding: 6.4rem 0;
+}
 
-section.about {
+p.about__paragraph {
+  margin: 1.6rem 0;
 }
 
 /*Sección Hobbies*/
 
-section.hobbies {
-}
-
 /* Experiencia Académica*/
-
-section.academic {
-}
 
 /* experiencia*/
 
-section.experience {
-}
-
 /*Contacto*/
-
-section.formcontato {
-}
 
 /*footeer*/
 
 footer.footer {
+  width: 100%;
+  padding: 3.2rem;
+  background-color: var(--color-fondo-footer);
+  font-weight: 500;
+  text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
