@@ -7,6 +7,7 @@
   --color-texto-hover: rgb(0, 0, 0);
   --color-fondo: rgb(245, 245, 245);
   --color-fondo-section: rgb(234, 242, 253);
+  --color-fondo-footer: rgb(255, 255, 255);
   --color-iconos: rgb(42, 122, 228);
 }
 
@@ -41,8 +42,36 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
 a {
+  color: var(--color-texto);
+  font-weight: 500;
   text-decoration: none;
+}
+a:hover {
+  color: var(--color-texto-hover);
 }
 
 .fa-2xl {
@@ -58,14 +87,11 @@ header.menu {
   justify-content: space-between;
   align-items: center;
 }
+
 .menu__logo {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-}
-
-h3.menu__title {
-  font-weight: 700;
 }
 
 .menu__list {
@@ -73,15 +99,11 @@ h3.menu__title {
   gap: 3.2rem;
 }
 
-.menu__list__item a {
-  color: var(--color-texto);
-  font-weight: 500;
-}
-.menu__list__item a:hover {
-  color: var(--color-texto-hover);
-}
-
+.menu__title,
+.skills__name,
+.hobbies__name,
 .menu__list__item:nth-last-child(1) a {
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
