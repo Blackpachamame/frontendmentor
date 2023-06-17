@@ -1,4 +1,4 @@
-# $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$ 🤡
+# $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$
 
 <p align="center" >
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
@@ -43,3 +43,11 @@ En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que 
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Extras}}$ ➕
 
 - La página debe contener un botón que le permita ver, en una nueva pestaña, una versión PDF de su currículum.
+
+## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Correcciones}}$ ➕
+
+Se corrigieron los siguientes detalles y errores:
+
+- Corrección del `index.html` proporcionado por Alura, se encontraron errores de semántica y de sintaxis.
+- Se reemplazaron la mayoría de las imagenes proporcionadas por Alura, por iconos de fontawesome.
+- Se actualizaron las imagenes de formación académica por otras de mejor calidad.

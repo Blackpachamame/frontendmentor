@@ -6,6 +6,7 @@
   --color-texto: rgb(70, 70, 70);
   --color-texto-hover: rgb(0, 0, 0);
   --color-fondo: rgb(245, 245, 245);
+  --color-fondo-hover: rgb(221, 221, 221);
   --color-fondo-section: rgb(234, 242, 253);
   --color-white: rgb(255, 255, 255);
   --color-blue: rgb(42, 122, 228);
@@ -301,8 +302,8 @@ p.about__paragraph {
 }
 
 .experience__repo:hover {
-  color: var(--color-white);
-  background-color: var(--color-blue-hover);
+  color: var(--color-blue);
+  background-color: var(--color-fondo-hover);
 }
 
 .experience__demo:hover,
