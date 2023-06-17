@@ -386,6 +386,18 @@ footer.footer {
   background-color: var(--color-white);
 }
 
+@media (max-width: 1311px) {
+  .experience__box,
+  .experience__box:nth-child(even) {
+    flex-direction: column;
+    max-width: 752px;
+  }
+
+  .experience__info:nth-child(even) {
+    align-self: flex-start;
+  }
+}
+
 @media (max-width: 1186px) {
   h1 {
     font-size: 3.2rem;
@@ -399,20 +411,10 @@ footer.footer {
   .title__network {
     margin-top: 1rem;
   }
-
-  .experience__box,
-  .experience__box:nth-child(even) {
-    flex-direction: column;
-    max-width: 752px;
-  }
-
-  .experience__info:nth-child(even) {
-    align-self: flex-start;
-  }
 }
 
 /* Tablet */
-@media (max-width: 826px) {
+@media (max-width: 1000px) {
   body,
   h4 {
     font-size: 1.4rem;
@@ -494,7 +496,7 @@ footer.footer {
 }
 
 /* Mobile */
-@media (max-width: 580px) {
+@media (max-width: 700px) {
   header.menu,
   section.title,
   section.about,
@@ -555,6 +557,12 @@ footer.footer {
   .title__network {
     gap: 0;
     justify-content: space-between;
+  }
+
+  /* Skills y Hobbies */
+  .skills__container,
+  .hobbies__container {
+    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
   }
 
   /* Académica */
