@@ -32,11 +32,13 @@
         <!-- Sección del Header/Title/Hero -->
         <section class="title">
             <div class="title__container">
-                <img class="title__profile" src="assets/profile.png" alt="imagen de perfil">
+                <figure class="title__figure">
+                    <img class="title__profile" src="assets/profile.png" alt="imagen de perfil">
+                </figure>
                 <div class="title__description">
                     <h1 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo páginas web</h1>
-                    <p class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente
-                        estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+                    <p class="title__subsection">Soy formada en lorem ipsum sit amet consectetur y actualmente estoy
+                        participando en el proyecto Oracle ONE en Alura Latam.</p>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
                         <li class="title__network__item"><a href="">Github <i
@@ -200,11 +202,11 @@
         <section class="experience" id="experience">
             <h2 class="experience__title">Experiencia Profissional</h2>
             <div class="experience__container">
-                <div class="experiencie__box">
+                <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets/decod_print.png" alt="decod print">
                     <div class="experience__info">
-                        <h3 class="experience__title">Encriptador de texto</h3>
+                        <h3 class="experience__title__info">Encriptador de texto</h3>
                         <h4 class="experience__text">Challenge Alura Codificador</h4>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
@@ -215,11 +217,11 @@
                     </div>
                 </div>
 
-                <div class="experiencie__box">
+                <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets/forca_print.png" alt="forca print">
                     <div class="experience__info">
-                        <h3 class="experience__title">Juego creado con HTML y JavaScript</h3>
+                        <h3 class="experience__title__info">Juego creado con HTML y JavaScript</h3>
                         <h4 class="experience__text">Challenge Oracle</h4>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
@@ -233,9 +235,9 @@
                 <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                     <img class="experience__img" src="assets/secretcode_print.png" alt="secretcode print">
-                    <div class="experience__info-container">
-                        <h3 class="experience__title">Encriptador de texto</h3>
-                        <h4 class="experience__text">Challenge Oracle </h4>
+                    <div class="experience__info">
+                        <h3 class="experience__title__info">Encriptador de texto</h3>
+                        <h4 class="experience__text">Challenge Oracle</h4>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
                             <a class="experience__repo"
@@ -247,9 +249,9 @@
 
                 <div class="experience__box">
                     <img class="experience__img" src="assets/forca2_print.png" alt="forca 2 print">
-                    <div class="experience__info-container">
-                        <h3 class="experience__title">Juego creado con HTML, CSS y JavaScript</h3>
-                        <h4 class="experience__text">Challenge Oracle </h4>
+                    <div class="experience__info">
+                        <h3 class="experience__title__info">Juego creado con HTML, CSS y JavaScript</h3>
+                        <h4 class="experience__text">Challenge Oracle</h4>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
                             <a class="experience__repo"
@@ -260,24 +262,27 @@
                 </div>
             </div>
         </section>
+
         <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__container">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets/contact_image.png" alt="imagen de contacto">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h4 class="formcontato__subtext">¿Quieres contactarme?</h4>
-                    <p class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
-                        usted lo antes posible. </p>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
+        <section class="contacto" id="contacto">
+            <div class="contacto__container">
+                <figure class="contacto__figure">
+                    <img class="contacto__img" src="assets/contact_image.png" alt="imagen de contacto">
+                </figure>
+                <div class="contacto__form__container">
+                    <div class="contacto__text__container">
+                        <h2 class="contacto__title">Contacto</h2>
+                        <h4 class="contacto__subtext">¿Quieres contactarme?</h4>
+                        <p class="contacto__subtext">Complete el siguiente formulario y me pondré en contacto con
+                            usted lo antes posible.</p>
+                    </div>
+                    <form class="contacto__form" name="form">
+                        <input class="contacto__input" type="text" name="nombre" placeholder="Nombre">
+                        <input class="contacto__input" type="email" name="email" placeholder="E-mail">
+                        <input class="contacto__input" type="text" name="asunto" placeholder="Asunto">
+                        <textarea class="contacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje"
                             placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <button type="submit" class="contacto__submit">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -289,6 +294,7 @@
         <p>Desarrollado por Fulana de Tal</p>
         <p>2023</p>
     </footer>
+
     <!-- Script del documento JavaScript -->
     <script src="validacion.js"></script>
 </body>

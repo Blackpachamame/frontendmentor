@@ -12,7 +12,7 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 `La letra "o" es convertida para "ober"`
 `La letra "u" es convertida para "ufat"`
 
-## $\normalsize\color{rgb(109, 160, 219)}{\texttt{Requisitos}}$ 👈
+## $\normalsize\color{rgb(109, 160, 219)}{\texttt{Requisitos}}$ 📌
 
 -   Debe funcionar solo con letras minúsculas
 -   No deben ser utilizados letras con acentos ni caracteres especiales
@@ -26,6 +26,6 @@ Por ejemplo:
     inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 -   El resultado debe ser mostrado en la pantalla.
 
-## $\normalsize\color{rgb(109, 160, 219)}{\texttt{Extras}}$ 👌
+## $\normalsize\color{rgb(109, 160, 219)}{\texttt{Extras}}$ ➕
 
 -   Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción "copiar" del menú de las aplicaciones.
