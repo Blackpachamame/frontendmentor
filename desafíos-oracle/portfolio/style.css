@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: inherit;
+  font: inherit;
 }
 
 html {
@@ -41,7 +41,8 @@ section.contacto {
 
 img,
 svg,
-figure {
+figure,
+.academic__box__img {
   display: block;
   max-width: 100%;
 }
@@ -95,19 +96,40 @@ a {
   text-decoration: none;
   transition: color 0.5s ease;
 }
+
 a:hover {
   color: var(--color-texto-hover);
 }
 
 .fa-2xl {
-  /* font-size: 3.2rem; */
   color: var(--color-blue);
 }
 
-/* Sección Menu */
+header.menu,
+section.title,
+section.experience {
+  padding: 3.2rem 15.2rem;
+}
+
+section.about,
+section.contacto {
+  padding: 6.4rem 15.2rem;
+}
+
+section.skills {
+  padding: 3.2rem 15.2rem 8.8rem;
+}
+
+section.hobbies {
+  padding: 0 15.2rem 8.8rem;
+}
+
+section.academic {
+  padding: 8.2rem 15.2rem;
+}
+
+/* Menu */
 header.menu {
-  margin: 0 15.2rem;
-  padding: 3.2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,16 +154,7 @@ header.menu {
   font-weight: 700;
 }
 
-.title__container,
-.about__container,
-.skills__container,
-.hobbies__container,
-.academic__container,
-.experience__container {
-  margin: 3.2rem 15.2rem;
-}
-
-/* Sección Title */
+/* Title */
 .title__container {
   display: grid;
   grid-template-columns: auto minmax(auto, 36.8rem);
@@ -168,34 +181,27 @@ header.menu {
   gap: 3.2rem;
 }
 
-/* Sección About */
+/* About */
 .about__container {
   max-width: 75.1rem;
-  padding: 6.4rem 0;
+  /* padding: 6.4rem 0; */
 }
 
 p.about__paragraph {
   margin: 1.6rem 0;
 }
 
-/* Sección Skills y Hobbies */
-section.hobbies {
-  padding: 8.8rem 0;
-}
-
+/* Skills y Hobbies */
 .skills__container,
 .hobbies__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
-  /* justify-content: center;
-  flex-wrap: wrap; */
-  gap: 1.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(17.6rem, 1fr));
+  gap: 3.2rem 1.6rem;
 }
 
 .skills__box,
 .hobbies__box {
-  /* width: 176px; */
-  height: 174px;
+  height: 17.4rem;
   padding: 1.6rem;
   background-color: var(--color-white);
   display: flex;
@@ -217,15 +223,11 @@ section.hobbies {
   gap: 1.5rem;
 }
 
-/* Experiencia Académica*/
-section.academic {
-  padding: 8.2rem 0 6rem;
-}
-
+/* Académica */
 .academic__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 36.8rem));
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1.6rem;
 }
 
@@ -236,7 +238,6 @@ section.academic {
 }
 
 .academic__box__figure {
-  width: 36.8rem;
   height: 28.6rem;
   background-color: var(--color-white);
   display: flex;
@@ -244,15 +245,16 @@ section.academic {
   align-items: center;
 }
 
-/* Experiencia*/
+.academic__box__subtitle {
+  margin-top: 0.8rem;
+}
+
+/* Experiencia */
 .experience__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6.4rem;
-}
-
-.experience__title {
-  margin-top: 3.2rem;
 }
 
 .experience__box {
@@ -275,7 +277,7 @@ section.academic {
 .experience__description {
   text-align: center;
   display: flex;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 .experience__repo,
@@ -311,10 +313,9 @@ section.academic {
 
 /* Contacto */
 .contacto__container {
-  margin: 0 15.2rem;
-  padding: 12.8rem 0 6.4rem;
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: center;
   gap: 1.6rem;
 }
 
@@ -330,7 +331,9 @@ section.academic {
   margin-bottom: 0.8rem;
 }
 
+.contacto__subtitle,
 .contacto__subtext {
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -373,28 +376,14 @@ section.academic {
   color: var(--color-placeholder);
 }
 
-/* Footeer */
-
+/* Footer */
 footer.footer {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
   width: 100%;
   padding: 3.2rem;
   background-color: var(--color-white);
-  font-weight: 500;
-  text-align: center;
-}
-
-@media (max-width: 1306px) {
-  .title__container,
-  .about__container,
-  .skills__container,
-  .hobbies__container,
-  .academic__container,
-  .experience__container {
-    margin: 3.2rem;
-  }
-  .contacto__container {
-    margin: 3.2rem 3.2rem 0;
-  }
 }
 
 @media (max-width: 1186px) {
@@ -411,25 +400,19 @@ footer.footer {
     margin-top: 1rem;
   }
 
-  /* .experience__box,
+  .experience__box,
   .experience__box:nth-child(even) {
     flex-direction: column;
+    max-width: 752px;
   }
 
   .experience__info:nth-child(even) {
     align-self: flex-start;
-  } */
-}
-
-@media (max-width: 1070px) {
-  .experience__description {
-    flex-direction: column;
-    /* width: 100%; */
   }
 }
 
-/*Tablet*/
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 826px) {
   body,
   h4 {
     font-size: 1.4rem;
@@ -445,38 +428,64 @@ footer.footer {
     font-size: 1.6rem;
   }
 
+  section.title,
+  section.about,
+  section.skills,
+  section.hobbies,
+  section.academic,
+  section.experience,
+  section.contacto {
+    padding: 3.2rem;
+  }
+
   /* Menú */
   header.menu {
-    margin: 0 3.2rem;
-    padding: 1.6rem 0;
+    padding: 1.6rem 3.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  /*title*/
+  /* Title */
   .title__container {
     grid-template-columns: auto minmax(auto, 14.6rem);
-    gap: 3.2rem;
+    gap: 3.8rem;
   }
 
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formación Académica*/
-  .about__container,
-  section.hobbies,
-  section.academic {
-    padding: 3.2rem 0;
+  /* Académica */
+  .academic__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 22.4rem));
+    justify-content: center;
+    gap: 1.6rem;
   }
 
-  /*Experiencia Profesional*/
+  .academic__box__figure {
+    height: 11.8rem;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .academic__box__img {
+    width: 50%;
+  }
+
+  /* Skills y Hobbies */
+  .skills__container,
+  .hobbies__container {
+    grid-template-columns: repeat(auto-fit, minmax(22.4rem, 1fr));
+  }
+
+  .skills__box,
+  .hobbies__box {
+    height: 11.8rem;
+  }
 
   /* Contacto */
   .contacto__container {
-    padding: 3.2rem 0;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 
   .contacto__figure {
@@ -484,18 +493,14 @@ footer.footer {
   }
 }
 
-/*Mobile*/
+/* Mobile */
 @media (max-width: 580px) {
-  .title__container,
-  .about__container,
-  .skills__container,
-  .hobbies__container,
-  .academic__container,
-  .experience__container {
-    margin: 1.6rem;
-  }
-  .contacto__container {
-    margin: 1.6rem 1.6rem 0;
+  header.menu,
+  section.title,
+  section.about,
+  section.skills,
+  section.hobbies {
+    padding: 1.6rem;
   }
 
   a,
@@ -506,13 +511,13 @@ footer.footer {
     font-weight: 600;
   }
 
-  /*Menu*/
+  /* Menú */
   .menu__list__item:nth-last-child(1) a {
     font-size: 1.4rem;
     font-weight: 400;
   }
 
-  /*Titulo*/
+  /* Title */
   .title__container {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -535,20 +540,25 @@ footer.footer {
     font-size: 1.4rem;
   }
 
-  /*Sección sobre mi*/
+  /* Académica */
+  .academic__container {
+    grid-template-columns: 1fr;
+  }
 
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formación Académica*/
-
-  /*Experiencia Profesional*/
+  .academic__box__img {
+    width: 30%;
+  }
 }
 
 @media (max-width: 425px) {
+  /* Title */
   .title__network {
     gap: 0;
     justify-content: space-between;
+  }
+
+  /* Académica */
+  .academic__box__img {
+    width: 45%;
   }
 }

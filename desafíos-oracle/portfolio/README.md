@@ -1,12 +1,12 @@
 # $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$ 🤡
 
-[Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/)
-
 <p align="center" >
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
 </p>
 
 En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
+
+[Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/)
 
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Requisitos}}$ 📌
 
