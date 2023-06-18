@@ -284,11 +284,30 @@
                             usted lo antes posible.</p>
                     </div>
                     <form class="contacto__form" name="form">
-                        <input class="contacto__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="contacto__input" type="email" name="email" placeholder="E-mail">
-                        <input class="contacto__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="contacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje"
-                            placeholder="Mensaje"></textarea>
+                        <div class="contacto__container-input">
+                            <input class="contacto__input" type="text" name="nombre" id="nombre" required>
+                            <label for="nombre" class="contacto__label">
+                                <span class="contacto__label-name">Nombre</span>
+                            </label>
+                        </div>
+                        <div class="contacto__container-input">
+                            <input class="contacto__input" type="email" name="email" id="email" required>
+                            <label for="email" class="contacto__label">
+                                <span class="contacto__label-name">E-mail</span>
+                            </label>
+                        </div>
+                        <div class="contacto__container-input">
+                            <input class="contacto__input" type="text" name="asunto" id="asunto" required>
+                            <label for="asunto" class="contacto__label">
+                                <span class="contacto__label-name">Asunto</span>
+                            </label>
+                        </div>
+                        <div class="contacto__container-input">
+                            <textarea class="contacto__textarea" name="mensaje" id="mensaje" required></textarea>
+                            <label for="mensaje" class="contacto__label-textarea">
+                                <span class="contacto__label-name-textarea">Mensaje</span>
+                            </label>
+                        </div>
                         <button type="submit" class="contacto__submit">Enviar mensaje</button>
                     </form>
                 </div>
