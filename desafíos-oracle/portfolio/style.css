@@ -444,7 +444,7 @@ footer.footer {
   background-color: var(--color-white);
 }
 
-@media (max-width: 1311px) {
+@media (max-width: 1330px) {
   .experience__box,
   .experience__box:nth-child(even) {
     flex-direction: column;
