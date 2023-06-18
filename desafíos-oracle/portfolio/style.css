@@ -43,7 +43,7 @@ section.contacto {
 img,
 svg,
 figure,
-.academic__box__img {
+.academic__img {
   display: block;
   max-width: 100%;
 }
@@ -81,7 +81,7 @@ h2 {
 }
 
 h3,
-.title__subsection {
+.title__text--paragraph {
   font-size: 2.2rem;
 }
 
@@ -102,7 +102,8 @@ a:hover {
   color: var(--color-texto-hover);
 }
 
-.fa-2xl {
+.skills__icon,
+.hobbies__icon {
   color: var(--color-blue);
 }
 
@@ -150,7 +151,7 @@ header.menu {
 .menu__title,
 .skills__name,
 .hobbies__name,
-.menu__list__item:nth-last-child(1) a {
+.menu__list-item:nth-last-child(1) a {
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -172,7 +173,7 @@ header.menu {
   grid-area: description;
 }
 
-.title__subsection {
+.title__text--paragraph {
   margin-top: 2.4rem;
 }
 
@@ -238,7 +239,7 @@ p.about__paragraph {
   gap: 0.8rem;
 }
 
-.academic__box__figure {
+.academic__figure {
   height: 28.6rem;
   background-color: var(--color-white);
   display: flex;
@@ -246,7 +247,7 @@ p.about__paragraph {
   align-items: center;
 }
 
-.academic__box__subtitle {
+.academic__text--date {
   margin-top: 0.8rem;
 }
 
@@ -275,14 +276,14 @@ p.about__paragraph {
   gap: 0.8rem;
 }
 
-.experience__description {
+.experience__container-enlace {
   text-align: center;
   display: flex;
   gap: 1.6rem;
 }
 
-.experience__repo,
-.experience__demo,
+.experience__enlace--repo,
+.experience__enlace--demo,
 .contacto__submit {
   font-size: 1.6rem;
   font-weight: 400;
@@ -291,22 +292,22 @@ p.about__paragraph {
   transition: background-color 0.5s ease;
 }
 
-.experience__repo {
+.experience__enlace--repo {
   color: var(--color-blue);
 }
 
-.experience__demo,
+.experience__enlace--demo,
 .contacto__submit {
   color: var(--color-white);
   background-color: var(--color-blue);
 }
 
-.experience__repo:hover {
+.experience__enlace--repo:hover {
   color: var(--color-blue);
   background-color: var(--color-fondo-hover);
 }
 
-.experience__demo:hover,
+.experience__enlace--demo:hover,
 .contacto__submit:hover {
   color: var(--color-white);
   background-color: var(--color-blue-hover);
@@ -320,7 +321,7 @@ p.about__paragraph {
   gap: 1.6rem;
 }
 
-.contacto__form__container {
+.contacto__box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -461,11 +462,11 @@ footer.footer {
     font-size: 3.2rem;
   }
 
-  .menu__list__item:not(:last-child) {
+  .menu__list-item:not(:last-child) {
     display: none;
   }
 
-  .title__subsection,
+  .title__text--paragraph,
   .title__network {
     margin-top: 1rem;
   }
@@ -484,7 +485,7 @@ footer.footer {
   }
 
   h3,
-  .title__subsection {
+  .title__text--paragraph {
     font-size: 1.6rem;
   }
 
@@ -520,7 +521,7 @@ footer.footer {
     gap: 1.6rem;
   }
 
-  .academic__box__figure {
+  .academic__figure {
     height: 11.8rem;
     background-color: var(--color-white);
     display: flex;
@@ -528,7 +529,7 @@ footer.footer {
     align-items: center;
   }
 
-  .academic__box__img {
+  .academic__img {
     width: 50%;
   }
 
@@ -564,15 +565,15 @@ footer.footer {
   }
 
   a,
-  .experience__repo,
-  .experience__demo,
+  .experience__enlace--repo,
+  .experience__enlace--demo,
   .contacto__submit {
     font-size: 1.4rem;
     font-weight: 600;
   }
 
   /* Menú */
-  .menu__list__item:nth-last-child(1) a {
+  .menu__list-item:nth-last-child(1) a {
     font-size: 1.4rem;
     font-weight: 400;
   }
@@ -591,12 +592,12 @@ footer.footer {
     width: 9.8rem;
   }
 
-  .title__subsection,
+  .title__text--paragraph,
   .title__network {
     margin-top: 1.6rem;
   }
 
-  .title__subsection {
+  .title__text--paragraph {
     font-size: 1.4rem;
   }
 
@@ -605,7 +606,7 @@ footer.footer {
     grid-template-columns: 1fr;
   }
 
-  .academic__box__img {
+  .academic__img {
     width: 30%;
   }
 }
@@ -624,7 +625,7 @@ footer.footer {
   }
 
   /* Académica */
-  .academic__box__img {
+  .academic__img {
     width: 45%;
   }
 }
