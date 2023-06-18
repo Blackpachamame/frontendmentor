@@ -42,8 +42,7 @@ section.contacto {
 
 img,
 svg,
-figure,
-.academic__img {
+figure {
   display: block;
   max-width: 100%;
 }
@@ -607,7 +606,7 @@ footer.footer {
   }
 
   .academic__img {
-    width: 30%;
+    width: 27%;
   }
 }
 
