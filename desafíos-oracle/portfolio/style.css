@@ -399,7 +399,7 @@ p.about__paragraph {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-bottom: 1.7rem;
+  padding-bottom: 1.8rem;
   padding-left: 1.2rem;
   transition: all 0.3s ease;
 }
@@ -445,6 +445,7 @@ footer.footer {
 }
 
 @media (max-width: 1330px) {
+  /* Experiencia */
   .experience__box,
   .experience__box:nth-child(even) {
     flex-direction: column;
@@ -461,13 +462,24 @@ footer.footer {
     font-size: 3.2rem;
   }
 
+  /* Menú */
   .menu__list-item:not(:last-child) {
     display: none;
   }
 
+  /* Title */
   .title__text--paragraph,
   .title__network {
     margin-top: 1rem;
+  }
+
+  /* Contacto */
+  .contacto__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto__figure {
+    display: none;
   }
 }
 
@@ -541,15 +553,6 @@ footer.footer {
   .skills__box,
   .hobbies__box {
     height: 11.8rem;
-  }
-
-  /* Contacto */
-  .contacto__container {
-    grid-template-columns: 1fr;
-  }
-
-  .contacto__figure {
-    display: none;
   }
 }
 

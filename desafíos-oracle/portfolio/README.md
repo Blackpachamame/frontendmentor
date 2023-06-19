@@ -6,7 +6,8 @@
 
 En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
 
-[Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/)
+### [Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/) 🙊
+### [Descargar repositorio](https://github.com/Blackpachamame/Blackpachamame.github.io/archive/refs/heads/main.zip) 📥
 
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Requisitos}}$ 📌
 
@@ -37,17 +38,21 @@ En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que 
      3) Asunto
      4) Mensaje
     
--   Debe tener un Pie de página con la información de la persona que desarrolló el portafolio.
+-   Debe tener un Footer con la información de la persona que desarrolló el portafolio.
 -   Es de extrema importancia que el portafolio sea responsivo, lo que quiere decir que debe adaptarse a los diferentes tamaños de pantallas, pudiendo ser desktop, tablet o celular.
 
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Extras}}$ ➕
 
 - La página debe contener un botón que le permita ver, en una nueva pestaña, una versión PDF de su currículum.
 
-## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Correcciones}}$ ➕
+## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Correcciones}}$ ✏️
 
-Se corrigieron los siguientes detalles y errores:
+- Corrección del `index.html`, se encontraron errores de semántica y de sintaxis.
+- Se reemplazaron la mayoría de las imágenes por iconos de fontawesome.
+- El resto de las imágenes fueron actualizadas y optimizadas.
 
-- Corrección del `index.html` proporcionado por Alura, se encontraron errores de semántica y de sintaxis.
-- Se reemplazaron la mayoría de las imagenes proporcionadas por Alura, por iconos de fontawesome.
-- Se actualizaron las imagenes de formación académica por otras de mejor calidad.
+## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Recursos útiles}}$ 📚
+
+- [Fontawesome](https://fontawesome.com) - Iconos gratis.
+- [Get Emoji](https://getemoji.com) - ✂️ Copy and 📋 Paste Emoji 👍.
+- [TinyPNG](https://tinypng.com) - Optimizar imágenes.
