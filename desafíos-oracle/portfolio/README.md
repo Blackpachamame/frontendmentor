@@ -1,12 +1,17 @@
 # $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$
 
-### $\Large\color{rgb(219, 175, 109)}{\texttt{asd}}$
-### [Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/) 🙊
-### [Descargar repositorio](https://github.com/Blackpachamame/Blackpachamame.github.io/archive/refs/heads/main.zip) 📥
-
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
-</p>
+<div align="center">
+<img src="assets/portafolio-preview.jpg"></img>
+  <h3>
+    <a href="https://blackpachamame.github.io/desafíos-oracle/portfolio/">
+      🙊 Sitio en vivo
+    </a>
+    <span> | </span>
+    <a href="https://mega.nz/file/9AdkhY6A#CR_O79UKtHo6HNycUmikGvxQ7BNJOQwQzHqViBlLZD4">
+      Descargar repositorio 📥
+    </a>
+  </h3>
+</div>
 
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Requisitos}}$ 📌
 
