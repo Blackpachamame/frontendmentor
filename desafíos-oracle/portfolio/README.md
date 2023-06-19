@@ -1,15 +1,16 @@
 # $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$
 
+### $\Large\color{rgb(219, 175, 109)}{\texttt{[Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/)}}$
+### [Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/) 🙊
+### [Descargar repositorio](https://github.com/Blackpachamame/Blackpachamame.github.io/archive/refs/heads/main.zip) 📥
+
 <p align="center" >
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
 </p>
 
-En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
-
-### [Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/portfolio/) 🙊
-### [Descargar repositorio](https://github.com/Blackpachamame/Blackpachamame.github.io/archive/refs/heads/main.zip) 📥
-
 ## $\normalsize\color{rgb(219, 175, 109)}{\texttt{Requisitos}}$ 📌
+
+En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
 
 -   Debe tener un menú de navegación.
 -   Debe tener una imagen que se utilizará como banner.
@@ -33,7 +34,7 @@ En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que 
     Aquí puedes poner los proyectos que ya has realizado anteriormente, como por ejemplo: los proyectos del retador principiante en programación.
 -   Debe tener un formulario de contacto con los siguientes campos:
     
-	 1) Correo electrónico
+     1) Correo electrónico
      2) Nombre
      3) Asunto
      4) Mensaje
