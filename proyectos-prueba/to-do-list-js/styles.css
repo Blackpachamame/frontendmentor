@@ -1,40 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Parisienne&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Dosis', sans-serif;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
   font-size: 16px;
 }
 
-main {
+.main {
+  min-height: 100vh;
+  width: 100%;
   background-image: linear-gradient(
     109.6deg,
     rgba(62, 161, 219, 1) 11.2%,
     rgba(93, 52, 236, 1) 100.2%
   );
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: minmax(300px, 400px);
+  padding: 10px;
+  place-content: center;
 }
 
 .mainCard {
-  width: 40vw;
   border-radius: 25px;
   background-color: #fff;
   padding: 25px;
 }
 
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .title {
-  font-family: 'Dosis', sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -42,27 +49,28 @@ form {
 }
 
 .inputForm {
-  border: none;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 15px;
   border: 1px solid #eee;
+  border-radius: 5px 0 0 5px;
   outline: none;
-  width: 65%;
-}
-
-.inputForm::placeholder {
-  padding: 0px;
 }
 
 .btnCreate {
-  padding: 10px 15px;
+  width: 100px;
+  padding: 11px 15px;
   background-image: linear-gradient(
     109.6deg,
     rgba(62, 161, 219, 1) 11.2%,
     rgba(93, 52, 236, 1) 100.2%
   );
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
