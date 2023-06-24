@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Mi Portafolio</title>
 </head>
 
@@ -14,7 +14,7 @@
     <!-- Sección del Menú  -->
     <header class="menu">
         <div class="menu__logo">
-            <img class="menu__img" src="assets/vector.png" alt="vector">
+            <img class="menu__img" src="assets/images/vector.png" alt="vector">
             <h5 class="menu__title">Fulana de Tal</h5>
         </div>
         <nav class="menu__nav">
@@ -34,7 +34,7 @@
         <section class="title">
             <div class="title__container">
                 <figure class="title__figure">
-                    <img class="title__profile" src="assets/profile.png" alt="imagen de perfil">
+                    <img class="title__profile" src="assets/images/profile.png" alt="imagen de perfil">
                 </figure>
                 <div class="title__description">
                     <h1 class="title__text--primary">Hola, mi nombre es Fulana de Tal y construyo páginas web</h1>
@@ -74,7 +74,7 @@
                     Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas
                     metus vitae, aliquet metus.</p>
                 <!-- Si quieres, pon tú firma acá! -->
-                <img class="about__signature" src="assets/signature.png" alt="signature">
+                <img class="about__signature" src="assets/images/signature.png" alt="signature">
             </div>
         </section>
 
@@ -183,7 +183,7 @@
             <div class="academic__container">
                 <div class="academic__box">
                     <figure class="academic__figure">
-                        <img class="academic__img" src="assets/ufpr_logo.png" alt="logo ufpr">
+                        <img class="academic__img" src="assets/images/ufpr_logo.png" alt="logo ufpr">
                     </figure>
                     <div class="academic__container-text">
                         <h3 class="academic__text--title">Análisis de datos</h3>
@@ -192,7 +192,7 @@
                 </div>
                 <div class="academic__box">
                     <figure class="academic__figure">
-                        <img class="academic__img" src="assets/alura_logo.png" alt="logo alura">
+                        <img class="academic__img" src="assets/images/alura_logo.png" alt="logo alura">
                     </figure>
                     <div class="academic__container-text">
                         <h3 class="academic__text--title">Formación en UX Design</h3>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="academic__box">
                     <figure class="academic__figure">
-                        <img class="academic__img" src="assets/ufrj_logo.png" alt="logo ufrj">
+                        <img class="academic__img" src="assets/images/ufrj_logo.png" alt="logo ufrj">
                     </figure>
                     <div class="academic__container-text">
                         <h3 class="academic__text--title">Posgrado en diseño</h3>
@@ -217,7 +217,7 @@
             <div class="experience__container">
                 <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets/decod_print.png" alt="decod print">
+                    <img class="experience__img" src="assets/images/decod_print.png" alt="decod print">
                     <div class="experience__info">
                         <h3 class="experience__text--title">Encriptador de texto</h3>
                         <h4 class="experience__text--description">Challenge Alura Codificador</h4>
@@ -232,7 +232,7 @@
 
                 <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets/forca_print.png" alt="forca print">
+                    <img class="experience__img" src="assets/images/forca_print.png" alt="forca print">
                     <div class="experience__info">
                         <h3 class="experience__text--title">Juego creado con HTML y JavaScript</h3>
                         <h4 class="experience__text--description">Challenge Oracle</h4>
@@ -247,7 +247,7 @@
 
                 <div class="experience__box">
                     <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets/secretcode_print.png" alt="secretcode print">
+                    <img class="experience__img" src="assets/images/secretcode_print.png" alt="secretcode print">
                     <div class="experience__info">
                         <h3 class="experience__text--title">Encriptador de texto</h3>
                         <h4 class="experience__text--description">Challenge Oracle</h4>
@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="experience__box">
-                    <img class="experience__img" src="assets/forca2_print.png" alt="forca 2 print">
+                    <img class="experience__img" src="assets/images/forca2_print.png" alt="forca 2 print">
                     <div class="experience__info">
                         <h3 class="experience__text--title">Juego creado con HTML, CSS y JavaScript</h3>
                         <h4 class="experience__text--description">Challenge Oracle</h4>
@@ -280,7 +280,7 @@
         <section class="contacto">
             <div class="contacto__container">
                 <figure class="contacto__figure">
-                    <img class="contacto__img" src="assets/contact_image.png" alt="imagen de contacto">
+                    <img class="contacto__img" src="assets/images/contact_image.png" alt="imagen de contacto">
                 </figure>
                 <div class="contacto__box">
                     <div class="contacto__container-text">
@@ -291,28 +291,41 @@
                     </div>
                     <form class="contacto__form" name="form">
                         <div class="contacto__container-input">
-                            <input class="contacto__input" type="text" name="nombre" id="nombre" required>
+                            <input class="contacto__input" type="text" name="nombre" id="nombre" data-tipo="nombre"
+                                required>
                             <label class="contacto__label" for="nombre">
                                 <span class="contacto__label-name">Nombre</span>
                             </label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
                         <div class="contacto__container-input">
-                            <input class="contacto__input" type="email" name="email" id="email" required>
+                            <input class="contacto__input" type="email" name="email" id="email" data-tipo="email"
+                                required>
                             <label class="contacto__label" for="email">
                                 <span class="contacto__label-name">E-mail</span>
                             </label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
-                        <div class="contacto__container-input">
-                            <input class="contacto__input" type="text" name="asunto" id="asunto" required>
+                        <!-- <div class="contacto__container-input">
+                            <input class="contacto__input" type="text" name="asunto" id="asunto" data-tipo="asunto"
+                                required>
                             <label class="contacto__label" for="asunto">
                                 <span class="contacto__label-name">Asunto</span>
                             </label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div> -->
+                        <div class="input-wrapper">
+                            <input class="uninput" type='text' id='input' required></input>
+                            <label for='input' class='placeholder'>Username</label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
                         <div class="contacto__container-input">
-                            <textarea class="contacto__textarea" name="mensaje" id="mensaje" required></textarea>
+                            <textarea class="contacto__textarea" name="mensaje" id="mensaje" data-tipo="mensaje"
+                                required></textarea>
                             <label class="contacto__label-textarea" for="mensaje">
                                 <span class="contacto__label-name-textarea">Mensaje</span>
                             </label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
                         <button class="contacto__submit" type="submit">Enviar mensaje</button>
                     </form>
@@ -328,7 +341,7 @@
     </footer>
 
     <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
 </body>
 
 </html>
