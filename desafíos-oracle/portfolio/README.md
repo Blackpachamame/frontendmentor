@@ -1,7 +1,7 @@
 # $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Portafolio}}$
 
 <div align="center">
-<img src="assets/portafolio-preview.png"></img>
+<img src="assets/images/portafolio-preview.png"></img>
   <h3>
     <a href="https://blackpachamame.github.io/desafíos-oracle/portfolio/">
       🙊 Sitio en vivo
