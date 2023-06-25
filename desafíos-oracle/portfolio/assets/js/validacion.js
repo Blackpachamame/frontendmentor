@@ -1,10 +1,7 @@
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
-    console.log(input.parentElement);
     if (input.validity.valid) {
         input.parentElement.classList.remove("input-container--invalid");
-        input.parentElement.querySelector(".contacto__label-name", ".contacto__label-textarea").style.color = "inherit";
-        input.parentElement.querySelector(".contacto__input").style.borderColor = "--color-border-input";
     } else {
         input.parentElement.classList.add("input-container--invalid");
         input.parentElement.querySelector(".input-message-error").innerHTML =

@@ -63,7 +63,7 @@
         </section>
 
         <!-- Sección Sobre mi -->
-        <section class="about">
+        <section class="about" id="sobre-mi">
             <div class="about__container">
                 <h2 class="about__title">Sobre mi</h2>
                 <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
@@ -79,7 +79,7 @@
         </section>
 
         <!-- Sección de Skills -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills__title">Skills</h2>
             <div class="skills__container">
                 <div class="skills__box">
@@ -127,7 +127,7 @@
         </section>
 
         <!-- Sección de Hobbies -->
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies">
             <h2 class="hobbies__title">Hobbies</h2>
             <div class="hobbies__container">
                 <div class="hobbies__box">
@@ -178,7 +178,7 @@
         </section>
 
         <!-- Sección de Formación académica -->
-        <section class="academic">
+        <section class="academic" id="formacion">
             <h2 class="academic__title">Formación académica</h2>
             <div class="academic__container">
                 <div class="academic__box">
@@ -212,7 +212,7 @@
         </section>
 
         <!-- Sección de Experiencia Profesional/Proyectos -->
-        <section class="experience">
+        <section class="experience" id="xp">
             <h2 class="experience__title">Experiencia profesional</h2>
             <div class="experience__container">
                 <div class="experience__box">
@@ -277,7 +277,7 @@
         </section>
 
         <!-- Sección de Contacto -->
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <div class="contacto__container">
                 <figure class="contacto__figure">
                     <img class="contacto__img" src="assets/images/contact_image.png" alt="imagen de contacto">
@@ -290,42 +290,29 @@
                             usted lo antes posible.</p>
                     </div>
                     <form class="contacto__form" name="form">
-                        <div class="contacto__container-input">
+                        <div class="contacto__input-wrapper">
                             <input class="contacto__input" type="text" name="nombre" id="nombre" data-tipo="nombre"
                                 required>
-                            <label class="contacto__label" for="nombre">
-                                <span class="contacto__label-name">Nombre</span>
-                            </label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                            <label class="contacto__label" for="nombre">Nombre</label>
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
-                        <div class="contacto__container-input">
+                        <div class="contacto__input-wrapper">
                             <input class="contacto__input" type="email" name="email" id="email" data-tipo="email"
                                 required>
-                            <label class="contacto__label" for="email">
-                                <span class="contacto__label-name">E-mail</span>
-                            </label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                            <label class="contacto__label" for="email">E-mail</label>
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
-                        <!-- <div class="contacto__container-input">
+                        <div class="contacto__input-wrapper">
                             <input class="contacto__input" type="text" name="asunto" id="asunto" data-tipo="asunto"
                                 required>
-                            <label class="contacto__label" for="asunto">
-                                <span class="contacto__label-name">Asunto</span>
-                            </label>
-                            <span class="input-message-error">Este campo no es valido</span>
-                        </div> -->
-                        <div class="input-wrapper">
-                            <input class="uninput" type='text' id='input' required></input>
-                            <label for='input' class='placeholder'>Username</label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                            <label class="contacto__label" for="asunto">Asunto</label>
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
-                        <div class="contacto__container-input">
+                        <div class="contacto__input-wrapper">
                             <textarea class="contacto__textarea" name="mensaje" id="mensaje" data-tipo="mensaje"
                                 required></textarea>
-                            <label class="contacto__label-textarea" for="mensaje">
-                                <span class="contacto__label-name-textarea">Mensaje</span>
-                            </label>
-                            <span class="input-message-error">Este campo no es valido</span>
+                            <label class="contacto__label-textarea" for="mensaje">Mensaje</label>
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                         <button class="contacto__submit" type="submit">Enviar mensaje</button>
                     </form>
