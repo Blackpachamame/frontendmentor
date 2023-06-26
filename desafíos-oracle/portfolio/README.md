@@ -7,8 +7,8 @@
       🙊 Sitio en vivo
     </a>
     <span> | </span>
-    <a href="https://mega.nz/file/5MsSQbqa#WWxLFq2we15IQ45OnllW-2JneQUP6kbe0IppItW8258">
-      Descargar repositorio 📥
+    <a href="https://mega.nz/file/kF1E1ThC#pOCI1pd4zuTTJDgqqnmdhJpJOUnepB1wgrOn0ALpTjQ">
+      Descargar plantilla 📥
     </a>
   </h3>
 </div>
