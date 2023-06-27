@@ -1,4 +1,4 @@
-# $\Huge\color{#d57589}{\texttt{Proyecto 2}}$ 🧁
+# $\Huge\color{#d57589}{\texttt{Fruicy}}$ 🧁
 
 Página de variedades de comidas, postres y frutas.
 

@@ -1,3 +1,5 @@
+# $\Huge\color{#d57589}{\texttt{Todo List}}$
+
 ### Seleccionando elementos
 
 Utilizamos el método `querySelector` para recorrer el árbol del DOM y encontrar el elemento que queremos utilizando *JavaScript*. Pero, existen otro métodos que pueden ser utilizados con la misma finalidad.

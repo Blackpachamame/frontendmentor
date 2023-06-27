@@ -28,9 +28,9 @@ body {
 }
 
 .mainCard {
-  border-radius: 25px;
+  padding: 25px 25px 35px;
   background-color: #fff;
-  padding: 25px;
+  border-radius: 25px;
 }
 
 .form {
@@ -51,14 +51,13 @@ body {
 .inputForm {
   width: 100%;
   padding: 10px 15px;
-  border: 1px solid #eee;
+  border: 2px solid rgba(62, 161, 219, 1);
   border-radius: 5px 0 0 5px;
   outline: none;
 }
 
 .btnCreate {
-  width: 100px;
-  padding: 11px 15px;
+  padding: 12px 15px;
   background-image: linear-gradient(
     109.6deg,
     rgba(62, 161, 219, 1) 11.2%,
@@ -80,21 +79,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow-y: scroll;
-  max-height: 60vh;
-  height: 60vh;
+  min-height: 60vh;
+  gap: 5px;
 }
 
 .card {
-  width: 90%;
+  width: 96%;
   padding: 15px;
-  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  /* box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16); */
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  margin: 5px 0px;
-  position: relative;
+  align-items: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 
 .task {

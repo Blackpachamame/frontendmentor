@@ -1,4 +1,4 @@
-<h1 align="center">Proyecto 3</h1>
+<h1 align="center">Serendipity</h1>
 
 <div align="center">
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.

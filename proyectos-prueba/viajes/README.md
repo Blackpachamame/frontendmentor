@@ -1,4 +1,4 @@
-# $\Huge\color{#009688}{\texttt{Proyecto 1}}$ ✈️
+# $\Huge\color{#009688}{\texttt{Viajes}}$ ✈️
 
 Página de viajes.
 
