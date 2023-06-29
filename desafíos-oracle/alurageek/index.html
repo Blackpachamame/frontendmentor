@@ -12,17 +12,24 @@
 <body>
 
     <header class="header">
-        <nav class="heaver__nav">
-            <img src="./assets/images/logo.svg" alt="logo-alurageek">
-            <div class="header__nav-search">
-                <input class="header__search" type="text" placeholder="¿Qué deseas buscar?"><i class="lupa"></i>
+        <nav class="header__nav">
+            <div class="header__nav-container">
+                <div class="header__logo-container">
+                    <img src="./assets/images/logo.svg" alt="logo-alurageek">
+                    <div class="header__nav-search">
+                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?">
+                        <img src="./assets/images/icon-search.svg" alt="icon-search">
+                    </div>
+                </div>
+                <button class="header__btn-login">Login</button>
             </div>
-            <button class="header__login">Login</button>
         </nav>
         <div class="header__banner">
-            <h1 class="header__title">Febrero Promocional</h1>
-            <p class="header__text">Productos selecionados con 33% de descuento</p>
-            <button class="header__ver-consolas">Ver Consolas</button>
+            <div class="header__title-container">
+                <h1 class="header__title">Febrero Promocional</h1>
+                <p class="header__text">Productos selecionados con 33% de descuento</p>
+                <button class="header__btn-ver-consolas">Ver Consolas</button>
+            </div>
         </div>
     </header>
 
@@ -86,7 +93,7 @@
                     <input class="info__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
                     <textarea class="info__textarea" name="mensaje" id="mensaje"
                         placeholder="Escribe tu mensaje"></textarea>
-                    <button class="info__submit" type="submit">Enviar mensaje</button>
+                    <button class="info__btn-submit" type="submit">Enviar mensaje</button>
                 </form>
             </div>
         </section>
