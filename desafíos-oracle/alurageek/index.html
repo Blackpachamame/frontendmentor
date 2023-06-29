@@ -3,12 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alurageek</title>
+    <title>AluraGeek</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <nav class="heaver__nav">
+            <img src="./assets/images/logo.svg" alt="logo-alurageek">
+            <div class="header__nav-search">
+                <input class="header__search" type="text" placeholder="¿Qué deseas buscar?"><i class="lupa"></i>
+            </div>
+            <button class="header__login">Login</button>
+        </nav>
+        <div class="header__banner">
+            <h1 class="header__title">Febrero Promocional</h1>
+            <p class="header__text">Productos selecionados con 33% de descuento</p>
+            <button class="header__ver-consolas">Ver Consolas</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="starwars">
+            <div class="starwars__container-title">
+                <h2 class="starwars__title">Star Wars</h2>
+                <a href="" class="starwars__ver-mas">Ver todo <i class="icon-flecha"></i></a>
+            </div>
+            <div class="starwars__card">
+                <img src="" alt="" class="starwars__card-img">
+                <h4 class="starwars__name-producto">Producto XYZ</h4>
+                <h3 class="starwars__price">$ 60,00</h3>
+                <a href="" class="starwars__ver-producto">Ver producto</a>
+            </div>
+        </section>
+
+        <section class="consolas">
+            <div class="consolas__container-title">
+                <h2 class="consolas__title">Consolas</h2>
+                <a href="" class="consolas__ver-mas">Ver todo <i class="icon-flecha"></i></a>
+            </div>
+            <div class="consolas__card">
+                <img src="" alt="" class="consolas__card-img">
+                <h4 class="consolas__name-producto">Control XYZ</h4>
+                <h3 class="consolas__price">$ 60,00</h3>
+                <a href="" class="consolas__ver-producto">Ver producto</a>
+            </div>
+        </section>
+
+        <section class="diversos">
+            <div class="diversos__container-title">
+                <h2 class="diversos__title">Diversos</h2>
+                <a href="" class="diversos__ver-mas">Ver todo <i class="icon-flecha"></i></a>
+            </div>
+            <div class="diversos__card">
+                <img src="" alt="" class="diversos__card-img">
+                <h4 class="diversos__name-producto">Camisa Atari</h4>
+                <h3 class="diversos__price">$ 60,00</h3>
+                <a href="" class="diversos__ver-producto">Ver producto</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="info">
+            <img src="./assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
+            <div class="info__links">
+                <ul class="info__list">
+                    <li class="info__list-item">Quienes somos</li>
+                    <li class="info__list-item">Política de privacidad</li>
+                    <li class="info__list-item">Programa de fidelidad</li>
+                    <li class="info__list-item">Nuestras Tiendas</li>
+                    <li class="info__list-item">Quiero ser franquiciado</li>
+                    <li class="info__list-item">Anúncie aquí</li>
+                </ul>
+            </div>
+            <div class="info__contacto">
+                <h3 class="info__text">Hable con nosotros</h3>
+                <form action="" class="info__form">
+                    <input class="info__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <textarea class="info__textarea" name="mensaje" id="mensaje"
+                        placeholder="Escribe tu mensaje"></textarea>
+                    <button class="info__submit" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+        <section class="creditos">
+            <p class="creditos__text">Desarrollado por Fulana de Tal</p>
+            <p class="creditos__text">2023</p>
+        </section>
+    </footer>
 
 </body>
 
