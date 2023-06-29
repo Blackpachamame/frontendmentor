@@ -36,7 +36,7 @@ En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que 
 -   Debe tener una sección de formación y cursos.  
     Aquí puedes poner las formaciones y cursos que has realizado, aunque no esté en el área de programación.
 -   Debe tener experiencia en la sección de programación.  
-    Aquí puedes poner los proyectos que ya has realizado anteriormente, como por ejemplo: los proyectos del retador principiante en programación.
+    Aquí puedes poner los proyectos que ya has realizado anteriormente, como, por ejemplo: los proyectos del retador principiante en programación.
 -   Debe tener un formulario de contacto con los siguientes campos:
     
      1) Correo electrónico
