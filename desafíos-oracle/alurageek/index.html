@@ -76,25 +76,34 @@
 
     <footer class="footer">
         <section class="info">
-            <img src="./assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
-            <div class="info__links">
+            <div class="info__container">
+                <img src="./assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
                 <ul class="info__list">
-                    <li class="info__list-item">Quienes somos</li>
-                    <li class="info__list-item">Política de privacidad</li>
-                    <li class="info__list-item">Programa de fidelidad</li>
-                    <li class="info__list-item">Nuestras Tiendas</li>
-                    <li class="info__list-item">Quiero ser franquiciado</li>
-                    <li class="info__list-item">Anúncie aquí</li>
+                    <li class="info__list-item"><a href="#">Quienes somos</a></li>
+                    <li class="info__list-item"><a href="#">Política de privacidad</a></li>
+                    <li class="info__list-item"><a href="#">Programa de fidelidad</a></li>
+                    <li class="info__list-item"><a href="#">Nuestras Tiendas</a></li>
+                    <li class="info__list-item"><a href="#">Quiero ser franquiciado</a></li>
+                    <li class="info__list-item"><a href="#">Anúncie aquí</a></li>
                 </ul>
-            </div>
-            <div class="info__contacto">
-                <h3 class="info__text">Hable con nosotros</h3>
-                <form action="" class="info__form">
-                    <input class="info__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <textarea class="info__textarea" name="mensaje" id="mensaje"
-                        placeholder="Escribe tu mensaje"></textarea>
+                <div class="info__contacto">
+                    <h3 class="info__text">Hable con nosotros</h3>
+                    <div class="info__input-container">
+                        <div class="info__input-wrapper">
+                            <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
+                                required>
+                            <label class="info__label" for="nombre">Nombre</label>
+                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                        </div>
+                        <div class="info__input-wrapper">
+                            <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
+                                required></textarea>
+                            <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
+                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                        </div>
+                    </div>
                     <button class="info__btn-submit" type="submit">Enviar mensaje</button>
-                </form>
+                </div>
             </div>
         </section>
         <section class="creditos">
