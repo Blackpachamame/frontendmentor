@@ -61,6 +61,10 @@ h2 {
 h3 {
   font-weight: 700;
 }
+h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
 
 a {
   color: var(--color-blue);
@@ -188,8 +192,8 @@ a:hover {
 
 /* MAIN */
 .main {
+  width: 100%;
   display: flex;
-  width: 90rem;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
@@ -197,6 +201,8 @@ a:hover {
 
 /* Starwars */
 .starwars {
+  width: 100%;
+  max-width: 71rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -204,7 +210,7 @@ a:hover {
 }
 
 .starwars__container-title {
-  width: 71rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -213,13 +219,22 @@ a:hover {
 a[class$="ver-mas"] {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .starwars__container-card {
-  width: 71rem;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 176px));
+  justify-content: space-between;
   gap: 1rem;
+}
+
+.starwars__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 /* FOOTER */
