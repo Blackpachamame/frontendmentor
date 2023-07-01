@@ -54,6 +54,10 @@ button {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 h3 {
   font-weight: 700;
 }
@@ -180,6 +184,42 @@ a:hover {
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
   padding: 1rem;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  width: 90rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Starwars */
+.starwars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.starwars__container-title {
+  width: 71rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a[class$="ver-mas"] {
+  display: flex;
+  align-items: center;
+}
+
+.starwars__container-card {
+  width: 71rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+  gap: 1rem;
 }
 
 /* FOOTER */
