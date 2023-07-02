@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
 }
 
 img,
@@ -96,10 +95,11 @@ a:hover {
 }
 
 .header__nav-container {
+  width: 100%;
+  max-width: 71rem;
+  padding: 2rem 0rem;
   background-color: var(--color-white);
   display: flex;
-  width: 71rem;
-  padding: 2rem 0rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -164,8 +164,9 @@ a:hover {
 
 .header__title-container {
   color: var(--color-white);
+  width: 100%;
+  padding-left: 7.4375rem;
   display: flex;
-  width: 71rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -191,16 +192,24 @@ a:hover {
 }
 
 /* MAIN */
+a[class$="ver-mas"] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .main {
   width: 100%;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
 }
 
-/* Starwars */
-.starwars {
+.starwars,
+.consolas,
+.diversos {
   width: 100%;
   max-width: 71rem;
   display: flex;
@@ -209,32 +218,38 @@ a:hover {
   gap: 1rem;
 }
 
-.starwars__container-title {
+.starwars__container-title,
+.consolas__container-title,
+.diversos__container-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-a[class$="ver-mas"] {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.starwars__container-card {
+.starwars__container-card,
+.consolas__container-card,
+.diversos__container-card {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 176px));
+  grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
   justify-content: space-between;
   gap: 1rem;
 }
 
-.starwars__card {
+.starwars__card,
+.consolas__card,
+.diversos__card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+}
+
+img[class$="card-img"] {
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
 }
 
 /* FOOTER */
@@ -257,7 +272,8 @@ a[class$="ver-mas"] {
 
 .info__container {
   display: flex;
-  width: 71rem;
+  width: 100%;
+  max-width: 71rem;
   align-items: flex-start;
   gap: 7rem;
 }
@@ -283,11 +299,10 @@ a[class$="ver-mas"] {
 
 .info__contacto {
   display: flex;
-  width: 35rem;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  flex-shrink: 0;
 }
 
 .info__input-container {
@@ -395,4 +410,19 @@ a[class$="ver-mas"] {
   justify-content: center;
   align-items: center;
   align-self: stretch;
+}
+
+@media (max-width: 1439px) {
+  .starwars__card:nth-last-child(-n + 2),
+  .consolas__card:nth-last-child(-n + 2),
+  .diversos__card:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* MAIN */
+  .main {
+    padding: 2rem;
+  }
 }
