@@ -150,7 +150,11 @@ a:hover {
   border: 1px solid var(--color-blue-hover);
 }
 
-.header__nav-search-mobile {
+.header__btn-search {
+  padding: 0;
+}
+
+.header__btn-search-mobile {
   display: none;
 }
 
@@ -521,7 +525,7 @@ img[class$="card-img"] {
   .header__nav-search {
     display: none;
   }
-  .header__nav-search-mobile {
+  .header__btn-search-mobile {
     padding: 0;
     display: block;
   }
