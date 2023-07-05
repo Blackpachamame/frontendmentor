@@ -138,18 +138,25 @@ a:hover {
   color: var(--color-text-label);
 }
 
-.header__btn-login {
+.header__login,
+.header__ver-consolas,
+.productos__agregar-producto {
+  font-weight: 400;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__login {
   width: 11.375rem;
   color: var(--color-blue);
   background-color: transparent;
   border: 1px solid var(--color-blue);
   transition: all 0.5s ease;
 }
-.header__btn-login {
-  width: 11.375rem;
-}
 
-.header__btn-login:hover {
+.header__login:hover {
   color: var(--color-white);
   background-color: var(--color-blue-hover);
   border: 1px solid var(--color-blue-hover);
@@ -206,20 +213,21 @@ a:hover {
   font-weight: 700;
 }
 
-.header__btn-ver-consolas,
+.header__ver-consolas,
 .info__btn-contacto,
 .login__btn-submit,
-.productos__btn-agregar-producto {
+.productos__agregar-producto {
   color: var(--color-white);
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
   transition: all 0.5s ease;
 }
 
-.header__btn-ver-consolas:hover,
+.header__ver-consolas:hover,
 .info__btn-contacto:hover,
 .login__btn-submit:hover,
-.productos__btn-agregar-producto:hover {
+.productos__agregar-producto:hover {
+  color: var(--color-white);
   background-color: var(--color-blue-hover);
   border: 1px solid var(--color-blue-hover);
 }
@@ -548,7 +556,10 @@ img[class$="card-img"] {
     font-size: 1.375rem;
   }
 
-  button {
+  button,
+  .header__login,
+  .header__ver-consolas,
+  .productos__agregar-producto {
     font-size: 0.875rem;
     font-weight: 600;
     padding: 0.75rem 1rem;
@@ -566,7 +577,7 @@ img[class$="card-img"] {
     width: initial;
   }
 
-  .header__btn-login {
+  .header__login {
     width: 10.375rem;
   }
 
@@ -610,7 +621,7 @@ img[class$="card-img"] {
     display: block;
   }
 
-  .header__btn-login {
+  .header__login {
     width: 8.3125rem;
   }
 
