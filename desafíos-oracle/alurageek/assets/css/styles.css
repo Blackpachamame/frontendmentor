@@ -587,9 +587,11 @@ img[class$="card-img"] {
 
   .header__nav,
   .main,
-  .login,
   .info {
     padding: 1rem;
+  }
+  .login {
+    padding: 3rem 1rem;
   }
 
   .header__nav-search {
