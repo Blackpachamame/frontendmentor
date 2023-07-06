@@ -155,12 +155,15 @@ a:hover {
   display: none;
 }
 
-.header__login {
-  width: 11.375rem;
+.header__login,
+.header__btn-menu {
   color: var(--color-blue);
   background-color: transparent;
   border: 1px solid var(--color-blue);
   transition: all 0.5s ease;
+}
+.header__login {
+  width: 11.375rem;
 }
 
 .header__login:hover {
@@ -548,9 +551,9 @@ img[class$="card-img"] {
   gap: 1rem;
 }
 
-.login__text {
+/* .login__text {
   font-size: 1.125rem;
-}
+} */
 
 .login__btn-submit {
   width: 100%;
@@ -614,6 +617,39 @@ img[class$="card-img"] {
   display: none;
 }
 
+/* AGREGAR PRODUCTO */
+.header__dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.header__dropdown-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  overflow: auto;
+  background-color: var(--color-white);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header__dropdown:hover .header__dropdown-options {
+  display: block;
+}
+
+.header__dropdown-options a {
+  display: block;
+  color: var(--color-blue);
+  padding: 5px;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
+.header__dropdown-options a:hover {
+  color: var(--color-blue-hover);
+  background-color: var(--color-background-hover);
+}
+
 @media (max-width: 1439px) {
   .starwars__card:nth-last-child(-n + 2):not(
       .productos__container-card .starwars__card
@@ -649,7 +685,8 @@ img[class$="card-img"] {
   button,
   .header__login,
   .header__ver-consolas,
-  .productos__agregar-producto {
+  .productos__agregar-producto,
+  .header__btn-menu {
     font-size: 0.875rem;
     font-weight: 600;
     padding: 0.75rem 1rem;
@@ -676,9 +713,11 @@ img[class$="card-img"] {
   }
 
   .main,
-  .login,
   .info {
     padding: 2rem;
+  }
+  .login {
+    padding: 3rem 2rem;
   }
 
   .info__container-list {
