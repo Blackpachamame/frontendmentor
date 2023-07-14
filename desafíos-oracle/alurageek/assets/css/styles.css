@@ -651,9 +651,7 @@ img[class$="card-img"] {
 }
 
 @media (max-width: 1439px) {
-  .starwars__card:nth-last-child(-n + 2):not(
-      .productos__container-card .starwars__card
-    ),
+  .starwars__container-card .starwars__card:nth-last-child(-n + 3),
   .consolas__card:nth-last-child(-n + 2):not(
       .productos__container-card .consolas__card
     ),
