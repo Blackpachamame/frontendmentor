@@ -2,7 +2,7 @@ import { productServices } from "../service/producto-service.js";
 
 // console.log(productServices);
 
-const crearProducto = (imageUrl, name, price) => {
+const crearProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
         <figure class="starwars__figure">
@@ -10,7 +10,7 @@ const crearProducto = (imageUrl, name, price) => {
         </figure>
         <h4 class="starwars__name-producto">${name}</h4>
         <h3 class="starwars__price">${price}</h3>
-        <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
+        <a href="verProducto.html?id=${id}" class="starwars__ver-producto" data-verProducto>Ver producto</a>
   `;
     box.innerHTML = contenido;
     box.classList.add('starwars__card');
@@ -23,7 +23,7 @@ productServices
     .listaProductos()
     .then((data) => {
         data.forEach((productos) => {
-            const nuevoProducto = crearProducto(productos.imageUrl, productos.name, productos.price);
+            const nuevoProducto = crearProducto(productos.imageUrl, productos.name, productos.price, productos.id);
             card.appendChild(nuevoProducto);
         });
     })
