@@ -1,19 +1,17 @@
 import { productServices } from "../service/producto-service.js";
 
-// console.log(productServices);
-
 const crearProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
-        <figure class="starwars__figure">
-            <img src="${imageUrl}" alt="producto xyz" class="starwars__card-img">
+        <figure class="producto__figure">
+            <img src="${imageUrl}" alt="producto xyz" class="producto__card-img">
         </figure>
-        <h4 class="starwars__name-producto">${name}</h4>
-        <h3 class="starwars__price">${price}</h3>
-        <a href="verProducto.html?id=${id}" class="starwars__ver-producto" data-verProducto>Ver producto</a>
+        <h4 class="producto__name">${name}</h4>
+        <h3 class="producto__price">${price}</h3>
+        <a href="verProducto.html?id=${id}" class="producto__ver" data-verProducto>Ver producto</a>
   `;
     box.innerHTML = contenido;
-    box.classList.add('starwars__card');
+    box.classList.add('producto__card');
     return box;
 };
 

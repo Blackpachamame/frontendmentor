@@ -296,9 +296,7 @@ a[class$="ver-mas"]:hover::before {
   gap: 1rem;
 }
 
-.starwars__container-title,
-.consolas__container-title,
-.diversos__container-title,
+.producto__container-title,
 .productos__container-title {
   width: 100%;
   display: flex;
@@ -306,9 +304,7 @@ a[class$="ver-mas"]:hover::before {
   align-items: center;
 }
 
-.starwars__container-card,
-.consolas__container-card,
-.diversos__container-card,
+.producto__container-card,
 .productos__container-card {
   width: 100%;
   display: grid;
@@ -321,18 +317,14 @@ a[class$="ver-mas"]:hover::before {
   row-gap: 4rem;
 }
 
-.starwars__card,
-.consolas__card,
-.diversos__card {
+.producto__card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
 
-.starwars__figure,
-.consolas__figure,
-.diversos__figure {
+.producto__figure {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -348,9 +340,7 @@ img[class$="card-img"] {
   transition: 0.3s ease-in-out;
 }
 
-.starwars__card .starwars__figure:hover img[class$="card-img"],
-.consolas__card .consolas__figure:hover img[class$="card-img"],
-.diversos__card .diversos__figure:hover img[class$="card-img"] {
+.producto__card .producto__figure:hover img[class$="card-img"] {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -651,14 +641,8 @@ img[class$="card-img"] {
 }
 
 @media (max-width: 1439px) {
-  .starwars__card:nth-last-child(-n + 2):not(
-      .productos__container-card .starwars__card
-    ),
-  .consolas__card:nth-last-child(-n + 2):not(
-      .productos__container-card .consolas__card
-    ),
-  .diversos__card:nth-last-child(-n + 2):not(
-      .productos__container-card .diversos__card
+  .producto__card:nth-last-child(-n + 2):not(
+      .productos__container-card .producto__card
     ) {
     display: none;
   }
