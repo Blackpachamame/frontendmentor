@@ -7,21 +7,15 @@
       "id": "e330000b-cadd-4a35-911f-c08d8eb4520d"
     },
     {
-      "name": "cq",
-      "email": "cc@c.C",
-      "password": "c",
-      "id": "beb63de4-60e3-49a9-8c0d-fcb20430cb50"
-    },
-    {
-      "name": "1",
-      "email": "cesar@gmail.com",
-      "password": "123",
+      "name": "marcos",
+      "email": "marcos@gmail.com",
+      "password": "1234",
       "id": "d336f49d-c9f2-49ff-91fe-804b38fe4694"
     },
     {
-      "name": "tati",
-      "email": "tatiana27ocean@gmail.com",
-      "password": "1234",
+      "name": "pepe",
+      "email": "elsapopepe@gmail.com",
+      "password": "sapo",
       "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
     }
   ],
@@ -42,22 +36,46 @@
   "productos": [
     {
       "imageUrl": "./assets/images/starwars/sw1.webp",
-      "name": "master Yoda",
+      "name": "Tasa Trooper",
       "price": "$50.00",
       "categoria": "StarWars",
-      "description": "Sticker",
+      "description": "Tasa con forma de casco Trooper",
       "id": "e0ea324b-356a-4423-a619-09338941354b"
     },
     {
-      "imageUrl": "https://i.pinimg.com/564x/60/89/f3/6089f31a8780b19e3ffb12cbe369b7da.jpg",
-      "name": "ART, Mini Darkvader ",
+      "imageUrl": "./assets/images/starwars/sw2.webp",
+      "name": "El imperio LEGO",
       "price": "$100.00",
       "categoria": "StarWars",
       "description": "Darth Vader (Tatooine, 41 ABY - Estrella de la Muerte, 4 DBY), también conocido por su nombre de nacimiento Anakin Skywalker, es un personaje de ficción en la franquicia de Star Wars. Vader aparece en la trilogía original como un antagonista cuyas acciones dirigen la trama, mientras que su pasado como Anakin Skywalker y la historia de su corrupción por Darth Sidious y su paso al Lado Oscuro son centrales en la narrativa de la trilogía de la precuela.  El personaje fue creado por George Lucas y ha sido retratado por numerosos actores. Sus apariciones abarcan las primeras seis películas de Star Wars, así como Rogue One, y su personaje está fuertemente referenciado en Star Wars: Episodio VII - El despertar de la Fuerza. También es un personaje importante en el universo expandido de Star Wars de series de televisión, videojuegos, novelas, literatura y cómics. Darth Vader se ha convertido en uno de los villanos más emblemáticos de la cultura popular, y ha figurado entre los más grandes villanos y personajes ficticios de la historia.2​3​  Vader a pesar de ser de una maldad tan pura, aún conserva sus sentimientos a su fallecido esposa Padme Amidala, cómo después a su hijo Luke. También tiene una extraña y desconocida obsesión por el orden y en menor medida la justicia en la galaxia sea por intenciónes benévolas o lo contrario. Al principio de llevar portar su armadura biónica odiaba su personalidad de Darth Vader tanto como la armadura propia hasta el punto de dudar si había elegido un camino correcto, aunque después unos cinco años después de la fundación del Imperio Galáctico acepta la retorcida ideología del lado oscuro de La Fuerza hasta el punto de aceptar su armadura y purgar casi todo lo que quedaba de su luz interior.",
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
     },
     {
-      "imageUrl": "https://i.pinimg.com/736x/54/9f/a6/549fa61cfa4ee1d2abfb133dd2ad6c01.jpg",
+      "imageUrl": "./assets/images/starwars/sw4.webp",
+      "name": "Armadura Trooper",
+      "price": "$54.00",
+      "categoria": "StarWars",
+      "description": "Armadura Trooper",
+      "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
+    },
+    {
+      "imageUrl": "./assets/images/starwars/sw5.webp",
+      "name": "Baby Yoda",
+      "price": "$79.00",
+      "categoria": "StarWars",
+      "description": "Hermoso arte  donde se puede apreciar al mandaloriano, baby yoda y un  blurrg\n\nLos blurrg fueron una especie no inteligente, con dos patas y usada en tareas de carga por toda la galaxia. Los blurrgs fueron notablemente usados por la Resistencia Twi'lek y el Movimiento Ryloth Libre durante las Guerras Clon y la Era Imperial, y también fueron usados por el granjero de humedad Kuiil en Arvala-7. ",
+      "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
+    },
+    {
+      "imageUrl": "./assets/images/starwars/sw8.webp",
+      "name": "Muñecos del imperio",
+      "price": "$54.00",
+      "categoria": "StarWars",
+      "description": "Darth Vader y soldado trooper",
+      "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
+    },
+    {
+      "imageUrl": "./assets/images/consolas/sw7.webp",
       "name": "Ps4 Control Personalizado",
       "price": "$70.00",
       "categoria": "Consolas",
@@ -105,28 +123,12 @@
       "id": "4174188c-b724-4b27-9951-2e21de3b5506"
     },
     {
-      "imageUrl": "https://i.pinimg.com/564x/c2/40/3d/c2403d3185991993c6aa7532bd997ef6.jpg",
-      "name": "ART, The Mandalorian and Baby Yoda",
+      "imageUrl": "./assets/images/starwars/sw7.webp",
+      "name": "Troopers LEGO",
       "price": "$80.99",
       "categoria": "StarWars",
       "description": "hermoso arte  donde se puede apreciar al mandaloriano, baby yoda y un  blurrg\n\nLos blurrg fueron una especie no inteligente, con dos patas y usada en tareas de carga por toda la galaxia. Los blurrgs fueron notablemente usados por la Resistencia Twi'lek y el Movimiento Ryloth Libre durante las Guerras Clon y la Era Imperial, y también fueron usados por el granjero de humedad Kuiil en Arvala-7.",
       "id": "3eed7026-ee93-46ac-a9bf-745dd3747748"
-    },
-    {
-      "imageUrl": "https://i.pinimg.com/564x/28/e6/27/28e627ab177f2599c2aefcd66f1f61f4.jpg",
-      "name": "Baby Yoda",
-      "price": "$54.00",
-      "categoria": "StarWars",
-      "description": "Muñeco con armadura: \nbaby yoda, listo para la batalla.\n\n",
-      "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
-    },
-    {
-      "imageUrl": "https://i.pinimg.com/564x/20/4c/e3/204ce3ce96655860c7464a181dd96ba0.jpg",
-      "name": "Sticker  starbucks",
-      "price": "$5.00",
-      "categoria": "StarWars",
-      "description": "sticker ",
-      "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
     },
     {
       "imageUrl": "https://i.pinimg.com/564x/78/2d/85/782d8561488271658fc9bb2a0ccd04ea.jpg",
