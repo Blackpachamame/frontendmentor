@@ -75,7 +75,15 @@
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
     {
-      "imageUrl": "./assets/images/consolas/sw7.webp",
+      "imageUrl": "./assets/images/starwars/sw7.webp",
+      "name": "Troopers LEGO",
+      "price": "$80.99",
+      "categoria": "StarWars",
+      "description": "hermoso arte  donde se puede apreciar al mandaloriano, baby yoda y un  blurrg\n\nLos blurrg fueron una especie no inteligente, con dos patas y usada en tareas de carga por toda la galaxia. Los blurrgs fueron notablemente usados por la Resistencia Twi'lek y el Movimiento Ryloth Libre durante las Guerras Clon y la Era Imperial, y también fueron usados por el granjero de humedad Kuiil en Arvala-7.",
+      "id": "3eed7026-ee93-46ac-a9bf-745dd3747748"
+    },
+    {
+      "imageUrl": "https://i.pinimg.com/736x/54/9f/a6/549fa61cfa4ee1d2abfb133dd2ad6c01.jpg",
       "name": "Ps4 Control Personalizado",
       "price": "$70.00",
       "categoria": "Consolas",
@@ -121,14 +129,6 @@
       "categoria": "Consolas",
       "description": "Custom control",
       "id": "4174188c-b724-4b27-9951-2e21de3b5506"
-    },
-    {
-      "imageUrl": "./assets/images/starwars/sw7.webp",
-      "name": "Troopers LEGO",
-      "price": "$80.99",
-      "categoria": "StarWars",
-      "description": "hermoso arte  donde se puede apreciar al mandaloriano, baby yoda y un  blurrg\n\nLos blurrg fueron una especie no inteligente, con dos patas y usada en tareas de carga por toda la galaxia. Los blurrgs fueron notablemente usados por la Resistencia Twi'lek y el Movimiento Ryloth Libre durante las Guerras Clon y la Era Imperial, y también fueron usados por el granjero de humedad Kuiil en Arvala-7.",
-      "id": "3eed7026-ee93-46ac-a9bf-745dd3747748"
     },
     {
       "imageUrl": "https://i.pinimg.com/564x/78/2d/85/782d8561488271658fc9bb2a0ccd04ea.jpg",

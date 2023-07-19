@@ -48,7 +48,7 @@
     <main class="login">
         <div class="login__container">
             <h2 class="login__text">Agregar nuevo producto</h2>
-            <div class="login__input-container">
+            <form class="login__form" data-form>
                 <div class="login__input-wrapper">
                     <input class="login__input data" type="text" name="url" id="url" data-tipo="url" required>
                     <label class="login__label" for="url">URL de imagen</label>
@@ -76,8 +76,8 @@
                     <label class="info__label-textarea" for="descripcion">Descripción del producto</label>
                     <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
                 </div>
-            </div>
-            <button class="login__btn-submit" type="submit">Agregar producto</button>
+                <button class="login__btn-submit" type="submit">Agregar producto</button>
+            </form>
         </div>
     </main>
 
@@ -120,6 +120,8 @@
             <p class="creditos__text">2023</p>
         </section>
     </footer>
+
+    <script type="module" src="./controller/agregarProducto-controller.js"></script>
 </body>
 
 </html>
