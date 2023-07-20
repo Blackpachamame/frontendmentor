@@ -24,7 +24,14 @@ const crearProducto = (imageUrl, name, price, categoria, description) => {
         });
 };
 
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: "DELETE",
+    })
+};
+
 export const productServices = {
     listaProductos,
     crearProducto,
+    eliminarProducto,
 };

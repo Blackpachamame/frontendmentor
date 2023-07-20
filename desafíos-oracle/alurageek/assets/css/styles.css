@@ -566,6 +566,11 @@ img[class$="card-img"] {
   border-radius: 1rem;
 }
 
+button.productos__delete {
+  padding: 0;
+  background-color: transparent;
+}
+
 .delete:hover,
 .edit:hover {
   fill: var(--color-background-hover);

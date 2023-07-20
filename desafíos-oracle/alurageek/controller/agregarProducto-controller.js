@@ -10,10 +10,7 @@ form.addEventListener('submit', (evento) => {
     const categoria = document.getElementById("categoria").value;
 
     productServices.crearProducto(url, categoria, nombre, precio, descripcion).then(respuesta => {
-        alert('El PRODUCTO FUE CREADO CON EXITO')
-
-        window.location.href = '../agregar-producto.html'
-
+        window.location.href = './productos.html'
         console.log(respuesta)
     }).catch(err => {
         console.log(err)
