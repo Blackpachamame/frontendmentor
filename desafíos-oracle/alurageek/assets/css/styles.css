@@ -419,7 +419,8 @@ img[class$="card-img"] {
 
 .info__input,
 .login__input,
-.info__textarea {
+.info__textarea,
+.login__select {
   font-size: 1rem;
   height: 3.5rem;
   padding: 1.75rem 0.75rem 0.25rem;
@@ -429,6 +430,10 @@ img[class$="card-img"] {
   border: none;
   border-bottom: 2px solid var(--color-border-input);
   outline: none;
+}
+
+.login__select {
+  padding: 0 0.5rem;
 }
 
 .info__textarea {
@@ -449,7 +454,8 @@ img[class$="card-img"] {
 
 .info__input:is(:focus),
 .login__input:is(:focus),
-.info__textarea:is(:focus) {
+.info__textarea:is(:focus),
+.login__select:is(:focus) {
   border-bottom: 2px solid var(--color-blue);
 }
 
@@ -466,7 +472,8 @@ img[class$="card-img"] {
 /* Invalido */
 .input-container--invalid .info__input,
 .input-container--invalid .login__input,
-.input-container--invalid .info__textarea {
+.input-container--invalid .info__textarea,
+.input-container--invalid .login__select {
   border-bottom: 2px solid var(--color-warning);
 }
 
@@ -497,7 +504,8 @@ img[class$="card-img"] {
 /* Valido */
 .info__input:is(:valid),
 .login__input:is(:valid),
-.info__textarea:is(:valid) {
+.info__textarea:is(:valid),
+.login__select:is(:valid) {
   border-bottom: 2px solid var(--color-valid);
 }
 

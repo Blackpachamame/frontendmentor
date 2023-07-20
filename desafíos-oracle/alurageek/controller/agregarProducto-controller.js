@@ -1,3 +1,32 @@
+import { productServices } from "../service/producto-service.js";
+
+const form = document.querySelector('[data-form]');
+form.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+    const nombre = document.getElementById("name").value;
+    const url = document.getElementById("url").value;
+    const precio = document.getElementById("precio").value;
+    const descripcion = document.getElementById("descripcion").value;
+    const categoria = document.getElementById("categoria").value;
+    console.log(categoria)
+
+    // const [selectedCategory] = [].filter
+    //     .call(categoria.options, option => option.selected)
+    //     .map(option => option.text);
+
+    productServices.crearProducto(url, categoria, nombre, precio, descripcion).then(respuesta => {
+        alert('El PRODUCTO FUE CREADO CON EXITO')
+
+        window.location.href = '../agregar-producto.html'
+
+        console.log(respuesta)
+    }).catch(err => {
+        console.log(err)
+    });
+})
+
+
+// Validaciones
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
     if (input.validity.valid) {
