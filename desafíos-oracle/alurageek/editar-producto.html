@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-container">
+                <div class="header__logo-container">
+                    <img src="./assets/images/logo.svg" alt="logo-alurageek">
+                    <div class="header__nav-search">
+                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?">
+                        <button class="header__btn-search">
+                            <img src="./assets/images/icon-search.svg" alt="icon-search">
+                        </button>
+                    </div>
+                </div>
+                <!-- <a class="header__login" href="login.html">Menú Administrador</a> -->
+                <div class="header__dropdown">
+                    <button class="header__btn-menu">Menú</button>
+                    <div class="header__dropdown-options">
+                        <a href="productos.html">Productos</a>
+                        <a href="agregar-producto.html">Agregar</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+                <button class="header__btn-search-mobile">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Icone">
+                            <path id="Vector"
+                                d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z"
+                                fill="#464646" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login">
+        <div class="login__container">
+            <h2 class="login__text">Editar producto</h2>
+            <form class="login__form" data-form>
+                <div class="login__input-wrapper">
+                    <input class="login__input data" type="text" name="url" id="url" data-tipo="url" required>
+                    <label class="login__label" for="url">URL de imagen</label>
+                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                </div>
+                <!-- <div class="login__input-wrapper">
+                    <input class="login__input data" type="text" name="categoria" id="categoria" data-tipo="categoria"
+                        required>
+                    <label class="login__label" for="categoria">Categoría</label>
+                    <span class="login__input-message-error">Este campo no es válido</span>
+                </div> -->
+                <div class="login__input-wrapper">
+                    <select class="login__select" name="categoria" id="categoria" required>
+                        <option value="" disabled selected hidden>Seleccionar categoría</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                    <!-- <label class="login__label" for="categoria">Categoría</label> -->
+                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                </div>
+                <div class="login__input-wrapper">
+                    <input class="login__input data" type="text" name="name" id="name" data-tipo="name" required>
+                    <label class="login__label" for="name">Nombre del producto</label>
+                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                </div>
+                <div class="login__input-wrapper">
+                    <input class="login__input data" type="text" name="precio" id="precio" data-tipo="precio" required>
+                    <label class="login__label" for="precio">Precio del produtco</label>
+                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                </div>
+                <div class="info__input-wrapper">
+                    <textarea class="info__textarea data" name="descripcion" id="descripcion" data-tipo="descripcion"
+                        required></textarea>
+                    <label class="info__label-textarea" for="descripcion">Descripción del producto</label>
+                    <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                </div>
+                <button class="login__btn-submit" type="submit">Agregar producto</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section class="info">
+            <div class="info__container">
+                <div class="info__container-list">
+                    <img src="./assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
+                    <ul class="info__list">
+                        <li class="info__list-item"><a href="#">Quienes somos</a></li>
+                        <li class="info__list-item"><a href="#">Política de privacidad</a></li>
+                        <li class="info__list-item"><a href="#">Programa de fidelidad</a></li>
+                        <li class="info__list-item"><a href="#">Nuestras Tiendas</a></li>
+                        <li class="info__list-item"><a href="#">Quiero ser franquiciado</a></li>
+                        <li class="info__list-item"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+                <div class="info__contacto">
+                    <h3 class="info__text">Hable con nosotros</h3>
+                    <div class="info__input-container">
+                        <div class="info__input-wrapper">
+                            <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
+                                required>
+                            <label class="info__label" for="nombre">Nombre</label>
+                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                        </div>
+                        <div class="info__input-wrapper">
+                            <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
+                                required></textarea>
+                            <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
+                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                        </div>
+                    </div>
+                    <button class="info__btn-contacto" type="submit">Enviar mensaje</button>
+                </div>
+            </div>
+        </section>
+        <section class="creditos">
+            <h5 class="creditos__text">Desarrollado por Fulana de Tal</h5>
+            <p class="creditos__text">2023</p>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./controller/editarProducto-controller.js"></script>
+</body>
+
+</html>
