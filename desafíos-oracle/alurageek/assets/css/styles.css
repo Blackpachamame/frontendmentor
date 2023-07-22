@@ -226,6 +226,7 @@ a:hover {
 .header__ver-consolas,
 .info__btn-contacto,
 .login__btn-submit,
+.agregar__btn-submit,
 .productos__agregar-producto,
 .productos__agregar-producto-mobile {
   color: var(--color-white);
@@ -237,6 +238,7 @@ a:hover {
 .header__ver-consolas:hover,
 .info__btn-contacto:hover,
 .login__btn-submit:hover,
+.agregar__btn-submit:hover,
 .productos__agregar-producto:hover,
 .productos__agregar-producto-mobile:hover {
   color: var(--color-white);
