@@ -401,26 +401,33 @@ img[class$="card-img"] {
 }
 
 .info__input-container,
-.login__form {
+.login__input-container,
+.agregar__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.4rem;
+}
+.info__input-container,
+.login__input-container {
   align-self: stretch;
+  gap: 1rem;
 }
 
 .info__input-wrapper,
-.login__input-wrapper {
+.login__input-wrapper,
+.agregar__input-wrapper {
   --padding: 0.75rem;
   position: relative;
   width: 100%;
-  display: flex;
 }
 
 .info__input,
-.login__input,
 .info__textarea,
-.login__select {
+.login__input,
+.agregar__input,
+.agregar__textarea,
+.agregar__select {
   font-size: 1rem;
   height: 3.5rem;
   padding: 1.75rem 0.75rem 0.25rem;
@@ -432,19 +439,22 @@ img[class$="card-img"] {
   outline: none;
 }
 
-.login__select {
+.agregar__select {
   padding: 0 0.5rem;
 }
 
-.info__textarea {
+.info__textarea,
+.agregar__textarea {
   height: 5.125rem;
   resize: none;
   overflow: hidden;
 }
 
 .info__label,
+.info__label-textarea,
 .login__label,
-.info__label-textarea {
+.agregar__label,
+.agregar__label-textarea {
   position: absolute;
   color: var(--color-text-label);
   top: 1.1rem;
@@ -453,15 +463,19 @@ img[class$="card-img"] {
 }
 
 .info__input:is(:focus),
-.login__input:is(:focus),
 .info__textarea:is(:focus),
-.login__select:is(:focus) {
+.login__input:is(:focus),
+.agregar__input:is(:focus),
+.agregar__textarea:is(:focus),
+.agregar__select:is(:focus) {
   border-bottom: 2px solid var(--color-blue);
 }
 
 .info__input:is(:focus, :valid) + .info__label,
+.info__textarea:is(:focus, :valid) + .info__label-textarea,
 .login__input:is(:focus, :valid) + .login__label,
-.info__textarea:is(:focus, :valid) + .info__label-textarea {
+.agregar__input:is(:focus, :valid) + .agregar__label,
+.agregar__textarea:is(:focus, :valid) + .agregar__label-textarea {
   transform: translateY(calc(-1 * var(--padding) + 5px));
   font-size: 0.75rem;
   color: var(--color-blue);
@@ -471,47 +485,58 @@ img[class$="card-img"] {
 
 /* Invalido */
 .input-container--invalid .info__input,
-.input-container--invalid .login__input,
 .input-container--invalid .info__textarea,
-.input-container--invalid .login__select {
+.input-container--invalid .login__input,
+.input-container--invalid .agregar__input,
+.input-container--invalid .agregar__textarea,
+.input-container--invalid .agregar__select {
   border-bottom: 2px solid var(--color-warning);
 }
 
 .input-container--invalid > .info__input:is(:invalid) + .info__label,
-.input-container--invalid > .login__input:is(:invalid) + .login__label,
 .input-container--invalid
   > .info__textarea:is(:invalid)
-  + .info__label-textarea {
+  + .info__label-textarea,
+.input-container--invalid > .login__input:is(:invalid) + .login__label,
+.input-container--invalid > .agregar__input:is(:invalid) + .agregar__label,
+.input-container--invalid
+  > .agregar__textarea:is(:invalid)
+  + .agregar__label-textarea {
   transform: translateY(calc(-1 * var(--padding) + 5px));
   font-size: 0.75rem;
   color: var(--color-warning);
 }
 
 .info__input-message-error,
-.login__input-message-error {
+.login__input-message-error,
+.agregar__input-message-error {
   font-size: 0.75rem;
   visibility: hidden;
-  margin-top: 1rem;
   padding-left: 0.75rem;
 }
 
 .input-container--invalid .info__input-message-error,
-.input-container--invalid .login__input-message-error {
+.input-container--invalid .login__input-message-error,
+.input-container--invalid .agregar__input-message-error {
   color: var(--color-warning);
   visibility: visible;
 }
 
 /* Valido */
 .info__input:is(:valid),
-.login__input:is(:valid),
 .info__textarea:is(:valid),
-.login__select:is(:valid) {
+.login__input:is(:valid),
+.agregar__input:is(:valid),
+.agregar__textarea:is(:valid),
+.agregar__select:is(:valid) {
   border-bottom: 2px solid var(--color-valid);
 }
 
 .info__input:is(:valid) + .info__label,
+.info__textarea:is(:valid) + .info__label-textarea,
 .login__input:is(:valid) + .login__label,
-.info__textarea:is(:valid) + .info__label-textarea {
+.agregar__input:is(:valid) + .agregar__label,
+.agregar__textarea:is(:valid) + .agregar__label-textarea {
   color: var(--color-valid);
 }
 
@@ -527,15 +552,17 @@ img[class$="card-img"] {
   align-self: stretch;
 }
 
-/* LOGIN */
-.login {
+/* LOGIN - AGREGAR */
+.login,
+.agregar {
   width: 100%;
   padding: 5.75rem;
   display: flex;
   justify-content: center;
 }
 
-.login__container {
+.login__container,
+.agregar__container {
   width: 26.4375rem;
   display: flex;
   flex-direction: column;
@@ -543,11 +570,8 @@ img[class$="card-img"] {
   gap: 1rem;
 }
 
-/* .login__text {
-  font-size: 1.125rem;
-} */
-
-.login__btn-submit {
+.login__btn-submit,
+.agregar__btn-submit {
   width: 100%;
   height: 3.5rem;
 }
@@ -648,11 +672,6 @@ button.productos__delete {
 }
 
 @media (max-width: 1439px) {
-  /* .productos__card:nth-last-child(-n + 2):not(
-      .productos__container-card .productos__card
-    ) {
-    display: none;
-  } */
   .starwars .productos__card:nth-last-child(-n + 2),
   .consolas .productos__card:nth-last-child(-n + 2),
   .diversos .productos__card:nth-last-child(-n + 2) {
