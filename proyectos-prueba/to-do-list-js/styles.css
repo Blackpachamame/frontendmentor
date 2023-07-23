@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Parisienne&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
+:root {
+  --color-sky-blue: rgb(62, 161, 219);
+  --color-violet: rgb(93, 52, 236);
+  --color-completada: 170, 197, 143;
+  --color-delete: rgb(177, 21, 21);
+  --color-white: rgb(255, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +26,8 @@ body {
   width: 100%;
   background-image: linear-gradient(
     109.6deg,
-    rgba(62, 161, 219, 1) 11.2%,
-    rgba(93, 52, 236, 1) 100.2%
+    var(--color-sky-blue) 11.2%,
+    var(--color-violet) 100.2%
   );
   display: grid;
   grid-template-columns: minmax(300px, 400px);
@@ -29,7 +37,7 @@ body {
 
 .mainCard {
   padding: 25px 25px 35px;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 25px;
 }
 
@@ -45,13 +53,13 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .inputForm {
   width: 100%;
   padding: 10px 15px;
-  border: 2px solid rgba(62, 161, 219, 1);
+  border: 2px solid var(--color-sky-blue);
   border-radius: 5px 0 0 5px;
   outline: none;
 }
@@ -60,15 +68,15 @@ body {
   padding: 12px 15px;
   background-image: linear-gradient(
     109.6deg,
-    rgba(62, 161, 219, 1) 11.2%,
-    rgba(93, 52, 236, 1) 100.2%
+    var(--color-sky-blue) 11.2%,
+    var(--color-violet) 100.2%
   );
   border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6px;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
@@ -80,20 +88,20 @@ body {
   align-items: center;
   justify-content: flex-start;
   min-height: 60vh;
-  gap: 5px;
+  gap: 10px;
 }
 
 .card {
-  width: 96%;
   padding: 15px;
-  /* box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16); */
   display: flex;
   justify-content: space-between;
+  align-self: stretch;
   align-items: center;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+  -webkit-box-shadow: 0px 0px 10px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 10px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 5px;
+  border-bottom: 2px solid var(--color-sky-blue);
 }
 
 .task {
@@ -105,20 +113,20 @@ body {
 }
 
 .icon:hover {
-  color: rgba(62, 161, 219, 1);
+  color: var(--color-sky-blue);
 }
 
 .completeIcon {
-  color: rgba(62, 161, 219, 1);
+  color: var(--color-sky-blue);
 }
 
 .trashIcon:hover {
-  color: #f00;
+  color: var(--color-delete);
 }
 
 .deleteConfirmationPop {
   position: relative;
-  background-color: rgba(255, 255, 255);
+  background-color: var(--color-white);
   z-index: 99;
   width: 100%;
   top: -100px;
@@ -131,4 +139,9 @@ body {
 
 .noTasks {
   font-size: 48px;
+}
+
+.completada {
+  background-color: rgba(var(--color-completada), 0.4);
+  border-bottom-color: rgb(var(--color-completada));
 }
