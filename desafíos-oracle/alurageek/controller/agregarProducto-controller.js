@@ -19,6 +19,14 @@ form.addEventListener('submit', (evento) => {
 
 
 // Validaciones
+const inputs = document.querySelectorAll(".data");
+
+inputs.forEach((input) => {
+    input.addEventListener("blur", (input) => {
+        valida(input.target);
+    });
+});
+
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
     if (input.validity.valid) {
