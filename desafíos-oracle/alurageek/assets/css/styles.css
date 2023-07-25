@@ -592,6 +592,10 @@ img[class$="card-img"] {
   border-radius: 1rem;
 }
 
+:is(.starwars, .consolas, .diversos) .productos__icons-container {
+  display: none;
+}
+
 button.productos__delete {
   padding: 0;
   background-color: transparent;
