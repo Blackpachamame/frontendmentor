@@ -36,7 +36,7 @@ const crearProducto = (imageUrl, name, price, id) => {
         </figure>
         <h4 class="productos__name">${name}</h4>
         <h3 class="productos__price">${price}</h3>
-        <a href="verProducto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
+        <a href="ver-producto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
   `;
     box.innerHTML = contenido;
     box.classList.add('productos__card');
@@ -53,17 +53,42 @@ const crearProducto = (imageUrl, name, price, id) => {
     return box;
 };
 
-const product = document.querySelector("[data-products]");
+const productAdmin = document.querySelector("[data-products]");
 const productStarwar = document.querySelector('[data-starwars]');
 const productConsola = document.querySelector('[data-consolas]');
 const productDiverso = document.querySelector('[data-diversos]');
 
-productServices
-    .listaProductos()
-    .then((data) => {
-        data.forEach(({ imageUrl, name, price, id }) => {
-            const nuevoProducto = crearProducto(imageUrl, name, price, id);
-            product.appendChild(nuevoProducto);
-        });
-    })
-    .catch((error) => alert("Ocurrió un error"));
+const render = async () => {
+    try {
+        const allProducts = await productServices.listaProductos();
+
+        if (productAdmin) {
+            productAdmin.innerHTML = '';
+            allProducts.forEach(elemento => {
+                productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+            });
+        }
+        if (productStarwar) {
+            productStarwar.innerHTML = '';
+            allProducts.filter(product => product.categoria === 'StarWars').forEach(elemento => {
+                productStarwar.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+            });
+        }
+        if (productConsola) {
+            productConsola.innerHTML = '';
+            allProducts.filter(product => product.categoria === 'Consolas').forEach(elemento => {
+                productConsola.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+            });
+        }
+        if (productDiverso) {
+            productDiverso.innerHTML = '';
+            allProducts.filter(product => product.categoria === 'Diversos').forEach(elemento => {
+                productDiverso.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+            });
+        }
+    } catch (err) {
+        console.error("Ocurrió un error", err);
+    }
+};
+
+render();
