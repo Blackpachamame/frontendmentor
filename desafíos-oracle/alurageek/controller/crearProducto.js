@@ -9,9 +9,9 @@ form.addEventListener('submit', (evento) => {
     const descripcion = document.getElementById("descripcion").value;
     const categoria = document.getElementById("categoria").value;
 
-    productServices.crearProducto(url, categoria, nombre, precio, descripcion).then(respuesta => {
+    productServices.crearProducto(url, nombre, precio, categoria, descripcion).then(() => {
+        alert('Producto agregado con exito')
         window.location.href = './productos.html'
-        console.log(respuesta)
     }).catch(err => {
         console.log(err)
     });

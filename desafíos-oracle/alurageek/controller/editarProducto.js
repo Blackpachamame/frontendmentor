@@ -30,7 +30,7 @@ if (id) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        productServices.updateItem(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
+        productServices.editarProducto(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
             alert('Producto editado con exito')
             window.location.href = './productos.html'
         })
