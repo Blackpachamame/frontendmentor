@@ -1,4 +1,4 @@
-import { productServices } from "../service/producto-service.js";
+import { productServices } from "../service/productoService.js";
 
 const form = document.querySelector('[data-form]');
 form.addEventListener('submit', (evento) => {
