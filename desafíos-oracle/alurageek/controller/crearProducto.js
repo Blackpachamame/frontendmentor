@@ -10,8 +10,9 @@ form.addEventListener('submit', (evento) => {
     const categoria = document.getElementById("categoria").value;
 
     productServices.crearProducto(url, nombre, precio, categoria, descripcion).then(() => {
-        alert('Producto agregado con exito')
-        window.location.href = './productos.html'
+        alert('Producto agregado con exito');
+        window.location.href = "./productos.html"
+        // window.location.assign("https://www.google.com.ar/?hl=es");
     }).catch(err => {
         console.log(err)
     });

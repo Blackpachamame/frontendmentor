@@ -20,7 +20,7 @@ const crearProducto = (imageUrl, name, price, id) => {
                     </svg>
                 </button>
                 <!-- Btn Borrar -->
-                <a href="editar-producto.html?id=${id}" class="productos__edit">
+                <a href="./editar-producto.html?id=${id}" class="productos__edit">
                     <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_993)">
                             <path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z" />
@@ -36,7 +36,7 @@ const crearProducto = (imageUrl, name, price, id) => {
         </figure>
         <h4 class="productos__name">${name}</h4>
         <h3 class="productos__price">${price}</h3>
-        <a href="ver-producto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
+        <a href="http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/ver-producto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
   `;
     box.innerHTML = contenido;
     box.classList.add('productos__card');

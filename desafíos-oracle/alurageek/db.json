@@ -35,7 +35,7 @@
   ],
   "productos": [
     {
-      "imageUrl": "./assets/images/starwars/sw1.webp",
+      "imageUrl": "./../assets/images/starwars/sw1.webp",
       "name": "Tasa Trooper",
       "price": "$50.00",
       "categoria": "StarWars",
@@ -43,7 +43,7 @@
       "id": "e0ea324b-356a-4423-a619-09338941354b"
     },
     {
-      "imageUrl": "./assets/images/starwars/sw2.webp",
+      "imageUrl": "./../assets/images/starwars/sw2.webp",
       "name": "El imperio LEGO",
       "price": "$100.00",
       "categoria": "StarWars",
@@ -51,7 +51,7 @@
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
     },
     {
-      "imageUrl": "./assets/images/starwars/sw4.webp",
+      "imageUrl": "./../assets/images/starwars/sw4.webp",
       "name": "Armadura Trooper",
       "price": "$54.00",
       "categoria": "StarWars",
@@ -59,7 +59,7 @@
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
     {
-      "imageUrl": "./assets/images/starwars/sw5.webp",
+      "imageUrl": "./../assets/images/starwars/sw5.webp",
       "name": "Baby Yoda",
       "price": "$79.00",
       "categoria": "StarWars",
@@ -67,7 +67,7 @@
       "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
     },
     {
-      "imageUrl": "./assets/images/starwars/sw8.webp",
+      "imageUrl": "./../assets/images/starwars/sw8.webp",
       "name": "Muñecos del imperio",
       "price": "$54.00",
       "categoria": "StarWars",
@@ -75,7 +75,7 @@
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
     {
-      "imageUrl": "./assets/images/starwars/sw7.webp",
+      "imageUrl": "./../assets/images/starwars/sw7.webp",
       "name": "Troopers LEGO",
       "price": "$80.99",
       "categoria": "StarWars",
@@ -158,7 +158,7 @@
       "imageUrl": "https://i.ebayimg.com/images/g/~QsAAOSwXlpgmN8k/s-l500.jpg",
       "name": "Gaming Computer Mouse Pad ",
       "price": "$12.00",
-      "categoria": "Selecciona la seccion",
+      "categoria": "Diversos",
       "description": "Gaming Computer Mouse Pad World Map Mouse Mat Desk Mat Non-Slip Rubber B.AUJ J-\n\nCaracterísticas:\n1, bordes cosidos duraderos: esta alfombrilla de ratón tiene bordes delicados que pueden evitar el desgaste. Asegurar un uso prolongado sin deformación y desgomado.\n2, superficie lisa: la textura es más densa. El mouse se puede mover rápidamente y colocar con precisión para garantizar un control más suave del mouse. Perfecto para su computadora portátil, computadora y PC.,3, Base de goma antideslizante: el sombreado denso y la base de goma natural antideslizante pueden sujetar firmemente el escritorio. Material suave de primera calidad para su comodidad y control del mouse.,\n4, diseño lavable y evita la decoloración: esta alfombrilla de ratón está hecha de un gran efecto de bloqueo de color. Las manchas líquidas se pueden limpiar con agua para uso continuo. Y no se desvanecerá con la limpieza repetida.\nAmplia aplicabilidad: disponible para todo tipo de mouse, láser y óptico. Tamaño ideal para uso diario.\n\n\nPaquete que incluye: 1 ud.\n\nNota:\n1. Debido a la diferencia de luz, el color puede ser ligeramente diferente\n2. Permita diferencias de 1-5 mm debido a la medición manual",
       "id": "0e4e5716-a86c-4940-a13d-116c87aa393a"
     },
@@ -190,7 +190,7 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61SkDLmOssL._AC_SX466_.jpg",
       "name": "Alfombrilla de mouse LED RGB para juegos,",
       "price": "$10.00",
-      "categoria": "Selecciona la seccion",
+      "categoria": "Diversos",
       "description": "EUREKA ERGONOMIC Alfombrilla de mouse LED RGB para juegos, XXL, grande, extendida, para oficina, computadora, computadora, computadora, computadora, computadora, computadora, computadora, computadora, computadora, computadora, computadora, alfombrilla de mouse con base de goma antideslizante, negro y verde MARRS, 31.5 x 11.8 pulgadas",
       "id": "102e2a6e-686b-4c63-a922-49a0d000e6f3"
     },
@@ -198,17 +198,17 @@
       "imageUrl": "https://m.media-amazon.com/images/I/612kvNOy5xL._AC_SX466_.jpg",
       "name": "Alfombrilla de ratón para juegos, tamaño XXL,",
       "price": "$25.00",
-      "categoria": "diversos",
+      "categoria": "Diversos",
       "description": "Tamaño grande: el grosor de la alfombrilla de ratón es de 0.118 in para mejorar la comodidad de la muñeca. El tamaño de 31.5 x 11.8 pulgadas se adapta perfectamente a tu escritorio. Esta gran alfombrilla de ratón para juegos se adapta perfectamente a tu teclado y ratón, y también hay espacio adicional para periféricos como teléfonos y tabletas.\nBase de goma antideslizante: sombreado denso y base de goma antideslizante que proporcionan un agarre pesado que evita el deslizamiento o el movimiento de las alfombrillas de mouse, te ofrece un funcionamiento estable y te permite mover libremente tu mouse sin interrupciones, disponible para cualquier superficie plana y dura de mesa.",
       "id": "41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac"
     },
     {
-      "imageUrl": "https://m.media-amazon.com/images/I/612kvNOy5xL._AC_SX466_.jpg",
-      "name": "asdas",
-      "price": "$55.00",
-      "categoria": "diversos",
-      "description": "qqqqqqqqqqqqq",
-      "id": "b9296fec-6e06-4e55-92fc-f7689b3084e4"
+      "imageUrl": "https://m.media-amazon.com/images/I/5148SrUPX5L._AC_SX466_.jpg",
+      "name": "aa",
+      "price": "123",
+      "categoria": "StarWars",
+      "description": "aaa",
+      "id": "6353b2ab-470e-4ace-be5a-31ad09c6ae38"
     }
   ]
 }
