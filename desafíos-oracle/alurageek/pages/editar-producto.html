@@ -54,7 +54,7 @@
                 <div class="agregar__input-wrapper">
                     <input class="agregar__input data" type="text" name="url" id="url" data-tipo="url" required>
                     <label class="agregar__label" for="url">URL de imagen</label>
-                    <span class="agregar__input-message-error">Este campo no es válido</span>
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
                     <select class="agregar__select" name="categoria" id="categoria" data-tipo="categoria" required>
@@ -63,24 +63,24 @@
                         <option value="Consolas">Consolas</option>
                         <option value="Diversos">Diversos</option>
                     </select>
-                    <span class="agregar__input-message-error">Este campo no es válido</span>
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
                     <input class="agregar__input data" type="text" name="name" id="name" data-tipo="name" required>
                     <label class="agregar__label" for="name">Nombre del producto</label>
-                    <span class="agregar__input-message-error">Este campo no es válido</span>
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
                     <input class="agregar__input data" type="text" name="precio" id="precio" data-tipo="precio"
                         required>
                     <label class="agregar__label" for="precio">Precio del producto</label>
-                    <span class="agregar__input-message-error">Este campo no es válido</span>
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
                     <textarea class="agregar__textarea data" name="descripcion" id="descripcion" data-tipo="descripcion"
                         required></textarea>
                     <label class="agregar__label-textarea" for="descripcion">Descripción del producto</label>
-                    <span class="agregar__input-message-error">Este campo no es válido</span>
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <button class="agregar__btn-submit" type="submit">Enviar</button>
             </form>
@@ -108,13 +108,13 @@
                             <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
                                 required>
                             <label class="info__label" for="nombre">Nombre</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                         <div class="info__input-wrapper">
                             <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
                                 required></textarea>
                             <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                     </div>
                     <button class="info__btn-contacto" type="submit">Enviar mensaje</button>
@@ -127,6 +127,7 @@
         </section>
     </footer>
 
+    <script src="./../assets/js/validaciones.js"></script>
     <script type="module" src="./../controller/editarProducto.js"></script>
 </body>
 

@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <nav class="header__nav">
             <div class="header__nav-container">
@@ -228,7 +227,7 @@
         <section class="info">
             <div class="info__container">
                 <div class="info__container-list">
-                    <img src="./assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
+                    <img src="./../assets/images/logo.svg" alt="logo-alurageek" class="info__logo">
                     <ul class="info__list">
                         <li class="info__list-item"><a href="#">Quienes somos</a></li>
                         <li class="info__list-item"><a href="#">Política de privacidad</a></li>
@@ -245,13 +244,13 @@
                             <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
                                 required>
                             <label class="info__label" for="nombre">Nombre</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                         <div class="info__input-wrapper">
                             <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
                                 required></textarea>
                             <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                     </div>
                     <button class="info__btn-contacto" type="submit">Enviar mensaje</button>
@@ -264,6 +263,7 @@
         </section>
     </footer>
 
+    <script src="./assets/js/validaciones.js"></script>
     <script type="module" src="./controller/verProductos.js"></script>
 </body>
 

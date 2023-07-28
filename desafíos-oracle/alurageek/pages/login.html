@@ -41,19 +41,19 @@
     <main class="login">
         <div class="login__container">
             <h2 class="login__text">Iniciar Sesión</h2>
-            <div class="login__input-container">
+            <form class="login__input-container">
                 <div class="login__input-wrapper">
-                    <input class="login__input data" type="email" name="mail" id="mail" data-tipo="mail" required>
+                    <input class="login__input data" type="email" name="email" id="email" data-tipo="email" required>
                     <label class="login__label" for="mail">Correo electrónico</label>
-                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="login__input-wrapper">
                     <input class="login__input data" type="password" name="password" id="password" data-tipo="password"
                         required>
                     <label class="login__label" for="password">Contraseña</label>
-                    <!-- <span class="login__input-message-error">Este campo no es válido</span> -->
+                    <span class="input-message-error">Este campo no es válido</span>
                 </div>
-            </div>
+            </form>
             <button class="login__btn-submit" type="submit">Enviar</button>
         </div>
     </main>
@@ -79,13 +79,13 @@
                             <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
                                 required>
                             <label class="info__label" for="nombre">Nombre</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                         <div class="info__input-wrapper">
                             <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
                                 required></textarea>
                             <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
-                            <!-- <span class="info__input-message-error">Este campo no es válido</span> -->
+                            <span class="input-message-error">Este campo no es válido</span>
                         </div>
                     </div>
                     <button class="info__btn-contacto" type="submit">Enviar mensaje</button>
@@ -97,6 +97,8 @@
             <p class="creditos__text">2023</p>
         </section>
     </footer>
+
+    <script src="./../assets/js/validaciones.js"></script>
 </body>
 
 </html>
