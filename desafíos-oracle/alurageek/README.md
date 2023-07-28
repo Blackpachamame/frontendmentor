@@ -1,7 +1,7 @@
 # $\Huge\color{rgb(219, 175, 109)}{\texttt{Challenge ONE | Front End -  Alurageek}}$
 
 <div align="center">
-<img src="assets/images/alurageek-preview.png"></img>
+<img src="./assets/images/alurageek-preview.jpg"></img>
   <h3>
     <a href="https://blackpachamame.github.io/desafíos-oracle/alurageek/">
       🙊 Sitio en vivo
