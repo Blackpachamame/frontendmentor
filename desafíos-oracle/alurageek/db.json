@@ -35,7 +35,7 @@
   ],
   "productos": [
     {
-      "imageUrl": "./../assets/images/starwars/sw1.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw1.webp",
       "name": "Tasa Trooper",
       "price": "$50.00",
       "categoria": "StarWars",
@@ -43,7 +43,7 @@
       "id": "e0ea324b-356a-4423-a619-09338941354b"
     },
     {
-      "imageUrl": "./../assets/images/starwars/sw2.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw2.webp",
       "name": "El imperio LEGO",
       "price": "$100.00",
       "categoria": "StarWars",
@@ -51,7 +51,7 @@
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
     },
     {
-      "imageUrl": "./../assets/images/starwars/sw4.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw4.webp",
       "name": "Armadura Trooper",
       "price": "$54.00",
       "categoria": "StarWars",
@@ -59,7 +59,7 @@
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
     {
-      "imageUrl": "./../assets/images/starwars/sw5.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw5.webp",
       "name": "Baby Yoda",
       "price": "$79.00",
       "categoria": "StarWars",
@@ -67,7 +67,7 @@
       "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
     },
     {
-      "imageUrl": "./../assets/images/starwars/sw8.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw8.webp",
       "name": "Muñecos del imperio",
       "price": "$54.00",
       "categoria": "StarWars",
@@ -75,7 +75,7 @@
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
     {
-      "imageUrl": "./../assets/images/starwars/sw7.webp",
+      "imageUrl": "http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/assets/images/starwars/sw7.webp",
       "name": "Troopers LEGO",
       "price": "$80.99",
       "categoria": "StarWars",
@@ -204,11 +204,11 @@
     },
     {
       "imageUrl": "https://m.media-amazon.com/images/I/5148SrUPX5L._AC_SX466_.jpg",
-      "name": "aa",
-      "price": "123",
-      "categoria": "StarWars",
-      "description": "aaa",
-      "id": "6353b2ab-470e-4ace-be5a-31ad09c6ae38"
+      "name": "Max Power",
+      "price": "1234",
+      "categoria": "Consolas",
+      "description": "ok",
+      "id": "2acbc355-f9a1-49fb-b096-34ab96774a9e"
     }
   ]
 }
