@@ -66,7 +66,8 @@
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="name" id="name" data-tipo="name" required>
+                    <input class="agregar__input data" type="text" name="name" id="name" data-tipo="name" maxlength="20"
+                        required>
                     <label class="agregar__label" for="name">Nombre del producto</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
@@ -78,7 +79,7 @@
                 </div>
                 <div class="agregar__input-wrapper">
                     <textarea class="agregar__textarea data" name="descripcion" id="descripcion" data-tipo="descripcion"
-                        required></textarea>
+                        maxlength="150" required></textarea>
                     <label class="agregar__label-textarea" for="descripcion">Descripción del producto</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
@@ -106,13 +107,13 @@
                     <div class="info__input-container">
                         <div class="info__input-wrapper">
                             <input class="info__input data" type="text" name="nombre" id="nombre" data-tipo="nombre"
-                                required>
+                                maxlength="40" required>
                             <label class="info__label" for="nombre">Nombre</label>
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>
                         <div class="info__input-wrapper">
                             <textarea class="info__textarea data" name="mensaje" id="mensaje" data-tipo="mensaje"
-                                required></textarea>
+                                maxlength="120" required></textarea>
                             <label class="info__label-textarea" for="mensaje">Escribe tu mensaje</label>
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>

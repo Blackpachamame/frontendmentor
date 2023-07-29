@@ -21,6 +21,8 @@ function valida(input) {
 const tipoDeErrores = [
     "valueMissing",
     "typeMismatch",
+    "tooLong",
+    "tooShort",
 ];
 
 const mensajesDeError = {
@@ -41,6 +43,8 @@ const mensajesDeError = {
     },
     password: {
         valueMissing: "Este campo no puede estar vacío",
+        tooLong: "Debe tener máximo 8 caracteres",
+        tooShort: "Debe tener al menos 4 caracteres",
     },
     email: {
         valueMissing: "Este campo no puede estar vacío",
@@ -48,9 +52,11 @@ const mensajesDeError = {
     },
     nombre: {
         valueMissing: "Este campo no puede estar vacío",
+        tooLong: "Se permiten como máximo 40 caracteres",
     },
     mensaje: {
         valueMissing: "Este campo no puede estar vacío",
+        tooLong: "Se permiten como máximo 120 caracteres",
     },
 };
 
