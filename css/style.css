@@ -7,11 +7,11 @@
   /* --dark: #0d1117; */
   --blue-dark: rgb(21, 21, 32);
   --newbie: rgb(111, 121, 255);
-  --newbie-card: rgb(45, 40, 82);
+  --newbie-card: rgb(43, 37, 85);
   --newbie-card-footer: rgb(31, 26, 70);
   --junior: rgb(170, 215, 66);
-  --junior-card: rgb(32 60 43);
-  --junior-card-footer: rgb(11 42 23);
+  --junior-card: rgb(11, 42, 23);
+  --junior-card-footer: rgb(8, 32, 17);
   --intermediate: rgb(241, 182, 4);
   --avanced: rgb(244, 137, 37);
   --guru: rgb(237, 44, 73);
@@ -32,7 +32,19 @@ body {
   font-family: "Play", sans-serif;
   font-weight: 400;
   color: var(--crimson);
-  background-color: var(--blue-dark);
+  /* background-color: var(--blue-dark); */
+  background: linear-gradient(
+      135deg,
+      #0000 18.75%,
+      var(--blue-dark) 0 31.25%,
+      #0000 0
+    ),
+    repeating-linear-gradient(
+      45deg,
+      var(--blue-dark) -6.25% 6.25%,
+      #181825 0 18.75%
+    );
+  background-size: 48px 48px;
   min-height: 100vh;
 }
 
