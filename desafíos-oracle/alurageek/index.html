@@ -15,17 +15,22 @@
         <nav class="header__nav">
             <div class="header__nav-container">
                 <div class="header__logo-container">
+                    <!-- Logo -->
                     <a href="index.html" class="header__a-logo">
                         <img src="./assets/images/logo.svg" alt="logo-alurageek">
                     </a>
-                    <div class="header__nav-search">
-                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?">
-                        <button class="header__btn-search">
+                    <!-- Búsqueda -->
+                    <form class="header__nav-search" data-formsearch>
+                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?" data-busqueda
+                            required>
+                        <button class="header__btn-search" type="submit">
                             <img src="./assets/images/icon-search.svg" alt="icon-search">
                         </button>
-                    </div>
+                    </form>
                 </div>
+                <!-- Login -->
                 <a class="header__login" href="./pages/login.html">Login</a>
+                <!-- Búsqueda mobile -->
                 <button class="header__btn-search-mobile">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Icone">
