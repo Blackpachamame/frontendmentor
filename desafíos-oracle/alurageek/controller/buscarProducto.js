@@ -54,10 +54,30 @@ const crearProducto = (imageUrl, name, price, id) => {
 };
 
 const busqueda = document.querySelector('[data-busqueda]')
-const productAdmin = document.querySelector('[data-products]');
 const productStarwar = document.querySelector('[data-starwars]');
 const productConsola = document.querySelector('[data-consolas]');
 const productDiverso = document.querySelector('[data-diversos]');
+
+function porCategoria(tipo) {
+    const productAdmin = document.querySelector('[data-products]');
+    const allProducts = productServices.listaProductos();
+    if (productAdmin) {
+        productAdmin.innerHTML = '';
+        allProducts.filter(product => product.categoria === tipo).forEach(elemento => {
+            productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+        });
+        window.location.href = "./productos.html";
+    };
+}
+
+const porNombre = (nombre) => {
+    if (productAdmin) {
+        productAdmin.innerHTML = '';
+        allProducts.filter(product => product.name === nombre).forEach(elemento => {
+            productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+        });
+    };
+}
 
 const render = async () => {
     try {
@@ -65,7 +85,7 @@ const render = async () => {
 
         if (productAdmin) {
             productAdmin.innerHTML = '';
-            allProducts.filter(product => product.categoria === 'StarWars').forEach(elemento => {
+            allProducts.forEach(elemento => {
                 productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }

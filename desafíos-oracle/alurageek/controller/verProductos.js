@@ -92,3 +92,15 @@ const render = async () => {
 };
 
 render();
+
+function porCategoria(tipo) {
+    const productAdmin = document.querySelector('[data-products]');
+    const allProducts = productServices.listaProductos();
+    window.location.href = "./productos.html";
+    if (productAdmin) {
+        productAdmin.innerHTML = '';
+        allProducts.filter(product => product.categoria === tipo).forEach(elemento => {
+            productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+        });
+    };
+}
