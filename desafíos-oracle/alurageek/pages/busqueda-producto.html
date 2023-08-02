@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../assets/images/favicon.ico" type="image/x-icon">
-    <title>Login</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="./../assets/css/styles.css">
 </head>
 
 <body>
+
     <header class="header">
         <nav class="header__nav">
             <div class="header__nav-container">
                 <div class="header__logo-container">
                     <a href="./../index.html" class="header__a-logo">
                         <img src="./../assets/images/logo.svg" alt="logo-alurageek">
-                    </a>
-                    <div class="header__nav-search">
-                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?">
-                        <button class="header__btn-search">
+                    </a><!-- Búsqueda -->
+                    <form class="header__nav-search" data-formsearch>
+                        <input class="header__search" type="text" placeholder="¿Qué deseas buscar?" data-busqueda
+                            required>
+                        <button class="header__btn-search" type="submit">
                             <img src="./../assets/images/icon-search.svg" alt="icon-search">
                         </button>
-                    </div>
+                    </form>
                 </div>
                 <button class="header__btn-search-mobile">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,24 +40,17 @@
         </nav>
     </header>
 
-    <main class="login">
-        <div class="login__container">
-            <h2 class="login__text">Iniciar Sesión</h2>
-            <form class="login__input-container">
-                <div class="login__input-wrapper">
-                    <input class="login__input data" type="email" name="email" id="email" data-tipo="email" required>
-                    <label class="login__label" for="mail">Correo electrónico</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="login__input-wrapper">
-                    <input class="login__input data" type="password" name="password" id="password" data-tipo="password"
-                        minlength="4" maxlength="8" required>
-                    <label class="login__label" for="password">Contraseña</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-            </form>
-            <button class="login__btn-submit" type="submit">Iniciar</button>
-        </div>
+    <main class="main">
+        <section class="productos">
+            <!-- Título -->
+            <div class="productos__container-title">
+                <h2 class="productos__title">Resultado de la búsqueda</h2>
+            </div>
+            <!-- Productos -->
+            <div class="productos__container-card" data-search>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -101,6 +96,8 @@
     </footer>
 
     <script src="./../assets/js/validaciones.js"></script>
+    <script type="module" src="./../controller/buscarProducto.js"></script>
+    <script type="module" src="./../controller/resultadoBuscarProducto.js"></script>
 </body>
 
 </html>

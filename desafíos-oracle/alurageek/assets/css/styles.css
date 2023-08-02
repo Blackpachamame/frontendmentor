@@ -314,8 +314,8 @@ button[class$="ver-mas"]:hover::before {
 .productos__container-card {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(156px, 176px));
+  /* justify-content: space-between; */
   gap: 4rem 1rem;
 }
 
@@ -750,6 +750,7 @@ button.productos__delete {
   }
 
   .productos__container-card {
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
     row-gap: 1rem;
   }
 }

@@ -1,5 +1,7 @@
 import { productServices } from "../service/productoService.js";
 
+const productAdmin = document.querySelector('[data-search]');
+
 const crearProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
@@ -53,42 +55,38 @@ const crearProducto = (imageUrl, name, price, id) => {
     return box;
 };
 
-const productAdmin = document.querySelector("[data-products]");
-const productStarwar = document.querySelector('[data-starwars]');
-const productConsola = document.querySelector('[data-consolas]');
-const productDiverso = document.querySelector('[data-diversos]');
+const mostrarResultadoBuscado = async () => {
+    const url = new URL(window.location);
+    const nombreBuscado = url.searchParams.get("busqueda");
 
-const render = async () => {
-    try {
-        const allProducts = await productServices.listaProductos();
-
-        if (productAdmin) {
-            productAdmin.innerHTML = '';
-            allProducts.forEach(elemento => {
-                productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
-            });
-        }
-        if (productStarwar) {
-            productStarwar.innerHTML = '';
-            allProducts.filter(product => product.categoria === 'StarWars').forEach(elemento => {
-                productStarwar.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
-            });
-        }
-        if (productConsola) {
-            productConsola.innerHTML = '';
-            allProducts.filter(product => product.categoria === 'Consolas').forEach(elemento => {
-                productConsola.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
-            });
-        }
-        if (productDiverso) {
-            productDiverso.innerHTML = '';
-            allProducts.filter(product => product.categoria === 'Diversos').forEach(elemento => {
-                productDiverso.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
-            });
-        }
-    } catch (err) {
-        console.error("Ocurrió un error", err);
+    if (nombreBuscado === null) {
+        console.log("Hubo un error al momento de buscar el producto");
     }
-};
+    const nombreBuscar = nombreBuscado.toLowerCase();
 
-render();
+    let cantidadResultados = 0;
+    //Resultados busqueda
+    productServices.listaProductos().then(data => {
+        data.forEach(({ imageUrl, name, price, categoria, id }) => {
+            const nombreProducto = name.toLowerCase();
+            const nombreCategoria = categoria.toLowerCase();
+            const validar = nombreProducto.includes(nombreBuscar);
+            const validarCategoria = nombreCategoria.includes(nombreBuscado); //Revisar esto
+
+            if (validar || validarCategoria) {
+                const mostrarResultadoBuscado = crearProducto(imageUrl, name, price, id);
+                productAdmin.appendChild(mostrarResultadoBuscado);
+                cantidadResultados++;
+            }
+        });
+        //Mostrar mensajes cuando no haya resultados
+        if (cantidadResultados == 0) {
+            const textoInformativo = `
+        <h3 class="productos__resultados_mensaje">No se encontraron resultados para esta búsqueda 😥</h3>
+        `
+            productAdmin.innerHTML = textoInformativo;
+        }
+    }).catch(error => alert("Ocurrio un error en producto buscado"));
+}
+
+mostrarResultadoBuscado();
