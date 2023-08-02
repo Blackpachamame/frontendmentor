@@ -247,7 +247,7 @@ a:hover {
 }
 
 /* MAIN */
-button[class$="ver-mas"] {
+a[class$="ver-mas"] {
   color: var(--color-blue);
   font-size: 1rem;
   font-weight: 700;
@@ -260,11 +260,11 @@ button[class$="ver-mas"] {
   transition: all 0.5s ease;
 }
 
-button[class$="ver-mas"]:hover {
+a[class$="ver-mas"]:hover {
   color: var(--color-blue);
 }
 
-button[class$="ver-mas"]::before {
+a[class$="ver-mas"]::before {
   content: "";
   position: absolute;
   width: 68%;
@@ -278,7 +278,7 @@ button[class$="ver-mas"]::before {
   transition: transform 0.3s ease-in-out;
 }
 
-button[class$="ver-mas"]:hover::before {
+a[class$="ver-mas"]:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -796,7 +796,7 @@ button.productos__delete {
     font-size: 0.875rem;
   }
 
-  button[class$="ver-mas"]::before {
+  a[class$="ver-mas"]::before {
     width: 64%;
   }
 
