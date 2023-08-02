@@ -2,7 +2,7 @@ import { productServices } from "../service/productoService.js";
 
 const productAdmin = document.querySelector('[data-search]');
 
-const crearProducto = (imageUrl, name, price, id) => {
+const mostrarProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
         <figure class="productos__figure">
@@ -74,7 +74,7 @@ const mostrarResultadoBuscado = async () => {
             const validarCategoria = nombreCategoria.includes(nombreBuscado); //Revisar esto
 
             if (validar || validarCategoria) {
-                const mostrarResultadoBuscado = crearProducto(imageUrl, name, price, id);
+                const mostrarResultadoBuscado = mostrarProducto(imageUrl, name, price, id);
                 productAdmin.appendChild(mostrarResultadoBuscado);
                 cantidadResultados++;
             }
@@ -82,9 +82,10 @@ const mostrarResultadoBuscado = async () => {
         //Mostrar mensajes cuando no haya resultados
         if (cantidadResultados == 0) {
             const textoInformativo = `
-        <h3 class="productos__resultados_mensaje">No se encontraron resultados para esta búsqueda 😥</h3>
+        <h3 class="productos__no-encontrado">No se encontraron resultados para esta búsqueda 😥</h3>
         `
             productAdmin.innerHTML = textoInformativo;
+            document.querySelector('.productos__no-encontrado').parentElement.style.display = "block";
         }
     }).catch(error => alert("Ocurrio un error en producto buscado"));
 }

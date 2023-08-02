@@ -1,6 +1,6 @@
 import { productServices } from "../service/productoService.js";
 
-const crearProducto = (imageUrl, name, price, id) => {
+const mostrarProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
         <figure class="productos__figure">
@@ -65,25 +65,25 @@ const render = async () => {
         if (productAdmin) {
             productAdmin.innerHTML = '';
             allProducts.forEach(elemento => {
-                productAdmin.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+                productAdmin.appendChild(mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }
         if (productStarwar) {
             productStarwar.innerHTML = '';
             allProducts.filter(product => product.categoria === 'StarWars').forEach(elemento => {
-                productStarwar.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+                productStarwar.appendChild(mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }
         if (productConsola) {
             productConsola.innerHTML = '';
             allProducts.filter(product => product.categoria === 'Consolas').forEach(elemento => {
-                productConsola.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+                productConsola.appendChild(mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }
         if (productDiverso) {
             productDiverso.innerHTML = '';
             allProducts.filter(product => product.categoria === 'Diversos').forEach(elemento => {
-                productDiverso.appendChild(crearProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+                productDiverso.appendChild(mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }
     } catch (err) {
