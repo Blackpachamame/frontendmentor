@@ -679,10 +679,13 @@ button.productos__delete {
 }
 
 @media (max-width: 1439px) {
-  .starwars .productos__card:nth-last-child(-n + 2),
-  .consolas .productos__card:nth-last-child(-n + 2),
-  .diversos .productos__card:nth-last-child(-n + 2) {
+  /* Oculto todos los cards */
+  :is(.starwars, .consolas, .diversos) .productos__card {
     display: none;
+  }
+  /* Solo muestro los 4 primeros cards de las sections starwars, consolas y diversos */
+  :is(.starwars, .consolas, .diversos) .productos__card:nth-child(-n + 4) {
+    display: flex;
   }
 }
 
@@ -718,7 +721,7 @@ button.productos__delete {
     padding: 1rem 2rem;
   }
 
-  .header__logo-container > img {
+  .header__a-logo > img {
     width: 6.25rem;
   }
 
