@@ -13,7 +13,9 @@ searchInput.addEventListener("submit", (event) => {
 
 const verTodo = document.querySelector("[data-verconsolas]");
 //Enviando categoría a la página de resultados de búsqueda
-verTodo.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.location.href = `http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/busqueda-producto.html?busqueda=consolas`;
-});
+if (verTodo) {
+    verTodo.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = `http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/busqueda-producto.html?busqueda=consolas`;
+    });
+}
