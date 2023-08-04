@@ -12,7 +12,7 @@ const mostrarResultadoBuscado = async () => {
     }
     const nombreBuscar = nombreBuscado.toLowerCase();
 
-    let cantidadResultados = 0;
+    let contador = 0;
     //Resultados busqueda
     productServices.listaProductos().then(data => {
         data.forEach(({ imageUrl, name, price, categoria, id }) => {
@@ -24,18 +24,18 @@ const mostrarResultadoBuscado = async () => {
             if (validar || validarCategoria) {
                 const mostrarResultadoBuscado = productView.mostrarProducto(imageUrl, name, price, id);
                 productAdmin.appendChild(mostrarResultadoBuscado);
-                cantidadResultados++;
+                contador++;
             }
         });
         //Mostrar mensajes cuando no haya resultados
-        if (cantidadResultados == 0) {
+        if (contador == 0) {
             const textoInformativo = `
         <h3 class="productos__no-encontrado">No se encontraron resultados para esta búsqueda 😥</h3>
         `
             productAdmin.innerHTML = textoInformativo;
             document.querySelector('.productos__no-encontrado').parentElement.style.display = "block";
         }
-    }).catch(error => alert("Ocurrio un error en producto buscado"));
+    }).catch(error => alert("Ocurrio un error en la búsqueda"));
 }
 
 mostrarResultadoBuscado();

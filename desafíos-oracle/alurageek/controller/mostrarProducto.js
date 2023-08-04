@@ -2,7 +2,7 @@ const mostrarProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
         <figure class="productos__figure">
-            <img src="${imageUrl}" alt="producto xyz" class="productos__card-img">
+            <img src="${imageUrl}" alt="imagen ${name}" class="productos__card-img">
             <div class="productos__icons-container">
                 <!-- Btn Editar -->
                 <button class="productos__delete" id="${id}">
@@ -51,6 +51,24 @@ const mostrarProducto = (imageUrl, name, price, id) => {
     return box;
 };
 
+const verProducto = (imageUrl, name, price, categoria, description, id) => {
+    const card = document.createElement("div");
+    const contenido = `
+        <figure class="detalles__figure">
+            <img src="${imageUrl}" alt="imagen ${name}" class="detalles__img">
+        </figure>
+        <div class="detalles__text-container">
+            <h2 class="detalles__nombre">${name}</h2>
+            <h3 class="consolas__price">${price}</h3>
+            <p class="detalles__text">${description}</p>
+        </div>
+    `;
+    card.innerHTML = contenido;
+    card.classList.add('detalles__container');
+    return card;
+};
+
 export const productView = {
     mostrarProducto,
+    verProducto,
 };

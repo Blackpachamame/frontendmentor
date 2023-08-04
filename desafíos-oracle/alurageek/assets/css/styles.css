@@ -295,7 +295,8 @@ a[class$="ver-mas"]:hover::before {
 .starwars,
 .consolas,
 .diversos,
-.productos {
+.productos,
+.detalles {
   width: 100%;
   max-width: 71rem;
   display: flex;

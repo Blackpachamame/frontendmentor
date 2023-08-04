@@ -1,10 +1,15 @@
 import { productServices } from "../service/productoService.js";
 import { productView } from "../controller/mostrarProducto.js";
 
+// Página de productos (todos)
 const productAdmin = document.querySelector("[data-products]");
+// Página de index
 const productStarwar = document.querySelector('[data-starwars]');
 const productConsola = document.querySelector('[data-consolas]');
 const productDiverso = document.querySelector('[data-diversos]');
+// Página de ver producto
+const product = document.querySelector('[data-producto]');
+const productSimilar = document.querySelector('[data-similares]');
 
 const render = async () => {
     try {
@@ -32,6 +37,23 @@ const render = async () => {
             productDiverso.innerHTML = '';
             allProducts.filter(product => product.categoria === 'Diversos').forEach(elemento => {
                 productDiverso.appendChild(productView.mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
+            });
+        }
+        if (product) {
+            const url = new URL(window.location);
+            const idProducto = url.searchParams.get("id");
+            product.innerHTML = '';
+            allProducts.filter(product => product.id === idProducto).forEach(elemento => {
+                product.appendChild(productView.verProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.categoria, elemento.description, elemento.id));
+            });
+        }
+        if (productSimilar) {
+            const url = new URL(window.location);
+            const idProducto = url.searchParams.get("id");
+            productSimilar.innerHTML = '';
+            const producto = allProducts.filter(product => product.id === idProducto);
+            allProducts.filter(product => product.categoria === producto[0].categoria && product.id !== idProducto).forEach(elemento => {
+                productSimilar.appendChild(productView.mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.categoria, elemento.description, elemento.id));
             });
         }
     } catch (err) {

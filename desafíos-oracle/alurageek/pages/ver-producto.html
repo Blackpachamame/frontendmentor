@@ -46,79 +46,18 @@
     </figure>
 
     <main class="main">
-        <section class="detalles">
-            <div class="detalles__container">
-                <figure class="detalles__figure">
-                    <img src="./../assets/images/starwars/sw1.webp" alt="" class="detalles__img">
-                </figure>
-                <div class="detalles__text-container">
-                    <h2 class="detalles__nombre">Producto XYZ</h2>
-                    <h3 class="consolas__price">$ 60,00</h3>
-                    <p class="detalles__text">
-                        Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis
-                        fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada.
-                        Quisque
-                        deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero
-                        dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam.
-                    </p>
-                </div>
-            </div>
+        <section class="detalles" data-producto>
+            <!-- Acá va el producto con su imagen, nombre, precio y descripción -->
         </section>
-        <section class="productos">
+
+        <section class="starwars">
             <!-- Título -->
             <div class="productos__container-title">
                 <h2 class="productos__title">Productos similares</h2>
             </div>
             <!-- Productos -->
-            <div class="starwars__container-card">
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw7.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw2.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw3.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw4.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw5.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
-                <div class="starwars__card">
-                    <figure class="starwars__figure">
-                        <img src="./../assets/images/starwars/sw6.webp" alt="producto xyz" class="starwars__card-img">
-                    </figure>
-                    <h4 class="starwars__name-producto">Producto XYZ</h4>
-                    <h3 class="starwars__price">$ 60,00</h3>
-                    <a href="producto.html" class="starwars__ver-producto">Ver producto</a>
-                </div>
+            <div class="productos__container-card" data-similares>
+                <!-- Acá van los productos similares -->
             </div>
         </section>
     </main>
@@ -167,6 +106,7 @@
 
     <script src="./../assets/js/validaciones.js"></script>
     <script type="module" src="./../controller/buscarProducto.js"></script>
+    <script type="module" src="./../controller/verProductos.js"></script>
 </body>
 
 </html>
