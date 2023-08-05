@@ -53,7 +53,7 @@ const render = async () => {
             productSimilar.innerHTML = '';
             const producto = allProducts.filter(product => product.id === idProducto);
             allProducts.filter(product => product.categoria === producto[0].categoria && product.id !== idProducto).forEach(elemento => {
-                productSimilar.appendChild(productView.mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.categoria, elemento.description, elemento.id));
+                productSimilar.appendChild(productView.mostrarProducto(elemento.imageUrl, elemento.name, elemento.price, elemento.id));
             });
         }
     } catch (err) {
