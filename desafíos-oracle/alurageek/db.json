@@ -47,7 +47,7 @@
       "name": "El imperio LEGO",
       "price": "$100.00",
       "categoria": "StarWars",
-      "description": "Darth Vader (Tatooine, 41 ABY - Estrella de la Muerte, 4 DBY), también conocido por su nombre de nacimiento Anakin Skywalker, es un personaje de ficción en la franquicia de Star Wars. Vader aparece en la trilogía original como un antagonista cuyas acciones dirigen la trama, mientras que su pasado como Anakin Skywalker y la historia de su corrupción por Darth Sidious y su paso al Lado Oscuro son centrales en la narrativa de la trilogía de la precuela.  El personaje fue creado por George Lucas y ha sido retratado por numerosos actores. Sus apariciones abarcan las primeras seis películas de Star Wars, así como Rogue One, y su personaje está fuertemente referenciado en Star Wars: Episodio VII - El despertar de la Fuerza. También es un personaje importante en el universo expandido de Star Wars de series de televisión, videojuegos, novelas, literatura y cómics. Darth Vader se ha convertido en uno de los villanos más emblemáticos de la cultura popular, y ha figurado entre los más grandes villanos y personajes ficticios de la historia.2​3​  Vader a pesar de ser de una maldad tan pura, aún conserva sus sentimientos a su fallecido esposa Padme Amidala, cómo después a su hijo Luke. También tiene una extraña y desconocida obsesión por el orden y en menor medida la justicia en la galaxia sea por intenciónes benévolas o lo contrario. Al principio de llevar portar su armadura biónica odiaba su personalidad de Darth Vader tanto como la armadura propia hasta el punto de dudar si había elegido un camino correcto, aunque después unos cinco años después de la fundación del Imperio Galáctico acepta la retorcida ideología del lado oscuro de La Fuerza hasta el punto de aceptar su armadura y purgar casi todo lo que quedaba de su luz interior.",
+      "description": "Darth Vader (Tatooine, 41 ABY - Estrella de la Muerte, 4 DBY), también conocido por su nombre de nacimiento Anakin Skywalker, es un personaje de ficción en la franquicia de Star Wars. Vader aparece en la trilogía original como un antagonista cuyas acciones dirigen la trama, mientras que su pasado como Anakin Skywalker y la historia de su corrupción por Darth Sidious y su paso al Lado Oscuro son centrales en la narrativa de la trilogía de la precuela.",
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
     },
     {
@@ -103,7 +103,7 @@
       "name": "PlayStation 5",
       "price": "$850.75",
       "categoria": "Consolas",
-      "description": "es una consola de videojuegos de sobremesa desarrollada por la empresa Sony Interactive Entertainment. Fue anunciada en el año 2019 como la sucesora de la PlayStation 4, la PS5 se lanzó el 12 de noviembre de 2020 en Australia, Japón, Nueva Zelanda, América del Norte, Singapur y Corea del Sur, y en el resto de países el 19 de noviembre de 2020. La PlayStation 5 junto con la Xbox Series X|S de Microsoft, lanzada el mismo mes, son parte de la novena generación de consolas de videojuegos.\n\nLa plataforma se lanzó en dos variantes: un modelo base con una unidad de disco óptico compatible con Ultra HD Blu-ray y una edición digital que carece de esta unidad, que sirve como modelo de menor costo para quienes prefieren comprar videojuegos mediante descarga digital.\n\nLas principales características de hardware de la PlayStation 5 incluyen una unidad de estado sólido personalizada para transmisión de datos de alta velocidad para permitir mejoras significativas en el rendimiento del almacenamiento, una GPU AMD capaz de mostrar una resolución de 4K de hasta 120 cuadros por segundo, trazado de rayos acelerado por hardware para realismo, iluminación y reflejos y el motor Tempest que permite efectos de audio 3D acelerados por hardware. Otras características incluyen el controlador DualSense con retroalimentación háptica y compatibilidad con versiones anteriores de la mayoría de los videojuegos de PlayStation 4 y PlayStation VR.",
+      "description": "es una consola de videojuegos de sobremesa desarrollada por la empresa Sony Interactive Entertainment. Fue anunciada en el año 2019 como la sucesora de la PlayStation 4, la PS5 se lanzó el 12 de noviembre de 2020 en Australia, Japón, Nueva Zelanda, América del Norte, Singapur y Corea del Sur, y en el resto de países el 19 de noviembre de 2020.",
       "id": "0515aaa6-6324-49b9-99a9-ebc168160964"
     },
     {
@@ -111,7 +111,7 @@
       "name": "AirPods Max by Apple",
       "price": "$549.00",
       "categoria": "Diversos",
-      "description": "Controlador dinámico diseñado por Apple\nCancelación Activa de Ruido\nModo Ambiente\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\n\nSensor óptico (en cada audífono)\nSensor de posición (en cada audífono)\nDetector de funda (en cada audífono)\nAcelerómetro (en cada audífono)\nGiroscopio (audífono izquierdo)\nMicrófonos\nNueve micrófonos en total:\n\nOcho micrófonos para la Cancelación Activa de Ruido\nTres micrófonos para captar la voz (dos compartidos con la Cancelación Activa de Ruido y uno adicional)\nChip\nChip H1 de Apple para audífonos (en cada audífono)\n\nControles\nDigital Crown\n\nGira para controlar el volumen\nPresiona una vez para reproducir, pausar o contestar una llamada\nPresiona dos veces para avanzar\nPresiona tres veces para retroceder\nBotón de control de ruido\n\nPresiona para cambiar entre Cancelación Activa de Ruido y modo Ambiente",
+      "description": "Controlador dinámico diseñado por Apple\nCancelación Activa de Ruido\nModo Ambiente\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\n\nSensor óptico (en cada audífono)\nSensor de posición (en cada audífono)\nDetector de funda (en cada audífono)\nAcelerómetro (en cada audífono)\nGiroscopio (audífono izquierdo)",
       "id": "d77d874c-8778-42f1-8a02-d8e6a705cfc5"
     },
     {
@@ -119,7 +119,7 @@
       "name": "AirPods Pro by Apple",
       "price": "$289. En 0",
       "categoria": "Diversos",
-      "description": "Tecnología de audio\nControlador de alta excursión diseñado por Apple\nAmplificador exclusivo con alto rango dinámico\nCancelación Activa de Ruido\nModo Ambiente\nEcualización de presión mediante un sistema de ventilación\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\nSensores\nDos micrófonos con tecnología beamforming\nMicrófono orientado hacia adentro\nDos sensores ópticos\nAcelerómetro con detección de movimiento\nAcelerómetro con detección de voz\nSensor de fuerza\nChip\nChip H1 para audífonos\n\nControles\nPresiona una vez para reproducir, pausar o contestar una llamada\nPresiona dos veces para avanzar\nPresiona tres veces para retroceder\nMantén presionado para cambiar entre Cancelación Activa de Ruido y modo Ambiente",
+      "description": "Tecnología de audio\nControlador de alta excursión diseñado por Apple\nAmplificador exclusivo con alto rango dinámico\nCancelación Activa de Ruido\nModo Ambiente\nEcualización de presión mediante un sistema de ventilación\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\nSensores\nDos micrófonos con tecnología beamforming",
       "id": "bf69cef6-8af8-44b7-8cdb-bfa30b8d1b5d"
     },
     {
@@ -151,7 +151,7 @@
       "name": "Gaming Headset LED Stereo Bass ",
       "price": "$10.00",
       "categoria": "Diversos",
-      "description": "Gaming Headset 3.5mm Mic LED Headphones Stereo Bass Surround For PC Xbox One PS4\n\nSpecification: \n\nSpeaker diameter: 40mm\nPlug: 3.5mm\nDriver Impedance: 32 ohm\nSensitivity: 102dB±3dB\nFrequency response: 20Hz-20KHz\nMicrophone diameter: 6.0 * 5.0mm\nMicrophone directivity: omnidirectional\nPlug: 3.5mm microphone and earphone plug + USB interface\nMicrophone sensitivity: -36±3dB\nCable length: about 2.2 meters\nLED working voltage: DC5V±5%\nWorking current: ≤100mA\nHeadphone weight: 12.8 Oz",
+      "description": "Gaming Headset 3.5mm Mic LED Headphones Stereo Bass Surround For PC Xbox One PS4\n\nSpecification: \n\nSpeaker diameter: 40mm\nPlug: 3.5mm\nDriver Impedance: 32 ohm\nSensitivity: 102dB±3dB\nFrequency response: 20Hz-20KHz\nMicrophone diameter: 6.0 * 5.0mm\nMicrophone directivity: omnidirectional\nPlug: 3.5mm microphone and earphone plug + USB interface\nMicrophone sensitivity: -36±3dB",
       "id": "2a81d270-76a6-418c-b33f-a1b05136f831"
     },
     {
@@ -159,7 +159,7 @@
       "name": "Gaming Computer Mouse Pad ",
       "price": "$12.00",
       "categoria": "Diversos",
-      "description": "Gaming Computer Mouse Pad World Map Mouse Mat Desk Mat Non-Slip Rubber B.AUJ J-\n\nCaracterísticas:\n1, bordes cosidos duraderos: esta alfombrilla de ratón tiene bordes delicados que pueden evitar el desgaste. Asegurar un uso prolongado sin deformación y desgomado.\n2, superficie lisa: la textura es más densa. El mouse se puede mover rápidamente y colocar con precisión para garantizar un control más suave del mouse. Perfecto para su computadora portátil, computadora y PC.,3, Base de goma antideslizante: el sombreado denso y la base de goma natural antideslizante pueden sujetar firmemente el escritorio. Material suave de primera calidad para su comodidad y control del mouse.,\n4, diseño lavable y evita la decoloración: esta alfombrilla de ratón está hecha de un gran efecto de bloqueo de color. Las manchas líquidas se pueden limpiar con agua para uso continuo. Y no se desvanecerá con la limpieza repetida.\nAmplia aplicabilidad: disponible para todo tipo de mouse, láser y óptico. Tamaño ideal para uso diario.\n\n\nPaquete que incluye: 1 ud.\n\nNota:\n1. Debido a la diferencia de luz, el color puede ser ligeramente diferente\n2. Permita diferencias de 1-5 mm debido a la medición manual",
+      "description": "Gaming Computer Mouse Pad World Map Mouse Mat Desk Mat Non-Slip Rubber B.AUJ J-\n\nCaracterísticas:\n1, bordes cosidos duraderos: esta alfombrilla de ratón tiene bordes delicados que pueden evitar el desgaste. Asegurar un uso prolongado sin deformación y desgomado.\n2, superficie lisa: la textura es más densa. El mouse se puede mover rápidamente y colocar con precisión para garantizar un control más suave del mouse.",
       "id": "0e4e5716-a86c-4940-a13d-116c87aa393a"
     },
     {
@@ -175,7 +175,7 @@
       "name": "COUGAR DUALBLADER Ratón para juegos",
       "price": "$80.00",
       "categoria": "Diversos",
-      "description": "Diseño de dinastruta evolutiva: el nuevo ratón de doble blader icónico para juegos cuenta con un soporte de palma ergonómico y ajustable totalmente personalizable. Vale la pena mencionar que DUALBLADER está equipado con el nuevo concepto evolutivo: Dynasrut diseño (pendiente de patente). Proporciona dos despliegues (agarre de garra/palma) a través del ajuste de altura para que los jugadores elijan. Esto hace que los jugadores puedan cambiar diferentes estilos mientras juegan diferentes juegos.\nComponentes personalizados: DUALBLADER también proporciona dos juegos de agarres laterales intercambiables (grande/pequeño), cuatro botones desmontables y dos tamaños de reposamanos. Los jugadores pueden utilizar esos componentes para crear el mejor ajuste que necesitan o ajustan. Además, COUGAR soporta los archivos 3D de código abierto de los agarres laterales y botones de DUALBLADER, DIYer podría descargar estos archivos 3D y rediseñarlos para hacer una forma única por sí sola. Ofrece más posibilidades para dualblader y hace que sea divertido con el bricolaje",
+      "description": "Diseño de dinastruta evolutiva: el nuevo ratón de doble blader icónico para juegos cuenta con un soporte de palma ergonómico y ajustable totalmente personalizable. Vale la pena mencionar que DUALBLADER está equipado con el nuevo concepto evolutivo: Dynasrut diseño (pendiente de patente). Proporciona dos despliegues (agarre de garra/palma) a través del ajuste de altura para que los jugadores elijan.",
       "id": "bc872b45-f582-4cd9-82b4-9feb69d79406"
     },
     {
@@ -199,7 +199,7 @@
       "name": "Alfombrilla de ratón para juegos, tamaño XXL,",
       "price": "$25.00",
       "categoria": "Diversos",
-      "description": "Tamaño grande: el grosor de la alfombrilla de ratón es de 0.118 in para mejorar la comodidad de la muñeca. El tamaño de 31.5 x 11.8 pulgadas se adapta perfectamente a tu escritorio. Esta gran alfombrilla de ratón para juegos se adapta perfectamente a tu teclado y ratón, y también hay espacio adicional para periféricos como teléfonos y tabletas.\nBase de goma antideslizante: sombreado denso y base de goma antideslizante que proporcionan un agarre pesado que evita el deslizamiento o el movimiento de las alfombrillas de mouse, te ofrece un funcionamiento estable y te permite mover libremente tu mouse sin interrupciones, disponible para cualquier superficie plana y dura de mesa.",
+      "description": "Tamaño grande: el grosor de la alfombrilla de ratón es de 0.118 in para mejorar la comodidad de la muñeca. El tamaño de 31.5 x 11.8 pulgadas se adapta perfectamente a tu escritorio. Esta gran alfombrilla de ratón para juegos se adapta perfectamente a tu teclado y ratón, y también hay espacio adicional para periféricos como teléfonos y tabletas.",
       "id": "41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac"
     }
   ]

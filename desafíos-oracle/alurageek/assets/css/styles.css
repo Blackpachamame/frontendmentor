@@ -795,6 +795,15 @@ button.productos__delete {
   }
 }
 
+@media (max-width: 1200px) {
+  .detalles__container {
+    align-items: flex-start;
+  }
+  .detalles__img {
+    max-height: 15rem;
+  }
+}
+
 @media (max-width: 600px) {
   .main h3,
   .main a {
