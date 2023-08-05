@@ -296,7 +296,8 @@ a[class$="ver-mas"]:hover::before {
 .consolas,
 .diversos,
 .productos,
-.detalles {
+.detalles,
+.similares {
   width: 100%;
   max-width: 71rem;
   display: flex;
@@ -594,7 +595,7 @@ img[class$="card-img"] {
   border-radius: 1rem;
 }
 
-:is(.starwars, .consolas, .diversos) .productos__icons-container {
+:is(.starwars, .consolas, .diversos, .similares) .productos__icons-container {
   display: none;
 }
 
@@ -609,6 +610,22 @@ button.productos__delete {
 }
 
 /* DETALLES */
+.main-producto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.detalles {
+  padding: 4rem 0 0;
+}
+
+.similares {
+  padding-bottom: 4rem;
+}
+
 .detalles__container {
   width: 100%;
   max-width: 71rem;
@@ -681,16 +698,35 @@ button.productos__delete {
 
 @media (max-width: 1439px) {
   /* Oculto todos los cards */
-  :is(.starwars, .consolas, .diversos) .productos__card {
+  :is(.starwars, .consolas, .diversos, .similares) .productos__card {
     display: none;
   }
   /* Solo muestro los 4 primeros cards de las sections starwars, consolas y diversos */
-  :is(.starwars, .consolas, .diversos) .productos__card:nth-child(-n + 4) {
+  :is(.starwars, .consolas, .diversos, .similares)
+    .productos__card:nth-child(-n + 4) {
     display: flex;
   }
 }
 
+@media (max-width: 1200px) {
+  .detalles {
+    padding: 4rem 2rem 0;
+  }
+  .similares {
+    padding: 0 2rem 4rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  .detalles {
+    padding: 2rem 2rem 0;
+    max-width: initial;
+  }
+
+  .similares {
+    padding: 0 2rem 2rem;
+  }
+
   h2,
   .detalles__nombre {
     font-size: 1.375rem;
@@ -840,6 +876,22 @@ button.productos__delete {
     width: 100%;
     max-height: 20rem;
     object-fit: cover;
+  }
+
+  .main-producto {
+    gap: 2rem;
+  }
+
+  .detalles {
+    padding: 0;
+  }
+
+  .similares {
+    padding: 0 1rem 1rem;
+  }
+
+  .detalles__text-container {
+    padding: 0 1rem;
   }
 }
 

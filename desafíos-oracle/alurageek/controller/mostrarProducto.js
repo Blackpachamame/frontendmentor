@@ -54,6 +54,9 @@ const mostrarProducto = (imageUrl, name, price, id) => {
 const verProducto = (imageUrl, name, price, categoria, description, id) => {
     const card = document.createElement("div");
     const contenido = `
+    <figure class="detalles__figure-mobile">
+        <img src="${imageUrl}" alt="imagen ${name}" class="detalles__img-mobile">
+    </figure>
         <figure class="detalles__figure">
             <img src="${imageUrl}" alt="imagen ${name}" class="detalles__img">
         </figure>
