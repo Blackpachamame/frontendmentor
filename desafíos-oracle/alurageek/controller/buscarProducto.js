@@ -19,3 +19,10 @@ if (verTodo) {
         window.location.href = `http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/busqueda-producto.html?busqueda=consolas`;
     });
 }
+
+const searchMobile = document.getElementsByClassName('header__btn-search-mobile')[0];
+
+searchMobile.addEventListener('click', () => {
+    const barra = document.getElementsByClassName("header__nav-search")[0];
+    barra.style.display = "flex";
+})

@@ -810,6 +810,10 @@ button.productos__delete {
     font-size: 0.875rem;
   }
 
+  .header__nav {
+    position: relative;
+  }
+
   .header__nav,
   .main,
   .info {
@@ -822,6 +826,11 @@ button.productos__delete {
 
   .header__nav-search {
     display: none;
+    width: 100%;
+    border-radius: 0 0 1.25rem;
+    position: absolute;
+    top: 74px;
+    right: 0;
   }
   .header__btn-search-mobile {
     padding: 0;
