@@ -141,7 +141,9 @@ a:hover {
 .header__login,
 .header__ver-consolas,
 .productos__agregar-producto,
-.productos__agregar-producto-mobile {
+.productos__agregar-producto-mobile,
+.usuarios__agregar-usuario,
+.usuarios__agregar-usuario-mobile {
   font-weight: 400;
   padding: 1rem;
   display: flex;
@@ -149,7 +151,8 @@ a:hover {
   align-items: center;
 }
 
-.productos__agregar-producto-mobile {
+.productos__agregar-producto-mobile,
+.usuarios__agregar-usuario-mobile {
   padding: 0.2rem;
   border-radius: 50%;
   display: none;
@@ -228,7 +231,9 @@ a:hover {
 .login__btn-submit,
 .agregar__btn-submit,
 .productos__agregar-producto,
-.productos__agregar-producto-mobile {
+.productos__agregar-producto-mobile,
+.usuarios__agregar-usuario,
+.usuarios__agregar-usuario-mobile {
   color: var(--color-white);
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
@@ -240,7 +245,9 @@ a:hover {
 .login__btn-submit:hover,
 .agregar__btn-submit:hover,
 .productos__agregar-producto:hover,
-.productos__agregar-producto-mobile:hover {
+.productos__agregar-producto-mobile:hover,
+.usuarios__agregar-usuario:hover,
+.usuarios__agregar-usuario-mobile:hover {
   color: var(--color-white);
   background-color: var(--color-blue-hover);
   border: 1px solid var(--color-blue-hover);
@@ -296,6 +303,7 @@ a[class$="ver-mas"]:hover::before {
 .consolas,
 .diversos,
 .productos,
+.usuarios,
 .detalles,
 .similares {
   width: 100%;
@@ -306,7 +314,8 @@ a[class$="ver-mas"]:hover::before {
   gap: 1rem;
 }
 
-.productos__container-title {
+.productos__container-title,
+.usuarios__container-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -694,6 +703,35 @@ button.productos__delete {
 .header__dropdown-options a:hover {
   color: var(--color-blue-hover);
   background-color: var(--color-background-hover);
+}
+
+/* TABLA USUARIOS */
+.usuarios__container-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.usuarios__table {
+  /* border-collapse: collapse; */
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+}
+
+td,
+th {
+  /* border: 1px solid #ddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+.usuarios__button-control {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1439px) {

@@ -21,7 +21,7 @@ function valida(input) {
 const tipoDeErrores = [
     "valueMissing",
     "typeMismatch",
-    "tooLong",
+    "tooLong", //Esto es innecesario porque el input no te deja escribir mas caracteres del máximo establecido, pero lo dejo por las dudas
     "tooShort",
 ];
 
@@ -31,6 +31,11 @@ const mensajesDeError = {
     },
     name: {
         valueMissing: "Debe ingresar un nombre",
+        tooLong: "Se permiten como máximo 20 caracteres",
+    },
+    user: {
+        valueMissing: "Debe ingresar un nombre de usuario",
+        tooLong: "Se permiten como máximo 20 caracteres",
     },
     categoria: {
         valueMissing: "Debe seleccionar una categoría",

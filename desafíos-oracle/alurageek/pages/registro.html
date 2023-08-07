@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../assets/images/favicon.ico" type="image/x-icon">
-    <title>Editar Producto</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="./../assets/css/styles.css">
 </head>
 
@@ -28,14 +28,6 @@
                         </button>
                     </form>
                 </div>
-                <div class="header__dropdown">
-                    <button class="header__btn-menu">Menú</button>
-                    <div class="header__dropdown-options">
-                        <a href="productos.html">Productos</a>
-                        <a href="usuarios.html">Usuarios</a>
-                        <a href="#">Logout</a>
-                    </div>
-                </div>
                 <button class="header__btn-search-mobile">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Icone">
@@ -51,41 +43,26 @@
 
     <main class="agregar">
         <div class="agregar__container">
-            <h2 class="agregar__text">Editar producto</h2>
-            <form class="agregar__form" data-form>
+            <h2 class="agregar__text">Registro</h2>
+            <form class="agregar__form" data-registro>
                 <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="url" id="url" data-tipo="url" required>
-                    <label class="agregar__label" for="url">URL de imagen</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <select class="agregar__select" name="categoria" id="categoria" data-tipo="categoria" required>
-                        <option value="" disabled selected hidden>Seleccionar categoría</option>
-                        <option value="StarWars">Star Wars</option>
-                        <option value="Consolas">Consolas</option>
-                        <option value="Diversos">Diversos</option>
-                    </select>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="name" id="name" data-tipo="name" maxlength="20"
+                    <input class="agregar__input data" type="text" name="user" id="user" data-tipo="user" maxlength="20"
                         required>
-                    <label class="agregar__label" for="name">Nombre del producto</label>
+                    <label class="agregar__label" for="user">Nombre de usuario</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="precio" id="precio" data-tipo="precio"
-                        required>
-                    <label class="agregar__label" for="precio">Precio del producto</label>
+                    <input class="agregar__input data" type="email" name="email" id="email" data-tipo="email" required>
+                    <label class="agregar__label" for="email">Correo electrónico</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
                 <div class="agregar__input-wrapper">
-                    <textarea class="agregar__textarea data" name="descripcion" id="descripcion" data-tipo="descripcion"
-                        maxlength="150" required></textarea>
-                    <label class="agregar__label-textarea" for="descripcion">Descripción del producto</label>
+                    <input class="agregar__input data" type="password" name="password" id="password"
+                        data-tipo="password" minlength="4" maxlength="8" required>
+                    <label class="agregar__label" for="password">Contraseña</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
-                <button class="agregar__btn-submit" type="submit">Enviar</button>
+                <button class="agregar__btn-submit" type="submit">Registrarse</button>
             </form>
         </div>
     </main>
@@ -132,9 +109,12 @@
         </section>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./../assets/js/validaciones.js"></script>
     <script type="module" src="./../controller/buscarProducto.js"></script>
-    <script type="module" src="./../controller/editarProducto.js"></script>
+    <script type="module" src="./../controller/crearUsuario.js"></script>
 </body>
 
 </html>

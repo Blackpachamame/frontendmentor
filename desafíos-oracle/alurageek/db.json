@@ -1,5 +1,5 @@
 {
-  "users": [
+  "usuarios": [
     {
       "name": "test",
       "email": "test@test.test",
@@ -16,10 +16,10 @@
       "name": "pepe",
       "email": "elsapopepe@gmail.com",
       "password": "sapo",
-      "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
+      "id": "88ce7d8f-e120-4d96-ba1f-ffcdf2790291"
     }
   ],
-  "categories": [
+  "categorias": [
     {
       "id": 1,
       "name": "StarWars"

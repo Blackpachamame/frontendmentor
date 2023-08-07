@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../assets/images/favicon.ico" type="image/x-icon">
-    <title>Editar Producto</title>
+    <title>Usuarios</title>
     <link rel="stylesheet" href="./../assets/css/styles.css">
 </head>
 
@@ -49,45 +49,33 @@
         </nav>
     </header>
 
-    <main class="agregar">
-        <div class="agregar__container">
-            <h2 class="agregar__text">Editar producto</h2>
-            <form class="agregar__form" data-form>
-                <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="url" id="url" data-tipo="url" required>
-                    <label class="agregar__label" for="url">URL de imagen</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <select class="agregar__select" name="categoria" id="categoria" data-tipo="categoria" required>
-                        <option value="" disabled selected hidden>Seleccionar categoría</option>
-                        <option value="StarWars">Star Wars</option>
-                        <option value="Consolas">Consolas</option>
-                        <option value="Diversos">Diversos</option>
-                    </select>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="name" id="name" data-tipo="name" maxlength="20"
-                        required>
-                    <label class="agregar__label" for="name">Nombre del producto</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <input class="agregar__input data" type="text" name="precio" id="precio" data-tipo="precio"
-                        required>
-                    <label class="agregar__label" for="precio">Precio del producto</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="agregar__input-wrapper">
-                    <textarea class="agregar__textarea data" name="descripcion" id="descripcion" data-tipo="descripcion"
-                        maxlength="150" required></textarea>
-                    <label class="agregar__label-textarea" for="descripcion">Descripción del producto</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <button class="agregar__btn-submit" type="submit">Enviar</button>
-            </form>
-        </div>
+    <main class="main">
+        <section class="usuarios">
+            <!-- Título -->
+            <div class="usuarios__container-title">
+                <h2 class="usuarios__title">Todos los usuarios</h2>
+                <a class="usuarios__agregar-usuario" href="agregar-usuario.html">Agregar Usuario</a>
+                <a class="usuarios__agregar-usuario-mobile" href="agregar-usuario.html">
+                    <img src="./../assets/images/add.svg" alt="icon add">
+                </a>
+            </div>
+            <!-- Usuarios -->
+            <div class="usuarios__container-table">
+                <table class="usuarios__table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody data-users>
+                        <!-- Acá va la lista de usuarios registrados -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -134,7 +122,7 @@
 
     <script src="./../assets/js/validaciones.js"></script>
     <script type="module" src="./../controller/buscarProducto.js"></script>
-    <script type="module" src="./../controller/editarProducto.js"></script>
+    <script type="module" src="./../controller/verUsuarios.js"></script>
 </body>
 
 </html>
