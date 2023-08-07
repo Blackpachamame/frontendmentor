@@ -107,22 +107,6 @@
       "id": "0515aaa6-6324-49b9-99a9-ebc168160964"
     },
     {
-      "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpod-max-202011-gallery-5_FMT_WHH?wid=1000&hei=850&fmt=jpeg&qlt=90&.v=1607440699000",
-      "name": "AirPods Max by Apple",
-      "price": "$549.00",
-      "categoria": "Diversos",
-      "description": "Controlador dinámico diseñado por Apple\nCancelación Activa de Ruido\nModo Ambiente\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\n\nSensor óptico (en cada audífono)\nSensor de posición (en cada audífono)\nDetector de funda (en cada audífono)\nAcelerómetro (en cada audífono)\nGiroscopio (audífono izquierdo)",
-      "id": "d77d874c-8778-42f1-8a02-d8e6a705cfc5"
-    },
-    {
-      "imageUrl": "https://bufallo.uy/wp-content/uploads/2020/11/LqsksvzfE8X2tNAosapGwh.jpg",
-      "name": "AirPods Pro by Apple",
-      "price": "$289. En 0",
-      "categoria": "Diversos",
-      "description": "Tecnología de audio\nControlador de alta excursión diseñado por Apple\nAmplificador exclusivo con alto rango dinámico\nCancelación Activa de Ruido\nModo Ambiente\nEcualización de presión mediante un sistema de ventilación\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\nSensores\nDos micrófonos con tecnología beamforming",
-      "id": "bf69cef6-8af8-44b7-8cdb-bfa30b8d1b5d"
-    },
-    {
       "imageUrl": "https://i5.walmartimages.com/asr/d01ae56f-3ac2-4ad1-94ea-37bbfa992011.33292b347aecd4c9162b3381e4a53a01.jpeg",
       "name": "XCBOX Control",
       "price": "$69.99",
@@ -145,6 +129,22 @@
       "categoria": "Consolas",
       "description": "Insignia™ - Joy-Con Charging Station for Nintendo Switch - Black\nModel:NS-GNSJCCS18SKU:5894301",
       "id": "529959de-570d-4fdf-b0ee-e13733b4852d"
+    },
+    {
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpod-max-202011-gallery-5_FMT_WHH?wid=1000&hei=850&fmt=jpeg&qlt=90&.v=1607440699000",
+      "name": "AirPods Max by Apple",
+      "price": "$549.00",
+      "categoria": "Diversos",
+      "description": "Controlador dinámico diseñado por Apple\nCancelación Activa de Ruido\nModo Ambiente\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\n\nSensor óptico (en cada audífono)\nSensor de posición (en cada audífono)\nDetector de funda (en cada audífono)\nAcelerómetro (en cada audífono)\nGiroscopio (audífono izquierdo)",
+      "id": "d77d874c-8778-42f1-8a02-d8e6a705cfc5"
+    },
+    {
+      "imageUrl": "https://bufallo.uy/wp-content/uploads/2020/11/LqsksvzfE8X2tNAosapGwh.jpg",
+      "name": "AirPods Pro by Apple",
+      "price": "$289. En 0",
+      "categoria": "Diversos",
+      "description": "Tecnología de audio\nControlador de alta excursión diseñado por Apple\nAmplificador exclusivo con alto rango dinámico\nCancelación Activa de Ruido\nModo Ambiente\nEcualización de presión mediante un sistema de ventilación\nAudio espacial con seguimiento dinámico del movimiento de la cabeza1\nEcualización Adaptativa\nSensores\nDos micrófonos con tecnología beamforming",
+      "id": "bf69cef6-8af8-44b7-8cdb-bfa30b8d1b5d"
     },
     {
       "imageUrl": "https://i.ebayimg.com/images/g/00AAAOSwP~diAbs3/s-l500.jpg",
