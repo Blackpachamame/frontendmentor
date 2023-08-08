@@ -4,7 +4,7 @@ const mostrarProducto = (imageUrl, name, price, id) => {
         <figure class="productos__figure">
             <img src="${imageUrl}" alt="imagen ${name}" class="productos__card-img">
             <div class="productos__icons-container">
-                <!-- Btn Editar -->
+                <!-- Btn Borrar -->
                 <button class="productos__delete" id="${id}">
                     <svg class="delete" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_996)">
@@ -17,7 +17,7 @@ const mostrarProducto = (imageUrl, name, price, id) => {
                         </defs>
                     </svg>
                 </button>
-                <!-- Btn Borrar -->
+                <!-- Btn Editar -->
                 <a href="./editar-producto.html?id=${id}" class="productos__edit">
                     <svg class="edit" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_993)">

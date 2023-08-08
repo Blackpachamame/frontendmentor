@@ -9,10 +9,10 @@ const nuevoUsuario = (name, email, password, id) => {
         <td>
           <ul class="usuarios__button-control">
             <li>
-              <a href="./editar-usuario.html?id=${id}" class="simple-button simple-button--edit btn" data-editUser>Editar</a>
+                <a href="./editar-usuario.html?id=${id}" class="usuarios__edit" data-editUser>Editar</a>
             </li>
             <li>
-              <button class="simple-button simple-button--delete btn" type="button"  id="${id}" data-deleteUser>Eliminar</button>
+                <button class="usuarios__delete" type="button" id="${id}" data-deleteUser>Eliminar</button>
             </li>
           </ul>
        </td>`;

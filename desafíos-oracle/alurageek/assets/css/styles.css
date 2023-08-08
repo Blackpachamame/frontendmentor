@@ -734,6 +734,17 @@ th {
   align-items: center;
 }
 
+.usuarios__edit {
+  color: forestgreen;
+  font-weight: 600;
+}
+
+.usuarios__delete {
+  color: crimson;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 1439px) {
   /* Oculto todos los cards */
   :is(.starwars, .consolas, .diversos, .similares) .productos__card {
