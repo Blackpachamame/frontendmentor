@@ -3,7 +3,6 @@ import { productServices } from "../service/productoService.js";
 const formulario = document.querySelector("[data-form]");
 const url = new URL(window.location);
 const id = url.searchParams.get("id");
-
 const nombre = document.getElementById("name");
 const imgUrl = document.getElementById("url");
 const precio = document.getElementById("precio");
@@ -38,8 +37,8 @@ obtenerInformacion();
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     productServices.editarProducto(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
-        // alert("Producto agregado correctamente");
         window.location.href = "./productos.html";
+        alert("Producto agregado correctamente");
     });
 });
 

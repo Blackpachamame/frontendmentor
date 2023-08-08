@@ -1,5 +1,5 @@
 const searchInput = document.querySelector("[data-formsearch]");
-//Enviando nombre buscado a la página de resultados de búsqueda
+// Enviando nombre buscado a la página de resultados de búsqueda
 searchInput.addEventListener("submit", (event) => {
     event.preventDefault();
     const inputValue = document.querySelector('[data-busqueda]').value.toLowerCase();
@@ -12,7 +12,7 @@ searchInput.addEventListener("submit", (event) => {
 });
 
 const verTodo = document.querySelector("[data-verconsolas]");
-//Enviando categoría a la página de resultados de búsqueda
+// Enviando categoría a la página de resultados de búsqueda
 if (verTodo) {
     verTodo.addEventListener("click", (event) => {
         event.preventDefault();

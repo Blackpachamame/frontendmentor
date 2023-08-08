@@ -39,7 +39,7 @@ const mostrarProducto = (imageUrl, name, price, id) => {
     box.innerHTML = contenido;
     box.classList.add('productos__card');
 
-    // Capturando evento onclick del boton eliminar
+    // Capturando evento onclick del botón eliminar
     const btnDelete = box.querySelector("button");
     btnDelete.addEventListener("click", () => {
         const id = btnDelete.id;

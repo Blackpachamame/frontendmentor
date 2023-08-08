@@ -13,7 +13,7 @@ const mostrarResultadoBuscado = async () => {
     const nombreBuscar = nombreBuscado.toLowerCase();
 
     let contador = 0;
-    //Resultados busqueda
+    // Resultados búsqueda
     productServices.listaProductos().then(data => {
         data.forEach(({ imageUrl, name, price, categoria, id }) => {
             const nombreProducto = name.toLowerCase();
@@ -27,7 +27,7 @@ const mostrarResultadoBuscado = async () => {
                 contador++;
             }
         });
-        //Mostrar mensajes cuando no haya resultados
+        // Mostrar mensaje cuando no haya resultados
         if (contador == 0) {
             const textoInformativo = `
         <h3 class="productos__no-encontrado">No se encontraron resultados para esta búsqueda 😥</h3>

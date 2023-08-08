@@ -8,8 +8,8 @@ registro.addEventListener('submit', (evento) => {
     const password = document.getElementById("password").value;
 
     userServices.crearUsuario(nombre, email, password).then(() => {
-        // window.location.href = "./login.html";
-        alert('Usuario agregado con exito');
+        window.location.href = "./login.html";
+        alert('Usuario registrado con exito');
     }).catch(err => {
         console.log(err)
     });
