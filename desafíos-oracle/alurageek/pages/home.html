@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../assets/images/favicon.ico" type="image/x-icon">
-    <title>Login</title>
+    <title>AluraGeek</title>
     <link rel="stylesheet" href="./../assets/css/styles.css">
 </head>
 
@@ -16,7 +16,7 @@
             <div class="header__nav-container">
                 <div class="header__logo-container">
                     <!-- Logo -->
-                    <a href="home.html" class="header__a-logo">
+                    <a href="./home.html" class="header__a-logo">
                         <img src="./../assets/images/logo.svg" alt="logo-alurageek">
                     </a>
                     <!-- Búsqueda -->
@@ -28,6 +28,9 @@
                         </button>
                     </form>
                 </div>
+                <!-- Login -->
+                <a class="header__login" href="login.html">Login</a>
+                <!-- Búsqueda mobile -->
                 <button class="header__btn-search-mobile">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Icone">
@@ -39,26 +42,49 @@
                 </button>
             </div>
         </nav>
+        <div class="header__banner">
+            <div class="header__title-container">
+                <h1 class="header__title">Febrero Promocional</h1>
+                <p class="header__text">Productos seleccionados con 33% de descuento</p>
+                <button class="header__ver-consolas" data-verconsolas>Ver Consolas</button>
+            </div>
+        </div>
     </header>
 
-    <main class="login">
-        <div class="login__container">
-            <h2 class="login__text">Iniciar Sesión</h2>
-            <form class="login__input-container">
-                <div class="login__input-wrapper">
-                    <input class="login__input data" type="email" name="email" id="email" data-tipo="email" required>
-                    <label class="login__label" for="email">Correo electrónico</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-                <div class="login__input-wrapper">
-                    <input class="login__input data" type="password" name="password" id="password" data-tipo="password"
-                        minlength="4" maxlength="8" required>
-                    <label class="login__label" for="password">Contraseña</label>
-                    <span class="input-message-error">Este campo no es válido</span>
-                </div>
-            </form>
-            <button class="login__btn-submit" type="submit">Iniciar</button>
-        </div>
+    <main class="main">
+        <!-- Starwars -->
+        <section class="starwars">
+            <div class="productos__container-title">
+                <h2 class="productos__title">Star Wars</h2>
+                <a href="./productos.html" class="productos__ver-mas">Ver todo <img src="./../assets/images/arrow.svg"
+                        alt="flecha"></a>
+            </div>
+            <div class="productos__container-card" data-starwars>
+                <!-- Productos de starwars -->
+            </div>
+        </section>
+        <!-- Consolas -->
+        <section class="consolas">
+            <div class="productos__container-title">
+                <h2 class="productos__title">Consolas</h2>
+                <a href="./productos.html" class="productos__ver-mas">Ver todo <img src="./../assets/images/arrow.svg"
+                        alt="flecha"></a>
+            </div>
+            <div class="productos__container-card" data-consolas>
+                <!-- Productos de consolas -->
+            </div>
+        </section>
+        <!-- Diversos -->
+        <section class="diversos">
+            <div class="productos__container-title">
+                <h2 class="productos__title">Diversos</h2>
+                <a href="./productos.html" class="productos__ver-mas">Ver todo <img src="./../assets/images/arrow.svg"
+                        alt="flecha"></a>
+            </div>
+            <div class="productos__container-card" data-diversos>
+                <!-- Productos diversos -->
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -105,6 +131,7 @@
 
     <script src="./../assets/js/validaciones.js"></script>
     <script type="module" src="./../controller/buscarProducto.js"></script>
+    <script type="module" src="./../controller/verProductos.js"></script>
 </body>
 
 </html>

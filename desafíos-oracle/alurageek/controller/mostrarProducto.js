@@ -34,7 +34,7 @@ const mostrarProducto = (imageUrl, name, price, id) => {
         </figure>
         <h4 class="productos__name">${name}</h4>
         <h3 class="productos__price">${price}</h3>
-        <a href="http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/ver-producto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
+        <a href="./ver-producto.html?id=${id}" class="productos__ver" data-verProducto>Ver producto</a>
   `;
     box.innerHTML = contenido;
     box.classList.add('productos__card');

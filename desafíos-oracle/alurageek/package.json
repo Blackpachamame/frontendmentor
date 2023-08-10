@@ -1,0 +1,12 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Un e-commerce con productos varios",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

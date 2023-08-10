@@ -5,7 +5,7 @@ searchInput.addEventListener("submit", (event) => {
     const inputValue = document.querySelector('[data-busqueda]').value.toLowerCase();
 
     if (inputValue) {
-        window.location.href = `http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/busqueda-producto.html?busqueda=${inputValue}`;
+        window.location.href = `./busqueda-producto.html?busqueda=${inputValue}`;
         inputValue.value = "";
     };
     return true;
@@ -16,7 +16,7 @@ const verTodo = document.querySelector("[data-verconsolas]");
 if (verTodo) {
     verTodo.addEventListener("click", (event) => {
         event.preventDefault();
-        window.location.href = `http://127.0.0.1:5500/desaf%C3%ADos-oracle/alurageek/pages/busqueda-producto.html?busqueda=consolas`;
+        window.location.href = `./busqueda-producto.html?busqueda=consolas`;
     });
 }
 
