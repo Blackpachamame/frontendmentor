@@ -1,8 +1,9 @@
+// Probar en local con http://localhost:3000/usuarios
 const listaUsuarios = () =>
-    fetch('http://localhost:3000/usuarios').then(respuesta => respuesta.json());
+    fetch('https://blackpachamame-alurageek.vercel.app/usuarios').then(respuesta => respuesta.json());
 
 const crearUsuario = (name, email, password) => {
-    return fetch('http://localhost:3000/usuarios', {
+    return fetch('https://blackpachamame-alurageek.vercel.app/usuarios', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,17 +24,17 @@ const crearUsuario = (name, email, password) => {
 };
 
 const detalleUsuario = (id) => {
-    return fetch(`http://localhost:3000/usuarios/${id}`).then((resp) => resp.json());
+    return fetch(`https://blackpachamame-alurageek.vercel.app/usuarios/${id}`).then((resp) => resp.json());
 };
 
 const eliminarUsuario = (id) => {
-    return fetch(`http://localhost:3000/usuarios/${id}`, {
+    return fetch(`https://blackpachamame-alurageek.vercel.app/usuarios/${id}`, {
         method: 'DELETE',
     });
 };
 
 const editarUsuario = (name, email, password, id) => {
-    return fetch(`http://localhost:3000/usuarios/${id}`, {
+    return fetch(`https://blackpachamame-alurageek.vercel.app/usuarios/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",

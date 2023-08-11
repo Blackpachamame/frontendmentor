@@ -1,8 +1,9 @@
+// Probar en local con http://localhost:3000/productos
 const listaProductos = () =>
-    fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+    fetch("https://blackpachamame-alurageek.vercel.app/productos").then((respuesta) => respuesta.json());
 
 const crearProducto = (imageUrl, name, price, categoria, description) => {
-    return fetch('http://localhost:3000/productos', {
+    return fetch('https://blackpachamame-alurageek.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -25,17 +26,17 @@ const crearProducto = (imageUrl, name, price, categoria, description) => {
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`, {
         method: "DELETE",
     })
 };
 
 const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then((resp) => resp.json());
+    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`).then((resp) => resp.json());
 };
 
 const editarProducto = (imageUrl, name, price, categoria, description, id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
