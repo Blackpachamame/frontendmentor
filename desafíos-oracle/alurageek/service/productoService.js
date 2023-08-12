@@ -1,9 +1,9 @@
 // Probar en local con http://localhost:3000/productos
 const listaProductos = () =>
-    fetch("https://blackpachamame-alurageek.vercel.app/productos").then((respuesta) => respuesta.json());
+    fetch("https://alurageek-two.vercel.app/productos").then((respuesta) => respuesta.json());
 
 const crearProducto = (imageUrl, name, price, categoria, description) => {
-    return fetch('https://blackpachamame-alurageek.vercel.app/productos', {
+    return fetch('https://alurageek-two.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -26,17 +26,17 @@ const crearProducto = (imageUrl, name, price, categoria, description) => {
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`, {
+    return fetch(`https://alurageek-two.vercel.app/productos/${id}`, {
         method: "DELETE",
     })
 };
 
 const detalleProducto = (id) => {
-    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`).then((resp) => resp.json());
+    return fetch(`https://alurageek-two.vercel.app/productos/${id}`).then((resp) => resp.json());
 };
 
 const editarProducto = (imageUrl, name, price, categoria, description, id) => {
-    return fetch(`https://blackpachamame-alurageek.vercel.app/productos/${id}`, {
+    return fetch(`https://alurageek-two.vercel.app/productos/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
