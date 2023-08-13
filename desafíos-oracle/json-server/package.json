@@ -1,7 +1,7 @@
 {
-  "name": "json-server-vercel",
+  "name": "alurageek",
   "version": "1.0.0",
-  "description": "Deploy JSON Server to Vercel",
+  "description": "Ecommerce con deploy de JSON Server en Vercel",
   "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js"
