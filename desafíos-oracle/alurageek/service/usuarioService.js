@@ -1,9 +1,9 @@
 // Probar en local con http://localhost:3000/usuarios
 const listaUsuarios = () =>
-    fetch('https://alurageek-two.vercel.app/usuarios').then(respuesta => respuesta.json());
+    fetch('https://alurageek-sable.vercel.app/usuarios').then(respuesta => respuesta.json());
 
 const crearUsuario = (name, email, password) => {
-    return fetch('https://alurageek-two.vercel.app/usuarios', {
+    return fetch('https://alurageek-sable.vercel.app/usuarios', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,17 +24,17 @@ const crearUsuario = (name, email, password) => {
 };
 
 const detalleUsuario = (id) => {
-    return fetch(`https://alurageek-two.vercel.app/usuarios/${id}`).then((resp) => resp.json());
+    return fetch(`https://alurageek-sable.vercel.app/usuarios/${id}`).then((resp) => resp.json());
 };
 
 const eliminarUsuario = (id) => {
-    return fetch(`https://alurageek-two.vercel.app/usuarios/${id}`, {
+    return fetch(`https://alurageek-sable.vercel.app/usuarios/${id}`, {
         method: 'DELETE',
     });
 };
 
 const editarUsuario = (name, email, password, id) => {
-    return fetch(`https://alurageek-two.vercel.app/usuarios/${id}`, {
+    return fetch(`https://alurageek-sable.vercel.app/usuarios/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
