@@ -1,9 +1,9 @@
 // Probar en local con http://localhost:3000/usuarios
 const listaUsuarios = () =>
-    fetch('https://json-server-alurageek.vercel.app/usuarios').then(respuesta => respuesta.json());
+    fetch('https://64d9702ce947d30a260a1886.mockapi.io/usuarios').then(respuesta => respuesta.json());
 
 const crearUsuario = (name, email, password) => {
-    return fetch('https://json-server-alurageek.vercel.app/usuarios', {
+    return fetch('https://64d9702ce947d30a260a1886.mockapi.io/usuarios', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,17 +24,17 @@ const crearUsuario = (name, email, password) => {
 };
 
 const detalleUsuario = (id) => {
-    return fetch(`https://json-server-alurageek.vercel.app/usuarios/${id}`).then((resp) => resp.json());
+    return fetch(`https://64d9702ce947d30a260a1886.mockapi.io/usuarios/${id}`).then((resp) => resp.json());
 };
 
 const eliminarUsuario = (id) => {
-    return fetch(`https://json-server-alurageek.vercel.app/usuarios/${id}`, {
+    return fetch(`https://64d9702ce947d30a260a1886.mockapi.io/usuarios/${id}`, {
         method: 'DELETE',
     });
 };
 
 const editarUsuario = (name, email, password, id) => {
-    return fetch(`https://json-server-alurageek.vercel.app/usuarios/${id}`, {
+    return fetch(`https://64d9702ce947d30a260a1886.mockapi.io/usuarios/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
