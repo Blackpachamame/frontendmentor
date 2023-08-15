@@ -303,6 +303,7 @@ a[class$="ver-mas"]:hover::before {
 .consolas,
 .diversos,
 .productos,
+.busqueda,
 .usuarios,
 .detalles,
 .similares {
@@ -604,7 +605,8 @@ img[class$="card-img"] {
   border-radius: 1rem;
 }
 
-:is(.starwars, .consolas, .diversos, .similares) .productos__icons-container {
+:is(.starwars, .consolas, .diversos, .similares, .busqueda)
+  .productos__icons-container {
   display: none;
 }
 
