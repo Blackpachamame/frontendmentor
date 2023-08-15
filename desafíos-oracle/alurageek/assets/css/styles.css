@@ -608,6 +608,10 @@ img[class$="card-img"] {
   display: none;
 }
 
+.ocultar {
+  display: none;
+}
+
 button.productos__delete {
   padding: 0;
   background-color: transparent;

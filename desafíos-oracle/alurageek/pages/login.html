@@ -44,7 +44,7 @@
     <main class="login">
         <div class="login__container">
             <h2 class="login__text">Iniciar Sesión</h2>
-            <form class="login__input-container">
+            <form class="login__input-container" data-login>
                 <div class="login__input-wrapper">
                     <input class="login__input data" type="email" name="email" id="email" data-tipo="email" required>
                     <label class="login__label" for="email">Correo electrónico</label>
@@ -56,8 +56,8 @@
                     <label class="login__label" for="password">Contraseña</label>
                     <span class="input-message-error">Este campo no es válido</span>
                 </div>
+                <button class="login__btn-submit" type="submit">Iniciar</button>
             </form>
-            <button class="login__btn-submit" type="submit">Iniciar</button>
         </div>
     </main>
 
@@ -104,6 +104,7 @@
     </footer>
 
     <script src="./../assets/js/validaciones.js"></script>
+    <script type="module" src="./../controller/login.js"></script>
     <script type="module" src="./../controller/buscarProducto.js"></script>
 </body>
 
