@@ -2,7 +2,7 @@
 const url = new URL(window.location);
 const usuarioValido = url.searchParams.get("user");
 
-function hola() {
+function ocultar() {
     if (!usuarioValido) {
         const barra = document.getElementsByClassName("productos__icons-container");
         for (let i = 0; i < barra.length; i++) {
@@ -11,4 +11,4 @@ function hola() {
     }
 }
 
-setTimeout(hola, 300);
+setTimeout(ocultar, 300);
