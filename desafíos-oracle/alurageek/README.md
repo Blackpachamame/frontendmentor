@@ -3,7 +3,7 @@
 <div align="center">
 <img src="./assets/images/alurageek-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-oracle/alurageek/">
+    <a href="https://alurageek-sable.vercel.app/pages/home.html">
       🙊 Sitio en vivo
     </a>
   </h3>
