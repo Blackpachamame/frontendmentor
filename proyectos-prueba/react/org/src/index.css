@@ -13,6 +13,13 @@ body {
   color: #212121;
 }
 
+img,
+svg,
+figure {
+  display: block;
+  max-width: 100%;
+}
+
 h1,
 h2,
 h3,
