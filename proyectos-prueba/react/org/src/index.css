@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap");
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
 body {
   margin: 0;
-  font-family: "Prata", serif;
+  font-family: "Montserrat", sans-serif;
   color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prata", serif;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
