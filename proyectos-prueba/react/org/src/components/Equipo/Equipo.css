@@ -1,0 +1,17 @@
+.equipo {
+  width: 100%;
+  padding: 32px 155px;
+  text-align: center;
+}
+
+.equipo h3 {
+  padding: 8px;
+  border-bottom: 4px solid;
+  display: inline-block;
+}
+
+.colaboradores {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
