@@ -3,7 +3,7 @@ import "./Equipo.css";
 
 const Equipo = (props) => {
     const { titulo, colorPrimario, colorSecundario } = props.datos;
-    const { colaboradores } = props;
+    const { colaboradores, eliminarColaborador } = props;
 
     const bcolor = { backgroundColor: colorSecundario };
     const border = { borderColor: colorPrimario };
@@ -19,6 +19,7 @@ const Equipo = (props) => {
                             datos={colaborador}
                             key={colaborador.nombre}
                             colorPrimario={colorPrimario}
+                            eliminarColaborador={eliminarColaborador}
                         />)
                     }
                 </div>

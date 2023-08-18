@@ -1,16 +1,27 @@
 .colaborador {
   width: 262px;
   height: 272px;
-  border-radius: 10px;
   background: #fff;
+  border-radius: 10px;
+  position: relative;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
 }
 
+.colaborador .btnEliminar {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .colaborador .encabezado {
+  height: 91px;
   background: #a6d157;
   border-radius: 10px 10px 0px 0px;
   position: relative;
-  height: 91px;
 }
 
 .encabezado figure {
@@ -30,14 +41,14 @@
   padding: 27px 31px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
   justify-content: flex-end;
+  gap: 6px;
 }
 
 .colaborador .info h4 {
-  color: #6278f7;
   font-size: 18px;
   font-weight: 600;
+  color: #6278f7;
 }
 
 .colaborador .info h5 {
