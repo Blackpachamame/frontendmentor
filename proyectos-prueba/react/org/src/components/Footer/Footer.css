@@ -1,0 +1,22 @@
+.footer {
+  padding: 75px 155px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.footer p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}

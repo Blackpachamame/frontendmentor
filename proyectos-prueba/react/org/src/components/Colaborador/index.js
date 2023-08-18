@@ -1,16 +1,20 @@
 import "./Colaborador.css";
 
-const Colaborador = () => {
+const Colaborador = (props) => {
+    const { nombre, puesto, foto, equipo } = props.datos;
+    const { colorPrimario } = props;
     return (
         <div className="colaborador">
-            <div className="encabezado">
-                <img src="/img/Jeanmarie.png" alt="Jeanmarie" />
-            </div>
+            <header className="encabezado" style={{ backgroundColor: colorPrimario }}>
+                <figure>
+                    <img src={foto} alt={nombre} />
+                </figure>
+            </header>
             <div className="info">
-                <h4>Hola h4</h4>
-                <h5>Instructor</h5>
+                <h4>{nombre}</h4>
+                <h5>{puesto}</h5>
             </div>
-        </div>
+        </div >
     );
 }
 
