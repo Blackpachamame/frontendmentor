@@ -2,6 +2,12 @@
   width: 100%;
   padding: 32px 155px 0;
   text-align: center;
+  position: relative;
+}
+
+.inputColor {
+  position: absolute;
+  right: 32px;
 }
 
 .equipo h3 {
