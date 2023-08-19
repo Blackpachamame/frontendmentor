@@ -1,6 +1,6 @@
 .colaborador {
   width: 262px;
-  height: 272px;
+  height: 292px;
   background: #fff;
   border-radius: 10px;
   position: relative;
@@ -37,11 +37,12 @@
 }
 
 .colaborador .info {
-  height: 181px;
+  height: 201px;
   padding: 27px 31px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   gap: 6px;
 }
 
@@ -54,4 +55,11 @@
 .colaborador .info h5 {
   font-size: 16px;
   font-weight: 400;
+}
+
+.colaborador .info .favorito {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  cursor: pointer;
 }
