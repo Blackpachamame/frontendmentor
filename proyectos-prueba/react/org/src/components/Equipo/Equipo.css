@@ -1,6 +1,6 @@
 .equipo {
   width: 100%;
-  padding: 32px 155px 0;
+  padding: 40px 155px;
   text-align: center;
   position: relative;
 }
@@ -17,9 +17,41 @@
 }
 
 .colaboradores {
-  padding: 40px 0;
+  padding-top: 40px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 24px 30px;
+}
+
+@media (max-width: 900px) {
+  .equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputColor {
+    position: initial;
+  }
+}
+
+@media (max-width: 860px) {
+  .equipo {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .equipo {
+    padding: 20px;
+  }
+  .equipo h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  .equipo h3 {
+    font-size: 24px;
+  }
 }
