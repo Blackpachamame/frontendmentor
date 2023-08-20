@@ -1,9 +1,12 @@
 .colaborador {
-  width: 262px;
-  height: 292px;
+  width: 260px;
+  height: 310px;
   background: #fff;
   border-radius: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
 }
 
@@ -17,18 +20,17 @@
   cursor: pointer;
 }
 
-.colaborador .encabezado {
-  height: 91px;
-  background: #a6d157;
+.colaborador .colaborador__header {
+  height: 90px;
   border-radius: 10px 10px 0px 0px;
   position: relative;
 }
 
-.encabezado figure {
+.colaborador__header figure {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -13%);
+  transform: translate(-50%, -14%);
 }
 
 .colaborador img {
@@ -36,28 +38,28 @@
   border-radius: 50%;
 }
 
-.colaborador .info {
-  height: 201px;
+.colaborador .colaborador__body {
+  height: 160px;
   padding: 27px 31px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 6px;
 }
 
-.colaborador .info h4 {
+.colaborador .colaborador__body h4 {
   font-size: 18px;
   font-weight: 600;
   color: #6278f7;
 }
 
-.colaborador .info h5 {
+.colaborador .colaborador__body h5 {
   font-size: 16px;
   font-weight: 400;
 }
 
-.colaborador .info .favorito {
+.colaborador .colaborador__body .favorito {
   width: 24px;
   height: 24px;
   margin-top: 10px;

@@ -3,13 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   position: relative;
 }
 
-.title {
+.orgSection h2 {
   color: #6278f7;
-  font-size: 40px;
-  font-weight: 400;
   padding-bottom: 24px;
   border-bottom: 4px solid #6278f7;
 }
@@ -18,4 +17,41 @@
   position: absolute;
   right: 155px;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .orgSection,
+  .imgAdd {
+    position: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .orgSection {
+    padding: 60px 40px;
+  }
+  .orgSection h2 {
+    font-size: 32px;
+    padding-bottom: 8px;
+  }
+  .imgAdd {
+    width: 70px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .orgSection {
+    padding: 60px 20px;
+  }
+  .orgSection h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  .orgSection h2 {
+    font-size: 24px;
+  }
 }

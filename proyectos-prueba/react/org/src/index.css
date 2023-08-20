@@ -24,11 +24,15 @@ h1,
 h2,
 h3 {
   font-family: "Prata", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 h3 {
   font-size: 32px;
-  font-weight: 400;
 }
 
 label {

@@ -5,7 +5,7 @@ const MiOrg = (props) => {
     //userState
 
     return <section className="orgSection">
-        <h3 className="title">Mi organización</h3>
+        <h2>Mi organización</h2>
         <img className="imgAdd" src="/img/add.png" alt="add" onClick={props.cambiarMostrar} />
     </section>
 }

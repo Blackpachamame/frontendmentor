@@ -55,43 +55,36 @@ function App() {
     {
       id: uuid(),
       titulo: "Programación",
-      colorSecundario: "#D9F7E9",
       colorPrimario: "#57C278",
     },
     {
       id: uuid(),
       titulo: "Frontend",
-      colorSecundario: "#E8F8FF",
       colorPrimario: "#82CFFA",
     },
     {
       id: uuid(),
       titulo: "Data Science",
-      colorSecundario: "#F0F8E2",
       colorPrimario: "#A6D157",
     },
     {
       id: uuid(),
       titulo: "Devops",
-      colorSecundario: "#FDE7E8",
       colorPrimario: "#E06B69",
     },
     {
       id: uuid(),
       titulo: "UX y Diseño",
-      colorSecundario: "#FAE9F5",
       colorPrimario: "#DB6EBF",
     },
     {
       id: uuid(),
       titulo: "Móvil",
-      colorSecundario: "#FFF5D9",
       colorPrimario: "#FFBA05",
     },
     {
       id: uuid(),
       titulo: "Innovación y Gestión",
-      colorSecundario: "#FFEEDF",
       colorPrimario: "#FF8A29",
     },
   ]);
@@ -108,14 +101,12 @@ function App() {
 
   //Eliminar colaborador
   const eliminarColaborador = (id) => {
-    console.log("Eliminar colaborador", id);
     const nuevosColaboradores = colaboradores.filter((colaborador) => colaborador.id !== id);
     actualizarColaboradores(nuevosColaboradores);
   };
 
   //Actualizar color de equipo
   const actualizarColor = (color, id) => {
-    console.log("Actualizar: ", color, id);
     const equiposActualizados = equipos.map((equipo) => {
       if (equipo.id === id) {
         equipo.colorPrimario = color;

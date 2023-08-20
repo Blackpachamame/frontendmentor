@@ -33,7 +33,7 @@ const Formulario = (props) => {
     return (
         <section className="formulario">
             <form onSubmit={manejarEnvio}>
-                <h2>Rellena el formulario para crear el colaborador.</h2>
+                <h3>Rellena el formulario para crear el colaborador.</h3>
                 <Campo
                     label="Nombre"
                     placeholder="Ingresar nombre"
@@ -63,7 +63,7 @@ const Formulario = (props) => {
                 <Boton>Crear</Boton>
             </form>
             <form onSubmit={manejarNuevoEquipo}>
-                <h2>Rellena el formulario para crear el equipo.</h2>
+                <h3>Rellena el formulario para crear el equipo.</h3>
                 <Campo
                     label="Titulo"
                     placeholder="Ingresar titulo"
