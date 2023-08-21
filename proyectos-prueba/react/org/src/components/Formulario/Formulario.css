@@ -23,7 +23,7 @@
 
 @media (max-width: 900px) {
   .formulario {
-    padding: 40px;
+    padding: 40px 40px 0;
   }
   .formulario form {
     padding: 40px;

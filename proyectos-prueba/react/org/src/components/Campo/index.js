@@ -1,4 +1,4 @@
-import "./Campo.css"
+import "./Campo.css";
 const Campo = (props) => {
     const placeholderModificado = `${props.placeholder}...`;
 
@@ -10,11 +10,13 @@ const Campo = (props) => {
     };
 
     return <div className={`campo campo-${type}`}>
-        <label>{props.label}</label>
+        <label htmlFor={props.label}>{props.label}</label>
         <input
+            id={props.label}
+            name={props.label}
             placeholder={placeholderModificado}
             required={props.required}
-            value={props.valor}
+            value={(props.valor === "") && (type === "color") ? "#000000" : props.valor}
             onChange={manejarCambio}
             type={type}
         />
