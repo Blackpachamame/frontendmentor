@@ -1,47 +1,20 @@
-<h1 align="center">Serendipity</h1>
+# $\Huge\color{#9747ff}{\texttt{Serendipity}}$ 🎀
 
-<div align="center">
-   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
-</div>
-<br>
-<div align="center">
-<img src="design/desktop-preview.jpg"></img>
-</div>
+<div align="center"><img src="images/coverSerendipity.png"></img></div>
 
-## Tabla de contenido
+## $\normalsize\color{#9747ff}{\texttt{En práctica}}$ ⚔️
 
-- [Tabla de contenido](#tabla-de-contenido)
-- [Descripción](#descripción)
-  - [Desafío](#desafío)
-- [Mi Procedimiento](#mi-procedimiento)
-  - [Construido con](#construido-con)
-  - [Lo que aprendí](#lo-que-aprendí)
-  - [Recursos útiles](#recursos-útiles)
-- [Autor](#autor)
+- La idea es lograr hacer algo lo mas parecido posible al diseño presentado en figma.
 
-## Descripción
-
-### Desafío
-
-A completar
-
-## Mi Procedimiento
-
-### Construido con
+## $\normalsize\color{#9747ff}{\texttt{Construido con}}$ 🔨
 
 - HTML5
 - CSS3
 
-### Lo que aprendí
+## $\normalsize\color{#9747ff}{\texttt{Falta}}$ ⏳
 
-- La propiedad CSS `background-clip` especifica si el fondo de un elemento, ya sea el color o imagen, se extiende por debajo su borde.
+- Retormarlo en un futuro
 
-### Recursos útiles
+## $\normalsize\color{#9747ff}{\texttt{Recursos}}$ 📌
 
-- [Documentación CSS](background-clip) - Información sobre la propiedad background-clip.
-- [Gradient Borders in CSS](https://css-tricks.com/gradient-borders-in-css/) - Cómo hacer bordes con gradiente.
-
-## Autor
-
-- Github - [Blackpachamame](https://github.com/Blackpachamame)
-- Frontend Mentor - [@Blackpachamame](https://www.frontendmentor.io/profile/Blackpachamame)
+- [Modelo Figma](https://www.figma.com/file/40DQJ8IEvTxwE4Si35gisv/Notification-Web-Design-(Community)?node-id=70%3A167&mode=dev) - No es el que había empezado, pero tiene varios componentes similares.
