@@ -1,4 +1,36 @@
 .header {
   width: 100%;
+  color: #fff;
   background-color: #6278f7;
+  text-align: center;
+}
+
+.header__mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header__img {
+    display: none;
+  }
+  .header__mobile {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__mobile {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__mobile h1 {
+    font-size: 28px;
+  }
 }

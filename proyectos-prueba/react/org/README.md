@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Iniciando con Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create React App es una forma oficialmente admitida de crear aplicaciones React de una sola página. Como proyecto inicial haremos una página de colaboradores que debe contar con:
 
-## Available Scripts
+- Formulario para agregar un nuevo colaborador
+- Formulario para agregar un nuevo equipo
+- Ocultar/mostrar formularios
+- Lista de colaboradores divididos por equipo
+- Opción de marcar/desmarcar como favorito a un colaborador
+- Eliminar colaborador
+- Opción para editar el color de equipo
+- Nos basaremos en el siguiente [diseño](https://www.figma.com/file/g0lPfF6MnBImDq7ube3STz/Intro-a-React-Org)
 
-In the project directory, you can run:
+## Comenzando
 
-### `npm start`
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Luego abra `http://localhost:3000/` para ver su aplicación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Cuando esté listo para implementar en producción, cree un paquete minimizado con `npm run build`.
 
-### `npm test`
+## Lo que aprendimos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Creamos un nuevo proyecto de React con `create-react-app`
+- Analizamos las dependencias de nuestro proyecto
+- Analizamos los comandos disponibles en nuestro archivo `package.json`
+- Creamos componentes funcionales
+- Agregamos estilos CSS a nuestros componentes
+- Instalamos `React Developer Tools` para poder inspeccionar nuestros componentes
+- Generamos los componentes Formulario y CampoTexto
+- Aprendimos cómo pasar `props` para un componente
+- Trabajamos con elementos anidados utilizando la `prop children`
+- Aprendimos cómo reaccionar a eventos del DOM como el `onSubmit` de nuestro form
+- Controlar inputs utilizando `value` y `onChange`
+- Manejar el `estado de un componente` utilizando el `hook useState`
+- Trabajar con props que son funciones
+- Cómo representar con un arreglo de objetos una lista
+- A utilizar el `método map` y como este nos ayuda a generar nuevos componentes a partir de un arreglo
+- Cada elemento generado con map necesita tener un prop especial llamada `key` la cual le permite a React tener una referencia a cada componente creado dinámicamente
+- Actualizamos el estado de nuestros colaboradores agregando uno nuevo con la información que introducimos en el formulario
+- Creamos los colaboradores con la información de cada uno a partir del objeto que los representa en el estado de colaboradores
+- Como pasar la `props` a través de diferentes `componentes`
+- Como instalar nuevas dependencias en tu aplicación
+- Diferencia entre `export` y `export default`
+- Como realizar la comunicación entre componentes hijos a padres
+- La forma de cómo actualizar un arreglo de objetos y cómo react al estar al pendiente de esa información por medio del hook `useState` actualiza el DOM comparándolo con el `virtual DOM`
 
-### `npm run build`
+## Recursos útiles
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Create React App](https://create-react-app.dev) - Documentación.
+- [Uuid](https://github.com/uuidjs/uuid) - Para crear un UUID aleatorio.

@@ -19,18 +19,22 @@
 .redes {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 29px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 932px) {
   .footer {
+    background-color: #6278f7;
+    background-image: none !important;
     padding: 50px 30px;
+    text-align: center;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 375px) {
   .footer {
-    flex-direction: column-reverse;
+    text-align: initial;
     align-items: flex-start;
   }
 }
