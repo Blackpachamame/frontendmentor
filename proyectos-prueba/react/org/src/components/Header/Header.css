@@ -3,6 +3,8 @@
   color: #fff;
   background-color: #6278f7;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header__mobile {

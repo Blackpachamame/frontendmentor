@@ -7,7 +7,7 @@ const Equipo = (props) => {
 
     const bgcolor = { backgroundColor: colorPrimario + "33" };
     const border = { borderColor: colorPrimario };
-
+    const title = titulo;
     return (<>
         {
             colaboradores.length > 0 &&
@@ -16,6 +16,7 @@ const Equipo = (props) => {
                     type="color"
                     className="inputColor"
                     value={colorPrimario}
+                    aria-label={"colorEquipo " + title}
                     onChange={(evento) => {
                         actualizarColor(evento.target.value, id)
                     }}

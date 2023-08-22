@@ -49,6 +49,9 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 - Como realizar la comunicación entre componentes hijos a padres
 - La forma de cómo actualizar un arreglo de objetos y cómo react al estar al pendiente de esa información por medio del hook `useState` actualiza el DOM comparándolo con el `virtual DOM`
 
+## Dato extra
+Con el filtro `drop-shadow()` podemos darle un sombreado a las imagenes.
+
 ## Recursos útiles
 
 - [Create React App](https://create-react-app.dev) - Documentación.
