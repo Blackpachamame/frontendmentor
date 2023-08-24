@@ -2,7 +2,7 @@ import "./Footer.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
-    return <footer className="footer" style={{ backgroundImage: "url(/img/footer.png)" }}>
+    return <footer className="footer">
         <img src='/logoOrg.png' alt='logo org' />
         <p>Desarrollado por Blackpachamame</p>
         <div className="redes">
