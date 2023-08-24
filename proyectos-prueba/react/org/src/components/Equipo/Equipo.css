@@ -1,6 +1,6 @@
 .equipo {
   width: 100%;
-  padding: 40px 155px;
+  padding: 40px 130px;
   text-align: center;
   position: relative;
 }
@@ -19,9 +19,9 @@
 .colaboradores {
   padding-top: 40px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px 30px;
+  gap: 24px 20px;
 }
 
 @media (max-width: 900px) {

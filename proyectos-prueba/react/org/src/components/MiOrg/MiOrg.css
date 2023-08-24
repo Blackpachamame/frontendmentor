@@ -1,5 +1,5 @@
 .orgSection {
-  padding: 80px 155px;
+  padding: 80px 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .imgAdd {
   position: absolute;
-  right: 155px;
+  right: 130px;
   cursor: pointer;
   filter: drop-shadow(0px 3px 2px #bbbbbb);
 }
