@@ -11,6 +11,8 @@ Create React App es una forma oficialmente admitida de crear aplicaciones React 
 - Opción para editar el color de equipo
 - Nos basaremos en el siguiente [diseño](https://www.figma.com/file/g0lPfF6MnBImDq7ube3STz/Intro-a-React-Org)
 
+## [Sitio en vivo](https://org-alura-orcin.vercel.app)
+
 ## Comenzando
 
 ```
@@ -49,7 +51,7 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 - Como realizar la comunicación entre componentes hijos a padres
 - La forma de cómo actualizar un arreglo de objetos y cómo react al estar al pendiente de esa información por medio del hook `useState` actualiza el DOM comparándolo con el `virtual DOM`
 
-## Dato extra
+## Extra
 Con el filtro `drop-shadow()` podemos darle un sombreado a las imágenes.
 
 ## Recursos útiles
