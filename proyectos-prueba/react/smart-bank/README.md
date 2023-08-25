@@ -33,8 +33,14 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 - Utilizar propiedades en Componentes estilizados
 - Porqué utilizar inline styles no es bueno
 - Cómo utilizar `Herencia` de estilo
-- Sobre los posibles problemas de performance caso un Styled Component esté declarado dentro de otro componente React
+- Sobre los posibles problemas de performance en caso de que un Styled Component esté declarado dentro de otro componente React
 - Cómo tratar de `medias query` dentro de los componentes estilizados
+- Cómo componer elementos estilizados para crear nuevas pantallas
+- Ventajas de utilizar componentes para crear layouts
+- Porque evitar el uso de switch-case
+- Cómo organizar los temas de nuestro proyecto
+- Qué es el `ThemeProvider` de Styled Components
+- Como alterar colores de ícones SVG utilizando filters
 
 ## Recursos útiles
 

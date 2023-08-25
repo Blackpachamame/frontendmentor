@@ -1,11 +1,10 @@
+import styled from "styled-components";
 import Title from "../Title";
 import Account from "../Account";
-import styled from "styled-components";
-import { fondoClaro } from "../UI/variables";
 import List from "../List";
 
 const StyledContainer = styled.div`
-  background-color: ${fondoClaro};
+  background-color: ${({ theme }) => theme.body};
   min-height: 90vh;
   padding: 0px 15vw;
 `;

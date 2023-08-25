@@ -4,14 +4,14 @@ import salud from "./assets/images/salud.svg";
 import transporte from "./assets/images/transporte.svg";
 import otros from "./assets/images/otros.svg";
 
-import { Icono } from "./Components/UI";
+import { IconoTema } from "./Components/UI";
 
 const images = {
-    Restaurante: <Icono src={alimentacion} alt="Restaurant" />,
-    Utilidades: <Icono src={utilidades} alt="Utilidades" />,
-    Salud: <Icono src={salud} alt="Salud" />,
-    Transporte: <Icono src={transporte} alt="YTransporte" />,
-    Otros: <Icono src={otros} alt="Otros" />,
+    Restaurante: <IconoTema src={alimentacion} alt="Restaurant" />,
+    Utilidades: <IconoTema src={utilidades} alt="Utilidades" />,
+    Salud: <IconoTema src={salud} alt="Salud" />,
+    Transporte: <IconoTema src={transporte} alt="YTransporte" />,
+    Otros: <IconoTema src={otros} alt="Otros" />,
 };
 
 const Image = (props) => {
