@@ -20,6 +20,10 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 
 - La diferencia entre `componentes de Clase y Function`
 - Instalamos `Material UI` para trabajar con sus componentes
+- Aprendimos a utilizar diversos `componentes` de Material UI
+- Propiedades del componente `TextField`
+- Utilizamos el componente de `Typography`
+- `Switches` y `FormControlLabel` de Material UI
 
 ## Recursos útiles
 
