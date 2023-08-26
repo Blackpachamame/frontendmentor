@@ -10,10 +10,10 @@ export const IconoTema = styled(Icono)`
 `;
 
 export const Btn = styled.button`
+  height: 41px;
   margin: 15px auto 0px auto;
-  display: block;
   border-radius: 20px;
-  background-color: #41d3be;
+  background-color: ${({ theme }) => theme.header};
   border: none;
   color: white;
   font-weight: 600;
@@ -31,11 +31,7 @@ export const Box = styled.div`
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
-  width: 48%;
-  @media (max-width: 800px) {
-    width: 95%;
-    margin: 5px;
-  }
+  width: 100%;
 `;
 
 export const Saldo = styled.div`
@@ -44,15 +40,21 @@ export const Saldo = styled.div`
 `;
 
 export const Detalle = styled.span`
-  color: #41d3be;
+  color: ${({ theme }) => theme.header};
   font-size: 24px;
 `;
 
 export const BtnTema = styled.div`
-  position: absolute;
-  top: 4vh;
-  right: 20px;
   background-color: inherit;
   border: none;
   cursor: pointer;
+`;
+
+export const ContainerBtn = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media (max-width: 500px) {
+    gap: 10px;
+  }
 `;

@@ -3,12 +3,9 @@ import Container from "./Components/Container";
 import Header from "./Components/Header";
 import GlobalStyle from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import { BtnTema } from "./Components/UI";
-import SwitcherTema from "./Components/SwitcherTema";
 import { temaClaro, temaOscuro } from "./Components/UI/temas";
 
 function App() {
-  // const [tema, setTema] = useState(true);
   const [theme, setTema] = useState(getInitialTheme);
 
   useEffect(() => {
@@ -27,10 +24,7 @@ function App() {
   return (
     <ThemeProvider theme={theme ? temaClaro : temaOscuro}>
       <GlobalStyle />
-      <BtnTema onClick={toggleTema}>
-        <SwitcherTema theme={theme} />
-      </BtnTema>
-      <Header />
+      <Header theme={theme} toggleTema={toggleTema} />
       <Container />
     </ThemeProvider>
   );

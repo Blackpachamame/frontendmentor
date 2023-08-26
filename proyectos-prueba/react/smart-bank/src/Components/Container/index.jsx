@@ -6,14 +6,21 @@ import List from "../List";
 const StyledContainer = styled.div`
   background-color: ${({ theme }) => theme.body};
   min-height: 90vh;
-  padding: 0px 15vw;
+  padding: 0px 15vw 25px;
+  @media (max-width: 500px) {
+    padding: 0px 20px;
+  }
+  @media (max-width: 375px) {
+    padding: 0px 10px;
+  }
 `;
 
 const Content = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media (max-width: 800px) {
+  gap: 25px;
+  @media (max-width: 850px) {
     flex-direction: column;
   }
 `;

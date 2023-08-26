@@ -8,6 +8,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-decoration: none;
   }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .visible {
+    display: block;
+  }
+  .oculto {
+    display: none;
+  }
+
 `;
 
 export default GlobalStyle;
