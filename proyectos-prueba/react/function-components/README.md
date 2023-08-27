@@ -24,6 +24,12 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 - Propiedades del componente `TextField`
 - Utilizamos el componente de `Typography`
 - `Switches` y `FormControlLabel` de Material UI
+- Componentes `controlados` y `no controlados`
+- Implementamos el hook `useState`
+- Asincronicidad en el hook useState
+- Cuales son las reglas de los Hooks
+- Propiedad `checked` para Switches
+- Cómo recibir props en un componente de función
 
 ## Recursos útiles
 
