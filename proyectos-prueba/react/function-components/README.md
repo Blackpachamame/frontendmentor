@@ -30,6 +30,8 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 - Cuales son las reglas de los Hooks
 - Propiedad `checked` para Switches
 - Cómo recibir props en un componente de función
+- Propiedad de error en el componente TextField así como `HelperText` para indicar un mensaje de error
+- Usamos y actualizamos el estado para mostrar los errores
 
 ## Recursos útiles
 

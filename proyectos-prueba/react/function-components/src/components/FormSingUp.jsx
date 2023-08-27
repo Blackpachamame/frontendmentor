@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import Box from "@mui/material/Box";
 
 export default function FormSingUp({ handleSubmit }) {
   const [name, setName] = useState("");
@@ -12,6 +13,30 @@ export default function FormSingUp({ handleSubmit }) {
   const [email, setEmail] = useState("");
   const [prom, setProm] = useState(true);
   const [nov, setNov] = useState(false);
+
+  const [errors, setErrors] = useState({
+    name: {
+      error: false,
+    },
+    lastName: {
+      error: false,
+    },
+    email: {
+      error: false,
+    },
+  });
+
+  function validaciones(nombre) {
+    if (nombre.length >= 3) {
+      return {
+        name: { error: false, message: " " },
+      };
+    } else {
+      return {
+        name: { error: true, message: "Deben ser al menos 3 caracteres" },
+      };
+    }
+  }
 
   return (
     <form
@@ -30,7 +55,7 @@ export default function FormSingUp({ handleSubmit }) {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        spacing={2}
+        spacing={1}
       >
         <TextField
           id="name"
@@ -40,6 +65,12 @@ export default function FormSingUp({ handleSubmit }) {
           fullWidth
           onChange={(e) => setName(e.target.value)}
           value={name}
+          error={errors.name.error}
+          helperText={errors.name.error ? errors.name.message : " "}
+          onBlur={(e) => {
+            setErrors(validaciones(e.target.value));
+          }}
+          required
         />
         <TextField
           id="lastName"
@@ -48,6 +79,12 @@ export default function FormSingUp({ handleSubmit }) {
           fullWidth
           onChange={(e) => setLastName(e.target.value)}
           value={lastName}
+          error={errors.name.error}
+          helperText={errors.name.error ? errors.name.message : " "}
+          onBlur={(e) => {
+            setErrors(validaciones(e.target.value));
+          }}
+          required
         />
         <TextField
           id="email"
@@ -56,34 +93,39 @@ export default function FormSingUp({ handleSubmit }) {
           fullWidth
           onChange={(e) => setEmail(e.target.value)}
           value={email}
+          error={errors.name.error}
+          helperText={errors.name.error ? errors.name.message : " "}
+          onBlur={(e) => {
+            setErrors(validaciones(e.target.value));
+          }}
+          required
         />
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={prom}
-                onChange={(e) => setProm(e.target.checked)}
-              />
-            }
-            label="Promociones"
-            value={prom}
-          />
-          <FormControlLabel
-            control={
-              <Switch
-                checked={nov}
-                onChange={(e) => setNov(e.target.checked)}
-              />
-            }
-            label="Novedades"
-            value={nov}
-          />
-        </FormGroup>
+      </Stack>
+      <FormGroup row sx={{ display: "flex", justifyContent: "center", mt: 1 }}>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={prom}
+              onChange={(e) => setProm(e.target.checked)}
+            />
+          }
+          label="Promociones"
+          value={prom}
+        />
+        <FormControlLabel
+          control={
+            <Switch checked={nov} onChange={(e) => setNov(e.target.checked)} />
+          }
+          label="Novedades"
+          value={nov}
+        />
+      </FormGroup>
 
+      <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
         <Button variant="contained" type="submit">
           Registrarse
         </Button>
-      </Stack>
+      </Box>
     </form>
   );
 }
