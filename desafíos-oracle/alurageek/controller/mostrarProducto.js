@@ -1,3 +1,5 @@
+import { productServices } from "../service/productoService.js";
+
 const mostrarProducto = (imageUrl, name, price, id) => {
     const box = document.createElement("div");
     const contenido = `
