@@ -1,26 +1,23 @@
 import {
-  colorPrimario,
-  colorSecundario,
-  fondoClaro,
-  contenidoClaro,
-  textoFondoClaro,
-  fondoOscuro,
-  contenidoOscuro,
-  textoFondoOscuro,
+  lightCyanText,
+  neonGreen,
+  grayishBlue,
+  darkBlueBackground,
+  darkGrayishBlue,
 } from "./variables";
 
 export const temaClaro = {
-  header: colorPrimario,
-  body: fondoClaro,
-  inside: contenidoClaro,
-  text: textoFondoClaro,
+  background: darkBlueBackground,
+  body: darkGrayishBlue,
+  title: neonGreen,
+  text: lightCyanText,
   filter: "",
 };
 
 export const temaOscuro = {
-  header: colorSecundario,
-  body: fondoOscuro,
-  inside: contenidoOscuro,
-  text: textoFondoOscuro,
+  background: darkGrayishBlue,
+  body: lightCyanText,
+  title: neonGreen,
+  text: darkBlueBackground,
   filter: "invert(100%)",
 };

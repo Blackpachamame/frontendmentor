@@ -1,10 +1,7 @@
-export const colorPrimario = "#41D3BE";
-export const colorSecundario = "#5c3c7f";
-
-export const fondoClaro = "#F1F1F1";
-export const contenidoClaro = "white";
-export const textoFondoClaro = "grey";
-
-export const fondoOscuro = "#161021";
-export const contenidoOscuro = "#2f1749";
-export const textoFondoOscuro = "#FAFAFA";
+// Primary
+export const lightCyanText = "hsl(193, 38%, 86%)";
+export const neonGreen = "hsl(150, 100%, 66%)";
+// Neutral
+export const grayishBlue = "hsl(217, 19%, 38%)";
+export const darkGrayishBlue = "hsl(217, 19%, 24%)";
+export const darkBlueBackground = "hsl(218, 23%, 16%)";
