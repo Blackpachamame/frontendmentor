@@ -46,7 +46,8 @@ const mostrarProducto = (imageUrl, name, price, id) => {
     btnDelete.addEventListener("click", () => {
         const id = btnDelete.id;
         productServices.eliminarProducto(id).then((respuesta) => {
-            console.log(respuesta);
+            location.reload();
+            alert("Producto eliminado");
         }).catch((err) => alert("Ocurrió un error"));
     });
 

@@ -38,7 +38,7 @@ formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     productServices.editarProducto(imgUrl.value, nombre.value, precio.value, categoria.value, descripcion.value, id).then(() => {
         window.location.href = "./productos.html";
-        alert("Producto agregado correctamente");
+        alert("Producto editado correctamente");
     });
 });
 

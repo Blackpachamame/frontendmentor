@@ -22,7 +22,6 @@ const nuevoUsuario = (name, email, password, id) => {
         if (id) {
             userServices.eliminarUsuario(id)
                 .then((id) => {
-                    console.log(id)
                     render();
                 })
                 .catch((err) => console.error("Hubo un error", err))
