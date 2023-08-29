@@ -1,12 +1,15 @@
-// import temaOn from "../../assets/images/theme-on.png";
-// import temaOff from "../../assets/images/theme-off.png";
-// import { Icono } from "../UI";
 import { TbBulbFilled, TbBulbOff } from "react-icons/tb";
 
 const SwitcherTema = ({ theme }) => {
-  // const claro = <Icono src={temaOn} alt="Tema claro" />;
-  // const oscuro = <Icono src={temaOff} alt="Tema oscuro" />;
-  return <>{theme ? <TbBulbOff /> : <TbBulbFilled />}</>;
+  return (
+    <>
+      {theme ? (
+        <TbBulbOff style={{ fontSize: "32px", color: "#202733" }} />
+      ) : (
+        <TbBulbFilled style={{ fontSize: "32px", color: "#cee3e9" }} />
+      )}
+    </>
+  );
 };
 
 export default SwitcherTema;
