@@ -1,4 +1,5 @@
 import icon from "../../assets/images/icon-dice.svg";
+import iconLight from "../../assets/images/icon-diceLight.svg";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -14,6 +15,12 @@ const StyledButton = styled.button`
   bottom: -32px;
   right: calc(50% + -32px);
   cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 30px 5px ${({ theme }) => theme.shadow};
+    -webkit-box-shadow: 0px 0px 30px 5px ${({ theme }) => theme.shadow};
+    -moz-box-shadow: 0px 0px 30px 5px ${({ theme }) => theme.shadow};
+  }
 `;
 
 const StyledIcon = styled.img`
@@ -21,10 +28,14 @@ const StyledIcon = styled.img`
   height: 24px;
 `;
 
-export default function Button() {
+export default function Button({ theme, handleClick }) {
   return (
-    <StyledButton>
-      <StyledIcon src={icon} alt="" />
+    <StyledButton onClick={handleClick}>
+      {!theme ? (
+        <StyledIcon src={icon} alt="" />
+      ) : (
+        <StyledIcon src={iconLight} alt="" />
+      )}
     </StyledButton>
   );
 }

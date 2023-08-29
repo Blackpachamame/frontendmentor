@@ -4,12 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { temaClaro, temaOscuro } from "./Components/UI/temas";
 import Box from "./Components/Box";
 
-
-/* Advice #<!-- Advice ID goes here --> 
- 
- "<!-- Advice text goes here -->" */
-
-function App() {
+export default function App() {
 
   const [theme, setTema] = useState(getInitialTheme);
 
@@ -19,7 +14,7 @@ function App() {
 
   function getInitialTheme() {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? JSON.parse(savedTheme) : temaClaro;
+    return savedTheme ? JSON.parse(savedTheme) : temaOscuro;
   }
 
   const toggleTema = () => {
@@ -29,9 +24,7 @@ function App() {
   return (
     <ThemeProvider theme={theme ? temaClaro : temaOscuro}>
       <GlobalStyle />
-      <Box theme={theme} toggleTema={toggleTema} />
+      <Box theme={theme} handleTema={toggleTema} />
     </ThemeProvider>
   );
-}
-
-export default App;
+};

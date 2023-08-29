@@ -4,20 +4,24 @@ import {
   grayishBlue,
   darkBlueBackground,
   darkGrayishBlue,
+  white,
+  lightGray,
+  grayishBluehadow,
+  neonGreenShadow,
 } from "./variables";
 
-export const temaClaro = {
+export const temaOscuro = {
   background: darkBlueBackground,
   body: darkGrayishBlue,
   title: neonGreen,
   text: lightCyanText,
-  filter: "",
+  shadow: neonGreenShadow,
 };
 
-export const temaOscuro = {
-  background: darkGrayishBlue,
-  body: lightCyanText,
-  title: neonGreen,
+export const temaClaro = {
+  background: lightGray,
+  body: white,
+  title: grayishBlue,
   text: darkBlueBackground,
-  filter: "invert(100%)",
+  shadow: grayishBluehadow,
 };

@@ -13,6 +13,6 @@ const StyledAdvice = styled.h3`
   }
 `;
 
-export default function Advice() {
-  return <StyledAdvice>Advice 1117</StyledAdvice>;
+export default function TitleAdvice({ numero }) {
+  return <StyledAdvice>Advice #{numero}</StyledAdvice>;
 }
