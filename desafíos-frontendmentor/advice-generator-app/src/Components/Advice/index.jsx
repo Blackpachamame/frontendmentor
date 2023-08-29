@@ -7,10 +7,9 @@ const StyledAdvice = styled.h3`
   display: inline-block;
   letter-spacing: 4px;
   margin-right: -4px;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
   @media (min-width: 600px) {
     font-size: 12px;
-    margin-bottom: 36px;
   }
 `;
 
