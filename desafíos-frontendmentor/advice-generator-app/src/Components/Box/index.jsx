@@ -50,7 +50,7 @@ export default function Box({ theme, handleTema }) {
   return (
     <ContainerBox>
       <StyledBox>
-        <BtnTema onClick={handleTema}>
+        <BtnTema aria-label="Cambiar tema" onClick={handleTema}>
           <SwitcherTema theme={theme} />
         </BtnTema>
         <TitleAdvice numero={numero} />

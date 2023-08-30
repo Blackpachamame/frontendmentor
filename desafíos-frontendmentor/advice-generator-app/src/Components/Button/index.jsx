@@ -30,7 +30,7 @@ const StyledIcon = styled.img`
 
 export default function Button({ theme, handleClick }) {
   return (
-    <StyledButton onClick={handleClick}>
+    <StyledButton aria-label="Cambiar Advice" onClick={handleClick}>
       {!theme ? (
         <StyledIcon src={icon} alt="" />
       ) : (
