@@ -38,13 +38,10 @@ export default function Box({ theme, handleTema }) {
   );
   const [numero, setNumero] = useState(117);
 
-  const cita = GenerarAdvice();
-  console.log(cita);
-
-  const nuevoAdvice = () => {
-    // console.log("una cita: " + cita);
-    //setNumero(cita.slip.id);
-    // setAdvice(cita.slip.advice);
+  const fetchAPI = async () => {
+    const data = await GenerarAdvice();
+    setNumero(data.id);
+    setAdvice(data.advice);
   };
 
   return (
@@ -60,7 +57,7 @@ export default function Box({ theme, handleTema }) {
           <source media="(min-width:601px)" srcSet={dividerDesktop} />
           <img src="" alt="" style={{ margin: "auto" }} />
         </picture>
-        <Button theme={theme} handleClick={nuevoAdvice()} />
+        <Button theme={theme} handleClick={() => fetchAPI()} />
       </StyledBox>
     </ContainerBox>
   );
