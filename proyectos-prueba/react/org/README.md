@@ -24,6 +24,7 @@ npm start
 Luego abra `http://localhost:3000/` para ver su aplicación.
 
 Cuando esté listo para implementar en producción, cree un paquete minimizado con `npm run build`.
+Puedes levantar un servidor estático con: `serve -s build`.
 
 ## Lo que aprendimos
 

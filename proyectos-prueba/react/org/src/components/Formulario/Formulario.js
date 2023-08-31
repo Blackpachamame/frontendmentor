@@ -3,6 +3,7 @@ import "./Formulario.css";
 import Campo from "../Campo";
 import ListaOpciones from "../ListaOpciones";
 import Boton from "../Boton";
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = (props) => {
     const [nombre, actualizarNombre] = useState("");
@@ -17,10 +18,12 @@ const Formulario = (props) => {
     const manejarEnvio = (evento) => {
         evento.preventDefault();
         let datosAEnviar = {
+            id: uuidv4(),
+            equipo,
+            foto,
             nombre,
             puesto,
-            foto,
-            equipo,
+            fav: false,
         }
         registrarColaborador(datosAEnviar);
     }
