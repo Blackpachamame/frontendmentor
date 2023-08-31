@@ -7,6 +7,7 @@ import Quote from "../Quote";
 import Button from "../Button";
 import { BtnTema } from "../UI";
 import SwitcherTema from "../SwitcherTema";
+import { GenerarAdvice } from "../../services/useFetch";
 
 const StyledBox = styled.div`
   background-color: ${({ theme }) => theme.body};
@@ -37,14 +38,13 @@ export default function Box({ theme, handleTema }) {
   );
   const [numero, setNumero] = useState(117);
 
-  const generarAdvice = () => {
-    fetch(`https://api.adviceslip.com/advice`)
-      .then((resp) => resp.json())
-      .then((data) => {
-        setNumero(data.slip.id);
-        setAdvice(data.slip.advice);
-      })
-      .catch((err) => generarAdvice());
+  const cita = GenerarAdvice();
+  console.log(cita);
+
+  const nuevoAdvice = () => {
+    // console.log("una cita: " + cita);
+    //setNumero(cita.slip.id);
+    // setAdvice(cita.slip.advice);
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Box({ theme, handleTema }) {
           <source media="(min-width:601px)" srcSet={dividerDesktop} />
           <img src="" alt="" style={{ margin: "auto" }} />
         </picture>
-        <Button theme={theme} handleClick={generarAdvice} />
+        <Button theme={theme} handleClick={nuevoAdvice()} />
       </StyledBox>
     </ContainerBox>
   );
