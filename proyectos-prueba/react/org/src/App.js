@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
 import './App.css';
 import Header from './components/Header/Header';
@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [mostrarForm, actualizarMostrar] = useState(false);
 
-  const [colaboradores, actualizarColaboradores] = useState([{
+  const colaboradoresArreglo = [{
     id: uuid(),
     equipo: "Instructor",
     foto: "https://github.com/harlandlohora.png",
@@ -105,7 +105,9 @@ function App() {
     nombre: "Mariana Spinola",
     puesto: "Diseñadora web y Desarrolladora Full Stack",
     fav: true,
-  }]);
+  }];
+
+  const [colaboradores, actualizarColaboradores] = useState(getInitialColaboradores);
 
   const [equipos, actualizarEquipos] = useState([
     {
@@ -144,6 +146,15 @@ function App() {
       colorPrimario: "#FF8A29",
     },
   ]);
+
+  useEffect(() => {
+    localStorage.setItem("colaboradores", JSON.stringify(colaboradores));
+  }, [colaboradores]);
+
+  function getInitialColaboradores() {
+    const savedColaboradores = localStorage.getItem("colaboradores");
+    return savedColaboradores ? JSON.parse(savedColaboradores) : colaboradoresArreglo;
+  }
 
   const cambiarMostrar = () => {
     actualizarMostrar(!mostrarForm);
