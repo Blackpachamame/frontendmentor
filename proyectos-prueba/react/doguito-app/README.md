@@ -16,6 +16,14 @@ Cuando esté listo para implementar en producción, cree un paquete minimizado c
 
 `npm i react-router-dom`
 
+## Install JSON Server
+
+`npm install -g json-server`
+
+Puede iniciar JSON Server en otros puertos con el indicador `--port` o `-p`:
+
+`json-server --watch db.json -p 5000`
+
 ## Lo que aprendimos
 
 - Hemos configurado rutas para componentes diversos utilizando condiciones con if.
