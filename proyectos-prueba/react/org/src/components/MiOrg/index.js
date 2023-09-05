@@ -1,8 +1,6 @@
 import "./MiOrg.css";
 
 const MiOrg = (props) => {
-    //Estado - hooks
-    //userState
 
     return <section className="orgSection">
         <h2>Mi organización</h2>
