@@ -1,4 +1,3 @@
-import './App.css';
 import Typography from '@mui/material/Typography';
 import FormSingUp from './components/FormSingUp';
 import Container from '@mui/material/Container';

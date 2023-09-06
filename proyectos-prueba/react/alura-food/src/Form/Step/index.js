@@ -1,6 +1,5 @@
 import { TextField, Button, Box } from "@mui/material";
 
-
 const Step = ({ data, step, pasos }) => {
     const { inputs, buttonText, onSubmit } = data;
 
@@ -17,8 +16,7 @@ const Step = ({ data, step, pasos }) => {
             onSubmit={(e) => onSubmit(e, step, pasos)}
         >
             {inputs.map((input, i) => {
-                const { label, type, value, valid, onChange, helperText, validator } =
-                    input;
+                const { label, type, value, valid, onChange, helperText, validator } = input;
 
                 return (
                     <TextField

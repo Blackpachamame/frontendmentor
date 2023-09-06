@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import { LogoSpace, FormSpace, Img } from "./styles";
-import DatosUsuario from "./DatosUsuario";
-import DatosPersonales from "./DatosPersonales";
-import DatosEntrega from "./DatosEntrega";
 import Complete from "./Complete";
 import Stepper from "../Stepper";
 import Step from "./Step";
+
+//React Hook Form
+import { useForm } from "react-hook-form";
 
 //Validaciones
 import { validarEmail, validarPassword } from "./DatosUsuario/validaciones";
@@ -19,25 +19,25 @@ const Form = () => {
   const [pasos, setPasos] = useState({});
 
   const onSubmit = (e, step, pasos) => {
-    console.log(step);
     e.preventDefault();
     let newStep = step + 1;
-    console.log(newStep);
     setStep(newStep);
     if (newStep === 3) {
-      console.log("Eviar datos al backend", pasos);
+      console.log("Enviar datos al backend", pasos);
     }
   };
 
   const handleChange = (element, position, currentStep, validator, pasos) => {
     const value = element.target.value;
     const valid = validator(value);
-    const cp = { ...pasos };
-    cp[currentStep].inputs[position].value = value;
-    cp[currentStep].inputs[position].valid = valid;
+    const copyPasos = { ...pasos };
+    copyPasos[currentStep].inputs[position].value = value;
+    copyPasos[currentStep].inputs[position].valid = valid;
 
-    setPasos(cp);
+    setPasos(copyPasos);
   };
+
+  const { register, handleSubmit, watch } = useForm();
 
   const stepsFlow = {
     0: {
@@ -50,6 +50,11 @@ const Form = () => {
           onChange: handleChange,
           helperTex: "Ingresa un correo electrónico válido.",
           validator: validarEmail,
+          register: {
+            ...register("email", {
+              required: true,
+            })
+          }
         },
         {
           label: "Contraseña",
@@ -62,7 +67,7 @@ const Form = () => {
         },
       ],
       buttonText: "Siguiente",
-      onsubmit
+      onSubmit,
     },
     1: {
       inputs: [
@@ -134,20 +139,10 @@ const Form = () => {
 
   useEffect(() => {
     setPasos(stepsFlow);
+    // eslint-disable-next-line
   }, []);
 
-
-  const updateStep = (step) => {
-    setStep(step);
-  }
-
-  const steps = {
-    0: <DatosPersonales updateStep={updateStep} />,
-    1: <DatosUsuario updateStep={updateStep} />,
-    2: <DatosEntrega updateStep={updateStep} />,
-    3: <Complete />,
-  }
-
+  console.log(pasos[step]);
   return (
     <Box
       sx={{
@@ -166,6 +161,7 @@ const Form = () => {
           <Step data={pasos[step]} step={step} pasos={pasos} />
         )}
         {step === 3 && <Complete />}
+        <pre>{JSON.stringify(watch("email"), null, 2)}</pre>
       </FormSpace>
     </Box>
   );
