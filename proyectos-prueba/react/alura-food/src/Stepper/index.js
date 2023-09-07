@@ -3,7 +3,7 @@ import { Box, Stepper, Step, StepLabel } from "@mui/material";
 const StepperComponent = (props) => {
   const steps = ["Datos de usuario", "Datos personales", "Datos de entrega"];
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ marginBottom: "16px" }}>
       <Stepper activeStep={props.step}>
         {steps.map((step) => (
           <Step key={step}>

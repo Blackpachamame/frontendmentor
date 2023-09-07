@@ -5,9 +5,6 @@ import Complete from "./Complete";
 import Stepper from "../Stepper";
 import Step from "./Step";
 
-//React Hook Form
-import { useForm } from "react-hook-form";
-
 //Validaciones
 import { validarEmail, validarPassword } from "./DatosUsuario/validaciones";
 import { validarNombre, validarApellido, validarTelefono } from "./DatosPersonales/validaciones";
@@ -20,8 +17,14 @@ const Form = () => {
 
   const onSubmit = (e, step, pasos) => {
     e.preventDefault();
-    let newStep = step + 1;
-    setStep(newStep);
+    const todoBien = pasos[step].inputs.every(input => input.valid === true)
+    let newStep = step;
+    if (todoBien) {
+      newStep++;
+      setStep(newStep);
+    } else {
+      console.log("Datos incorrectos, intente nuevamente");
+    }
     if (newStep === 3) {
       console.log("Enviar datos al backend", pasos);
     }
@@ -37,8 +40,6 @@ const Form = () => {
     setPasos(copyPasos);
   };
 
-  const { register, handleSubmit, watch } = useForm();
-
   const stepsFlow = {
     0: {
       inputs: [
@@ -50,11 +51,6 @@ const Form = () => {
           onChange: handleChange,
           helperTex: "Ingresa un correo electrónico válido.",
           validator: validarEmail,
-          register: {
-            ...register("email", {
-              required: true,
-            })
-          }
         },
         {
           label: "Contraseña",
@@ -142,7 +138,6 @@ const Form = () => {
     // eslint-disable-next-line
   }, []);
 
-  console.log(pasos[step]);
   return (
     <Box
       sx={{
@@ -153,7 +148,7 @@ const Form = () => {
     >
       <LogoSpace>
         <Img src={"/favicon.png"} />
-        <Typography variant="h3">AluraFood</Typography>
+        <Typography variant="h3" sx={{ marginLeft: "16px" }}>AluraFood</Typography>
       </LogoSpace>
       <FormSpace>
         {step < 3 && <Stepper step={step} />}
@@ -161,7 +156,6 @@ const Form = () => {
           <Step data={pasos[step]} step={step} pasos={pasos} />
         )}
         {step === 3 && <Complete />}
-        <pre>{JSON.stringify(watch("email"), null, 2)}</pre>
       </FormSpace>
     </Box>
   );

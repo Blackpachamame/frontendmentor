@@ -22,19 +22,20 @@ const Step = ({ data, step, pasos }) => {
                     <TextField
                         key={i}
                         label={label}
-                        variant="standard"
+                        variant="filled"
                         fullWidth
-                        margin="dense"
+                        margin="normal"
                         type={type}
                         error={valid === false}
                         helperText={valid === false && helperText}
                         value={value}
                         onChange={(e) => onChange(e, i, step, validator, pasos)}
+                        size="small"
                     />
                 );
             })}
 
-            <Button variant="contained" type="submit">
+            <Button variant="contained" type="submit" sx={{ marginTop: "16px" }}>
                 {buttonText}
             </Button>
         </Box>

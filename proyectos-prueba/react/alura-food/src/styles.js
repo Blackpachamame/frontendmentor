@@ -15,7 +15,7 @@ export const ImageSpace = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -25,7 +25,8 @@ export const FormSpace = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  @media (max-width: 768px) {
+  justify-content: center;
+  @media (max-width: 900px) {
     width: 100vw;
   }
 `;
