@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
-import './App.css';
 import Header from './components/Header/Header';
 import Formulario from './components/Formulario/Formulario';
 import MiOrg from './components/MiOrg';

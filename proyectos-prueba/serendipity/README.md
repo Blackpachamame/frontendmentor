@@ -17,4 +17,4 @@
 
 ## $\normalsize\color{#9747ff}{\texttt{Recursos}}$ 📌
 
-- [Modelo Figma](https://www.figma.com/file/40DQJ8IEvTxwE4Si35gisv/Notification-Web-Design-(Community)?node-id=70%3A167&mode=dev) - No es el que había empezado, pero tiene varios componentes similares.
+- [Modelo Figma](https://www.figma.com/file/YWQzQfLV3AJYDnr5EXUP3D/Notification-Web-Design-(Community)?mode=dev)
