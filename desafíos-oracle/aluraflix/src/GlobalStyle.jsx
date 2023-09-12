@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;700&display=swap');
-
 :root {
   --color-primary: #2A7AE4;
   --color-frontend: #6BD1FF;
@@ -14,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   --color-marketing: #6B5BE2;
   --colo-inovation: #FF8C2A;
   --color-data-science: #9CD33B;
-  --color-black-dark: #030303;
-  --color-black-medium: #191919;
+  --color-black-dark: #131520;
+  --color-black-medium: #1e242f;
   --color-black-light: #5C5C5C;
   --color-black-lighter: #9E9E9E;
   --color-gray-dark: #C2C2C2;
@@ -50,10 +48,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: var(--body-medium);
     font-weight: var(--body-weight);
     color: var(--color-gray-light);
-    background-color: var(--color-black-medium);
+    background-color: var(--color-black-dark);
   }
 
-  img {
+  img, svg {
     max-width: 100%;
     display: block;
   }

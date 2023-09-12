@@ -1,13 +1,20 @@
+import { useState } from "react";
 import styled from "styled-components";
 import logo from "../../assets/logoAlura.svg";
-import logoText from "../../assets/logoAluraCircle.svg";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
+import {
+  HiHome,
+  HiMagnifyingGlass,
+  HiStar,
+  HiPlayCircle,
+  HiTv,
+} from "react-icons/hi2";
+import { HiPlus, HiDotsVertical } from "react-icons/hi";
+import HeaderItem from "./HeaderItem";
 
-const StyledHeader = styled.nav`
-  background-color: var(--color-black-dark);
+const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 0 15vw;
-  height: 100px;
   align-items: center;
   @media (max-width: 500px) {
     padding: 0px 20px;
@@ -17,79 +24,146 @@ const StyledHeader = styled.nav`
   }
 `;
 
-const LogoContainer = styled.div`
-  position: relative;
-  display: block;
+const StyledNavbar = styled.nav`
+  padding: 16px 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 `;
 
-const LogoCircle = styled.img`
-  height: 100px;
-  width: 100px;
-  position: relative;
-  z-index: 55;
-  top: 20px;
-  /* right: 25px; */
-  animation: 50s linear 0s infinite normal none running loading;
-  @keyframes loading {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-
-    100% {
-      -webkit-transform: rotate(1turn);
-      transform: rotate(1turn);
-    }
-  }
+const LogoContainer = styled.div`
+  color: #2bdefd;
+  display: flex;
+  gap: 5px;
 `;
 
 const Logo = styled.img`
-  display: block;
-  /* height: 30px; */
-  width: 26px;
+  width: 20px;
+`;
+
+const StyledUnorderedList = styled.ul`
+  display: none;
   position: relative;
-  z-index: 50;
-  top: -50px;
-  right: -38px;
-`;
-
-const BtnHeader = styled.a`
-  text-align: center;
-  border-radius: 3px;
-  padding: 5px 20px;
-  margin: 0 10px;
-  font-weight: 600;
-  border: 2px solid white;
-  color: ${({ primary, theme }) =>
-    primary === "activado" ? "white" : theme.header};
-  background-color: ${({ primary }) =>
-    primary === "activado" ? "transparent" : "white"};
-`;
-
-const ContainerBtn = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  @media (max-width: 500px) {
-    gap: 10px;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 `;
 
+const StyledUnorderedListResponsive = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const StyledToggle = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const StyledDropdown = styled.div`
+  width: 100%;
+  margin-top: 12px;
+  padding: 6px 48px 6px 16px;
+  background-color: var(--color-black-medium);
+  border: 1px solid rgba(151, 151, 151, 0.34);
+  border-radius: 4px;
+  position: absolute;
+`;
+
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+  const menu = [
+    {
+      name: "Home",
+      icon: HiHome,
+    },
+    {
+      name: "Search",
+      icon: HiMagnifyingGlass,
+    },
+    {
+      name: "Watch List",
+      icon: HiPlus,
+    },
+    {
+      name: "Originals",
+      icon: HiStar,
+    },
+    {
+      name: "Movies",
+      icon: HiPlayCircle,
+    },
+    {
+      name: "Series",
+      icon: HiTv,
+    },
+  ];
+
   return (
     <StyledHeader>
-      <LogoContainer>
-        <LogoCircle src={logoText} alt="Logo Smart Bank" />
-        <Logo src={logo} alt="Logo Smart Bank" />
-      </LogoContainer>
-      <ContainerBtn>
-        <div>
-          <BtnHeader href="https://google.com">Ayuda</BtnHeader>
-          <BtnHeader primary={"activado"} href="https://google.com">
-            Salir
-          </BtnHeader>
-        </div>
-      </ContainerBtn>
+      <StyledNavbar>
+        <LogoContainer>
+          <Logo src={logo} alt="Logo Alura" />
+          <MdOutlineSlowMotionVideo />
+        </LogoContainer>
+
+        <StyledUnorderedList>
+          {menu.map((item) => (
+            <HeaderItem
+              key={item.name}
+              name={item.name}
+              Icon={item.icon}
+              fontSize={"1rem"}
+            />
+          ))}
+        </StyledUnorderedList>
+        <StyledUnorderedListResponsive>
+          {menu.map(
+            (item, index) =>
+              index < 3 && (
+                <HeaderItem
+                  key={item.name}
+                  name={""}
+                  Icon={item.icon}
+                  fontSize={"1.5rem"}
+                />
+              )
+          )}
+          <StyledToggle
+            className="md:hidden"
+            onClick={() => setToggle(!toggle)}
+          >
+            <HeaderItem
+              key={"DotsVertical"}
+              name={""}
+              Icon={HiDotsVertical}
+              fontSize={"1.5rem"}
+            />
+            {toggle ? (
+              <StyledDropdown>
+                {menu.map(
+                  (item, index) =>
+                    index > 2 && (
+                      <HeaderItem
+                        key={item.name}
+                        name={item.name}
+                        Icon={item.icon}
+                        fontSize={"1.5rem"}
+                      />
+                    )
+                )}
+              </StyledDropdown>
+            ) : null}
+          </StyledToggle>
+        </StyledUnorderedListResponsive>
+      </StyledNavbar>
     </StyledHeader>
   );
 };

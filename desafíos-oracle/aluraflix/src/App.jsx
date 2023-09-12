@@ -8,7 +8,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header></Header>
-      <h1>Hola Mundo</h1>
     </ThemeProvider>
   );
 }
