@@ -1,44 +1,33 @@
 import { useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logoAlura.svg";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
-import {
-  HiHome,
-  HiMagnifyingGlass,
-  HiStar,
-  HiPlayCircle,
-  HiTv,
-} from "react-icons/hi2";
+import { HiMagnifyingGlass, HiStar } from "react-icons/hi2";
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
 import HeaderItem from "./HeaderItem";
+import Logo from "./Logo";
+import Perfil from "./Perfil";
+import Busqueda from "./Busqueda";
 
 const StyledHeader = styled.header`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media (max-width: 500px) {
-    padding: 0px 20px;
-  }
-  @media (max-width: 375px) {
-    padding: 0px 10px;
-  }
+  flex-direction: column;
 `;
 
 const StyledNavbar = styled.nav`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
   padding: 16px 36px;
+  @media (max-width: 425px) {
+    padding: 16px;
+  }
+`;
+
+const StyledNavLeft = styled.div`
   display: flex;
   align-items: center;
   gap: 32px;
-`;
-
-const LogoContainer = styled.div`
-  color: #2bdefd;
-  display: flex;
-  gap: 5px;
-`;
-
-const Logo = styled.img`
-  width: 20px;
 `;
 
 const StyledUnorderedList = styled.ul`
@@ -75,94 +64,85 @@ const StyledDropdown = styled.div`
   border: 1px solid rgba(151, 151, 151, 0.34);
   border-radius: 4px;
   position: absolute;
+  right: 0;
 `;
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const [toggleSearch, setToggleSearch] = useState(false);
   const menu = [
     {
-      name: "Home",
-      icon: HiHome,
-    },
-    {
-      name: "Search",
+      name: "Búsqueda",
       icon: HiMagnifyingGlass,
     },
     {
-      name: "Watch List",
+      name: "Lista",
       icon: HiPlus,
     },
     {
-      name: "Originals",
+      name: "Favoritos",
       icon: HiStar,
-    },
-    {
-      name: "Movies",
-      icon: HiPlayCircle,
-    },
-    {
-      name: "Series",
-      icon: HiTv,
     },
   ];
 
   return (
     <StyledHeader>
+      {toggleSearch ? <Busqueda /> : null}
       <StyledNavbar>
-        <LogoContainer>
-          <Logo src={logo} alt="Logo Alura" />
-          <MdOutlineSlowMotionVideo />
-        </LogoContainer>
-
-        <StyledUnorderedList>
-          {menu.map((item) => (
-            <HeaderItem
-              key={item.name}
-              name={item.name}
-              Icon={item.icon}
-              fontSize={"1rem"}
-            />
-          ))}
-        </StyledUnorderedList>
-        <StyledUnorderedListResponsive>
-          {menu.map(
-            (item, index) =>
-              index < 3 && (
-                <HeaderItem
-                  key={item.name}
-                  name={""}
-                  Icon={item.icon}
-                  fontSize={"1.5rem"}
-                />
-              )
-          )}
-          <StyledToggle
-            className="md:hidden"
-            onClick={() => setToggle(!toggle)}
+        <StyledNavLeft>
+          <Logo />
+          <StyledUnorderedList
+            onClick={() => {
+              setToggleSearch(!toggleSearch);
+            }}
           >
-            <HeaderItem
-              key={"DotsVertical"}
-              name={""}
-              Icon={HiDotsVertical}
-              fontSize={"1.5rem"}
-            />
-            {toggle ? (
-              <StyledDropdown>
-                {menu.map(
-                  (item, index) =>
-                    index > 2 && (
-                      <HeaderItem
-                        key={item.name}
-                        name={item.name}
-                        Icon={item.icon}
-                        fontSize={"1.5rem"}
-                      />
-                    )
-                )}
-              </StyledDropdown>
-            ) : null}
-          </StyledToggle>
-        </StyledUnorderedListResponsive>
+            {menu.map((item) => (
+              <HeaderItem
+                key={item.name}
+                name={item.name}
+                Icon={item.icon}
+                fontSize={"1rem"}
+              />
+            ))}
+          </StyledUnorderedList>
+          <StyledUnorderedListResponsive>
+            {menu.map(
+              (item, index) =>
+                index < 3 && (
+                  <HeaderItem
+                    key={item.name}
+                    name={""}
+                    Icon={item.icon}
+                    fontSize={"1.5rem"}
+                  />
+                )
+            )}
+            <StyledToggle onClick={() => setToggle(!toggle)}>
+              <HeaderItem
+                key={"DotsVertical"}
+                name={""}
+                Icon={HiDotsVertical}
+                fontSize={"1.5rem"}
+              />
+              {toggle ? (
+                <StyledDropdown>
+                  {menu.map(
+                    (item, index) =>
+                      index > 2 && (
+                        <HeaderItem
+                          key={item.name}
+                          name={item.name}
+                          Icon={item.icon}
+                          fontSize={"1.5rem"}
+                        />
+                      )
+                  )}
+                </StyledDropdown>
+              ) : null}
+            </StyledToggle>
+          </StyledUnorderedListResponsive>
+        </StyledNavLeft>
+        <Perfil />
       </StyledNavbar>
     </StyledHeader>
   );
