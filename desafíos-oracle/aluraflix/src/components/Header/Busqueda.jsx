@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { HiMagnifyingGlass } from "react-icons/hi2";
+import { BsSearch } from "react-icons/bs";
 
 const StyledBusqueda = styled.div`
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 100%;
   width: 100%;
@@ -42,13 +42,14 @@ const StyledBusquedaBtn = styled.button`
   border: 0;
 `;
 
-export default function Busqueda() {
+// eslint-disable-next-line react/prop-types
+export default function Busqueda({ position, top }) {
   return (
-    <StyledBusqueda>
+    <StyledBusqueda style={{ position: position, top: top }}>
       <StyledBusquedaForm>
-        <StyledBusquedaInput placeholder="O que você quer aprender?" />
+        <StyledBusquedaInput name="search" placeholder="¿Qué buscas?" />
         <StyledBusquedaBtn>
-          <HiMagnifyingGlass style={{ fontSize: "1.5rem" }} />
+          <BsSearch style={{ fontSize: "1.5rem" }} />
         </StyledBusquedaBtn>
       </StyledBusquedaForm>
     </StyledBusqueda>

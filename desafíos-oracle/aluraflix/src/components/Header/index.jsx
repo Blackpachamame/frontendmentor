@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { HiMagnifyingGlass, HiStar } from "react-icons/hi2";
-import { HiPlus, HiDotsVertical } from "react-icons/hi";
+import { BsFillHouseDoorFill, BsPlusLg, BsFillStarFill } from "react-icons/bs";
+import { HiDotsVertical } from "react-icons/hi";
 import HeaderItem from "./HeaderItem";
 import Logo from "./Logo";
 import Perfil from "./Perfil";
@@ -10,6 +10,7 @@ import Busqueda from "./Busqueda";
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
 `;
 
 const StyledNavbar = styled.nav`
@@ -70,38 +71,39 @@ const StyledDropdown = styled.div`
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [toggleSearch, setToggleSearch] = useState(false);
+
+  const mostrarBarraBusqueda = () => {
+    setToggleSearch(!toggleSearch);
+  };
+
   const menu = [
     {
-      name: "Búsqueda",
-      icon: HiMagnifyingGlass,
+      name: "Home",
+      icon: BsFillHouseDoorFill,
     },
     {
       name: "Lista",
-      icon: HiPlus,
+      icon: BsPlusLg,
     },
     {
       name: "Favoritos",
-      icon: HiStar,
+      icon: BsFillStarFill,
     },
   ];
 
   return (
-    <StyledHeader>
-      {toggleSearch ? <Busqueda /> : null}
+    <StyledHeader className={toggleSearch ? "header__nav--busca--visible" : ""}>
+      <Busqueda />
       <StyledNavbar>
         <StyledNavLeft>
           <Logo />
-          <StyledUnorderedList
-            onClick={() => {
-              setToggleSearch(!toggleSearch);
-            }}
-          >
+          <StyledUnorderedList>
             {menu.map((item) => (
               <HeaderItem
                 key={item.name}
                 name={item.name}
                 Icon={item.icon}
-                fontSize={"1rem"}
+                fontSize={"1em"}
               />
             ))}
           </StyledUnorderedList>
@@ -142,7 +144,7 @@ const Header = () => {
             </StyledToggle>
           </StyledUnorderedListResponsive>
         </StyledNavLeft>
-        <Perfil />
+        <Perfil mostrarBarraBusqueda={mostrarBarraBusqueda} />
       </StyledNavbar>
     </StyledHeader>
   );

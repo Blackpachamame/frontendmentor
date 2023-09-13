@@ -55,6 +55,11 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     display: block;
   }
+
+  .header__nav--busca--visible {
+    -webkit-transform: translateY(63px);
+    transform: translateY(63px);
+}
 `;
 
 export default GlobalStyle;
