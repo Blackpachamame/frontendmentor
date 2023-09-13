@@ -6,7 +6,7 @@ const StyledHeaderItem = styled.li`
   font-size: 15px;
   color: white;
   list-style: none;
-  position: relative;
+  padding-block: 10px;
   cursor: pointer;
 `;
 
@@ -21,7 +21,6 @@ const StyledLink = styled.a`
 const StyledParagraph = styled.p`
   font-size: 15px;
   margin-left: 0.5rem;
-  /* margin-block: 12px; */
   position: relative;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
   &:after {

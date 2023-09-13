@@ -8,8 +8,6 @@ import Perfil from "./Perfil";
 import Busqueda from "./Busqueda";
 
 const StyledHeader = styled.header`
-  display: flex;
-  flex-direction: column;
   transition: transform 0.3s ease;
 `;
 
@@ -57,15 +55,14 @@ const StyledToggle = styled.div`
   }
 `;
 
-const StyledDropdown = styled.div`
-  width: 100%;
+const StyledDropdown = styled.ul`
+  width: 180px;
   margin-top: 12px;
   padding: 6px 48px 6px 16px;
   background-color: var(--color-black-medium);
   border: 1px solid rgba(151, 151, 151, 0.34);
   border-radius: 4px;
   position: absolute;
-  right: 0;
 `;
 
 const Header = () => {
@@ -108,17 +105,6 @@ const Header = () => {
             ))}
           </StyledUnorderedList>
           <StyledUnorderedListResponsive>
-            {menu.map(
-              (item, index) =>
-                index < 3 && (
-                  <HeaderItem
-                    key={item.name}
-                    name={""}
-                    Icon={item.icon}
-                    fontSize={"1.5rem"}
-                  />
-                )
-            )}
             <StyledToggle onClick={() => setToggle(!toggle)}>
               <HeaderItem
                 key={"DotsVertical"}
@@ -128,17 +114,14 @@ const Header = () => {
               />
               {toggle ? (
                 <StyledDropdown>
-                  {menu.map(
-                    (item, index) =>
-                      index > 2 && (
-                        <HeaderItem
-                          key={item.name}
-                          name={item.name}
-                          Icon={item.icon}
-                          fontSize={"1.5rem"}
-                        />
-                      )
-                  )}
+                  {menu.map((item) => (
+                    <HeaderItem
+                      key={item.name}
+                      name={item.name}
+                      Icon={item.icon}
+                      fontSize={"1rem"}
+                    />
+                  ))}
                 </StyledDropdown>
               ) : null}
             </StyledToggle>

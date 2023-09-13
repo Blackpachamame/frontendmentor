@@ -9,18 +9,19 @@ const StyledNavRight = styled.div`
 `;
 
 const StyledContainerPerfil = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   position: relative;
 `;
 
 const StyledPerfil = styled.img`
-  width: 50px;
+  width: 44px;
   border-radius: 100%;
   cursor: pointer;
 `;
 
-const StyledDropdown = styled.div`
+const StyledDropdown = styled.ul`
+  width: 160px;
   text-align: end;
   padding-block: 6px;
   background-color: var(--color-black-medium);
@@ -28,7 +29,6 @@ const StyledDropdown = styled.div`
   border-radius: 4px;
   position: absolute;
   top: 60px;
-  width: 160px;
   right: 0;
   @media (max-width: 425px) {
     right: 16px;
