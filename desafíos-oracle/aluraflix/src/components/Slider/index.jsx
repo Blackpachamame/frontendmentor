@@ -9,21 +9,23 @@ const SliderContainer = styled.div`
   margin: 12px auto;
 `;
 
-const ImgContainer = styled.div`
+const StyledSlider = styled.div`
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  & ul li {
-    display: inline-flex;
-  }
+  display: flex;
+  overflow-x: hidden;
+  padding: 4px 60px;
+`;
+
+const ImgContainer = styled.div`
+  display: flex;
+  gap: 40px;
 `;
 
 const StyledImg = styled.img`
-  width: 90%;
-  height: 300px;
+  min-width: 100%;
+  height: 310px;
   border-radius: 20px;
-  border: 1px solid #eee;
-  overflow: hidden;
+  object-fit: cover;
 `;
 
 export default function Slider() {
@@ -32,7 +34,7 @@ export default function Slider() {
 
   useEffect(() => {
     const listNode = listRef.current;
-    const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
+    const imgNode = listNode.querySelectorAll("div > img")[currentIndex];
 
     if (imgNode) {
       imgNode.scrollIntoView({
@@ -58,23 +60,19 @@ export default function Slider() {
 
   return (
     <SliderContainer>
-      <ImgContainer>
+      <StyledSlider>
         <div className="leftArrow" onClick={() => scrollToImage("prev")}>
           &#10092;
         </div>
         <div className="rightArrow" onClick={() => scrollToImage("next")}>
           &#10093;
         </div>
-        <ul ref={listRef}>
+        <ImgContainer ref={listRef}>
           {data.map((item) => {
-            return (
-              <li key={item.id}>
-                <StyledImg src={item.imgUrl} />
-              </li>
-            );
+            return <StyledImg src={item.imgUrl} key={item.id} />;
           })}
-        </ul>
-      </ImgContainer>
+        </ImgContainer>
+      </StyledSlider>
     </SliderContainer>
   );
 }
