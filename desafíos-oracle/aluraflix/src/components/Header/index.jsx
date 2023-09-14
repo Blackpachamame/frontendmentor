@@ -63,6 +63,7 @@ const StyledDropdown = styled.ul`
   border: 1px solid rgba(151, 151, 151, 0.34);
   border-radius: 4px;
   position: absolute;
+  z-index: 1;
 `;
 
 const Header = () => {

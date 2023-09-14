@@ -30,6 +30,7 @@ const StyledDropdown = styled.ul`
   position: absolute;
   top: 60px;
   right: 0;
+  z-index: 1;
   @media (max-width: 425px) {
     right: 16px;
   }
