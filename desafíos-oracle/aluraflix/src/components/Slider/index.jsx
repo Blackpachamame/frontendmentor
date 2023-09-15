@@ -11,21 +11,23 @@ const SliderContainer = styled.div`
 
 const StyledSlider = styled.div`
   width: 100%;
-  display: flex;
-  overflow-x: hidden;
-  padding: 4px 60px;
 `;
 
 const ImgContainer = styled.div`
+  padding: 4px 60px;
+  overflow-x: hidden;
   display: flex;
   gap: 40px;
 `;
 
 const StyledImg = styled.img`
   min-width: 100%;
-  height: 310px;
+  margin-right: 20px;
   border-radius: 20px;
   object-fit: cover;
+  @media (min-width: 768px) {
+    height: 310px;
+  }
 `;
 
 export default function Slider() {
