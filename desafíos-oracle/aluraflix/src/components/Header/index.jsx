@@ -8,7 +8,7 @@ import Perfil from "./Perfil";
 import Busqueda from "./Busqueda";
 
 const StyledHeader = styled.header`
-  transition: transform 0.3s ease;
+  width: 100%;
 `;
 
 const StyledNavbar = styled.nav`
@@ -66,13 +66,9 @@ const StyledDropdown = styled.ul`
   z-index: 1;
 `;
 
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+const Header = ({ mostrarBarraBusqueda }) => {
   const [toggle, setToggle] = useState(false);
-  const [toggleSearch, setToggleSearch] = useState(false);
-
-  const mostrarBarraBusqueda = () => {
-    setToggleSearch(!toggleSearch);
-  };
 
   const menu = [
     {
@@ -90,7 +86,7 @@ const Header = () => {
   ];
 
   return (
-    <StyledHeader className={toggleSearch ? "header__nav--busca--visible" : ""}>
+    <StyledHeader>
       <Busqueda />
       <StyledNavbar>
         <StyledNavLeft>

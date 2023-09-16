@@ -1,15 +1,31 @@
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import { theme } from "./Theme";
+import styled from "styled-components";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 
+const StyledContainer = styled.div`
+  transition: transform 0.3s ease;
+`;
+
 function App() {
+  const [toggleSearch, setToggleSearch] = useState(false);
+
+  const mostrarBarraBusqueda = () => {
+    setToggleSearch(!toggleSearch);
+  };
+
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Header />
-      <Slider />
+      <StyledContainer
+        className={toggleSearch ? "header__nav--busca--visible" : ""}
+      >
+        <GlobalStyle />
+        <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
+        <Slider />
+      </StyledContainer>
     </ThemeProvider>
   );
 }

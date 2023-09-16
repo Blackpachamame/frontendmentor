@@ -14,15 +14,15 @@ const StyledSlider = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  padding: 4px 60px;
+  margin: 16px 64px;
   overflow-x: hidden;
   display: flex;
-  gap: 40px;
+  gap: 50px;
+  scroll-behavior: smooth;
 `;
 
 const StyledImg = styled.img`
   min-width: 100%;
-  margin-right: 20px;
   border-radius: 20px;
   object-fit: cover;
   @media (min-width: 768px) {
@@ -37,7 +37,6 @@ export default function Slider() {
   useEffect(() => {
     const listNode = listRef.current;
     const imgNode = listNode.querySelectorAll("div > img")[currentIndex];
-
     if (imgNode) {
       imgNode.scrollIntoView({
         behavior: "smooth",
