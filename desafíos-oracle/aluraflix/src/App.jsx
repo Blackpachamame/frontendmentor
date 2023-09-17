@@ -5,6 +5,8 @@ import { theme } from "./Theme";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import Category from "./components/Category";
+import ListVideos from "./components/ListVideos";
 
 const StyledContainer = styled.div`
   transition: transform 0.3s ease;
@@ -25,6 +27,8 @@ function App() {
         <GlobalStyle />
         <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
         <Slider />
+        <Category />
+        <ListVideos />
       </StyledContainer>
     </ThemeProvider>
   );
