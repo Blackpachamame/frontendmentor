@@ -6,9 +6,12 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Category from "./components/Category";
-import ListVideos from "./components/ListVideos";
 
 const StyledContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   transition: transform 0.3s ease;
 `;
 
@@ -28,7 +31,6 @@ function App() {
         <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
         <Slider />
         <Category />
-        <ListVideos />
       </StyledContainer>
     </ThemeProvider>
   );

@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
   --color-backend: #00C86F;
   --color-mobile: #FFBA05;
   --color-ux: #DC6EBE;
-  --color-infra: #9CD33B;
+  --color-devops: #f16165;
   --color-marketing: #6B5BE2;
-  --colo-inovation: #FF8C2A;
+  --color-inovation: #FF8C2A;
   --color-data-science: #9CD33B;
   --color-black-dark: #131520;
   --color-black-medium: #1e242f;

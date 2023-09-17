@@ -8,7 +8,10 @@ import Perfil from "./Perfil";
 import Busqueda from "./Busqueda";
 
 const StyledHeader = styled.header`
-  width: 100%;
+  padding: 16px 36px;
+  @media (max-width: 425px) {
+    padding: 16px;
+  }
 `;
 
 const StyledNavbar = styled.nav`
@@ -17,10 +20,6 @@ const StyledNavbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  padding: 16px 36px;
-  @media (max-width: 425px) {
-    padding: 16px;
-  }
 `;
 
 const StyledNavLeft = styled.div`

@@ -6,7 +6,7 @@ const SliderContainer = styled.div`
   position: relative;
   width: 100%;
   min-height: 25vw;
-  margin: 12px auto;
+  margin: 0 auto;
 `;
 
 const StyledSlider = styled.div`
@@ -14,7 +14,7 @@ const StyledSlider = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  margin: 16px 64px;
+  margin-inline: 64px;
   overflow-x: hidden;
   display: flex;
   gap: 50px;
