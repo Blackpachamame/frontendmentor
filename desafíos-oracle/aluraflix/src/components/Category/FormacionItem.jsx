@@ -10,11 +10,17 @@ const StyledCategoryItem = styled.div`
 
 const StyledCategory = styled.div`
   font-family: var(--ff-title);
-  padding: 20px;
-  background-color: #051d3b;
-  border-radius: 0.5em;
-  border: solid 0.03em #0d4d9c;
-  box-shadow: 0.31em 0.37em 0.87em 0.87em rgba(0, 0, 0, 0.04);
+  padding: 18px;
+  background: linear-gradient(#0a1725, #051d3b);
+  border-radius: 4px;
+  border: solid 2px #051d3b;
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px,
+    rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  transition: all 0.5s;
+  &:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
 `;
 
 const StyledCategoryLink = styled.a`

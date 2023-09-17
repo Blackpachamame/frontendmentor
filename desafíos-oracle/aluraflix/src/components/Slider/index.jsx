@@ -5,7 +5,6 @@ import { data } from "../../assets/data/data.js";
 const SliderContainer = styled.div`
   position: relative;
   width: 100%;
-  min-height: 25vw;
   margin: 0 auto;
 `;
 
