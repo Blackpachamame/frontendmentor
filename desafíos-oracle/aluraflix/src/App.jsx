@@ -4,8 +4,9 @@ import GlobalStyle from "./GlobalStyle";
 import { theme } from "./Theme";
 import styled from "styled-components";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
+import SliderTop from "./components/SliderTop";
 import Category from "./components/Category";
+import Projects from "./components/ListVideos/Projects";
 
 const StyledContainer = styled.div`
   min-height: 100vh;
@@ -29,8 +30,9 @@ function App() {
       >
         <GlobalStyle />
         <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
-        <Slider />
+        <SliderTop />
         <Category />
+        <Projects />
       </StyledContainer>
     </ThemeProvider>
   );

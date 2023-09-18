@@ -3,25 +3,25 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  --color-primary: #2A7AE4;
-  --color-frontend: #6BD1FF;
-  --color-backend: #00C86F;
-  --color-mobile: #FFBA05;
-  --color-ux: #DC6EBE;
-  --color-devops: #f16165;
-  --color-marketing: #6B5BE2;
-  --color-inovation: #FF8C2A;
-  --color-data-science: #9CD33B;
-  --color-black-dark: #131520;
-  --color-black-medium: #1e242f;
-  --color-black-light: #5C5C5C;
-  --color-black-lighter: #9E9E9E;
-  --color-gray-dark: #C2C2C2;
-  --color-gray-medium: #E5E5E5;
-  --color-gray-light: #F5F5F5;
-  --color-error-dark: #C62828;
-  --color-error-medium: #E53935;
-  --color-error-light: #FCE7E7;
+  --color-primary: rgb(42, 122, 228);
+  --color-frontend: rgb(107, 209, 255);
+  --color-backend: rgb(0, 200, 111);
+  --color-mobile: rgb(255, 186, 5);
+  --color-ux: rgb(220, 110, 190);
+  --color-devops: rgb(241, 97, 101);
+  --color-marketing: rgb(107, 91, 226);
+  --color-inovation: rgb(255, 140, 42);
+  --color-data-science: rgb(156, 211, 59);
+  --color-black-dark: rgb(9, 9, 16);
+  --color-black-medium: rgb(30, 36, 47);
+  --color-black-light: rgb(92, 92, 92);
+  --color-black-lighter: rgb(158, 158, 158);
+  --color-gray-dark: rgb(194, 194, 194);
+  --color-gray-medium: rgb(229, 229, 229);
+  --color-gray-light: rgb(245, 245, 245);
+  --color-error-dark: rgb(198, 40, 40);
+  --color-error-medium: rgb(229, 57, 53);
+  --color-error-light: rgb(252, 231, 231);
   --shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
   --ff-title: 'Chakra Petch', sans-serif;
   --ff-body: 'Inter', sans-serif;
@@ -96,6 +96,35 @@ ul, li {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+
+/* Slider Videos */
+.slick-list, .slick-slider, .slick-track{
+  padding: 1.5rem 0;
+}
+
+.center .slick-center .project{
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.center .project{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media(max-width: 990px){
+  .center .slick-center .project{
+    transform: scale(1);
+  }
+
+  .center .project{
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 `;
 

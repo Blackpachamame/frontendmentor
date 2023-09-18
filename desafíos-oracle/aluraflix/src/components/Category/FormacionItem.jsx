@@ -14,8 +14,7 @@ const StyledCategory = styled.div`
   background: linear-gradient(#0a1725, #051d3b);
   border-radius: 4px;
   border: solid 2px #051d3b;
-  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px,
-    rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  box-shadow: rgba(0, 0, 0, 0.73) 0px 15px 5px -10px;
   transition: all 0.5s;
   &:hover {
     transform: translateY(2px);
@@ -55,7 +54,12 @@ function FormacionItem({ name, color, icon }) {
     <StyledCategoryItem>
       <StyledCategory>
         <StyledCategoryLink href="#">
-          <figure style={{ backgroundColor: color + "52" }}>
+          <figure
+            style={{
+              backgroundColor:
+                "color-mix(in srgb," + color + "20%, rgba(0, 0, 0, 0.25))",
+            }}
+          >
             <StyledLogo src={icon} alt={name} />
           </figure>
           <StyledNameCategory style={{ color: color }}>

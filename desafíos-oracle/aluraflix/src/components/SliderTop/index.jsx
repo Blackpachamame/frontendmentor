@@ -29,7 +29,7 @@ const StyledImg = styled.img`
   }
 `;
 
-export default function Slider() {
+export default function SliderTop() {
   const listRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
