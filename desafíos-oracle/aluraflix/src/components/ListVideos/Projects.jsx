@@ -3,7 +3,7 @@ import SliderComp from "./Slider";
 
 const Projects = () => {
   return (
-    <Container id="project">
+    <Container className="sliderVideos">
       <h3>Recent</h3>
       <SliderComp />
     </Container>
@@ -12,10 +12,10 @@ const Projects = () => {
 
 export default Projects;
 
-const Container = styled.div`
+const Container = styled.section`
   width: 83%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 32px;
   position: relative;
   @media (max-width: 840px) {
     width: 80%;

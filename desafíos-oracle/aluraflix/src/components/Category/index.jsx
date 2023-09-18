@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { formaciones } from "../../assets/data/formaciones.js";
 import FormacionItem from "./FormacionItem";
 
-const CategoryContainer = styled.div`
+const CategoryContainer = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;

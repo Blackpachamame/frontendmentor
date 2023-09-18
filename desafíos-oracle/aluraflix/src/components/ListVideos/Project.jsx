@@ -23,12 +23,12 @@ const Container = styled.div`
   background-color: #6bd1ff4d;
   margin: 0 0.5rem;
   padding: 0.3rem;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   img {
-    border-radius: 3px;
+    border-radius: 2px;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }
