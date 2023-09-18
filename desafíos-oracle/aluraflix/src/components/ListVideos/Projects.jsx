@@ -5,9 +5,7 @@ const Projects = () => {
   return (
     <Container id="project">
       <h3>Recent</h3>
-      <Slide>
-        <SliderComp />
-      </Slide>
+      <SliderComp />
     </Container>
   );
 };
@@ -22,7 +20,7 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 80%;
   }
-  h1 {
+  h3 {
     font-size: 1.9rem;
   }
 
@@ -36,5 +34,3 @@ const Container = styled.div`
     }
   }
 `;
-
-const Slide = styled.div``;

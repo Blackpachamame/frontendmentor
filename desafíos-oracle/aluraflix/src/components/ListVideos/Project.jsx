@@ -20,17 +20,15 @@ const Project = (props) => {
 export default Project;
 
 const Container = styled.div`
-  height: 10rem;
-  background-color: #4e5156;
+  background-color: #6bd1ff4d;
   margin: 0 0.5rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   img {
-    width: 100%;
-    height: 100%;
+    border-radius: 3px;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }

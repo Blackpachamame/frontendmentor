@@ -23,8 +23,8 @@ const GlobalStyle = createGlobalStyle`
   --color-error-medium: rgb(229, 57, 53);
   --color-error-light: rgb(252, 231, 231);
   --shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-  --ff-title: 'Chakra Petch', sans-serif;
-  --ff-body: 'Inter', sans-serif;
+  --ff-title: "Chakra Petch", sans-serif;
+  --ff-body: "Inter", sans-serif;
   --title-big: 60px;
   --title-medium: 46px;
   --title-small: 35px;
@@ -34,7 +34,6 @@ const GlobalStyle = createGlobalStyle`
   --body-smaller: 12px;
   --title-weight: 400;
   --body-weight: 300;
-
 }
 
 * {
@@ -42,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
 }
-  
+
 body {
   font-family: var(--ff-body);
   font-size: var(--body-medium);
@@ -51,12 +50,14 @@ body {
   background-color: var(--color-black-dark);
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   display: block;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   white-space: nowrap;
 }
@@ -99,33 +100,43 @@ ul, li {
 }
 
 /* Slider Videos */
-.slick-list, .slick-slider, .slick-track{
+.slick-list,
+.slick-slider,
+.slick-track {
   padding: 1.5rem 0;
 }
 
-.center .slick-center .project{
-  transform: scale(1.3);
+.slick-list,
+.slick-slider,
+.slick-track .center {
+  padding: 0;
+}
+
+.center .slick-center .project {
+  transform: scale(1.2);
   z-index: 10000;
   transition: all 400ms ease-in-out;
   pointer-events: all;
   opacity: 1;
+  background-color: var(--color-frontend);
 }
 
-.center .project{
+.center .project {
   opacity: 0.7;
   pointer-events: none;
 }
 
-@media(max-width: 990px){
-  .center .slick-center .project{
+@media (max-width: 990px) {
+  .center .slick-center .project {
     transform: scale(1);
   }
 
-  .center .project{
+  .center .project {
     opacity: 1;
     pointer-events: all;
   }
 }
+
 `;
 
 export default GlobalStyle;
