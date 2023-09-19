@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   --color-ux: rgb(220, 110, 190);
   --color-devops: rgb(241, 97, 101);
   --color-marketing: rgb(107, 91, 226);
-  --color-inovation: rgb(255, 140, 42);
+  --color-innovation: rgb(255, 140, 42);
   --color-data-science: rgb(156, 211, 59);
   --color-black-dark: rgb(9, 9, 16);
   --color-black-medium: rgb(30, 36, 47);

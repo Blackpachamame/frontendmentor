@@ -11,7 +11,7 @@ const SliderContainer = styled.section`
 `;
 
 const StyledImg = styled.img`
-  height: 250px;
+  max-height: 420px;
   object-fit: cover;
   border-radius: 4px;
   cursor: pointer;

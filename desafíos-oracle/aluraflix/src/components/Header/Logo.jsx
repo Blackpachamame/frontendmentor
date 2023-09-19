@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../assets/images/logoAlura.svg";
+import logo from "../../assets/images/logo/logoAlura.svg";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 const StyledLogoContainer = styled.div`

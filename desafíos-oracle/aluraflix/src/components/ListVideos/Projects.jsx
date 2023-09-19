@@ -6,7 +6,7 @@ const Projects = () => {
     <Container className="sliderVideos">
       <StyledTitle>
         <img
-          src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/cf18a7e7bed48be335a02eb0de334b7dfcb649dc/desafíos-oracle/aluraflix/src/assets/images/iconFrontend.svg"
+          src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/cf18a7e7bed48be335a02eb0de334b7dfcb649dc/desafíos-oracle/aluraflix/src/assets/images/icono/iconFrontend.svg"
           alt=""
         />
         <span>Frontend</span>

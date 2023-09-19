@@ -1,12 +1,9 @@
 export const theme = {
   colors: {
-    primary: "--color-primary",
-    secondary: "#fff",
-  },
-  sizes: {
-    xs: "4px",
-    s: "8px",
-    m: "12px",
-    xl: "16px",
+    frontend: "--color-frontend",
+    backend: "--color-backend",
+    devops: "--color-devops",
+    innovation: "--color-innovation",
+    datascience: "--color-data-science",
   },
 };

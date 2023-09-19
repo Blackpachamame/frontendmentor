@@ -5,27 +5,27 @@ import Project from "./Project";
 const SliderComp = () => {
   let data = [
     {
-      img: "../src/assets/images/front1.webp",
+      img: "../src/assets/images/video/front1.webp",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
     {
-      img: "../src/assets/images/front2.jpg",
+      img: "../src/assets/images/video/front2.jpg",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
     {
-      img: "../src/assets/images/front3.jpg",
+      img: "../src/assets/images/video/front3.jpg",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
     {
-      img: "../src/assets/images/front4.jpg",
+      img: "../src/assets/images/video/front4.jpg",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
     {
-      img: "../src/assets/images/front5.jpg",
+      img: "../src/assets/images/video/front5.jpg",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
     {
-      img: "../src/assets/images/front6.jpg",
+      img: "../src/assets/images/video/front6.jpg",
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
     },
   ];
