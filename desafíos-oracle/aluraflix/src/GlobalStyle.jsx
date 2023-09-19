@@ -50,6 +50,11 @@ body {
   background-color: var(--color-black-dark);
 }
 
+h1, h2, h3, h4 {
+  font-size: 2rem;
+    font-family: var(--ff-title);
+}
+
 img,
 svg {
   max-width: 100%;
@@ -159,6 +164,12 @@ li {
     opacity: 1;
     pointer-events: all;
   }
+}
+
+@media (max-width: 500px){
+  h1, h2, h3, h4 {
+  font-size: 1.4rem;
+}
 }
 `;
 

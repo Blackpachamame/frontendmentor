@@ -4,7 +4,13 @@ import SliderComp from "./Slider";
 const Projects = () => {
   return (
     <Container className="sliderVideos">
-      <h3>Recent</h3>
+      <StyledTitle>
+        <img
+          src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/cf18a7e7bed48be335a02eb0de334b7dfcb649dc/desafíos-oracle/aluraflix/src/assets/images/iconFrontend.svg"
+          alt=""
+        />
+        <span>Frontend</span>
+      </StyledTitle>
       <SliderComp />
     </Container>
   );
@@ -13,24 +19,45 @@ const Projects = () => {
 export default Projects;
 
 const Container = styled.section`
-  width: 83%;
   max-width: 1280px;
-  margin: 0 auto 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 36px 16px;
   position: relative;
-  @media (max-width: 840px) {
-    width: 80%;
+  @media (max-width: 425px) {
+    padding: 16px;
   }
-  h3 {
-    font-size: 1.9rem;
-  }
+`;
 
-  p {
-    width: 28rem;
-    margin: 0 auto;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    @media (max-width: 500px) {
-      width: 90%;
+const StyledTitle = styled.h2`
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span {
+    color: var(--color-frontend);
+    position: relative;
+  }
+  span:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(130deg, #6bd1ff, #090910 90%);
+  }
+  img {
+    width: 30px;
+  }
+  @media (max-width: 990px) {
+    margin-bottom: 0;
+    span {
+      width: 100%;
+    }
+    img {
+      width: 24px;
     }
   }
 `;

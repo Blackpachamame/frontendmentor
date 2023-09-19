@@ -79,4 +79,6 @@ export default SliderComp;
 
 const ContainerSlider = styled.div`
   position: relative;
+  margin: 0 auto;
+  width: 90%;
 `;
