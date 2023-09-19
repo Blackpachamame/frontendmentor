@@ -50,9 +50,12 @@ body {
   background-color: var(--color-black-dark);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-size: 2rem;
-    font-family: var(--ff-title);
+  font-family: var(--ff-title);
 }
 
 img,
@@ -106,7 +109,7 @@ li {
 
 /* Slider Top */
 .sliderTop .slick-slide {
-    padding-inline: 10px;
+  padding-inline: 10px;
 }
 
 .sliderTop .slick-dots li button:before {
@@ -166,10 +169,13 @@ li {
   }
 }
 
-@media (max-width: 500px){
-  h1, h2, h3, h4 {
-  font-size: 1.4rem;
-}
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.4rem;
+  }
 }
 `;
 
