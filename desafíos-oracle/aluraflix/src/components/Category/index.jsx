@@ -2,6 +2,24 @@ import styled from "styled-components";
 import { formaciones } from "../../assets/data/formaciones.js";
 import FormacionItem from "./FormacionItem";
 
+export default function Category() {
+  return (
+    <CategoryContainer>
+      {formaciones.map((item) => {
+        return (
+          <FormacionItem
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            color={item.color}
+            icon={item.icon}
+          />
+        );
+      })}
+    </CategoryContainer>
+  );
+}
+
 const CategoryContainer = styled.section`
   width: 100%;
   display: flex;
@@ -13,20 +31,3 @@ const CategoryContainer = styled.section`
     padding: 16px;
   }
 `;
-
-export default function Category() {
-  return (
-    <CategoryContainer>
-      {formaciones.map((item) => {
-        return (
-          <FormacionItem
-            key={item.id}
-            name={item.name}
-            color={item.color}
-            icon={item.icon}
-          />
-        );
-      })}
-    </CategoryContainer>
-  );
-}

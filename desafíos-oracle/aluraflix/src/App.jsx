@@ -9,14 +9,6 @@ import Category from "./components/Category";
 import ListVideos from "./components/ListVideos";
 import { formaciones } from "./assets/data/formaciones";
 
-const StyledContainer = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  transition: transform 0.3s ease;
-`;
-
 function App() {
   const [toggleSearch, setToggleSearch] = useState(false);
 
@@ -42,3 +34,11 @@ function App() {
 }
 
 export default App;
+
+const StyledContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease;
+`;

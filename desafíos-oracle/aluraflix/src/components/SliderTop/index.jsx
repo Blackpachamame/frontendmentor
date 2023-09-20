@@ -1,23 +1,6 @@
-// import { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { banners } from "../../assets/data/banners.js";
-
-const SliderContainer = styled.section`
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 32px;
-`;
-
-const StyledImg = styled.img`
-  max-height: 320px;
-  object-fit: cover;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-`;
 
 export default function SliderTop() {
   const settings = {
@@ -41,3 +24,19 @@ export default function SliderTop() {
     </SliderContainer>
   );
 }
+
+const SliderContainer = styled.section`
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+`;
+
+const StyledImg = styled.img`
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+`;

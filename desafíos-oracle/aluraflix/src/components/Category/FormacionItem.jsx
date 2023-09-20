@@ -1,4 +1,29 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
+
+function FormacionItem({ id, name, color, icon }) {
+  return (
+    <StyledCategoryItem>
+      <StyledCategory>
+        <StyledCategoryLink href={"#" + id}>
+          <figure
+            style={{
+              backgroundColor:
+                "color-mix(in srgb," + color + "20%, rgba(0, 0, 0, 0.25))",
+            }}
+          >
+            <StyledLogo src={icon} alt={name} />
+          </figure>
+          <StyledNameCategory style={{ color: color }}>
+            {name}
+          </StyledNameCategory>
+        </StyledCategoryLink>
+      </StyledCategory>
+    </StyledCategoryItem>
+  );
+}
+
+export default FormacionItem;
 
 const StyledCategoryItem = styled.div`
   width: calc(20% - 16px);
@@ -48,27 +73,9 @@ const StyledNameCategory = styled.h3`
   margin-top: 10px;
 `;
 
-// eslint-disable-next-line react/prop-types
-function FormacionItem({ name, color, icon }) {
-  return (
-    <StyledCategoryItem>
-      <StyledCategory>
-        <StyledCategoryLink href="#frontend">
-          <figure
-            style={{
-              backgroundColor:
-                "color-mix(in srgb," + color + "20%, rgba(0, 0, 0, 0.25))",
-            }}
-          >
-            <StyledLogo src={icon} alt={name} />
-          </figure>
-          <StyledNameCategory style={{ color: color }}>
-            {name}
-          </StyledNameCategory>
-        </StyledCategoryLink>
-      </StyledCategory>
-    </StyledCategoryItem>
-  );
-}
-
-export default FormacionItem;
+FormacionItem.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  icon: PropTypes.string,
+  color: PropTypes.string,
+};

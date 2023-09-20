@@ -150,6 +150,7 @@ li {
   transition: all 400ms ease-in-out;
   pointer-events: all;
   opacity: 1;
+  box-shadow: var(--bg-color) 0px 0px 5px 2px;
 }
 
 .sliderVideos .center .project {

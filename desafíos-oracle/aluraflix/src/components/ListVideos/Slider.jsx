@@ -75,7 +75,6 @@ const StyledFigure = styled.figure`
   border: 2px solid var(--bg-color);
   cursor: pointer;
   position: relative;
-  box-shadow: rgba(107, 209, 255, 0.73) 0px 0px 5px 2px;
   overflow: hidden;
   :hover > img {
     transform: scale(1.3);

@@ -28,7 +28,6 @@ const Container = styled.section`
 
 const StyledTitle = styled.h2`
   --color: ${(props) => props.color};
-  /* margin-bottom: 18px; */
   display: flex;
   align-items: center;
   gap: 10px;
