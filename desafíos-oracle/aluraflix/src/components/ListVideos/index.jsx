@@ -1,22 +1,22 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import SliderComp from "./Slider";
 
-const Projects = () => {
+const ListVideos = ({ formaciones }) => {
   return (
     <Container className="sliderVideos">
-      <StyledTitle id="frontend">
-        <img src="../src/assets/images/icono/iconFrontend.svg" alt="" />
-        <span>Frontend</span>
+      <StyledTitle id={formaciones.id} color={formaciones.color}>
+        <img src={formaciones.icon} alt="" />
+        <span>{formaciones.name}</span>
       </StyledTitle>
-      <SliderComp />
+      <SliderComp formaciones={formaciones} />
     </Container>
   );
 };
 
-export default Projects;
+export default ListVideos;
 
 const Container = styled.section`
-  /* max-width: 1280px; */
   display: flex;
   flex-direction: column;
   padding: 0 36px 16px;
@@ -27,12 +27,13 @@ const Container = styled.section`
 `;
 
 const StyledTitle = styled.h2`
-  margin-bottom: 18px;
+  --color: ${(props) => props.color};
+  /* margin-bottom: 18px; */
   display: flex;
   align-items: center;
   gap: 10px;
   span {
-    color: var(--color-frontend);
+    color: var(--color);
     position: relative;
   }
   span:before {
@@ -43,7 +44,7 @@ const StyledTitle = styled.h2`
     left: 0;
     height: 2px;
     border-radius: 2px;
-    background: linear-gradient(130deg, #6bd1ff, #090910 90%);
+    background: linear-gradient(130deg, var(--color), #090910 90%);
   }
   img {
     width: 30px;
@@ -58,3 +59,12 @@ const StyledTitle = styled.h2`
     }
   }
 `;
+
+ListVideos.propTypes = {
+  formaciones: PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    icon: PropTypes.string,
+    color: PropTypes.string,
+  }),
+};

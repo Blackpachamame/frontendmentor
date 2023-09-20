@@ -12,12 +12,6 @@ export const formaciones = [
         icon: "../src/assets/images/icono/iconProgramacion.svg",
     },
     {
-        id: "datascience",
-        name: "Data Science",
-        color: "var(--color-data-science)",
-        icon: "../src/assets/images/icono/iconDataScience.svg",
-    },
-    {
         id: "devops",
         name: "Devops",
         color: "var(--color-devops)",
@@ -28,5 +22,11 @@ export const formaciones = [
         name: "Innovación y Gestión",
         color: "var(--color-innovation)",
         icon: "../src/assets/images/icono/iconInnovacionGestion.svg",
-    }
+    },
+    {
+        id: "datascience",
+        name: "Data Science",
+        color: "var(--color-data-science)",
+        icon: "../src/assets/images/icono/iconDataScience.svg",
+    },
 ];

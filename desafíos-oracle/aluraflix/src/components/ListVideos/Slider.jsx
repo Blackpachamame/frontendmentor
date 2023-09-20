@@ -1,9 +1,9 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { videos } from "../../assets/data/videos.js";
-import { formaciones } from "../../assets/data/formaciones.js";
 
-const SliderComp = () => {
+const SliderComp = ({ formaciones }) => {
   var settings = {
     className: "center",
     centerMode: true,
@@ -29,22 +29,26 @@ const SliderComp = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 425,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
   const sliderProject = videos.map((item, i) => {
-    const categoria = item.categoria;
-    const buscarColor = formaciones.filter(
-      (formacion) => formacion.id === categoria
-    );
-    const color = buscarColor[0].color;
-    return (
-      <div key={i}>
-        <StyledFigure className="project" $bgc={color}>
-          <img src={item.imgVideo} alt={item.title} />
-        </StyledFigure>
-      </div>
-    );
+    if (item.categoria === formaciones.id) {
+      return (
+        <div key={i}>
+          <StyledFigure className="project" $bgColor={formaciones.color}>
+            <img src={item.imgVideo} alt={item.title} />
+          </StyledFigure>
+        </div>
+      );
+    }
   });
 
   return (
@@ -63,22 +67,31 @@ const ContainerSlider = styled.div`
 `;
 
 const StyledFigure = styled.figure`
-  background-color: ${(props) => props.$bgc};
+  --bg-color: ${(props) => props.$bgColor};
+  background-color: #090910;
   margin: 0 0.5rem;
-  padding: 0.3rem;
+  padding: 0.2rem;
   border-radius: 4px;
+  border: 2px solid var(--bg-color);
   cursor: pointer;
   position: relative;
+  box-shadow: rgba(107, 209, 255, 0.73) 0px 0px 5px 2px;
   overflow: hidden;
   :hover > img {
     transform: scale(1.3);
   }
   img {
-    border-radius: 2px;
+    border-radius: 3px;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }
-  @media (max-width: 375px) {
-    padding: 0.2rem;
-  }
 `;
+
+SliderComp.propTypes = {
+  formaciones: PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    icon: PropTypes.string,
+    color: PropTypes.string,
+  }),
+};

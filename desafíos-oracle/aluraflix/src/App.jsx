@@ -6,7 +6,8 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import SliderTop from "./components/SliderTop";
 import Category from "./components/Category";
-import Projects from "./components/ListVideos/Projects";
+import ListVideos from "./components/ListVideos";
+import { formaciones } from "./assets/data/formaciones";
 
 const StyledContainer = styled.div`
   min-height: 100vh;
@@ -32,7 +33,9 @@ function App() {
         <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
         <SliderTop />
         <Category />
-        <Projects />
+        {formaciones.map((item, i) => (
+          <ListVideos key={i} formaciones={item} />
+        ))}
       </StyledContainer>
     </ThemeProvider>
   );

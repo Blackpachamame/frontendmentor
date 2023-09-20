@@ -135,7 +135,7 @@ li {
 .sliderVideos .slick-list,
 .sliderVideos .slick-slider,
 .sliderVideos .slick-track {
-  padding: 1.5rem 0;
+  padding: 1.8rem 0;
 }
 
 .sliderVideos .slick-list,
@@ -150,7 +150,6 @@ li {
   transition: all 400ms ease-in-out;
   pointer-events: all;
   opacity: 1;
-  background-color: var(--color-frontend);
 }
 
 .sliderVideos .center .project {
@@ -176,6 +175,12 @@ li {
   h4 {
     font-size: 1.4rem;
   }
+}
+
+@media (max-width: 425px) {
+  .sliderVideos .center .project {
+  opacity: 1;
+}
 }
 `;
 
