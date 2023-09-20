@@ -1,7 +1,7 @@
 // import { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { data } from "../../assets/data/data.js";
+import { banners } from "../../assets/data/banners.js";
 
 const SliderContainer = styled.section`
   position: relative;
@@ -11,9 +11,9 @@ const SliderContainer = styled.section`
 `;
 
 const StyledImg = styled.img`
-  max-height: 420px;
+  max-height: 320px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -34,7 +34,7 @@ export default function SliderTop() {
   return (
     <SliderContainer className="sliderTop">
       <Slider {...settings}>
-        {data.map((item) => {
+        {banners.map((item) => {
           return <StyledImg src={item.imgUrl} key={item.id} />;
         })}
       </Slider>

@@ -1,65 +1,33 @@
 import styled from "styled-components";
 
-const Project = (props) => {
-  // eslint-disable-next-line react/prop-types
-  const { img, disc } = props.item;
+// eslint-disable-next-line react/prop-types
+const Project = ({ imagen, color }) => {
   return (
-    <Container className="project">
-      <img src={img} alt="project" />
-      <div className="disc">
-        <h3>Description</h3>
-        <p>
-          {disc}
-          <a href="#">demo</a>
-        </p>
-      </div>
-    </Container>
+    <StyledFigure className="project" $bgc={color}>
+      <img src={imagen} alt="project" />
+    </StyledFigure>
   );
 };
 
 export default Project;
 
-const Container = styled.div`
-  background-color: #6bd1ff4d;
+const StyledFigure = styled.figure`
+  background-color: ${(props) => props.$bgc};
   margin: 0 0.5rem;
   padding: 0.3rem;
   border-radius: 4px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  :hover > img {
+    transform: scale(1.3);
+  }
   img {
     border-radius: 2px;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }
-  .disc {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -10rem;
-    text-align: left;
-    padding: 0.5rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
-    transition: all 400ms ease-in-out;
-    h1 {
-      font-size: 1rem;
-    }
-
-    p {
-      width: 90%;
-      font-size: 0.8rem;
-      a {
-        margin-left: 0.4rem;
-        color: red;
-      }
-    }
-  }
-
-  :hover > img {
-    transform: scale(1.3);
-  }
-
-  :hover > .disc {
-    bottom: 0;
+  @media (max-width: 375px) {
+    padding: 0.2rem;
   }
 `;

@@ -4,11 +4,8 @@ import SliderComp from "./Slider";
 const Projects = () => {
   return (
     <Container className="sliderVideos">
-      <StyledTitle>
-        <img
-          src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/cf18a7e7bed48be335a02eb0de334b7dfcb649dc/desafíos-oracle/aluraflix/src/assets/images/icono/iconFrontend.svg"
-          alt=""
-        />
+      <StyledTitle id="frontend">
+        <img src="../src/assets/images/icono/iconFrontend.svg" alt="" />
         <span>Frontend</span>
       </StyledTitle>
       <SliderComp />
@@ -19,7 +16,7 @@ const Projects = () => {
 export default Projects;
 
 const Container = styled.section`
-  max-width: 1280px;
+  /* max-width: 1280px; */
   display: flex;
   flex-direction: column;
   padding: 0 36px 16px;

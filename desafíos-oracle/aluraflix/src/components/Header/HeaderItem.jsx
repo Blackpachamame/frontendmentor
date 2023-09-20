@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 const StyledHeaderItem = styled.li`
-  font-family: var(--ff-title);
-  font-weight: 600;
-  font-size: 15px;
-  color: white;
   list-style: none;
   padding-block: 10px;
   cursor: pointer;
 `;
 
 const StyledLink = styled.a`
+  font-weight: 700;
+  font-size: 15px;
   color: var(--color-gray-light);
   display: flex;
   align-items: center;

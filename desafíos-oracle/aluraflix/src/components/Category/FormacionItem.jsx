@@ -53,7 +53,7 @@ function FormacionItem({ name, color, icon }) {
   return (
     <StyledCategoryItem>
       <StyledCategory>
-        <StyledCategoryLink href="#">
+        <StyledCategoryLink href="#frontend">
           <figure
             style={{
               backgroundColor:

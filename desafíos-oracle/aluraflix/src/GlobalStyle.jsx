@@ -154,16 +154,16 @@ li {
 }
 
 .sliderVideos .center .project {
-  opacity: 0.7;
+  opacity: 0.5;
   pointer-events: none;
 }
 
 @media (max-width: 990px) {
   .sliderVideos .center .slick-center .project {
-    transform: scale(1);
+    transform: scale(1.1);
   }
 
-  .sliderVideos .center .project {
+  .sliderVideos .center .project:hover {
     opacity: 1;
     pointer-events: all;
   }
