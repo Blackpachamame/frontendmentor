@@ -1,9 +1,53 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
+import { BsFillHouseDoorFill, BsSearch, BsFillHeartFill } from "react-icons/bs";
+import { HiDotsVertical } from "react-icons/hi";
 
-const StyledHeaderItem = styled.li`
+export default function HeaderItem({ mostrarBarraBusqueda, iconDotsVertical }) {
+  if (iconDotsVertical === "true") {
+    return (
+      <StyledDiv>
+        <HiDotsVertical style={{ fontSize: "1.5rem" }} />
+      </StyledDiv>
+    );
+  } else {
+    return (
+      <StyledHeaderItem>
+        <li>
+          <StyledLink href="#">
+            <BsFillHouseDoorFill style={{ fontSize: "1rem" }} />
+            <StyledParagraph>Home</StyledParagraph>
+          </StyledLink>
+        </li>
+        <li>
+          <StyledBtn onClick={mostrarBarraBusqueda}>
+            <BsSearch style={{ fontSize: "1rem" }} />
+            <StyledParagraph>Búsqueda</StyledParagraph>
+          </StyledBtn>
+        </li>
+        <li>
+          <StyledLink href="/favoritos">
+            <BsFillHeartFill style={{ fontSize: "1rem" }} />
+            <StyledParagraph>Favoritos</StyledParagraph>
+          </StyledLink>
+        </li>
+      </StyledHeaderItem>
+    );
+  }
+}
+
+const StyledHeaderItem = styled.ul`
   list-style: none;
   padding-block: 10px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -14,6 +58,25 @@ const StyledLink = styled.a`
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
+`;
+
+const StyledDiv = styled.div`
+  font-size: 15px;
+  color: var(--color-gray-light);
+  cursor: pointer;
+`;
+
+const StyledBtn = styled.button`
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-gray-light);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 `;
 
 const StyledParagraph = styled.p`
@@ -39,16 +102,7 @@ const StyledParagraph = styled.p`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
-function HeaderItem({ name, Icon, fontSize }) {
-  return (
-    <StyledHeaderItem>
-      <StyledLink href="#">
-        <Icon style={{ fontSize: fontSize }} />
-        <StyledParagraph>{name}</StyledParagraph>
-      </StyledLink>
-    </StyledHeaderItem>
-  );
-}
-
-export default HeaderItem;
+HeaderItem.propTypes = {
+  mostrarBarraBusqueda: PropTypes.func,
+  iconDotsVertical: PropTypes.string,
+};

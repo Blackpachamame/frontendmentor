@@ -6,16 +6,15 @@ const StyledLogoContainer = styled.div`
   color: #2bdefd;
   display: flex;
   gap: 5px;
-`;
-
-const StyledLogo = styled.img`
-  width: 20px;
+  img {
+    width: 20px;
+  }
 `;
 
 export default function Logo() {
   return (
     <StyledLogoContainer>
-      <StyledLogo src={logo} alt="Logo Alura" />
+      <img src={logo} alt="Logo Alura" />
       <MdOutlineSlowMotionVideo />
     </StyledLogoContainer>
   );

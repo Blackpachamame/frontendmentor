@@ -1,60 +1,95 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-import { BsFillHouseDoorFill, BsPlusLg, BsFillStarFill } from "react-icons/bs";
-import { HiDotsVertical } from "react-icons/hi";
 import HeaderItem from "./HeaderItem";
 import Logo from "./Logo";
 import Perfil from "./Perfil";
 import Busqueda from "./Busqueda";
 
+const Header = ({ mostrarBarraBusqueda }) => {
+  const [toggle, setToggle] = useState(false);
+
+  return (
+    <StyledHeader>
+      <Busqueda />
+      <nav>
+        <div>
+          <Logo />
+          <StyledUnorderedList>
+            <HeaderItem
+              mostrarBarraBusqueda={mostrarBarraBusqueda}
+              iconDotsVertical="false"
+            />
+          </StyledUnorderedList>
+          <StyledUnorderedListResponsive>
+            <StyledToggle onClick={() => setToggle(!toggle)}>
+              <HeaderItem
+                mostrarBarraBusqueda={mostrarBarraBusqueda}
+                iconDotsVertical="true"
+              />
+              {toggle ? (
+                <StyledDropdown>
+                  <HeaderItem
+                    mostrarBarraBusqueda={mostrarBarraBusqueda}
+                    iconDotsVertical="false"
+                  />
+                </StyledDropdown>
+              ) : null}
+            </StyledToggle>
+          </StyledUnorderedListResponsive>
+        </div>
+        <Perfil />
+      </nav>
+    </StyledHeader>
+  );
+};
+
+export default Header;
+
 const StyledHeader = styled.header`
   padding: 16px 36px;
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+  }
   @media (max-width: 425px) {
     padding: 16px;
   }
 `;
 
-const StyledNavbar = styled.nav`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-`;
-
-const StyledNavLeft = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 32px;
-`;
-
-const StyledUnorderedList = styled.ul`
-  display: none;
-  position: relative;
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+const StyledUnorderedList = styled.div`
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+    position: relative;
   }
 `;
 
-const StyledUnorderedListResponsive = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  position: relative;
-  @media (min-width: 768px) {
-    display: none;
+const StyledUnorderedListResponsive = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
   }
 `;
 
 const StyledToggle = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `;
 
-const StyledDropdown = styled.ul`
+const StyledDropdown = styled.div`
   width: 180px;
   margin-top: 12px;
   padding: 6px 48px 6px 16px;
@@ -65,68 +100,6 @@ const StyledDropdown = styled.ul`
   z-index: 1;
 `;
 
-// eslint-disable-next-line react/prop-types
-const Header = ({ mostrarBarraBusqueda }) => {
-  const [toggle, setToggle] = useState(false);
-
-  const menu = [
-    {
-      name: "Home",
-      icon: BsFillHouseDoorFill,
-    },
-    {
-      name: "Lista",
-      icon: BsPlusLg,
-    },
-    {
-      name: "Favoritos",
-      icon: BsFillStarFill,
-    },
-  ];
-
-  return (
-    <StyledHeader>
-      <Busqueda />
-      <StyledNavbar>
-        <StyledNavLeft>
-          <Logo />
-          <StyledUnorderedList>
-            {menu.map((item) => (
-              <HeaderItem
-                key={item.name}
-                name={item.name}
-                Icon={item.icon}
-                fontSize={"1em"}
-              />
-            ))}
-          </StyledUnorderedList>
-          <StyledUnorderedListResponsive>
-            <StyledToggle onClick={() => setToggle(!toggle)}>
-              <HeaderItem
-                key={"DotsVertical"}
-                name={""}
-                Icon={HiDotsVertical}
-                fontSize={"1.5rem"}
-              />
-              {toggle ? (
-                <StyledDropdown>
-                  {menu.map((item) => (
-                    <HeaderItem
-                      key={item.name}
-                      name={item.name}
-                      Icon={item.icon}
-                      fontSize={"1rem"}
-                    />
-                  ))}
-                </StyledDropdown>
-              ) : null}
-            </StyledToggle>
-          </StyledUnorderedListResponsive>
-        </StyledNavLeft>
-        <Perfil mostrarBarraBusqueda={mostrarBarraBusqueda} />
-      </StyledNavbar>
-    </StyledHeader>
-  );
+Header.propTypes = {
+  mostrarBarraBusqueda: PropTypes.func,
 };
-
-export default Header;
