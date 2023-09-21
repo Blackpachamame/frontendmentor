@@ -68,7 +68,7 @@ const ContainerSlider = styled.div`
 
 const StyledFigure = styled.figure`
   --bg-color: ${(props) => props.$bgColor};
-  background-color: #090910;
+  background-color: var(--color-black-dark);
   margin: 0 0.5rem;
   padding: 0.2rem;
   border-radius: 4px;

@@ -27,12 +27,12 @@ const Container = styled.section`
 `;
 
 const StyledTitle = styled.h2`
-  --color: ${(props) => props.color};
+  --color-category: ${(props) => props.color};
   display: flex;
   align-items: center;
   gap: 10px;
   span {
-    color: var(--color);
+    color: var(--color-category);
     position: relative;
   }
   span:before {
@@ -43,7 +43,11 @@ const StyledTitle = styled.h2`
     left: 0;
     height: 2px;
     border-radius: 2px;
-    background: linear-gradient(130deg, var(--color), #090910 90%);
+    background: linear-gradient(
+      130deg,
+      var(--color-category),
+      var(--color-black-dark) 90%
+    );
   }
   img {
     width: 30px;

@@ -1,6 +1,19 @@
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 
+export default function Busqueda() {
+  return (
+    <StyledBusqueda>
+      <StyledBusquedaForm>
+        <StyledBusquedaInput name="search" placeholder="¿Qué buscas?" />
+        <StyledBusquedaBtn>
+          <BsSearch style={{ fontSize: "1.5rem" }} />
+        </StyledBusquedaBtn>
+      </StyledBusquedaForm>
+    </StyledBusqueda>
+  );
+}
+
 const StyledBusqueda = styled.div`
   position: absolute;
   left: 0;
@@ -15,7 +28,7 @@ const StyledBusquedaForm = styled.form`
   gap: 10px;
   width: 100%;
   min-height: 64px;
-  border-bottom: solid 1.28px #27a6bd;
+  border-bottom: solid 1.28px var(--color-primary);
   padding: 16px 36px;
   @media (max-width: 425px) {
     padding: 16px;
@@ -28,11 +41,11 @@ const StyledBusquedaInput = styled.input`
   font-size: 0.875rem;
   height: 100%;
   width: 100%;
-  color: #fff;
+  color: var(--color-white);
   background-color: transparent;
   outline: none;
   &::placeholder {
-    color: #27a6bd;
+    color: var(--color-primary);
   }
 `;
 
@@ -41,17 +54,3 @@ const StyledBusquedaBtn = styled.button`
   background-color: transparent;
   border: 0;
 `;
-
-// eslint-disable-next-line react/prop-types
-export default function Busqueda({ position, top }) {
-  return (
-    <StyledBusqueda style={{ position: position, top: top }}>
-      <StyledBusquedaForm>
-        <StyledBusquedaInput name="search" placeholder="¿Qué buscas?" />
-        <StyledBusquedaBtn>
-          <BsSearch style={{ fontSize: "1.5rem" }} />
-        </StyledBusquedaBtn>
-      </StyledBusquedaForm>
-    </StyledBusqueda>
-  );
-}

@@ -53,7 +53,7 @@ const StyledDropdown = styled.ul`
   text-align: end;
   padding-block: 6px;
   background-color: var(--color-black-medium);
-  border: 1px solid rgba(151, 151, 151, 0.34);
+  border: 1px solid var(--color-black-light);
   border-radius: 4px;
   position: absolute;
   top: 60px;
@@ -63,7 +63,7 @@ const StyledDropdown = styled.ul`
     font-family: var(--ff-title);
     font-weight: 600;
     font-size: 15px;
-    color: white;
+    color: var(--color-white);
     margin-block: 3px;
     padding-inline: 16px;
     padding-block: 10px;
@@ -71,7 +71,7 @@ const StyledDropdown = styled.ul`
     position: relative;
     cursor: pointer;
     &:hover {
-      background-color: #293343;
+      background-color: var(--color-black-dark);
     }
   }
   @media (max-width: 425px) {

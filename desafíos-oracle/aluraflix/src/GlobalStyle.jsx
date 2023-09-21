@@ -3,37 +3,27 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  --color-primary: rgb(42, 122, 228);
+  --color-primary: rgb(39, 166, 189);
+  --color-white: rgb(255, 255, 255);
   --color-frontend: rgb(107, 209, 255);
   --color-backend: rgb(0, 200, 111);
-  --color-mobile: rgb(255, 186, 5);
-  --color-ux: rgb(220, 110, 190);
   --color-devops: rgb(241, 97, 101);
-  --color-marketing: rgb(107, 91, 226);
   --color-innovation: rgb(255, 140, 42);
   --color-data-science: rgb(156, 211, 59);
+  /* --color-mobile: rgb(255, 186, 5); */
+  /* --color-ux: rgb(220, 110, 190); */
+  /* --color-marketing: rgb(107, 91, 226); */
   --color-black-dark: rgb(9, 9, 16);
   --color-black-medium: rgb(30, 36, 47);
   --color-black-light: rgb(92, 92, 92);
-  --color-black-lighter: rgb(158, 158, 158);
-  --color-gray-dark: rgb(194, 194, 194);
-  --color-gray-medium: rgb(229, 229, 229);
   --color-gray-light: rgb(245, 245, 245);
-  --color-error-dark: rgb(198, 40, 40);
-  --color-error-medium: rgb(229, 57, 53);
-  --color-error-light: rgb(252, 231, 231);
-  --shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  --color-error: rgb(198, 40, 40);
   --ff-title: "Chakra Petch", sans-serif;
   --ff-body: "Inter", sans-serif;
-  --title-big: 60px;
-  --title-medium: 46px;
-  --title-small: 35px;
-  --body-big: 27px;
-  --body-medium: 18px;
-  --body-small: 16px;
-  --body-smaller: 12px;
-  --title-weight: 400;
-  --body-weight: 300;
+  --fs-regular: 18px;
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
 }
 
 * {
@@ -44,8 +34,8 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   font-family: var(--ff-body);
-  font-size: var(--body-medium);
-  font-weight: var(--body-weight);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
   color: var(--color-gray-light);
   background-color: var(--color-black-dark);
 }
@@ -54,8 +44,15 @@ h1,
 h2,
 h3,
 h4 {
-  font-size: 2rem;
   font-family: var(--ff-title);
+  font-size: 2rem;
+}
+
+h1, h2 {
+  font-weight: var(--fw-bold);
+}
+h3, h4 {
+  font-weight: var(--fw-semi-bold);
 }
 
 img,
@@ -75,38 +72,6 @@ li {
   transform: translateY(63px);
 }
 
-/* Arrows */
-.leftArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 32px;
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.rightArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 32px;
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.active {
-  background: #ccc;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
 /* Slider Top */
 .sliderTop .slick-slide {
   padding-inline: 10px;
@@ -123,12 +88,12 @@ li {
   content: "•";
   text-align: center;
   opacity: 0.2;
-  color: #27a6bd;
+  color: var(--color-primary);
 }
 
 .sliderTop .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #27a6bd;
+  color: var(--color-primary);
 }
 
 /* Slider Videos */
