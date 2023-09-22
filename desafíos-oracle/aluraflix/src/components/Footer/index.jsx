@@ -36,31 +36,33 @@ const StyledFooter = styled.footer`
   background-color: var(--color-black-ultra-dark);
   padding: 16px 36px;
   border-top: solid 2px var(--color-primary);
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
+  grid-template-columns: 250px auto 250px;
+  grid-template-areas: "texto logo redes";
   .textFooter {
-    width: 250px;
+    grid-area: texto;
     font-family: var(--ff-title);
   }
   .containerLogo {
+    grid-area: logo;
     position: relative;
-  }
-  .logoCircle {
-    width: 80px;
-    height: 80px;
-    animation: rotate 30s infinite;
-  }
-  .logo {
-    width: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    & .logoCircle {
+      width: 80px;
+      height: 80px;
+      animation: rotate 30s infinite;
+    }
+    & .logo {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   .redes {
-    width: 250px;
+    grid-area: redes;
     font-size: 32px;
     display: flex;
     align-items: center;
@@ -68,13 +70,34 @@ const StyledFooter = styled.footer`
     gap: 24px;
   }
   @media (max-width: 768px) {
-    flex-direction: column;
-    .redes {
-      justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "logo texto"
+      "logo redes";
+    .textFooter {
+      text-align: right;
     }
   }
   @media (max-width: 425px) {
-    padding: 16px;
+    padding: 6px 16px 16px;
+    grid-template-columns: 1fr 70px;
+    grid-template-areas:
+      "redes logo"
+      "texto texto";
+    .containerLogo {
+      & .logoCircle {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .textFooter {
+      text-align: center;
+    }
+    .redes {
+      margin-left: 10px;
+      justify-content: flex-start;
+    }
   }
   @keyframes rotate {
     0% {
