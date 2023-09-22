@@ -1,17 +1,17 @@
 export const banners = [
   {
-    id: 1, imgUrl: "../src/assets/images/banner/banner-frontend.jpg"
+    id: 1, imgUrl: "../src/assets/images/banner/banner-frontend.webp"
   },
   {
-    id: 2, imgUrl: "../src/assets/images/banner/banner-backend.jpg"
+    id: 2, imgUrl: "../src/assets/images/banner/banner-backend.webp"
   },
   {
-    id: 3, imgUrl: "../src/assets/images/banner/banner-devops.jpg"
+    id: 3, imgUrl: "../src/assets/images/banner/banner-devops.webp"
   },
   {
-    id: 4, imgUrl: "../src/assets/images/banner/banner-innovation.jpg"
+    id: 4, imgUrl: "../src/assets/images/banner/banner-innovation.webp"
   },
   {
-    id: 5, imgUrl: "../src/assets/images/banner/banner-datascience.jpg"
+    id: 5, imgUrl: "../src/assets/images/banner/banner-datascience.webp"
   },
 ];

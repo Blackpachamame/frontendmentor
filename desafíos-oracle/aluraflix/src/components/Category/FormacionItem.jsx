@@ -36,14 +36,36 @@ const StyledCategoryItem = styled.div`
 const StyledCategory = styled.div`
   font-family: var(--ff-title);
   padding: 18px;
-  background: linear-gradient(#0a1725, #051d3b);
+  /* background: linear-gradient(#0a1725, #051d3b); */
+  background: linear-gradient(45deg, rgba(5, 29, 59, 1) 50%, rgb(9 9 16) 100%);
   border-radius: 4px;
   border: solid 2px #051d3b;
   box-shadow: rgba(0, 0, 0, 0.73) 0px 15px 5px -10px;
+  position: relative;
+  z-index: 1;
   transition: all 0.5s;
   &:hover {
     transform: translateY(2px);
     box-shadow: none;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      45deg,
+      rgb(9 9 16) 0%,
+      rgba(5, 29, 59, 1) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  &:hover::before {
+    opacity: 1;
   }
 `;
 
