@@ -51,7 +51,6 @@ const StyledCategoryLink = styled.a`
   color: var(--color-gray-light);
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   text-transform: uppercase;
   & figure {
     width: 40px;

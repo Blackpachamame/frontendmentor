@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --color-primary: rgb(39, 166, 189);
+  --color-secondary: rgb(43, 222, 253);
   --color-white: rgb(255, 255, 255);
   --color-frontend: rgb(107, 209, 255);
   --color-backend: rgb(0, 200, 111);
@@ -13,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
   /* --color-mobile: rgb(255, 186, 5); */
   /* --color-ux: rgb(220, 110, 190); */
   /* --color-marketing: rgb(107, 91, 226); */
+  --color-black-ultra-dark: rgb(3 3 6);
   --color-black-dark: rgb(9, 9, 16);
   --color-black-medium: rgb(30, 36, 47);
   --color-black-light: rgb(92, 92, 92);
@@ -53,6 +55,11 @@ h1, h2 {
 }
 h3, h4 {
   font-weight: var(--fw-semi-bold);
+}
+
+a{
+  color: var(--color-gray-light);
+  text-decoration: none;
 }
 
 img,

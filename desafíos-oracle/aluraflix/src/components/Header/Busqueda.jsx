@@ -19,6 +19,7 @@ const StyledBusqueda = styled.div`
   left: 0;
   bottom: 100%;
   width: 100%;
+  background-color: var(--color-black-ultra-dark);
 `;
 
 const StyledBusquedaForm = styled.form`
@@ -28,7 +29,7 @@ const StyledBusquedaForm = styled.form`
   gap: 10px;
   width: 100%;
   min-height: 64px;
-  border-bottom: solid 1.28px var(--color-primary);
+  border-bottom: solid 2px var(--color-primary);
   padding: 16px 36px;
   @media (max-width: 425px) {
     padding: 16px;

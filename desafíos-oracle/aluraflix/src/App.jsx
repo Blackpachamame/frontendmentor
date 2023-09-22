@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import SliderTop from "./components/SliderTop";
 import Category from "./components/Category";
 import ListVideos from "./components/ListVideos";
+import Footer from "./components/Footer";
 import { formaciones } from "./assets/data/formaciones";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         {formaciones.map((item, i) => (
           <ListVideos key={i} formaciones={item} />
         ))}
+        <Footer />
       </StyledContainer>
     </ThemeProvider>
   );

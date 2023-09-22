@@ -56,7 +56,6 @@ const StyledLink = styled.a`
   color: var(--color-gray-light);
   display: flex;
   align-items: center;
-  text-decoration: none;
   text-transform: uppercase;
 `;
 
@@ -74,7 +73,6 @@ const StyledBtn = styled.button`
   border: none;
   display: flex;
   align-items: center;
-  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 `;
