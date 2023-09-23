@@ -42,6 +42,10 @@ body {
   background-color: var(--color-black-dark);
 }
 
+main {
+  min-height: calc(100vh - 190px);
+}
+
 h1,
 h2,
 h3,

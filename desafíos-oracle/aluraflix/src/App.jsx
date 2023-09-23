@@ -2,13 +2,16 @@ import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import { theme } from "./Theme";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./components/Header";
-import SliderTop from "./components/SliderTop";
-import Category from "./components/Category";
-import ListVideos from "./components/ListVideos";
 import Footer from "./components/Footer";
-import { formaciones } from "./assets/data/formaciones";
+import Home from "./pages/Home";
+import Favoritos from "./pages/Favoritos";
+import Video from "./pages/Video";
+import AddVideo from "./pages/AddVideo";
+import EditVideo from "./pages/EditVideo";
+import Error404 from "./pages/Error404";
 
 function App() {
   const [toggleSearch, setToggleSearch] = useState(false);
@@ -23,13 +26,18 @@ function App() {
         className={toggleSearch ? "header__nav--busca--visible" : ""}
       >
         <GlobalStyle />
-        <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
-        <SliderTop />
-        <Category />
-        {formaciones.map((item, i) => (
-          <ListVideos key={i} formaciones={item} />
-        ))}
-        <Footer />
+        <BrowserRouter>
+          <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favoritos" element={<Favoritos />} />
+            <Route path="/video/:id" element={<Video />} />
+            <Route path="/video/addvideo" element={<AddVideo />} />
+            <Route path="/video/editvideo" element={<EditVideo />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </StyledContainer>
     </ThemeProvider>
   );
@@ -38,9 +46,5 @@ function App() {
 export default App;
 
 const StyledContainer = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   transition: transform 0.3s ease;
 `;

@@ -1,6 +1,8 @@
+import { v4 as uuid } from 'uuid';
 export const videos = [
     // Frontend
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=MxlxFhzGRV8",
         imgVideo: "../src/assets/images/video/frontend/front1.webp",
         categoria: "frontend",
@@ -8,6 +10,7 @@ export const videos = [
         descripcion: "La funcionalidad conocida como Dark Mode está cada vez más popular, sendo encontrada en diversos tipos de aplicaciones, redes sociales, plataformas educacionales o de entretenimiento. En este Alura+, nuestro instructor Harland Lohora, nos enseña a como realizar estas aplicaciones en una página web. ",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=PztCEdIJITY",
         imgVideo: "../src/assets/images/video/frontend/front2.webp",
         categoria: "frontend",
@@ -15,6 +18,7 @@ export const videos = [
         descripcion: "¿A veces cuando estás programando sientes dificuldades en saber en qué momento utilizar let, var o const para declarar una variable? En este video te sacamos estas dudas, además de explicarte lo que es escopo global y local en JavaScript.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=GJfOSoaXk4s",
         imgVideo: "../src/assets/images/video/frontend/front3.webp",
         categoria: "frontend",
@@ -22,6 +26,7 @@ export const videos = [
         descripcion: "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=rpvrLaBQwgg",
         imgVideo: "../src/assets/images/video/frontend/front4.webp",
         categoria: "frontend",
@@ -29,6 +34,7 @@ export const videos = [
         descripcion: "¿Estás empezando tus estudios de Programación? ¿Te interesa todo lo que es la creación de Páginas Web Desarrollo de Softwares? ¿O estás pensando en cambiar de carrera y entrar a la maravillosa area de tecnología? \nEn este video, Jeanmarie Quijada, instructora Front End en Alura Latam te explica qué hace el equipo de Front End.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=UuAX5azcvDQ",
         imgVideo: "../src/assets/images/video/frontend/front5.webp",
         categoria: "frontend",
@@ -36,6 +42,7 @@ export const videos = [
         descripcion: "En este Alura+, Genesys, instructora de Alura Latam, nos responde esa pregunta y nos muestra esta conocida herramienta.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=EB4vWLzfVcI",
         imgVideo: "../src/assets/images/video/frontend/front6.webp",
         categoria: "frontend",
@@ -44,6 +51,7 @@ export const videos = [
     },
     // Backend
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=Z024LSCMqFk",
         imgVideo: "../src/assets/images/video/backend/back1.webp",
         categoria: "backend",
@@ -51,6 +59,7 @@ export const videos = [
         descripcion: "Maria Fernanda nos cuenta qué es el backend y con que lenguaje empezar.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=t-iqt1b2qqk",
         imgVideo: "../src/assets/images/video/backend/back2.webp",
         categoria: "backend",
@@ -58,6 +67,7 @@ export const videos = [
         descripcion: "¿Busca un framework  para utilizar en sus proyectos? ¿Conoce Spring Framework? Spring es el framework más usado de Java. Nos ofrece herramientas que nos permiten crear proyectos más avanzados, con mejores prácticas y en menor tiempo. También posee una gran comunidad, lo que nos brinda muchísima documentación y ayuda.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=EoPvlE85XAQ",
         imgVideo: "../src/assets/images/video/backend/back3.webp",
         categoria: "backend",
@@ -65,6 +75,7 @@ export const videos = [
         descripcion: "¿Escribir muchas variables del tipo constantes en Java te parece un proceso tedioso y que genera muchas líneas de código? En este Alura+ la instructora Génesys Rondón nos enseña a simplificar esta tarea usando un tipo de dato especial llamado enum.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=GrEO8nZzyZM",
         imgVideo: "../src/assets/images/video/backend/back4.webp",
         categoria: "backend",
@@ -73,6 +84,7 @@ export const videos = [
     },
     // Devops
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/IQ8-_khQATQ?si=gV1Ar1B6qyBtpfiR",
         imgVideo: "../src/assets/images/video/devops/devops1.webp",
         categoria: "devops",
@@ -80,6 +92,7 @@ export const videos = [
         descripcion: "En este #HipstersPontoTube el presentador Alberto Souza conversa con Leonardo Sartorello sobre la cultura DevOps y lo que es necesario aprender tanto en estructura como Dev!",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/0jw8RpHuZ-Q?si=vDjFsYbNfwx3WSOp",
         imgVideo: "../src/assets/images/video/devops/devops2.webp",
         categoria: "devops",
@@ -87,6 +100,7 @@ export const videos = [
         descripcion: "Descubra cuáles son los sistemas de control de versiones de código de desarrollo basados ​​en Git Flow y Trunk, sus diferencias y qué flujo de trabajo es más adecuado para diferentes escenarios de entorno y ciclos de desarrollo para poner su código en producción. \nEn este #AluraMás tendrás una breve discusión con Fernanda sobre los modelos de control de versiones de desarrollo basados ​​en Git Flow y Trunk.",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/Z-4oX6a5Z5s?si=umMRNnPxxaGIhoNF",
         imgVideo: "../src/assets/images/video/devops/devops3.webp",
         categoria: "devops",
@@ -94,6 +108,7 @@ export const videos = [
         descripcion: "¡Otro Alura+ para ustedes, muchachos! 🤯💥 \nEn este video, aprenderá sobre la diferencia entre implementación y lanzamiento, así como también aprenderá más sobre indicadores de funciones y cambios paralelos, dos conceptos bien conocidos en el universo DevOps.",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/noRAwzTg5VI?si=UolfFySLWi_8LPoP",
         imgVideo: "../src/assets/images/video/devops/devops4.webp",
         categoria: "devops",
@@ -101,6 +116,7 @@ export const videos = [
         descripcion: "En este Alura+ aprenderás la relación entre Garantía de Calidad (QA) y Entrega Continua. 💻 \nVinícius Dias, instructor de Alura, explica cómo es posible aumentar la calidad de los despliegues y cómo estos dos recursos dependen uno del otro. ¿Aquí vamos? 😉",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/yKnkK4HxW8E?si=cNPfbyaQsiM2No4Z",
         imgVideo: "../src/assets/images/video/devops/devops5.webp",
         categoria: "devops",
@@ -108,6 +124,7 @@ export const videos = [
         descripcion: "Hoy aprenderá cómo podemos crear una máquina virtual en Google Cloud Platform usando Terraform y verá las diferencias entre Google Cloud Platform y AWS.",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/jSnLOoGjQ80?si=Uc4S8nCKSjG4xooO",
         imgVideo: "../src/assets/images/video/devops/devops6.webp",
         categoria: "devops",
@@ -116,6 +133,7 @@ export const videos = [
     },
     // Innovación y Gestión
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=vhwspfvI52k",
         imgVideo: "../src/assets/images/video/innovation/innovation1.webp",
         categoria: "innovation",
@@ -123,6 +141,7 @@ export const videos = [
         descripcion: "¿Qué son las Softskills y por qué es tan importante desarrollarlas para posicionarse en el mercado laboral? En este video de Alura Tips, Pri Stuani nos habla de las habilidades más buscadas por las empresas en sus profesionales y cómo las Soft Skills te ayudan en el día a día.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
         imgVideo: "../src/assets/images/video/innovation/innovation2.webp",
         categoria: "innovation",
@@ -130,6 +149,7 @@ export const videos = [
         descripcion: "Seguro que ya escuchaste hablar sobre las Soft Skills, pero ¿sabes cuáles son las 7 más buscadas por las empresas? En este #AluraMás vamos a explicarte la importancia de estas habilidades y porque son tan requeridas en el mercado laboral.",
     },
     {
+        id: uuid(),
         urlVideo: "https://youtu.be/6N3OkLCfK-0?si=BWDEeqShlKWaGnAR",
         imgVideo: "../src/assets/images/video/innovation/innovation3.webp",
         categoria: "innovation",
@@ -137,6 +157,7 @@ export const videos = [
         descripcion: "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa.",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=hamjv6G5shY",
         imgVideo: "../src/assets/images/video/innovation/innovation4.webp",
         categoria: "innovation",
@@ -145,6 +166,7 @@ export const videos = [
     },
     // Data Science
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=JMKZMa0tMhQ",
         imgVideo: "../src/assets/images/video/datascience/datascience1.webp",
         categoria: "datascience",
@@ -152,6 +174,7 @@ export const videos = [
         descripcion: "En esta serie de videos en alianza con Oracle, explicaremos y exploraremos las herramientas de Oracle, recibimos a: Santiago Cáceres, quien se desempeña como Cloud engineer en esta empresa. ",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=CpL7-sbW2O0",
         imgVideo: "../src/assets/images/video/datascience/datascience2.webp",
         categoria: "datascience",
@@ -159,6 +182,7 @@ export const videos = [
         descripcion: "Descubre cuáles son los próximos pasos de tu carrera profesional en el sector de los datos, impulsa tu crecimiento, mejora tus competencias y promueve la sintonía entre tus aspiraciones individuales y las tendencias del sector. ¡Es hora de dar el gran paso!",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=7_UXo-aqAeM",
         imgVideo: "../src/assets/images/video/datascience/datascience3.webp",
         categoria: "datascience",
@@ -166,6 +190,7 @@ export const videos = [
         descripcion: "Porque si",
     },
     {
+        id: uuid(),
         urlVideo: "https://www.youtube.com/watch?v=kBVElf0zaqA",
         imgVideo: "../src/assets/images/video/datascience/datascience4.webp",
         categoria: "datascience",

@@ -19,7 +19,7 @@ export default ListVideos;
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 0 36px 16px;
+  padding: 16px 36px;
   position: relative;
   @media (max-width: 425px) {
     padding: 16px;

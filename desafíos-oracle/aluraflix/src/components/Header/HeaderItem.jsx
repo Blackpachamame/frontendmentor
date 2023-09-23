@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BsFillHouseDoorFill, BsSearch, BsFillHeartFill } from "react-icons/bs";
 import { HiDotsVertical } from "react-icons/hi";
@@ -14,10 +15,10 @@ export default function HeaderItem({ mostrarBarraBusqueda, iconDotsVertical }) {
     return (
       <StyledHeaderItem>
         <li>
-          <StyledLink href="#">
+          <Link to="/">
             <BsFillHouseDoorFill style={{ fontSize: "1rem" }} />
             <StyledParagraph>Home</StyledParagraph>
-          </StyledLink>
+          </Link>
         </li>
         <li>
           <StyledBtn onClick={mostrarBarraBusqueda}>
@@ -26,10 +27,10 @@ export default function HeaderItem({ mostrarBarraBusqueda, iconDotsVertical }) {
           </StyledBtn>
         </li>
         <li>
-          <StyledLink href="/favoritos">
+          <Link to="/favoritos">
             <BsFillHeartFill style={{ fontSize: "1rem" }} />
             <StyledParagraph>Favoritos</StyledParagraph>
-          </StyledLink>
+          </Link>
         </li>
       </StyledHeaderItem>
     );
@@ -43,20 +44,19 @@ const StyledHeaderItem = styled.ul`
   align-items: center;
   gap: 32px;
   cursor: pointer;
+  li a {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-gray-light);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
-`;
-
-const StyledLink = styled.a`
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--color-gray-light);
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
 `;
 
 const StyledDiv = styled.div`

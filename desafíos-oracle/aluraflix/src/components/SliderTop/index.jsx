@@ -29,7 +29,10 @@ const SliderContainer = styled.section`
   position: relative;
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding: 0 36px 32px;
+  @media (max-width: 425px) {
+    padding: 0 16px 32px;
+  }
 `;
 
 const StyledImg = styled.img`

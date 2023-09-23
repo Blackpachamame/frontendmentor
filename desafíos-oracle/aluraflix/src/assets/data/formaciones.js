@@ -18,15 +18,15 @@ export const formaciones = [
         icon: "../src/assets/images/icono/iconDevops.svg",
     },
     {
-        id: "innovation",
-        name: "Innovación y Gestión",
-        color: "var(--color-innovation)",
-        icon: "../src/assets/images/icono/iconInnovacionGestion.svg",
-    },
-    {
         id: "datascience",
         name: "Data Science",
         color: "var(--color-data-science)",
         icon: "../src/assets/images/icono/iconDataScience.svg",
+    },
+    {
+        id: "innovation",
+        name: "Innovación y Gestión",
+        color: "var(--color-innovation)",
+        icon: "../src/assets/images/icono/iconInnovacionGestion.svg",
     },
 ];
