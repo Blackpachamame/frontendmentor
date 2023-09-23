@@ -32,8 +32,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/favoritos" element={<Favoritos />} />
             <Route path="/video/:id" element={<Video />} />
-            <Route path="/video/addvideo" element={<AddVideo />} />
-            <Route path="/video/editvideo" element={<EditVideo />} />
+            <Route path="/video/agregar" element={<AddVideo />} />
+            <Route path="/video/:id/editar" element={<EditVideo />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />

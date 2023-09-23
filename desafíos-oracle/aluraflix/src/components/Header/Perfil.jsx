@@ -1,17 +1,21 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function Perfil() {
   const [toggle, setToggle] = useState(false);
   const menu = [
     {
       name: "Nuevo vídeo",
+      link: "/video/agregar",
     },
     {
       name: "Nueva Categoría",
+      link: "/categoria/agregar",
     },
     {
       name: "Logout",
+      link: "/",
     },
   ];
 
@@ -22,7 +26,9 @@ export default function Perfil() {
         {toggle ? (
           <StyledDropdown>
             {menu.map((item) => (
-              <li key={item.name}>{item.name}</li>
+              <li key={item.name}>
+                <Link to={item.link}>{item.name}</Link>
+              </li>
             ))}
           </StyledDropdown>
         ) : null}
