@@ -18,6 +18,7 @@ export default function Modal({ open, onClose, url }) {
           width="100%"
           height="100%"
           playing={true}
+          controls={true}
         />
       </div>
     </ContainerModal>

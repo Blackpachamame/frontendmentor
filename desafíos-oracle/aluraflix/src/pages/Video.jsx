@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { videos } from "../assets/data/videos.js";
 import Modal from "../components/Modal/index.jsx";
+import { BsPlayFill, BsPencilFill, BsTrashFill } from "react-icons/bs";
 
 function obtenerVideo(id) {
   const unVideo = videos.filter((video) => video.id === id);
@@ -29,11 +30,19 @@ export default function Video() {
         <p>{video.descripcion}</p>
         <ContainerButtons>
           <button className="video__ver" onClick={() => setOpenModal(true)}>
-            Ver ahora
+            <BsPlayFill style={{ fontSize: "19px" }} /> Ver ahora
           </button>
           <Link to="/" className="video__volver">
             Volver
           </Link>
+          <div className="video__edicion">
+            <Link to={"/video/" + id + "/editar"} className="video__editar">
+              <BsPencilFill />
+            </Link>
+            <Link to="/" className="video__borrar">
+              <BsTrashFill />
+            </Link>
+          </div>
         </ContainerButtons>
       </div>
     </StyledContainer>
@@ -62,12 +71,15 @@ const StyledContainer = styled.main`
     margin-bottom: 10px;
   }
   @media (max-width: 1024px) {
-    padding-inline: 16px;
     flex-direction: column;
+  }
+  @media (max-width: 425px) {
+    padding-inline: 16px;
   }
 `;
 
 const ContainerButtons = styled.div`
+  margin: 20px 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -76,17 +88,18 @@ const ContainerButtons = styled.div`
   .video__ver {
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 0;
     padding: 14px 22px;
+    border: 2px solid var(--color-secondary);
     border-radius: 5px;
-    display: inline-block;
     transition: all 0.3s ease;
     cursor: pointer;
   }
   .video__ver {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: var(--color-black-ultra-dark);
     background: var(--color-secondary);
-    border: 2px solid var(--color-secondary);
     &:hover {
       border: 2px solid var(--color-primary);
       background: var(--color-primary);
@@ -95,11 +108,30 @@ const ContainerButtons = styled.div`
   .video__volver {
     color: var(--color-secondary);
     background: var(--color-black-dark);
-    border: 2px solid var(--color-secondary);
     &:hover {
       color: var(--color-secondary);
       border: 2px solid var(--color-secondary);
       background: var(--color-black-ultra-dark);
+    }
+  }
+
+  .video__edicion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .video__editar,
+  .video__borrar {
+    padding: 10px;
+    color: var(--color-secondary);
+    background: var(--color-black-ultra-dark);
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    &:hover {
+      color: var(--color-secondary);
+      border: 2px solid var(--color-secondary);
+      background: var(--color-black-medium);
     }
   }
 `;

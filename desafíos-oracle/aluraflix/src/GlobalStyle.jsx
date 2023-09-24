@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   /* --color-mobile: rgb(255, 186, 5); */
   /* --color-ux: rgb(220, 110, 190); */
   /* --color-marketing: rgb(107, 91, 226); */
-  --color-black-ultra-dark: rgb(3 3 6);
+  --color-black-ultra-dark: rgb(3, 3, 6);
   --color-black-dark: rgb(9, 9, 16);
   --color-black-medium: rgb(30, 36, 47);
   --color-black-light: rgb(92, 92, 92);
