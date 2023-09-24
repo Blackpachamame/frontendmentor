@@ -65,7 +65,7 @@ const StyledDropdown = styled.ul`
   top: 60px;
   right: 0;
   z-index: 1;
-  li {
+  & li {
     font-family: var(--ff-title);
     font-weight: 600;
     font-size: 15px;
@@ -79,6 +79,10 @@ const StyledDropdown = styled.ul`
     &:hover {
       background-color: var(--color-black-dark);
     }
+  }
+  & li a {
+    width: 100%;
+    display: inline-block;
   }
   @media (max-width: 425px) {
     right: 16px;

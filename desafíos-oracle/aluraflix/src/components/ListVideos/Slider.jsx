@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { videos } from "../../assets/data/videos.js";
 
@@ -23,7 +24,7 @@ const SliderComp = ({ formaciones }) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -39,14 +40,14 @@ const SliderComp = ({ formaciones }) => {
     ],
   };
 
-  const sliderProject = videos.map((item, i) => {
+  const sliderProject = videos.map((item) => {
     if (item.categoria === formaciones.id) {
       return (
-        <div key={i}>
+        <Link to={`/video/${item.id}`} key={item.id}>
           <StyledFigure className="project" $bgColor={formaciones.color}>
             <img src={item.imgVideo} alt={item.title} />
           </StyledFigure>
-        </div>
+        </Link>
       );
     }
   });
@@ -64,6 +65,9 @@ const ContainerSlider = styled.div`
   position: relative;
   margin: 0 auto;
   width: 90%;
+  & a {
+    pointer-events: none;
+  }
 `;
 
 const StyledFigure = styled.figure`

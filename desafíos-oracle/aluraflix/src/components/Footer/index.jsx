@@ -34,7 +34,6 @@ export default function Footer() {
 const StyledFooter = styled.footer`
   width: 100%;
   background-color: var(--color-black-ultra-dark);
-  margin-top: 16px;
   padding: 16px 36px;
   border-top: solid 2px var(--color-primary);
   display: grid;

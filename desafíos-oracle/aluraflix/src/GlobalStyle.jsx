@@ -54,14 +54,16 @@ h4 {
   font-size: 2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: var(--fw-bold);
 }
-h3, h4 {
+h3,
+h4 {
   font-weight: var(--fw-semi-bold);
 }
 
-a{
+a {
   color: var(--color-gray-light);
   text-decoration: none;
 }
@@ -131,7 +133,6 @@ li {
 
 .sliderVideos .center .project {
   opacity: 0.5;
-  pointer-events: none;
 }
 
 @media (max-width: 990px) {
@@ -156,9 +157,12 @@ li {
 
 @media (max-width: 425px) {
   .sliderVideos .center .project {
-  opacity: 1;
+    opacity: 1;
+    box-shadow: var(--bg-color) 0px 0px 5px 2px;
+    pointer-events: all;
+  }
 }
-}
+
 `;
 
 export default GlobalStyle;

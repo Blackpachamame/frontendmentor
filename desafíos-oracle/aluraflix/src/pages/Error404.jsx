@@ -5,7 +5,10 @@ export default function Error404() {
   return (
     <StyledContainer>
       <figure>
-        <img src="../src/assets/images/logo/404page.png" alt="error 404" />
+        <img
+          src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/main/desafíos-oracle/aluraflix/src/assets/images/logo/404page.png"
+          alt="error 404"
+        />
       </figure>
       <div className="contant_box_404">
         <h1>Parece que estás perdido</h1>
