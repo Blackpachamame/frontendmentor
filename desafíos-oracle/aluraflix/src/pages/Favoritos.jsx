@@ -1,3 +1,5 @@
+import EnConstruccion from "../components/EnConstruccion";
+
 export default function Favoritos() {
-  return <main>Favoritos</main>;
+  return <EnConstruccion />;
 }

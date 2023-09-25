@@ -57,7 +57,7 @@ const StyledContainer = styled.main`
   align-items: center;
   gap: 24px;
   .video__categoria {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-size: 12px;
     color: var(--color-black-ultra-dark);
     background-color: var(--color-white);

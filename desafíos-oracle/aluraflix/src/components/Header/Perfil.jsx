@@ -59,7 +59,7 @@ const StyledDropdown = styled.ul`
   text-align: end;
   padding-block: 6px;
   background-color: var(--color-black-medium);
-  border: 1px solid var(--color-black-light);
+  border: 1px solid var(--color-gray-medium);
   border-radius: 4px;
   position: absolute;
   top: 60px;

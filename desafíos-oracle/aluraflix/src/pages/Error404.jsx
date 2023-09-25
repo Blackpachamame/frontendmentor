@@ -37,6 +37,11 @@ const StyledContainer = styled.main`
     font-family: var(--ff-body);
     margin-bottom: 10px;
   }
+  .contant_box_404 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   .link_404 {
     font-weight: 700;
     color: var(--color-black-ultra-dark);
@@ -45,7 +50,6 @@ const StyledContainer = styled.main`
     background: var(--color-secondary);
     border: 2px solid var(--color-secondary);
     border-radius: 5px;
-    display: inline-block;
     transition: all 0.3s ease;
     &:hover {
       color: var(--color-secondary);
@@ -56,5 +60,13 @@ const StyledContainer = styled.main`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+  }
+  @media (max-width: 425px) {
+    img {
+      max-width: 300px;
+    }
+    .contant_box_404 {
+      max-width: 290px;
+    }
   }
 `;

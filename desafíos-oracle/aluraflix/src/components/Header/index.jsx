@@ -94,7 +94,7 @@ const StyledDropdown = styled.div`
   margin-top: 12px;
   padding: 6px 48px 6px 16px;
   background-color: var(--color-black-medium);
-  border: 1px solid var(--color-black-light);
+  border: 1px solid var(--color-gray-medium);
   border-radius: 4px;
   position: absolute;
   z-index: 1;

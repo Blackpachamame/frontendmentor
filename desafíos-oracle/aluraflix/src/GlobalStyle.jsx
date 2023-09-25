@@ -17,7 +17,8 @@ const GlobalStyle = createGlobalStyle`
   --color-black-ultra-dark: rgb(3, 3, 6);
   --color-black-dark: rgb(9, 9, 16);
   --color-black-medium: rgb(30, 36, 47);
-  --color-black-light: rgb(92, 92, 92);
+  --color-black-light: rgb(21, 21, 30);
+  --color-gray-medium: rgb(92, 92, 92);
   --color-gray-light: rgb(245, 245, 245);
   --color-error: rgb(198, 40, 40);
   --ff-title: "Chakra Petch", sans-serif;
@@ -44,6 +45,7 @@ body {
 
 main {
   min-height: calc(100vh - 190px);
+  padding-bottom: 16px;
 }
 
 h1,
