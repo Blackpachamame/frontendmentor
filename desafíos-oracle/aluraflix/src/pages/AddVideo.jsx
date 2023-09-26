@@ -1,19 +1,8 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Formulario from "../components/Formulario";
-import { formaciones } from "../assets/data/formaciones";
-import { videos } from "../assets/data/videos";
 
-export default function AddVideo() {
-  const [videosUse, actualizarVideos] = useState(videos);
-
-  //Agregar video
-  const agregarVideo = (video) => {
-    //Spread operator
-    actualizarVideos([...videosUse, video]);
-  };
-
-  console.log(videosUse);
+export default function AddVideo({ agregarVideo, formaciones }) {
   return (
     <StyledMain>
       <h1>Agregar Video</h1>
@@ -39,3 +28,8 @@ const StyledMain = styled.main`
     padding: 16px 0;
   }
 `;
+
+AddVideo.propTypes = {
+  agregarVideo: PropTypes.func,
+  formaciones: PropTypes.array,
+};

@@ -1,21 +1,22 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { videos } from "../assets/data/videos.js";
 import Modal from "../components/Modal/index.jsx";
 import { BsPlayFill, BsPencilFill, BsTrashFill } from "react-icons/bs";
 
-function obtenerVideo(id) {
+function obtenerVideo(id, videos) {
   const unVideo = videos.filter((video) => video.id === id);
   return unVideo;
 }
 
-export default function Video() {
+// eslint-disable-next-line react/prop-types
+export default function Video({ videosUse }) {
+  console.log(videosUse);
   const [openModal, setOpenModal] = useState(false);
 
   const url = new URL(window.location).pathname;
   const id = url.slice(7);
-  const video = obtenerVideo(id)[0];
+  const video = obtenerVideo(id, videosUse)[0];
 
   return (
     <StyledContainer>
@@ -72,6 +73,7 @@ const StyledContainer = styled.main`
   }
   @media (max-width: 1024px) {
     flex-direction: column;
+    align-items: flex-start;
   }
   @media (max-width: 425px) {
     padding-inline: 16px;

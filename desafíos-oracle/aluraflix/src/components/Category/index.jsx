@@ -1,8 +1,8 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
-import { formaciones } from "../../assets/data/formaciones.js";
 import FormacionItem from "./FormacionItem";
 
-export default function Category() {
+export default function Category({ formaciones }) {
   return (
     <CategoryContainer>
       {formaciones.map((item) => {
@@ -31,3 +31,7 @@ const CategoryContainer = styled.section`
     padding: 16px;
   }
 `;
+
+Category.propTypes = {
+  formaciones: PropTypes.array,
+};

@@ -2,9 +2,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { videos } from "../../assets/data/videos.js";
 
-const SliderComp = ({ formaciones }) => {
+const SliderComp = ({ formaciones, videosUse }) => {
   var settings = {
     className: "center",
     centerMode: true,
@@ -40,7 +39,7 @@ const SliderComp = ({ formaciones }) => {
     ],
   };
 
-  const sliderProject = videos.map((item) => {
+  const sliderProject = videosUse.map((item) => {
     if (item.formacion === formaciones.id) {
       return (
         <Link to={`/video/${item.id}`} key={item.id}>
@@ -97,4 +96,5 @@ SliderComp.propTypes = {
     icon: PropTypes.string,
     color: PropTypes.string,
   }),
+  videosUse: PropTypes.array,
 };

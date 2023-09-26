@@ -1,16 +1,21 @@
+import PropTypes from "prop-types";
 import SliderTop from "../components/SliderTop";
 import Category from "../components/Category";
 import ListVideos from "../components/ListVideos";
-import { formaciones } from "../assets/data/formaciones";
 
-export default function Home() {
+export default function Home({ videosUse, formaciones }) {
   return (
     <main>
       <SliderTop />
-      <Category />
+      <Category formaciones={formaciones} />
       {formaciones.map((item, i) => (
-        <ListVideos key={i} formaciones={item} />
+        <ListVideos key={i} formaciones={item} videosUse={videosUse} />
       ))}
     </main>
   );
 }
+
+Home.propTypes = {
+  videosUse: PropTypes.array,
+  formaciones: PropTypes.array,
+};
