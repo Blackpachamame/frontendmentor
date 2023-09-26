@@ -11,7 +11,6 @@ function obtenerVideo(id, videos) {
 
 // eslint-disable-next-line react/prop-types
 export default function Video({ videosUse }) {
-  console.log(videosUse);
   const [openModal, setOpenModal] = useState(false);
 
   const url = new URL(window.location).pathname;
@@ -24,6 +23,7 @@ export default function Video({ videosUse }) {
         open={openModal}
         onClose={() => setOpenModal(false)}
         url={video.urlVideo}
+        tipo="video"
       />
       <div className="video__descripcion">
         <div className="video__formacion">{video.formacion}</div>

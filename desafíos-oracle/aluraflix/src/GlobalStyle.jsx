@@ -41,6 +41,7 @@ body {
   font-weight: var(--fw-regular);
   color: var(--color-gray-light);
   background-color: var(--color-black-dark);
+  position: relative;
 }
 
 main {

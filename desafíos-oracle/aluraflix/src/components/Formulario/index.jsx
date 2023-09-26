@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Campo from "./Campo";
 import ListaOpciones from "./ListOptions";
+import Modal from "../Modal";
 import { v4 as uuidv4 } from "uuid";
 
 const Formulario = ({ formaciones, agregarVideo }) => {
@@ -11,9 +12,11 @@ const Formulario = ({ formaciones, agregarVideo }) => {
   const [title, actualizarTitle] = useState("");
   const [descripcion, actualizarDescripcion] = useState("");
   const [formacion, actualizarFormacion] = useState("");
+  const [openModal, setOpenModal] = useState(false);
 
   const manejarEnvio = (evento) => {
     evento.preventDefault();
+
     let datosAEnviar = {
       id: uuidv4(),
       urlVideo,
@@ -63,8 +66,15 @@ const Formulario = ({ formaciones, agregarVideo }) => {
           actualizarFormacion={actualizarFormacion}
           formaciones={formaciones}
         />
-        <button className="boton">Agregar</button>
+        <button className="boton" onClick={() => setOpenModal(true)}>
+          Agregar
+        </button>
       </form>
+      <Modal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        text="Datos agregados correctamente"
+      />
     </ContainerForm>
   );
 };
