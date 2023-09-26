@@ -10,8 +10,8 @@ export default function Perfil() {
       link: "/video/agregar",
     },
     {
-      name: "Nueva Categoría",
-      link: "/categoria/agregar",
+      name: "Nueva Formación",
+      link: "/formacion/agregar",
     },
     {
       name: "Logout",

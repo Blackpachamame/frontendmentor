@@ -41,7 +41,7 @@ const SliderComp = ({ formaciones }) => {
   };
 
   const sliderProject = videos.map((item) => {
-    if (item.categoria === formaciones.id) {
+    if (item.formacion === formaciones.id) {
       return (
         <Link to={`/video/${item.id}`} key={item.id}>
           <StyledFigure className="project" $bgColor={formaciones.color}>

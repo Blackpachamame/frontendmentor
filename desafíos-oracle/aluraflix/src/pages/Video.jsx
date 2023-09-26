@@ -25,7 +25,7 @@ export default function Video() {
         url={video.urlVideo}
       />
       <div className="video__descripcion">
-        <div className="video__categoria">{video.categoria}</div>
+        <div className="video__formacion">{video.formacion}</div>
         <h1>{video.title}</h1>
         <p>{video.descripcion}</p>
         <ContainerButtons>
@@ -56,7 +56,7 @@ const StyledContainer = styled.main`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  .video__categoria {
+  .video__formacion {
     margin-bottom: 5px;
     font-size: 12px;
     color: var(--color-black-ultra-dark);

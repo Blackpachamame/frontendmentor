@@ -1,27 +1,27 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const ListaOpciones = ({ valor, actualizarEquipo, equipos }) => {
+const ListaOpciones = ({ valor, actualizarFormacion, formaciones }) => {
   const manejarCambio = (e) => {
-    actualizarEquipo(e.target.value);
+    actualizarFormacion(e.target.value);
   };
 
   return (
     <StyledLista>
-      <label htmlFor="Equipo">Equipos</label>
+      <label htmlFor="Formacion">Formaciones</label>
       <select
-        id="Equipo"
-        name="Equipo"
+        id="Formacion"
+        name="Formacion"
         value={valor}
         onChange={manejarCambio}
         required
       >
         <option value="" disabled defaultValue="" hidden>
-          Seleccionar equipo
+          Seleccionar formación
         </option>
-        {equipos.map((equipo, index) => (
-          <option key={index} value={equipo}>
-            {equipo}
+        {formaciones.map((formacion, index) => (
+          <option key={index} value={formacion.id}>
+            {formacion.name}
           </option>
         ))}
       </select>
@@ -72,6 +72,6 @@ const StyledLista = styled.div`
 
 ListaOpciones.propTypes = {
   valor: PropTypes.string,
-  actualizarEquipo: PropTypes.func,
-  equipos: PropTypes.array,
+  actualizarFormacion: PropTypes.func,
+  formaciones: PropTypes.array,
 };

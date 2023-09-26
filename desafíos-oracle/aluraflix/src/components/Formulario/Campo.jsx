@@ -20,15 +20,26 @@ const Campo = ({
   return (
     <StyledCampo className={`campo campo-${type}`}>
       <label htmlFor={label}>{label}</label>
-      <input
-        id={label}
-        name={label}
-        placeholder={placeholderModificado}
-        required={required}
-        value={valor === "" && type === "color" ? "#000000" : valor}
-        onChange={manejarCambio}
-        type={tipo}
-      />
+      {tipo === "textarea" ? (
+        <textarea
+          id={label}
+          name={label}
+          placeholder={placeholderModificado}
+          required={required}
+          value={valor === "" && type === "color" ? "#000000" : valor}
+          onChange={manejarCambio}
+        />
+      ) : (
+        <input
+          id={label}
+          name={label}
+          placeholder={placeholderModificado}
+          required={required}
+          value={valor === "" && type === "color" ? "#000000" : valor}
+          onChange={manejarCambio}
+          type={tipo}
+        />
+      )}
     </StyledCampo>
   );
 };
@@ -43,9 +54,25 @@ const StyledCampo = styled.div`
   label {
     margin-bottom: 3px;
   }
-
   input {
     height: 60px;
+  }
+  textarea {
+    height: 120px;
+    padding-top: 20px;
+    resize: none;
+  }
+
+  textarea::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-black-medium);
+    border-radius: 5px;
+  }
+  input,
+  textarea {
     font-family: var(--ff-body);
     font-size: 16px;
     color: var(--color-white);
@@ -61,7 +88,8 @@ const StyledCampo = styled.div`
     }
   }
 
-  input::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: #a4a4a4;
   }
 

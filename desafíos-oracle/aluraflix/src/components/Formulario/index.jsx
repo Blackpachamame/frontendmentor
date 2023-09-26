@@ -5,53 +5,63 @@ import Campo from "./Campo";
 import ListaOpciones from "./ListOptions";
 import { v4 as uuidv4 } from "uuid";
 
-const Formulario = ({ equipos, registrarColaborador }) => {
-  const [nombre, actualizarNombre] = useState("");
-  const [puesto, actualizarPuesto] = useState("");
-  const [foto, actualizarFoto] = useState("");
-  const [equipo, actualizarEquipo] = useState("");
+const Formulario = ({ formaciones, agregarVideo }) => {
+  const [urlVideo, actualizarUrlVideo] = useState("");
+  const [imgVideo, actualizarImgVideo] = useState("");
+  const [title, actualizarTitle] = useState("");
+  const [descripcion, actualizarDescripcion] = useState("");
+  const [formacion, actualizarFormacion] = useState("");
 
   const manejarEnvio = (evento) => {
     evento.preventDefault();
     let datosAEnviar = {
       id: uuidv4(),
-      equipo,
-      foto,
-      nombre,
-      puesto,
-      fav: false,
+      urlVideo,
+      imgVideo,
+      formacion,
+      title,
+      descripcion,
     };
-    registrarColaborador(datosAEnviar);
+    console.log(datosAEnviar);
+    agregarVideo(datosAEnviar);
   };
 
   return (
     <ContainerForm>
       <form onSubmit={manejarEnvio}>
         <Campo
-          label="Nombre"
-          placeholder="Ingresar nombre"
+          label="Url Video"
+          placeholder="Ingresar url del video"
           required
-          valor={nombre}
-          actualizarValor={actualizarNombre}
+          valor={urlVideo}
+          actualizarValor={actualizarUrlVideo}
         />
         <Campo
-          label="Puesto"
-          placeholder="Ingresar puesto"
+          label="Url Imagen"
+          placeholder="Ingresar url de la imagen del video"
           required
-          valor={puesto}
-          actualizarValor={actualizarPuesto}
+          valor={imgVideo}
+          actualizarValor={actualizarImgVideo}
         />
         <Campo
-          label="Foto"
-          placeholder="Ingresar enlace de foto"
+          label="Título"
+          placeholder="Ingresar título"
           required
-          valor={foto}
-          actualizarValor={actualizarFoto}
+          valor={title}
+          actualizarValor={actualizarTitle}
+        />
+        <Campo
+          label="Descripción"
+          placeholder="Ingresar descripción"
+          required
+          valor={descripcion}
+          actualizarValor={actualizarDescripcion}
+          type="textarea"
         />
         <ListaOpciones
-          valor={equipo}
-          actualizarEquipo={actualizarEquipo}
-          equipos={equipos}
+          valor={formacion}
+          actualizarFormacion={actualizarFormacion}
+          formaciones={formaciones}
         />
         <button className="boton">Agregar</button>
       </form>
@@ -110,6 +120,6 @@ const ContainerForm = styled.section`
 `;
 
 Formulario.propTypes = {
-  equipos: PropTypes.array,
-  registrarColaborador: PropTypes.func,
+  formaciones: PropTypes.array,
+  agregarVideo: PropTypes.func,
 };
