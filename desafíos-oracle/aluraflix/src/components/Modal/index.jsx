@@ -31,7 +31,11 @@ export default function Modal({ open, onClose, url, tipo, text }) {
             <Link to="/" className="video__volver">
               Ir al Home
             </Link>
-            <Link to="/video/agregar" className="video__otro" onClick={onClose}>
+            <Link
+              to="/video/agregar"
+              className="video__agregar"
+              onClick={onClose}
+            >
               Agregar otro video
             </Link>
           </div>
@@ -59,7 +63,7 @@ const ContainerModal = styled.div`
   }
 
   .video__volver,
-  .video__otro {
+  .video__agregar {
     font-size: 18px;
     font-weight: 700;
     padding: 14px 22px;
@@ -68,7 +72,7 @@ const ContainerModal = styled.div`
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .video__otro {
+  .video__agregar {
     color: var(--color-black-ultra-dark);
     background: var(--color-secondary);
     &:hover {

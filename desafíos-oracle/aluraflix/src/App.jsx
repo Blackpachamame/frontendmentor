@@ -74,7 +74,7 @@ function App() {
                 />
               }
             />
-            <Route path="/video/:id/editar" element={<EditVideo />} />
+            <Route path="/video/editar/:id" element={<EditVideo />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
