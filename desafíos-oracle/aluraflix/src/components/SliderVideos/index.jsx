@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import SliderComp from "./Slider";
 
-const ListVideos = ({ formaciones, videosUse }) => {
+const SliderVideos = ({ formaciones, videosUse }) => {
   return (
-    <Container className="sliderVideos">
+    <Container className="slider__videos">
       <StyledTitle id={formaciones.id} color={formaciones.color}>
         <img src={formaciones.icon} alt="" />
         <span>{formaciones.name}</span>
@@ -14,7 +14,7 @@ const ListVideos = ({ formaciones, videosUse }) => {
   );
 };
 
-export default ListVideos;
+export default SliderVideos;
 
 const Container = styled.section`
   display: flex;
@@ -63,7 +63,7 @@ const StyledTitle = styled.h2`
   }
 `;
 
-ListVideos.propTypes = {
+SliderVideos.propTypes = {
   formaciones: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,

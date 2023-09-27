@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal/index.jsx";
@@ -9,7 +10,6 @@ function obtenerVideo(id, videos) {
   return unVideo;
 }
 
-// eslint-disable-next-line react/prop-types
 export default function Video({ videosUse }) {
   const [openModal, setOpenModal] = useState(false);
 
@@ -132,3 +132,7 @@ const ContainerButtons = styled.div`
     }
   }
 `;
+
+Video.propTypes = {
+  videosUse: PropTypes.array,
+};

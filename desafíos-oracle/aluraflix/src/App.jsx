@@ -12,6 +12,7 @@ import Video from "./pages/Video";
 import AddVideo from "./pages/AddVideo";
 import EditVideo from "./pages/EditVideo";
 import Error404 from "./pages/Error404";
+import ListVideos from "./pages/ListVideos";
 import { videos } from "./assets/data/videos";
 import { formaciones } from "./assets/data/formaciones";
 
@@ -40,8 +41,6 @@ function App() {
     actualizarVideos([...videosUse, video]);
   };
 
-  console.log(videosUse);
-
   return (
     <ThemeProvider theme={theme}>
       <StyledContainer
@@ -61,6 +60,10 @@ function App() {
             <Route
               path="/video/:id"
               element={<Video videosUse={videosUse} />}
+            />
+            <Route
+              path="/video/lista"
+              element={<ListVideos videosUse={videosUse} />}
             />
             <Route
               path="/video/agregar"

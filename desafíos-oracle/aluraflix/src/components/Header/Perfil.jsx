@@ -6,12 +6,20 @@ export default function Perfil() {
   const [toggle, setToggle] = useState(false);
   const menu = [
     {
-      name: "Nuevo vídeo",
+      name: "Nuevo video",
       link: "/video/agregar",
     },
     {
-      name: "Nueva Formación",
+      name: "Lista videos",
+      link: "/video/lista",
+    },
+    {
+      name: "Nueva formación",
       link: "/formacion/agregar",
+    },
+    {
+      name: "Lista formaciones",
+      link: "/formacion/lista",
     },
     {
       name: "Logout",

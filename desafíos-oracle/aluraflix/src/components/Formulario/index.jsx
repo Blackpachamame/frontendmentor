@@ -25,7 +25,7 @@ const Formulario = ({ formaciones, agregarVideo }) => {
       title,
       descripcion,
     };
-    console.log(datosAEnviar);
+
     agregarVideo(datosAEnviar);
   };
 
