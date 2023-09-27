@@ -32,10 +32,10 @@ function App() {
   }, [videosUse]);
 
   function getInitialVideos() {
-    const savedVideos = localStorage.getItem("videos");
+    const savedVideos = localStorage.getItem("videosUse");
     return savedVideos ? JSON.parse(savedVideos) : videos;
   }
-
+  console.log(videosUse);
   //Agregar video
   const agregarVideo = (video) => {
     actualizarVideos([...videosUse, video]);

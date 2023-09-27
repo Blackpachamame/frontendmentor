@@ -24,7 +24,7 @@ export default function ListVideos({ videosUse }) {
                 <td>{video.formacion}</td>
                 <ContainerAcciones>
                   <Link
-                    to={`/video/editar/+${video.id}`}
+                    to={`/video/editar/${video.id}`}
                     className="video__editar"
                   >
                     <BsPencilFill />
