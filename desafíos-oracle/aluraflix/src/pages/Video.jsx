@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal/index.jsx";
-import { BsPlayFill, BsPencilFill, BsTrashFill } from "react-icons/bs";
+import { BsPlayFill, BsFillHeartFill } from "react-icons/bs";
 
 function obtenerVideo(id, videos) {
   const unVideo = videos.filter((video) => video.id === id);
@@ -16,7 +16,6 @@ export default function Video({ videosUse }) {
   const url = new URL(window.location).pathname;
   const id = url.slice(7);
   const video = obtenerVideo(id, videosUse)[0];
-
   return (
     <StyledContainer>
       <Modal
@@ -36,14 +35,9 @@ export default function Video({ videosUse }) {
           <Link to="/" className="video__volver">
             Volver
           </Link>
-          <div className="video__edicion">
-            <Link to={"/video/" + id + "/editar"} className="video__editar">
-              <BsPencilFill />
-            </Link>
-            <Link to="/" className="video__borrar">
-              <BsTrashFill />
-            </Link>
-          </div>
+          <button className="video__favoritos">
+            <BsFillHeartFill />
+          </button>
         </ContainerButtons>
       </div>
     </StyledContainer>
@@ -123,13 +117,14 @@ const ContainerButtons = styled.div`
     gap: 10px;
   }
 
-  .video__editar,
-  .video__borrar {
-    padding: 10px;
+  .video__favoritos {
+    font-size: 16px;
+    padding: 15px 13px 12px;
     color: var(--color-secondary);
     background: var(--color-black-ultra-dark);
     border: 2px solid var(--color-secondary);
     border-radius: 50%;
+    cursor: pointer;
     &:hover {
       color: var(--color-secondary);
       border: 2px solid var(--color-secondary);
