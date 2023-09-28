@@ -8,8 +8,7 @@ function FormacionItem({ id, name, color, icon }) {
         <StyledCategoryLink href={"#" + id}>
           <figure
             style={{
-              backgroundColor:
-                "color-mix(in srgb," + color + "20%, rgba(0, 0, 0, 0.25))",
+              backgroundColor: color + "30",
             }}
           >
             <StyledLogo src={icon} alt={name} />

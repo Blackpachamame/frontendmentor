@@ -26,7 +26,7 @@ const Campo = ({
           name={label}
           placeholder={placeholderModificado}
           required={required}
-          value={valor === "" && type === "color" ? "#000000" : valor}
+          value={valor}
           onChange={manejarCambio}
         />
       ) : (
@@ -86,6 +86,12 @@ const StyledCampo = styled.div`
     &:focus {
       border-bottom: 2px solid var(--color-secondary);
     }
+  }
+  input[type="color"] {
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 0;
   }
 
   input::placeholder,

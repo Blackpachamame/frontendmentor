@@ -27,15 +27,24 @@ function App() {
   };
 
   const [videosUse, actualizarVideos] = useState(getInitialVideos);
-  const [formacionesUse, actualizarFormaciones] = useState(formaciones);
+  const [formacionesUse, actualizarFormaciones] = useState(
+    getInitialFormaciones
+  );
 
   useEffect(() => {
     localStorage.setItem("videosUse", JSON.stringify(videosUse));
   }, [videosUse]);
+  useEffect(() => {
+    localStorage.setItem("formacionesUse", JSON.stringify(formacionesUse));
+  }, [formacionesUse]);
 
   function getInitialVideos() {
     const savedVideos = localStorage.getItem("videosUse");
     return savedVideos ? JSON.parse(savedVideos) : videos;
+  }
+  function getInitialFormaciones() {
+    const savedFormaciones = localStorage.getItem("formacionesUse");
+    return savedFormaciones ? JSON.parse(savedFormaciones) : formaciones;
   }
 
   //Agregar video
@@ -67,8 +76,8 @@ function App() {
   };
 
   //Agregar formacion
-  const agregarFormacion = (formacion) => {
-    actualizarFormaciones([...formacionesUse, formacion]);
+  const agregarFormacion = (nuevaFormacion) => {
+    actualizarFormaciones([...formacionesUse, nuevaFormacion]);
   };
 
   //Eliminar formacion
@@ -80,15 +89,16 @@ function App() {
   };
 
   //Actualizar formacion
-  const actualizarFormacion = (formacionActualizado) => {
+  const actualizarFormacion = (formacionActualizada) => {
+    console.log(formacionesUse[5].id);
     const formacionesActualizados = formacionesUse.map((formacion) =>
-      formacionActualizado.id === formacion.id
+      formacionActualizada.idAntiguo === formacion.id
         ? {
             ...formacion,
-            id: formacionActualizado.id,
-            name: formacionActualizado.name,
-            color: formacionActualizado.color,
-            icon: formacionActualizado.icon,
+            // id: formacionActualizada.id,
+            name: formacionActualizada.name,
+            color: formacionActualizada.color,
+            icon: formacionActualizada.icon,
           }
         : formacion
     );
@@ -132,7 +142,7 @@ function App() {
               element={
                 <AddVideo
                   agregarVideo={agregarVideo}
-                  formaciones={formaciones}
+                  formaciones={formacionesUse}
                 />
               }
             />
@@ -142,7 +152,7 @@ function App() {
                 <EditVideo
                   videosUse={videosUse}
                   actualizarVideo={actualizarVideo}
-                  formaciones={formaciones}
+                  formaciones={formacionesUse}
                 />
               }
             />
@@ -161,7 +171,7 @@ function App() {
               element={
                 <AddFormacion
                   agregarFormacion={agregarFormacion}
-                  formaciones={formaciones}
+                  formaciones={formacionesUse}
                 />
               }
             />
@@ -170,7 +180,7 @@ function App() {
               element={
                 <EditFormacion
                   videosUse={videosUse}
-                  formaciones={formaciones}
+                  formaciones={formacionesUse}
                   actualizarVideo={actualizarVideo}
                   actualizarFormacion={actualizarFormacion}
                 />

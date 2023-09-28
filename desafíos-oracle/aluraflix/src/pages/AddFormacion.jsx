@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Formulario from "../components/Formulario";
+import FormFormacion from "../components/Formulario/FormFormacion";
 
-export default function AddFormacion({ agregarVideo, formaciones }) {
+export default function AddFormacion({ agregarFormacion }) {
   return (
     <StyledMain>
       <h1>Agregar Formación</h1>
-      <Formulario formaciones={formaciones} agregarVideo={agregarVideo} />
+      <FormFormacion agregarFormacion={agregarFormacion} />
     </StyledMain>
   );
 }
@@ -31,6 +31,5 @@ const StyledMain = styled.main`
 `;
 
 AddFormacion.propTypes = {
-  agregarVideo: PropTypes.func,
-  formaciones: PropTypes.array,
+  agregarFormacion: PropTypes.func,
 };

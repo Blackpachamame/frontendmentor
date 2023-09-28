@@ -7,15 +7,13 @@ import Modal from "../Modal";
 import { v4 as uuidv4 } from "uuid";
 
 const Formulario = ({ formaciones, agregarVideo, actualizarVideo, datos }) => {
-  const [urlVideo, actualizarUrlVideo] = useState(datos ? datos.urlVideo : "");
-  const [imgVideo, actualizarImgVideo] = useState(datos ? datos.imgVideo : "");
-  const [title, actualizarTitle] = useState(datos ? datos.title : "");
-  const [descripcion, actualizarDescripcion] = useState(
+  const [urlVideo, updateUrlVideo] = useState(datos ? datos.urlVideo : "");
+  const [imgVideo, updateImgVideo] = useState(datos ? datos.imgVideo : "");
+  const [title, updateTitle] = useState(datos ? datos.title : "");
+  const [descripcion, updateDescripcion] = useState(
     datos ? datos.descripcion : ""
   );
-  const [formacion, actualizarFormacion] = useState(
-    datos ? datos.formacion : ""
-  );
+  const [formacion, updateFormacion] = useState(datos ? datos.formacion : "");
   const [openModal, setOpenModal] = useState(false);
 
   const handleCrear = (evento) => {
@@ -56,33 +54,33 @@ const Formulario = ({ formaciones, agregarVideo, actualizarVideo, datos }) => {
           placeholder="Ingresar url del video"
           required
           valor={urlVideo}
-          actualizarValor={actualizarUrlVideo}
+          actualizarValor={updateUrlVideo}
         />
         <Campo
           label="Url Imagen"
           placeholder="Ingresar url de la imagen del video"
           required
           valor={imgVideo}
-          actualizarValor={actualizarImgVideo}
+          actualizarValor={updateImgVideo}
         />
         <Campo
           label="Título"
           placeholder="Ingresar título"
           required
           valor={title}
-          actualizarValor={actualizarTitle}
+          actualizarValor={updateTitle}
         />
         <Campo
           label="Descripción"
           placeholder="Ingresar descripción"
           required
           valor={descripcion}
-          actualizarValor={actualizarDescripcion}
+          actualizarValor={updateDescripcion}
           type="textarea"
         />
         <ListaOpciones
           valor={formacion}
-          actualizarFormacion={actualizarFormacion}
+          actualizarFormacion={updateFormacion}
           formaciones={formaciones}
         />
         <button className="boton" onClick={() => setOpenModal(true)}>

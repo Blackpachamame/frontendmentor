@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Formulario from "../components/Formulario";
+import FormFormacion from "../components/Formulario/FormFormacion";
+
+function obtenerFormacion(slice, formaciones) {
+  const url = new URL(window.location).pathname;
+  const id = url.slice(slice);
+  const unaFormacion = formaciones.filter((formacion) => formacion.id === id);
+  return unaFormacion;
+}
 
 export default function EditFormacion({
   videosUse,
@@ -8,13 +15,15 @@ export default function EditFormacion({
   actualizarVideo,
   actualizarFormacion,
 }) {
+  const formacion = obtenerFormacion(18, formaciones)[0];
+
   return (
     <StyledMain>
       <h1>Editar Formacion</h1>
-      <Formulario
-        formaciones={formaciones}
+      <FormFormacion
+        datosFormaciones={formacion}
         actualizarVideo={actualizarVideo}
-        datos={videosUse}
+        datosVideos={videosUse}
         actualizarFormacion={actualizarFormacion}
       />
     </StyledMain>
