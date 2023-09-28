@@ -3,34 +3,36 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { BsPencilFill, BsTrashFill } from "react-icons/bs";
 
-export default function ListVideos({ videosUse, eliminarVideo }) {
+export default function ListFormaciones({ formacionesUse, eliminarFormacion }) {
   return (
     <StyledMain>
-      <h1>Lista de Videos</h1>
-      <div className="video__table-container">
+      <h1>Lista de Formaciones</h1>
+      <div className="formacion__table-container">
         <StyledTable>
           <thead>
             <tr>
-              <th>Título</th>
-              <th>Formación</th>
+              <th>Nombre</th>
+              <th>Icono</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            {videosUse.map((video) => (
-              <tr key={video.id}>
-                <td>{video.title}</td>
-                <td>{video.formacion}</td>
+            {formacionesUse.map((formacion) => (
+              <tr key={formacion.id}>
+                <td>{formacion.name}</td>
+                <td className="formacion__icono">
+                  <img src={formacion.icon} alt="" width="30px" height="30px" />
+                </td>
                 <ContainerAcciones>
                   <Link
-                    to={`/video/editar/${video.id}`}
-                    className="video__editar"
+                    to={`/formacion/editar/${formacion.id}`}
+                    className="formacion__editar"
                   >
                     <BsPencilFill />
                   </Link>
                   <button
-                    onClick={() => eliminarVideo(video.id)}
-                    className="video__eliminar"
+                    onClick={() => eliminarFormacion(formacion.id)}
+                    className="formacion__eliminar"
                   >
                     <BsTrashFill />
                   </button>
@@ -40,8 +42,8 @@ export default function ListVideos({ videosUse, eliminarVideo }) {
           </tbody>
         </StyledTable>
       </div>
-      <Link to="/video/agregar" className="video__agregar">
-        Agregar video
+      <Link to="/formacion/agregar" className="formacion__agregar">
+        Agregar formacion
       </Link>
     </StyledMain>
   );
@@ -60,7 +62,7 @@ const StyledMain = styled.main`
     text-align: center;
   }
 
-  .video__table-container {
+  .formacion__table-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -68,7 +70,7 @@ const StyledMain = styled.main`
     overflow-x: auto;
   }
 
-  .video__agregar {
+  .formacion__agregar {
     font-size: 18px;
     font-weight: 700;
     margin-top: 32px;
@@ -78,7 +80,7 @@ const StyledMain = styled.main`
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .video__agregar {
+  .formacion__agregar {
     color: var(--color-black-ultra-dark);
     background: var(--color-secondary);
     &:hover {
@@ -87,16 +89,14 @@ const StyledMain = styled.main`
     }
   }
 
-  @media (max-width: 1024px) {
-    .video__table-container {
-      justify-content: flex-start;
-    }
-  }
   @media (max-width: 425px) {
     padding: 16px;
   }
   @media (max-width: 375px) {
     padding: 16px 0;
+    .formacion__table-container {
+      justify-content: flex-start;
+    }
   }
 `;
 
@@ -112,6 +112,10 @@ const StyledTable = styled.table`
     text-align: left;
   }
 
+  td.formacion__icono img {
+    width: 100%;
+  }
+
   tr {
     background-color: var(--color-black-light);
   }
@@ -122,6 +126,9 @@ const StyledTable = styled.table`
     background-color: var(--color-black-medium);
     color: var(--color-white);
   }
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 const ContainerAcciones = styled.td`
@@ -131,8 +138,8 @@ const ContainerAcciones = styled.td`
   justify-content: center;
   gap: 8px;
 
-  .video__editar,
-  .video__eliminar {
+  .formacion__editar,
+  .formacion__eliminar {
     font-size: 16px;
     padding: 8px;
     color: var(--color-secondary);
@@ -148,7 +155,7 @@ const ContainerAcciones = styled.td`
   }
 `;
 
-ListVideos.propTypes = {
-  videosUse: PropTypes.array,
-  eliminarVideo: PropTypes.func,
+ListFormaciones.propTypes = {
+  formacionesUse: PropTypes.array,
+  eliminarFormacion: PropTypes.func,
 };

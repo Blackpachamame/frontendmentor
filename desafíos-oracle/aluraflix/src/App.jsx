@@ -15,6 +15,8 @@ import Error404 from "./pages/Error404";
 import ListVideos from "./pages/ListVideos";
 import { videos } from "./assets/data/videos";
 import { formaciones } from "./assets/data/formaciones";
+import ListFormaciones from "./pages/ListFormaciones";
+import AddFormacion from "./pages/AddFormacion";
 
 function App() {
   const [toggleSearch, setToggleSearch] = useState(false);
@@ -75,6 +77,7 @@ function App() {
               }
             />
             <Route path="/favoritos" element={<Favoritos />} />
+
             {/* Videos */}
             <Route
               path="/video/:id"
@@ -99,12 +102,13 @@ function App() {
               }
             />
             <Route path="/video/editar/:id" element={<EditVideo />} />
+
             {/* Formaciones */}
             <Route
               path="/formacion/lista"
               element={
-                <ListVideos
-                  videosUse={videosUse}
+                <ListFormaciones
+                  formacionesUse={formacionesUse}
                   eliminarFormacion={eliminarFormacion}
                 />
               }
@@ -112,7 +116,7 @@ function App() {
             <Route
               path="/formacion/agregar"
               element={
-                <AddVideo
+                <AddFormacion
                   agregarFormacion={agregarFormacion}
                   formaciones={formaciones}
                 />
