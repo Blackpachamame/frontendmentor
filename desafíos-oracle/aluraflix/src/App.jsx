@@ -17,6 +17,7 @@ import { videos } from "./assets/data/videos";
 import { formaciones } from "./assets/data/formaciones";
 import ListFormaciones from "./pages/ListFormaciones";
 import AddFormacion from "./pages/AddFormacion";
+import EditFormacion from "./pages/EditFormacion";
 
 function App() {
   const [toggleSearch, setToggleSearch] = useState(false);
@@ -78,6 +79,22 @@ function App() {
     actualizarFormaciones(nuevosformaciones);
   };
 
+  //Actualizar formacion
+  const actualizarFormacion = (formacionActualizado) => {
+    const formacionesActualizados = formacionesUse.map((formacion) =>
+      formacionActualizado.id === formacion.id
+        ? {
+            ...formacion,
+            id: formacionActualizado.id,
+            name: formacionActualizado.name,
+            color: formacionActualizado.color,
+            icon: formacionActualizado.icon,
+          }
+        : formacion
+    );
+    actualizarFormaciones(formacionesActualizados);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <StyledContainer
@@ -87,14 +104,15 @@ function App() {
         <BrowserRouter>
           <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
           <Routes>
+            {/* Home */}
             <Route
               path="/"
               element={
                 <Home videosUse={videosUse} formaciones={formacionesUse} />
               }
             />
+            {/* Favoritos */}
             <Route path="/favoritos" element={<Favoritos />} />
-
             {/* Videos */}
             <Route
               path="/video/:id"
@@ -128,7 +146,6 @@ function App() {
                 />
               }
             />
-
             {/* Formaciones */}
             <Route
               path="/formacion/lista"
@@ -148,6 +165,18 @@ function App() {
                 />
               }
             />
+            <Route
+              path="/formacion/editar/:id"
+              element={
+                <EditFormacion
+                  videosUse={videosUse}
+                  formaciones={formaciones}
+                  actualizarVideo={actualizarVideo}
+                  actualizarFormacion={actualizarFormacion}
+                />
+              }
+            />
+            {/* Error 404 */}
             <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />

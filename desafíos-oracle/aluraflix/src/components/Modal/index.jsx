@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player/youtube";
 import { Link } from "react-router-dom";
 
-export default function Modal({ open, onClose, url, tipo, text }) {
+export default function Modal({ open, onClose, url, tipo, text, editado }) {
   const type = tipo ? tipo : "text";
   if (!open) return null;
   return (
@@ -31,13 +31,23 @@ export default function Modal({ open, onClose, url, tipo, text }) {
             <Link to="/" className="video__volver">
               Ir al Home
             </Link>
-            <Link
-              to="/video/agregar"
-              className="video__agregar"
-              onClick={onClose}
-            >
-              Agregar otro video
-            </Link>
+            {editado ? (
+              <Link
+                to="/video/lista"
+                className="video__agregar"
+                onClick={onClose}
+              >
+                Lista videos
+              </Link>
+            ) : (
+              <Link
+                to="/video/agregar"
+                className="video__agregar"
+                onClick={onClose}
+              >
+                Agregar otro video
+              </Link>
+            )}
           </div>
         </div>
       )}
@@ -137,4 +147,5 @@ Modal.propTypes = {
   url: PropTypes.string,
   tipo: PropTypes.string,
   text: PropTypes.string,
+  editado: PropTypes.bool,
 };

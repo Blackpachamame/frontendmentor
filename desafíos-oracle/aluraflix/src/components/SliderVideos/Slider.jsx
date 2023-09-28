@@ -14,6 +14,7 @@ const SliderComp = ({ formaciones, videosUse }) => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
+    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 990,

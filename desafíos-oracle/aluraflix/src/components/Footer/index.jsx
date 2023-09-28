@@ -76,15 +76,11 @@ const StyledFooter = styled.footer`
       "logo texto"
       "logo redes";
     .textFooter {
-      text-align: right;
+      text-align: end;
     }
   }
   @media (max-width: 425px) {
-    padding: 6px 16px 16px;
-    grid-template-columns: 1fr 70px;
-    grid-template-areas:
-      "redes logo"
-      "texto texto";
+    padding: 16px;
     .containerLogo {
       & .logoCircle {
         width: 70px;
@@ -92,11 +88,11 @@ const StyledFooter = styled.footer`
       }
     }
     .textFooter {
-      text-align: center;
+      font-size: 16px;
     }
     .redes {
-      margin-left: 10px;
-      justify-content: flex-start;
+      font-size: 28px;
+      gap: 16px;
     }
   }
   @keyframes rotate {

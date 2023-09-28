@@ -95,8 +95,9 @@ const Formulario = ({ formaciones, agregarVideo, actualizarVideo, datos }) => {
         text={
           datos
             ? "Datos editados correctamente"
-            : "Datos agregados correctamente"
+            : "Video agregado correctamente"
         }
+        editado={datos ? true : false}
       />
     </ContainerForm>
   );

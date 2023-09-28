@@ -43,7 +43,7 @@ export default function ListFormaciones({ formacionesUse, eliminarFormacion }) {
         </StyledTable>
       </div>
       <Link to="/formacion/agregar" className="formacion__agregar">
-        Agregar formacion
+        Agregar formación
       </Link>
     </StyledMain>
   );
