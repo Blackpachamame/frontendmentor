@@ -48,6 +48,23 @@ function App() {
     actualizarVideos(nuevosVideos);
   };
 
+  //Actualizar video
+  const actualizarVideo = (videoActualizado) => {
+    const videosActualizados = videosUse.map((video) =>
+      videoActualizado.id === video.id
+        ? {
+            ...video,
+            urlVideo: videoActualizado.urlVideo,
+            imgVideo: videoActualizado.imgVideo,
+            formacion: videoActualizado.formacion,
+            title: videoActualizado.title,
+            descripcion: videoActualizado.descripcion,
+          }
+        : video
+    );
+    actualizarVideos(videosActualizados);
+  };
+
   //Agregar formacion
   const agregarFormacion = (formacion) => {
     actualizarFormaciones([...formacionesUse, formacion]);
@@ -101,7 +118,16 @@ function App() {
                 />
               }
             />
-            <Route path="/video/editar/:id" element={<EditVideo />} />
+            <Route
+              path="/video/editar/:id"
+              element={
+                <EditVideo
+                  videosUse={videosUse}
+                  actualizarVideo={actualizarVideo}
+                  formaciones={formaciones}
+                />
+              }
+            />
 
             {/* Formaciones */}
             <Route

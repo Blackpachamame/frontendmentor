@@ -6,15 +6,19 @@ import ListaOpciones from "./ListOptions";
 import Modal from "../Modal";
 import { v4 as uuidv4 } from "uuid";
 
-const Formulario = ({ formaciones, agregarVideo }) => {
-  const [urlVideo, actualizarUrlVideo] = useState("");
-  const [imgVideo, actualizarImgVideo] = useState("");
-  const [title, actualizarTitle] = useState("");
-  const [descripcion, actualizarDescripcion] = useState("");
-  const [formacion, actualizarFormacion] = useState("");
+const Formulario = ({ formaciones, agregarVideo, actualizarVideo, datos }) => {
+  const [urlVideo, actualizarUrlVideo] = useState(datos ? datos.urlVideo : "");
+  const [imgVideo, actualizarImgVideo] = useState(datos ? datos.imgVideo : "");
+  const [title, actualizarTitle] = useState(datos ? datos.title : "");
+  const [descripcion, actualizarDescripcion] = useState(
+    datos ? datos.descripcion : ""
+  );
+  const [formacion, actualizarFormacion] = useState(
+    datos ? datos.formacion : ""
+  );
   const [openModal, setOpenModal] = useState(false);
 
-  const manejarEnvio = (evento) => {
+  const handleCrear = (evento) => {
     evento.preventDefault();
 
     let datosAEnviar = {
@@ -29,9 +33,24 @@ const Formulario = ({ formaciones, agregarVideo }) => {
     agregarVideo(datosAEnviar);
   };
 
+  const handleEditar = (evento) => {
+    evento.preventDefault();
+
+    let datosAEditar = {
+      id: datos.id,
+      urlVideo,
+      imgVideo,
+      formacion,
+      title,
+      descripcion,
+    };
+
+    actualizarVideo(datosAEditar);
+  };
+
   return (
     <ContainerForm>
-      <form onSubmit={manejarEnvio}>
+      <form onSubmit={datos ? handleEditar : handleCrear}>
         <Campo
           label="Url Video"
           placeholder="Ingresar url del video"
@@ -67,13 +86,17 @@ const Formulario = ({ formaciones, agregarVideo }) => {
           formaciones={formaciones}
         />
         <button className="boton" onClick={() => setOpenModal(true)}>
-          Agregar
+          {datos ? "Editar" : "Agregar"}
         </button>
       </form>
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
-        text="Datos agregados correctamente"
+        text={
+          datos
+            ? "Datos editados correctamente"
+            : "Datos agregados correctamente"
+        }
       />
     </ContainerForm>
   );
@@ -132,4 +155,6 @@ const ContainerForm = styled.section`
 Formulario.propTypes = {
   formaciones: PropTypes.array,
   agregarVideo: PropTypes.func,
+  actualizarVideo: PropTypes.func,
+  datos: PropTypes.object,
 };

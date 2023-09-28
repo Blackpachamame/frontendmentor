@@ -53,12 +53,12 @@ const StyledLista = styled.div`
     border-radius: 5px 5px 0 0;
     appearance: none;
     transition: all 0.5s ease;
-    background-image: url("../src/assets/images/logo/arrow_down.svg");
+    background-image: url("../../src/assets/images/logo/arrow_down.svg");
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
     &:focus {
       border-bottom: 2px solid var(--color-secondary);
-      background-image: url("../src/assets/images/logo/arrow_down_focus.svg");
+      background-image: url("../../src/assets/images/logo/arrow_down_focus.svg");
       outline: 0;
     }
     &:required:invalid {
