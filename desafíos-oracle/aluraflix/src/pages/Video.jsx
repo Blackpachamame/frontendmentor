@@ -30,7 +30,7 @@ export default function Video({ videosUse }) {
         <p>{video.descripcion}</p>
         <ContainerButtons>
           <button className="video__ver" onClick={() => setOpenModal(true)}>
-            <BsPlayFill style={{ fontSize: "19px" }} /> Ver ahora
+            <BsPlayFill /> Ver ahora
           </button>
           <Link to="/" className="video__volver">
             Volver
@@ -46,9 +46,10 @@ export default function Video({ videosUse }) {
 
 const StyledContainer = styled.main`
   max-width: 874px;
+  padding-top: 16px;
   padding-inline: 32px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 24px;
   .video__formacion {
@@ -67,6 +68,7 @@ const StyledContainer = styled.main`
   }
   @media (max-width: 1024px) {
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
   }
   @media (max-width: 425px) {
@@ -78,27 +80,39 @@ const ContainerButtons = styled.div`
   margin: 20px 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
+  @media (max-width: 430px) {
+    max-width: 180px;
+    .video__ver {
+      width: 100%;
+    }
+  }
 
   .video__volver,
   .video__ver {
+    height: 56px;
     font-size: 18px;
     font-weight: 700;
     padding: 14px 22px;
     border: 2px solid var(--color-secondary);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease;
     cursor: pointer;
   }
   .video__ver {
-    display: flex;
-    align-items: center;
     gap: 5px;
     color: var(--color-black-ultra-dark);
     background: var(--color-secondary);
     &:hover {
       border: 2px solid var(--color-primary);
       background: var(--color-primary);
+    }
+    & svg {
+      font-size: 32px;
     }
   }
   .video__volver {

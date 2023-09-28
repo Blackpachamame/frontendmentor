@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { BsPencilFill, BsTrashFill } from "react-icons/bs";
 
-export default function ListVideos({ videosUse }) {
+export default function ListVideos({ videosUse, eliminarVideo }) {
   return (
     <StyledMain>
       <h1>Lista de Videos</h1>
@@ -30,7 +30,7 @@ export default function ListVideos({ videosUse }) {
                     <BsPencilFill />
                   </Link>
                   <button
-                    onClick={() => deleted(video.id)}
+                    onClick={() => eliminarVideo(video.id)}
                     className="video__eliminar"
                   >
                     <BsTrashFill />
@@ -143,4 +143,5 @@ const ContainerAcciones = styled.td`
 
 ListVideos.propTypes = {
   videosUse: PropTypes.array,
+  eliminarVideo: PropTypes.func,
 };

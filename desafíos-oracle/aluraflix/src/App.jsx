@@ -24,7 +24,6 @@ function App() {
   };
 
   const [videosUse, actualizarVideos] = useState(getInitialVideos);
-  // eslint-disable-next-line no-unused-vars
   const [formacionesUse, actualizarFormaciones] = useState(formaciones);
 
   useEffect(() => {
@@ -35,10 +34,29 @@ function App() {
     const savedVideos = localStorage.getItem("videosUse");
     return savedVideos ? JSON.parse(savedVideos) : videos;
   }
-  console.log(videosUse);
+
   //Agregar video
   const agregarVideo = (video) => {
     actualizarVideos([...videosUse, video]);
+  };
+
+  //Eliminar video
+  const eliminarVideo = (id) => {
+    const nuevosVideos = videosUse.filter((video) => video.id !== id);
+    actualizarVideos(nuevosVideos);
+  };
+
+  //Agregar formacion
+  const agregarFormacion = (formacion) => {
+    actualizarFormaciones([...formacionesUse, formacion]);
+  };
+
+  //Eliminar formacion
+  const eliminarFormacion = (id) => {
+    const nuevosformaciones = formacionesUse.filter(
+      (formacion) => formacion.id !== id
+    );
+    actualizarFormaciones(nuevosformaciones);
   };
 
   return (
@@ -57,13 +75,19 @@ function App() {
               }
             />
             <Route path="/favoritos" element={<Favoritos />} />
+            {/* Videos */}
             <Route
               path="/video/:id"
               element={<Video videosUse={videosUse} />}
             />
             <Route
               path="/video/lista"
-              element={<ListVideos videosUse={videosUse} />}
+              element={
+                <ListVideos
+                  videosUse={videosUse}
+                  eliminarVideo={eliminarVideo}
+                />
+              }
             />
             <Route
               path="/video/agregar"
@@ -75,6 +99,25 @@ function App() {
               }
             />
             <Route path="/video/editar/:id" element={<EditVideo />} />
+            {/* Formaciones */}
+            <Route
+              path="/formacion/lista"
+              element={
+                <ListVideos
+                  videosUse={videosUse}
+                  eliminarFormacion={eliminarFormacion}
+                />
+              }
+            />
+            <Route
+              path="/formacion/agregar"
+              element={
+                <AddVideo
+                  agregarFormacion={agregarFormacion}
+                  formaciones={formaciones}
+                />
+              }
+            />
             <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
