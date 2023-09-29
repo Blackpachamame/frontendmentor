@@ -41,17 +41,23 @@ const SliderComp = ({ formacion, videosUse }) => {
   };
 
   var settingsShort = {
-    className: "short",
     centerMode: true,
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
     focusOnSelect: true,
     responsive: [
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 425,
         settings: {
@@ -76,7 +82,12 @@ const SliderComp = ({ formacion, videosUse }) => {
   return (
     <ContainerSlider>
       {longitudSlider < 3 ? (
-        <Slider {...settingsShort}>{sliderProject}</Slider>
+        <Slider
+          {...settingsShort}
+          className={longitudSlider < 2 ? "mini" : "short"}
+        >
+          {sliderProject}
+        </Slider>
       ) : (
         <Slider {...settings}>{sliderProject}</Slider>
       )}

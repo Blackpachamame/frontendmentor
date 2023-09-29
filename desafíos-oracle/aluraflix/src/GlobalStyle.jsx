@@ -135,7 +135,7 @@ li {
 }
 
 .slider__videos .short .slick-center .project {
-  /* transform: scale(1.1); */
+  transform: scale(1.2);
   z-index: 10000;
   transition: all 400ms ease-in-out;
   pointer-events: all;
@@ -149,10 +149,16 @@ li {
 
 .short .slick-track {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.short .slick-slide {
+  max-width: 33.334%;
 }
 
 @media (max-width: 990px) {
-  .slider__videos .center .slick-center .project {
+  .slider__videos .center .slick-center .project, .slider__videos .short .slick-center .project {
     transform: scale(1.1);
   }
 
@@ -160,6 +166,10 @@ li {
     opacity: 1;
     pointer-events: all;
   }
+
+  .short .slick-slide {
+  max-width: initial;
+}
 }
 
 @media (max-width: 500px) {
