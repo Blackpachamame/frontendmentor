@@ -4,6 +4,17 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const SliderComp = ({ formacion, videosUse }) => {
+  const sliderProject = videosUse.map((item) => {
+    return (
+      <Link to={`/video/${item.id}`} key={item.id}>
+        <StyledFigure className="project" $bgColor={formacion.color}>
+          <img src={item.imgVideo} alt={item.title} />
+        </StyledFigure>
+      </Link>
+    );
+  });
+  const longitudSlider = sliderProject.length;
+
   var settings = {
     className: "center",
     centerMode: true,
@@ -45,7 +56,7 @@ const SliderComp = ({ formacion, videosUse }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: longitudSlider,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
@@ -68,23 +79,12 @@ const SliderComp = ({ formacion, videosUse }) => {
     ],
   };
 
-  const sliderProject = videosUse.map((item) => {
-    return (
-      <Link to={`/video/${item.id}`} key={item.id}>
-        <StyledFigure className="project" $bgColor={formacion.color}>
-          <img src={item.imgVideo} alt={item.title} />
-        </StyledFigure>
-      </Link>
-    );
-  });
-  const longitudSlider = sliderProject.length;
-
   return (
     <ContainerSlider>
       {longitudSlider < 3 ? (
         <Slider
           {...settingsShort}
-          className={longitudSlider < 2 ? "mini" : "short"}
+          className={longitudSlider < 2 ? "center mini" : "center short"}
         >
           {sliderProject}
         </Slider>

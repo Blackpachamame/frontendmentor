@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./GlobalStyle";
-import { theme } from "./Theme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./components/Header";
@@ -104,93 +102,85 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <StyledContainer
-        className={toggleSearch ? "header__nav--busca--visible" : ""}
-      >
-        <GlobalStyle />
-        <BrowserRouter>
-          <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
-          <Routes>
-            {/* Home */}
-            <Route
-              path="/"
-              element={
-                <Home videosUse={videosUse} formaciones={formacionesUse} />
-              }
-            />
-            {/* Favoritos */}
-            <Route path="/favoritos" element={<Favoritos />} />
-            {/* Videos */}
-            <Route
-              path="/video/:id"
-              element={<Video videosUse={videosUse} />}
-            />
-            <Route
-              path="/video/lista"
-              element={
-                <ListVideos
-                  videosUse={videosUse}
-                  eliminarVideo={eliminarVideo}
-                />
-              }
-            />
-            <Route
-              path="/video/agregar"
-              element={
-                <AddVideo
-                  agregarVideo={agregarVideo}
-                  formaciones={formacionesUse}
-                />
-              }
-            />
-            <Route
-              path="/video/editar/:id"
-              element={
-                <EditVideo
-                  videosUse={videosUse}
-                  actualizarVideo={actualizarVideo}
-                  formaciones={formacionesUse}
-                />
-              }
-            />
-            {/* Formaciones */}
-            <Route
-              path="/formacion/lista"
-              element={
-                <ListFormaciones
-                  formacionesUse={formacionesUse}
-                  eliminarFormacion={eliminarFormacion}
-                />
-              }
-            />
-            <Route
-              path="/formacion/agregar"
-              element={
-                <AddFormacion
-                  agregarFormacion={agregarFormacion}
-                  formaciones={formacionesUse}
-                />
-              }
-            />
-            <Route
-              path="/formacion/editar/:id"
-              element={
-                <EditFormacion
-                  videosUse={videosUse}
-                  formaciones={formacionesUse}
-                  actualizarVideo={actualizarVideo}
-                  actualizarFormacion={actualizarFormacion}
-                />
-              }
-            />
-            {/* Error 404 */}
-            <Route path="*" element={<Error404 />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </StyledContainer>
-    </ThemeProvider>
+    <StyledContainer
+      className={toggleSearch ? "header__nav--busca--visible" : ""}
+    >
+      <GlobalStyle />
+      <BrowserRouter>
+        <Header mostrarBarraBusqueda={mostrarBarraBusqueda} />
+        <Routes>
+          {/* Home */}
+          <Route
+            path="/"
+            element={
+              <Home videosUse={videosUse} formaciones={formacionesUse} />
+            }
+          />
+          {/* Favoritos */}
+          <Route path="/favoritos" element={<Favoritos />} />
+          {/* Videos */}
+          <Route path="/video/:id" element={<Video videosUse={videosUse} />} />
+          <Route
+            path="/video/lista"
+            element={
+              <ListVideos videosUse={videosUse} eliminarVideo={eliminarVideo} />
+            }
+          />
+          <Route
+            path="/video/agregar"
+            element={
+              <AddVideo
+                agregarVideo={agregarVideo}
+                formaciones={formacionesUse}
+              />
+            }
+          />
+          <Route
+            path="/video/editar/:id"
+            element={
+              <EditVideo
+                videosUse={videosUse}
+                actualizarVideo={actualizarVideo}
+                formaciones={formacionesUse}
+              />
+            }
+          />
+          {/* Formaciones */}
+          <Route
+            path="/formacion/lista"
+            element={
+              <ListFormaciones
+                formacionesUse={formacionesUse}
+                eliminarFormacion={eliminarFormacion}
+              />
+            }
+          />
+          <Route
+            path="/formacion/agregar"
+            element={
+              <AddFormacion
+                agregarFormacion={agregarFormacion}
+                formaciones={formacionesUse}
+              />
+            }
+          />
+          <Route
+            path="/formacion/editar/:id"
+            element={
+              <EditFormacion
+                videosUse={videosUse}
+                formaciones={formacionesUse}
+                actualizarVideo={actualizarVideo}
+                actualizarFormacion={actualizarFormacion}
+              />
+            }
+          />
+          {/* Error 404 */}
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </StyledContainer>
   );
 }
 
