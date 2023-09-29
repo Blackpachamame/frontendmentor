@@ -90,12 +90,10 @@ function App() {
 
   //Actualizar formacion
   const actualizarFormacion = (formacionActualizada) => {
-    console.log(formacionesUse[5].id);
     const formacionesActualizados = formacionesUse.map((formacion) =>
-      formacionActualizada.idAntiguo === formacion.id
+      formacionActualizada.id === formacion.id
         ? {
             ...formacion,
-            // id: formacionActualizada.id,
             name: formacionActualizada.name,
             color: formacionActualizada.color,
             icon: formacionActualizada.icon,

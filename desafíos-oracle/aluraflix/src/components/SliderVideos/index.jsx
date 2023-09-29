@@ -2,14 +2,17 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import SliderComp from "./Slider";
 
-const SliderVideos = ({ formaciones, videosUse }) => {
+const SliderVideos = ({ formacion, videosUse }) => {
   return (
     <Container className="slider__videos">
-      <StyledTitle id={formaciones.id} color={formaciones.color}>
-        <img src={formaciones.icon} alt="" />
-        <span>{formaciones.name}</span>
+      <StyledTitle
+        id={formacion.name.replace(/\s+/g, "").toLowerCase()}
+        color={formacion.color}
+      >
+        <img src={formacion.icon} alt="" />
+        <span>{formacion.name}</span>
       </StyledTitle>
-      <SliderComp formaciones={formaciones} videosUse={videosUse} />
+      <SliderComp formacion={formacion} videosUse={videosUse} />
     </Container>
   );
 };
@@ -64,7 +67,7 @@ const StyledTitle = styled.h2`
 `;
 
 SliderVideos.propTypes = {
-  formaciones: PropTypes.shape({
+  formacion: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
     icon: PropTypes.string,

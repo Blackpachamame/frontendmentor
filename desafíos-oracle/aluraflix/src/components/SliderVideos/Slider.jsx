@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
-const SliderComp = ({ formaciones, videosUse }) => {
+const SliderComp = ({ formacion, videosUse }) => {
   var settings = {
     className: "center",
     centerMode: true,
@@ -40,21 +40,46 @@ const SliderComp = ({ formaciones, videosUse }) => {
     ],
   };
 
+  var settingsShort = {
+    className: "short",
+    centerMode: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   const sliderProject = videosUse.map((item) => {
-    if (item.formacion === formaciones.id) {
-      return (
-        <Link to={`/video/${item.id}`} key={item.id}>
-          <StyledFigure className="project" $bgColor={formaciones.color}>
-            <img src={item.imgVideo} alt={item.title} />
-          </StyledFigure>
-        </Link>
-      );
-    }
+    return (
+      <Link to={`/video/${item.id}`} key={item.id}>
+        <StyledFigure className="project" $bgColor={formacion.color}>
+          <img src={item.imgVideo} alt={item.title} />
+        </StyledFigure>
+      </Link>
+    );
   });
+  const longitudSlider = sliderProject.length;
 
   return (
     <ContainerSlider>
-      <Slider {...settings}>{sliderProject}</Slider>
+      {longitudSlider < 3 ? (
+        <Slider {...settingsShort}>{sliderProject}</Slider>
+      ) : (
+        <Slider {...settings}>{sliderProject}</Slider>
+      )}
     </ContainerSlider>
   );
 };
@@ -91,7 +116,7 @@ const StyledFigure = styled.figure`
 `;
 
 SliderComp.propTypes = {
-  formaciones: PropTypes.shape({
+  formacion: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
     icon: PropTypes.string,

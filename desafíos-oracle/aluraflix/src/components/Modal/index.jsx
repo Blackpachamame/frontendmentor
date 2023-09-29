@@ -33,20 +33,16 @@ export default function Modal({ open, onClose, url, tipo, text, editado }) {
             </Link>
             {editado ? (
               <Link
-                to="/video/lista"
+                to={type === "formacion" ? "/formacion/lista" : "/video/lista"}
                 className="video__agregar"
                 onClick={onClose}
               >
-                Lista videos
+                {type === "formacion" ? "Lista formaciones" : "Lista videos"}
               </Link>
             ) : (
-              <Link
-                to="/video/agregar"
-                className="video__agregar"
-                onClick={onClose}
-              >
-                Agregar otro video
-              </Link>
+              <button className="video__agregar" onClick={onClose}>
+                Agregar más
+              </button>
             )}
           </div>
         </div>

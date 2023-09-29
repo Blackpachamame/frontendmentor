@@ -9,7 +9,6 @@ export default function Category({ formaciones }) {
         return (
           <FormacionItem
             key={item.id}
-            id={item.id}
             name={item.name}
             color={item.color}
             icon={item.icon}

@@ -134,8 +134,21 @@ li {
   box-shadow: var(--bg-color) 0px 0px 5px 2px;
 }
 
-.slider__videos .center .project {
+.slider__videos .short .slick-center .project {
+  /* transform: scale(1.1); */
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  pointer-events: all;
+  opacity: 1;
+  box-shadow: var(--bg-color) 0px 0px 5px 2px;
+}
+
+.slider__videos .center .project, .slider__videos .short .project {
   opacity: 0.5;
+}
+
+.short .slick-track {
+  margin: 0 auto;
 }
 
 @media (max-width: 990px) {

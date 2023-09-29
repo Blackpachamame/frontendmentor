@@ -19,8 +19,8 @@ const ListaOpciones = ({ valor, actualizarFormacion, formaciones }) => {
         <option value="" disabled defaultValue="" hidden>
           Seleccionar formación
         </option>
-        {formaciones.map((formacion, index) => (
-          <option key={index} value={formacion.id}>
+        {formaciones.map((formacion) => (
+          <option key={formacion.id} value={formacion.name}>
             {formacion.name}
           </option>
         ))}

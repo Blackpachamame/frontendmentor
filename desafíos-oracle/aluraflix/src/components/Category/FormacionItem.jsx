@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-function FormacionItem({ id, name, color, icon }) {
+function FormacionItem({ name, color, icon }) {
   return (
     <StyledCategoryItem>
       <StyledCategory>
-        <StyledCategoryLink href={"#" + id}>
+        <StyledCategoryLink href={"#" + name.replace(/\s+/g, "").toLowerCase()}>
           <figure
             style={{
               backgroundColor: color + "30",
@@ -35,7 +35,6 @@ const StyledCategoryItem = styled.div`
 const StyledCategory = styled.div`
   font-family: var(--ff-title);
   padding: 18px;
-  /* background: linear-gradient(#0a1725, #051d3b); */
   background: linear-gradient(45deg, rgba(5, 29, 59, 1) 50%, rgb(9 9 16) 100%);
   border-radius: 4px;
   border: solid 2px #051d3b;
@@ -94,7 +93,6 @@ const StyledNameCategory = styled.h3`
 `;
 
 FormacionItem.propTypes = {
-  id: PropTypes.string,
   name: PropTypes.string,
   icon: PropTypes.string,
   color: PropTypes.string,

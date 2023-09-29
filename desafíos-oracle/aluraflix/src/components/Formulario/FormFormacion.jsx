@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Campo from "./Campo";
 import Modal from "../Modal";
+import { v4 as uuidv4 } from "uuid";
 
 const FormFormacion = ({
   agregarFormacion,
@@ -21,12 +22,12 @@ const FormFormacion = ({
     evento.preventDefault();
 
     let datosAEnviar = {
-      id: name.replace(/\s+/g, "").toLowerCase(),
+      id: uuidv4(),
       name,
       icon,
       color,
     };
-    console.log(actualizarVideo);
+
     agregarFormacion(datosAEnviar);
   };
 
@@ -34,25 +35,31 @@ const FormFormacion = ({
     evento.preventDefault();
 
     let datosAEditar = {
-      idAntiguo: datosFormaciones.id,
-      id: name.replace(/\s+/g, "").toLowerCase(),
+      id: datosFormaciones.id,
       name,
       icon,
       color,
     };
 
-    // let datosAEditarVideo = {
-    //   id: datosVideos.id,
-    //   urlVideo: datosVideos.urlVideo,
-    //   imgVideo: datosVideos.imgVideo,
-    //   formacion: name.replace(/\s+/g, "").toLowerCase(),
-    //   title: datosVideos.title,
-    //   descripcion: datosVideos.descripcion,
-    // };
-
     actualizarFormacion(datosAEditar);
-    // actualizarVideo(datosAEditarVideo);
+    updateVideos();
   };
+
+  function updateVideos() {
+    for (let i = 0; i < datosVideos.length; i++) {
+      if (datosVideos[i].formacion === datosFormaciones.name) {
+        let datosAEditarVideo = {
+          id: datosVideos[i].id,
+          urlVideo: datosVideos[i].urlVideo,
+          imgVideo: datosVideos[i].imgVideo,
+          formacion: name,
+          title: datosVideos[i].title,
+          descripcion: datosVideos[i].descripcion,
+        };
+        actualizarVideo(datosAEditarVideo);
+      }
+    }
+  }
 
   return (
     <ContainerForm>
@@ -87,6 +94,7 @@ const FormFormacion = ({
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
+        tipo={"formacion"}
         text={
           datosVideos
             ? "Datos editados correctamente"
