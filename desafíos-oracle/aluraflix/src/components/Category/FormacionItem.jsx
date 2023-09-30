@@ -28,7 +28,7 @@ const StyledCategoryItem = styled.div`
   width: calc(20% - 16px);
   flex: 0 0 211px;
   @media (max-width: 525px) {
-    flex: 1 1 160px;
+    flex: 0 1 0;
   }
 `;
 
@@ -65,6 +65,12 @@ const StyledCategory = styled.div`
   &:hover::before {
     opacity: 1;
   }
+  @media (max-width: 525px) {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
 `;
 
 const StyledCategoryLink = styled.a`
@@ -90,6 +96,9 @@ const StyledLogo = styled.img`
 const StyledNameCategory = styled.h3`
   font-size: 15px;
   margin-top: 10px;
+  @media (max-width: 525px) {
+    display: none;
+  }
 `;
 
 FormacionItem.propTypes = {
