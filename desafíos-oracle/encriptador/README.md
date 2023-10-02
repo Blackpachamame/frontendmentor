@@ -1,4 +1,4 @@
-# $\Huge\color{rgb(109, 160, 219)}{\texttt{Encriptador}}$ 🔒
+# $\textcolor{red}{\textsf{Encriptador}}$ 🔒
 
 [Sitio en vivo](https://blackpachamame.github.io/desafíos-oracle/encriptador/)
 
