@@ -1,18 +1,18 @@
-# $\Huge\color{#d57589}{\texttt{Fruicy}}$ 🧁
+# Fruicy 🧁
 
 Página de variedades de comidas, postres y frutas.
 
-## $\normalsize\color{#d57589}{\texttt{En práctica}}$ ⚔️
+## En práctica ⚔️
 
 - Degradado mezclado con la imagen
 - Navbar dinámico
 
-## $\normalsize\color{#d57589}{\texttt{Construido con}}$ 🔨
+## Construido con 🔨
 
 - HTML5
 - CSS3
 - JavaScript
 
-## $\normalsize\color{#d57589}{\texttt{Falta}}$ ⏳
+## Falta ⏳
 
 - Construir menú dinámico

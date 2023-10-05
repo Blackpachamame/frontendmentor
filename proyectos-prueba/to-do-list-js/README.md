@@ -1,4 +1,4 @@
-# $\Huge\color{#d57589}{\texttt{Todo List}}$
+# Todo List 📝
 
 ### Seleccionando elementos
 

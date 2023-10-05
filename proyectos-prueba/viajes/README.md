@@ -1,14 +1,14 @@
-# $\Huge\color{#009688}{\texttt{Viajes}}$ ✈️
+# Viajes ✈️
 
 Página de viajes.
 
-## $\normalsize\color{#009688}{\texttt{En práctica}}$ ⚔️
+## En práctica ⚔️
 
 - Navbar responsive
 - Cards de info y precios
 - Footer responsive
 
-## $\normalsize\color{#009688}{\texttt{Construido con}}$ 🔨
+## Construido con 🔨
 
 - HTML5
 - CSS3
