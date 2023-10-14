@@ -1,4 +1,4 @@
-# $\Huge\color{rgb(216, 111, 132)}{\texttt{Challenge ONE | Front End -  Alurageek}}$
+# Challenge ONE | Front End -  Alurageek
 
 <div align="center">
 <img src="./assets/images/alurageek-preview.jpg"></img>
@@ -9,7 +9,7 @@
   </h3>
 </div>
 
-## $\normalsize\color{rgb(216, 111, 132)}{\texttt{Requisitos}}$ 📌
+## Requisitos 📌
 
 La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
 
@@ -25,7 +25,7 @@ Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe
 
 **Es muy importante que el sitio sea adaptable** para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
 
-## $\normalsize\color{rgb(216, 111, 132)}{\texttt{Recursos útiles}}$ 📌
+## Recursos útiles 📌
 
 - [JSON Server](https://github.com/typicode/json-server) - Obtenga una API REST falsa completa sin codificación en menos de 30 segundos.
 - [Uuid](https://github.com/uuidjs/uuid) - Para crear un UUID aleatorio.
