@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/testimonials-grid-section/">
+    <a href="https://blackpachamame.github.io/junior/testimonials-grid-section/">
       En Vivo
     </a>
     <span> | </span>

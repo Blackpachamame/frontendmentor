@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/desafíos-frontendmentor/huddle-landing-page-with-curved-sections/">
+    <a href="https://blackpachamame.github.io/junior/huddle-landing-page-with-curved-sections/">
       En Vivo
     </a>
     <span> | </span>
