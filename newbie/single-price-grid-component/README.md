@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/single-price-grid-component/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/single-price-grid-component/">
       En Vivo
     </a>
     <span> | </span>

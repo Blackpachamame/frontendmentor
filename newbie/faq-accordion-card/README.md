@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/faq-accordion-card/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/faq-accordion-card/">
       En Vivo
     </a>
     <span> | </span>

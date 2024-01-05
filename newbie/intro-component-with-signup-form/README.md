@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/intro-component-with-signup-form/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/intro-component-with-signup-form/">
       En Vivo
     </a>
     <span> | </span>

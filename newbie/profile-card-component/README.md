@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/profile-card-component/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/profile-card-component/">
       En Vivo
     </a>
     <span> | </span>

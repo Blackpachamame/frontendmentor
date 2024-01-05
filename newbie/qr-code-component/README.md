@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/qr-code-component/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/qr-code-component/">
       En Vivo
     </a>
     <span> | </span>

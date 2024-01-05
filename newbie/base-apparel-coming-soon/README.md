@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/base-apparel-coming-soon/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/base-apparel-coming-soon/">
       En Vivo
     </a>
     <span> | </span>

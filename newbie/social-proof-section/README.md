@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/social-proof-section/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/social-proof-section/">
       En Vivo
     </a>
     <span> | </span>

@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/3-column-preview-card-component/">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/3-column-preview-card-component/">
       En Vivo
     </a>
     <span> | </span>

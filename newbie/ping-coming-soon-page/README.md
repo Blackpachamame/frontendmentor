@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/newbie/ping-coming-soon-page/" color="white">
+    <a href="https://blackpachamame.github.io/frontendmentor/newbie/ping-coming-soon-page/" color="white">
       En Vivo
     </a>
     <span> | </span>
