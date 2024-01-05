@@ -1,4 +1,4 @@
-<h1 align="center">Testimonials grid section</h1>
+<h1 align="center">Four card feature section</h1>
 
 <div align="center">
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
@@ -7,15 +7,15 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/junior/testimonials-grid-section/">
+    <a href="https://frontendmentor/newbie/four-card-feature-section/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/testimonials-grid-section-3irsEnxYKn">
+    <a href="https://www.frontendmentor.io/solutions/usando-css-grid-por-primera-vez-rkodO5eU9">
       Solución
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">
+    <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK">
       Desafío
     </a>
   </h3>
@@ -23,7 +23,6 @@
 
 ## Tabla de contenido
 
-- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)
@@ -36,7 +35,7 @@
 
 ### Desafío
 
-Su desafío es construir esta sección de cuadrícula de testimonios y lograr que se parezca lo más posible al diseño.
+Su desafío es desarrollar esta sección de artículos y lograr que se parezca lo más posible al diseño.
 
 Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
 
@@ -52,21 +51,17 @@ Sus usuarios deberían poder:
 - CSS3
 - Flexbox
 - CSS Grid
-- BEM
 
 ### Lo que aprendí
 
-Este desafío me sirvió para repasar algunas cosas de grid.
-
-Esto no tiene que ver con este desafío, pero lo dejo por acá. La propiedad `text-underline-offset`
-me sirve para modificar la distancia de la linea de subrayado.
+- Armar el diseño y separarlo en areas es mucho más sencillo con CSS Grid que con Flexbox.
+- Con `grid-templates-areas` es muy simple posicionar cada elemento según lo deseado y te ahorra líneas de código.
 
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
-- [¿CÓMO nombrar CLASES en CSS? Usa BEM](https://www.youtube.com/watch?v=NucZM0GMRi4) - Aprendiendo la metodología BEM con Eduardo Fierro.
-- [NOMENCLATURAS en CSS](https://www.youtube.com/watch?v=lhEJkeCJ3As) - Aprendiendo nomenclaturas CSS con Eduardo Fierro.
-- [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset) - Documentación de MDN Web Docs sobre `text-underline-offset`.
+- [Grid Garden](https://cssgridgarden.com/#es) - Aprendiendo CSS Grid de forma entretenida regando un jardín.
+- [Flexbox Froggy](https://flexboxfroggy.com/#es) - Aprendiendo Flexbox de manera divertida ayudando a la rana Froggy y a sus amigos.
 
 ## Autor
 

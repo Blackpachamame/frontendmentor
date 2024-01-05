@@ -7,7 +7,7 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://blackpachamame.github.io/junior/newsletter-sign-up-with-success-message/">
+    <a href="https://frontendmentor/junior/newsletter-sign-up-with-success-message/">
       En Vivo
     </a>
     <span> | </span>

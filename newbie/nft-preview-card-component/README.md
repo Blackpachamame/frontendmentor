@@ -1,4 +1,4 @@
-<h1 align="center">Huddle landing page with curved sections</h1>
+<h1 align="center">NFT preview card component</h1>
 
 <div align="center">
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
@@ -7,15 +7,15 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/junior/huddle-landing-page-with-curved-sections/">
+    <a href="https://frontendmentor/newbie/nft-preview-card-component/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-0UOMkvOYgO">
+    <a href="https://www.frontendmentor.io/solutions/nft-preview-card-component-Qc3lo_vsvR">
       Solución
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2">
+    <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">
       Desafío
     </a>
   </h3>
@@ -23,26 +23,21 @@
 
 ## Tabla de contenido
 
-- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Lo que aprendí](#lo-que-aprendí)
+  - [Recursos útiles](#recursos-útiles)
 - [Autor](#autor)
 
 ## Descripción
 
 ### Desafío
 
-Su desafío es construir esta página de destino y lograr que se parezca lo más posible al diseño.
+Su desafío es construir este componente de tarjeta y lograr que se parezca lo más posible al diseño.
 
 Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
-
-Sus usuarios deberían poder:
-
-- Ver el diseño óptimo para el sitio según el tamaño de pantalla de su dispositivo
-- Ver estados de desplazamiento para todos los elementos interactivos en la página
 
 ## Mi Procedimiento
 
@@ -51,12 +46,16 @@ Sus usuarios deberían poder:
 - HTML5
 - CSS3
 - Flexbox
-- Grid
+- CSS Grid
 - BEM
 
 ### Lo que aprendí
 
-Este desafío lo use para repasar y practicar lo aprendido.
+Este desafío me sirvió para repasar lo aprendido en desafíos anteriores.
+
+### Recursos útiles
+
+- [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html) - En esta página se puede ir formando un box shadow para luego aplicarlo en el css.
 
 ## Autor
 

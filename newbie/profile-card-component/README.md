@@ -1,4 +1,4 @@
-<h1 align="center">Testimonials grid section</h1>
+<h1 align="center">Profile card component</h1>
 
 <div align="center">
    Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
@@ -7,15 +7,15 @@
 <div align="center">
 <img src="design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://frontendmentor/junior/testimonials-grid-section/">
+    <a href="https://frontendmentor/newbie/profile-card-component/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/testimonials-grid-section-3irsEnxYKn">
+    <a href="https://www.frontendmentor.io/solutions/profile-card-component-using-bem-E4E879IdsG">
       Solución
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">
+    <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ">
       Desafío
     </a>
   </h3>
@@ -23,7 +23,6 @@
 
 ## Tabla de contenido
 
-- [Tabla de contenido](#tabla-de-contenido)
 - [Descripción](#descripción)
   - [Desafío](#desafío)
 - [Mi Procedimiento](#mi-procedimiento)
@@ -36,13 +35,9 @@
 
 ### Desafío
 
-Su desafío es construir esta sección de cuadrícula de testimonios y lograr que se parezca lo más posible al diseño.
+Su desafío es construir este componente de tarjeta de perfil y lograr que se parezca lo más posible al diseño.
 
 Puedes usar cualquier herramienta que te guste para ayudarte a completar el desafío. Entonces, si tienes algo que te gustaría practicar, no dudes en intentarlo.
-
-Sus usuarios deberían poder:
-
-- Ver el diseño óptimo para el sitio según el tamaño de pantalla de su dispositivo
 
 ## Mi Procedimiento
 
@@ -56,17 +51,13 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Este desafío me sirvió para repasar algunas cosas de grid.
-
-Esto no tiene que ver con este desafío, pero lo dejo por acá. La propiedad `text-underline-offset`
-me sirve para modificar la distancia de la linea de subrayado.
+Aplicando `display: block` a la imagen o `line-height: 0` al contenedor de la imagen, sacamos el espacio extra que aparecer por debajo de la imagen y que ocupa espacio innecesario.
 
 ### Recursos útiles
 
 - [Malven Grid](https://grid.malven.co) - Esta página te da un pantallazo de cada elemento de CSS Grid.
 - [¿CÓMO nombrar CLASES en CSS? Usa BEM](https://www.youtube.com/watch?v=NucZM0GMRi4) - Aprendiendo la metodología BEM con Eduardo Fierro.
 - [NOMENCLATURAS en CSS](https://www.youtube.com/watch?v=lhEJkeCJ3As) - Aprendiendo nomenclaturas CSS con Eduardo Fierro.
-- [text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset) - Documentación de MDN Web Docs sobre `text-underline-offset`.
 
 ## Autor
 
