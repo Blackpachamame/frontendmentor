@@ -7,11 +7,11 @@
 <div align="center">
 <img src="./src/assets/design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://advice-generator-app-dun-gamma.vercel.app">
+    <a href="https://advice-generator-app-orpin-nine.vercel.app/">
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://advice-generator-app-dun-gamma.vercel.app">
+    <a href="https://advice-generator-app-orpin-nine.vercel.app/">
       Solución
     </a>
    <span> | </span>
