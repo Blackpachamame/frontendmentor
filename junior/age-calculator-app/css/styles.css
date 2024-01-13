@@ -112,7 +112,13 @@ body {
   height: 5.3rem;
   padding: 1.6rem;
   border-radius: 6px;
-  border: 2px solid var(--light-grey);
+  border: 1px solid var(--light-grey);
+  transition: all 0.5s ease-out;
+}
+
+.data__input:focus {
+  border-color: var(--purple);
+  outline: none;
 }
 
 .submit {
@@ -135,6 +141,12 @@ body {
   position: absolute;
   right: 0;
   top: -33px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.submit__button:hover {
+  background-color: var(--off-black);
 }
 
 .submit__button img {
