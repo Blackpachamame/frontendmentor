@@ -12,35 +12,37 @@
 <body>
 
   <main class="main">
-    <div class="data">
-      <div class="data__container">
-        <label class="data__label" for="day">Day</label>
-        <input class="data__input" type="number" id="day" name="day" placeholder="DD">
+    <form class="form">
+      <div class="data">
+        <div class="data__container">
+          <label class="data__label" for="day">Day</label>
+          <input class="data__input" type="number" id="day" name="day" placeholder="DD">
+        </div>
+
+        <div class="data__container">
+          <label class="data__label" for="month">Month</label>
+          <input class="data__input" type="number" id="month" name="month" placeholder="MM">
+        </div>
+
+        <div class="data__container">
+          <label class="data__label" for="year">Year</label>
+          <input class="data__input" type="number" id="year" name="year" placeholder="YYYY">
+        </div>
       </div>
 
-      <div class="data__container">
-        <label class="data__label" for="month">Month</label>
-        <input class="data__input" type="number" id="month" name="month" placeholder="MM">
+      <div class="submit">
+        <hr class="submit__hr">
+        <button class="submit__button" type="button">
+          <img src="./assets/images/icon-arrow.svg" alt="icon arrow">
+        </button>
       </div>
-
-      <div class="data__container">
-        <label class="data__label" for="year">Year</label>
-        <input class="data__input" type="number" id="year" name="year" placeholder="YYYY">
-      </div>
-    </div>
-
-    <div class="submit">
-      <hr class="submit__hr">
-      <button class="submit__button" type="button">
-        <img src="./assets/images/icon-arrow.svg" alt="icon arrow">
-      </button>
-    </div>
+    </form>
 
     <div class="info">
-      <ul>
-        <li><span class="info__data-years">--</span> years</li>
-        <li><span class="info__data-years">--</span> months</li>
-        <li><span class="info__data-years">--</span> days</li>
+      <ul class="info__ul">
+        <li class="info__li"><span class="info__span">--</span>years</li>
+        <li class="info__li"><span class="info__span">--</span>months</li>
+        <li class="info__li"><span class="info__span">--</span>days</li>
       </ul>
     </div>
   </main>

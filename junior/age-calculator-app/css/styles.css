@@ -81,6 +81,7 @@ body {
   border-radius: 16px 16px 145px 16px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 4rem 3.9rem 3.6rem;
 }
 
@@ -151,4 +152,21 @@ body {
 
 .submit__button img {
   width: 3.4rem;
+}
+
+.info__ul {
+  padding: 0;
+}
+
+.info__li {
+  font-size: 7rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2;
+  list-style: none;
+}
+
+.info__span {
+  color: var(--purple);
+  letter-spacing: 7px;
 }
