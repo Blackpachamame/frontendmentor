@@ -122,6 +122,15 @@ body {
   outline: none;
 }
 
+.data__error {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--light-red);
+  text-transform: initial;
+  visibility: hidden;
+}
+
 .submit {
   position: relative;
 }
@@ -169,4 +178,42 @@ body {
 .info__span {
   color: var(--purple);
   letter-spacing: 7px;
+}
+
+@media (max-width: 625px) {
+  body {
+    margin-inline: 1rem;
+  }
+
+  .main {
+    width: 100%;
+    min-height: 46.6rem;
+    border-radius: 16px 16px 145px 16px;
+    padding: 5rem 2.4rem 4rem;
+  }
+
+  .data {
+    gap: 1.6rem;
+  }
+
+  .data__input {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .info__li {
+    font-size: 5rem;
+  }
+
+  .submit__button {
+    width: 6.3rem;
+    height: 6.3rem;
+    top: -31px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .submit__button img {
+    width: 2.6rem;
+  }
 }
