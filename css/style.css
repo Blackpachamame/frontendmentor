@@ -13,6 +13,8 @@
   --junior-card: rgb(11, 42, 23);
   --junior-card-footer: rgb(8, 32, 17);
   --intermediate: rgb(241, 182, 4);
+  --intermediate-card: rgb(185, 146, 29);
+  --intermediate-card-footer: rgb(138, 106, 12);
   --avanced: rgb(244, 137, 37);
   --guru: rgb(237, 44, 73);
 }
@@ -103,6 +105,9 @@ h2 {
 .junior h2 {
   color: var(--junior);
 }
+.intermediate h2 {
+  color: var(--intermediate);
+}
 
 h2 span {
   text-underline-offset: 0.5rem;
@@ -112,6 +117,9 @@ h2 span {
 }
 .junior__span {
   text-decoration: underline var(--junior) dashed 3px;
+}
+.intermediate__span {
+  text-decoration: underline var(--intermediate) dashed 3px;
 }
 
 h3 {
@@ -160,6 +168,10 @@ section {
   background-color: var(--junior-card);
   border: 5px dashed var(--junior);
 }
+.card__intermediate {
+  background-color: var(--intermediate-card);
+  border: 5px dashed var(--intermediate);
+}
 
 .card-image {
   overflow: hidden;
@@ -205,6 +217,9 @@ section {
 }
 .junior .card-footer {
   background-color: var(--junior-card-footer);
+}
+.intermediate .card-footer {
+  background-color: var(--intermediate-card-footer);
 }
 
 @media (max-width: 550px) {
