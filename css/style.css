@@ -13,8 +13,8 @@
   --junior-card: rgb(11, 42, 23);
   --junior-card-footer: rgb(8, 32, 17);
   --intermediate: rgb(241, 182, 4);
-  --intermediate-card: rgb(185, 146, 29);
-  --intermediate-card-footer: rgb(138, 106, 12);
+  --intermediate-card: rgb(63, 47, 0);
+  --intermediate-card-footer: rgb(41, 30, 0);
   --avanced: rgb(244, 137, 37);
   --guru: rgb(237, 44, 73);
 }
@@ -149,6 +149,10 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-content: center;
   align-items: stretch;
+}
+
+.intermediate .card__container {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 44rem));
 }
 
 .card {
