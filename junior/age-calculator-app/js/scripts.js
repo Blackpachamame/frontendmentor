@@ -8,22 +8,22 @@ const resultMonths = document.querySelector('#resultMonths');
 const resultYears = document.querySelector('#resultYears');
 
 btnEnviar.addEventListener('click', function () {
-    document.getElementById('erroDia').textContent = '';
-    document.getElementById('erroMes').textContent = '';
-    document.getElementById('erroAno').textContent = '';
+    document.getElementById('error__day').textContent = '';
+    document.getElementById('error__month').textContent = '';
+    document.getElementById('error__year').textContent = '';
     exibeErro('Campo obrigatório');
     validarData();
 });
 
 function exibeErro(mensagem) {
     if (!dayInput.value) {
-        document.getElementById('erroDia').textContent = mensagem;
+        document.getElementById('error__day').textContent = mensagem;
     }
     if (!monthInput.value) {
-        document.getElementById('erroMes').textContent = mensagem;
+        document.getElementById('error__month').textContent = mensagem;
     }
     if (!yearInput.value) {
-        document.getElementById('erroAno').textContent = mensagem;
+        document.getElementById('error__year').textContent = mensagem;
     }
 }
 
@@ -31,29 +31,29 @@ function validarData() {
     const mensagem = 'Valor inválido';
 
     if (monthInput.value < 1 || monthInput.value > 12) {
-        document.getElementById('erroMes').textContent = mensagem;
+        document.getElementById('error__month').textContent = mensagem;
     }
 
     if ((monthInput.value == 1 || monthInput.value == 3 || monthInput.value == 5 || monthInput.value == 7 || monthInput.value == 8 || monthInput.value == 10 || monthInput.value == 12) && (dayInput.value < 1 || dayInput.value > 31)) {
-        document.getElementById('erroDia').textContent = mensagem;
+        document.getElementById('error__day').textContent = mensagem;
     }
 
     if ((monthInput.value == 4 || monthInput.value == 6 || monthInput.value == 9 || monthInput.value == 11) && (dayInput.value < 1 || dayInput.value > 30)) {
-        document.getElementById('erroDia').textContent = mensagem;
+        document.getElementById('error__day').textContent = mensagem;
     }
     if (monthInput.value == 2) {
         if ((yearInput.value % 4 == 0 && yearInput.value % 100 != 0) || yearInput.value % 400 == 0) {
             if (dayInput.value < 1 || dayInput.value > 29) {
-                document.getElementById('erroDia').textContent = mensagem;
+                document.getElementById('error__day').textContent = mensagem;
             }
         } else {
             if (dayInput.value < 1 || dayInput.value > 28) {
-                document.getElementById('erroDia').textContent = mensagem;
+                document.getElementById('error__day').textContent = mensagem;
             }
         }
     }
     if (yearInput.value < 0 || yearInput.value > data.getFullYear()) {
-        document.getElementById('erroAno').textContent = mensagem;
+        document.getElementById('error__year').textContent = mensagem;
     } else {
         calculo();
     }
