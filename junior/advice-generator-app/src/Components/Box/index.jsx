@@ -32,10 +32,6 @@ const ContainerBox = styled.main`
   background-color: ${({ theme }) => theme.background};
 `;
 
-const H1 = styled.h1`
-  display: none;
-`;
-
 export default function Box({ theme, handleTema }) {
   const [advice, setAdvice] = useState(
     "It is easy to sit up and take notice, what's difficult is getting up and taking action."
@@ -50,7 +46,6 @@ export default function Box({ theme, handleTema }) {
 
   return (
     <ContainerBox>
-      <H1>Advice generator app</H1>
       <StyledBox>
         <BtnTema aria-label="Cambiar tema" onClick={handleTema}>
           <SwitcherTema theme={theme} />

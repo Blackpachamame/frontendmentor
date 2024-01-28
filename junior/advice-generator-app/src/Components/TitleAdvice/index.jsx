@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledAdvice = styled.h3`
+const StyledAdvice = styled.h1`
   color: ${({ theme }) => theme.title};
   font-size: 10px;
   text-transform: uppercase;
