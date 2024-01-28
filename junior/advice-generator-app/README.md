@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://advice-generator-app-orpin-nine.vercel.app/">
+    <a href="https://www.frontendmentor.io/solutions/advice-generator-app-using-react-and-styled-components-rywZvkFigt">
       Solución
     </a>
    <span> | </span>
