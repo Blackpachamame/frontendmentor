@@ -12,30 +12,30 @@
 <body>
 
   <main class="main">
-    <form class="form">
+    <form id="form" action="">
       <div class="data">
         <div class="data__container">
           <label class="data__label" for="day">Day</label>
-          <input class="data__input" type="number" id="day" name="day" placeholder="DD">
-          <span id="error__day" class="data__error">This field is required</span>
+          <input class="data__input" type="number" id="day" name="day" min="1" max="31" placeholder="DD">
+          <span id="error__day" class="data__error"></span>
         </div>
 
         <div class="data__container">
           <label class="data__label" for="month">Month</label>
-          <input class="data__input" type="number" id="month" name="month" placeholder="MM">
-          <span id="error__month" class="data__error">This field is required</span>
+          <input class="data__input" type="number" id="month" name="month" min="1" max="12" placeholder="MM">
+          <span id="error__month" class="data__error"></span>
         </div>
 
         <div class="data__container">
           <label class="data__label" for="year">Year</label>
-          <input class="data__input" type="number" id="year" name="year" placeholder="YYYY">
-          <span id="error__year" class="data__error">This field is required</span>
+          <input class="data__input" type="number" id="year" name="year" min="1900" max="2024" placeholder="YYYY">
+          <span id="error__year" class="data__error"></span>
         </div>
       </div>
 
       <div class="submit">
         <hr class="submit__hr">
-        <button class="submit__button" type="button" id="submit">
+        <button class="submit__button" type="submit" id="submit">
           <img src="./assets/images/icon-arrow.svg" alt="icon arrow">
         </button>
       </div>

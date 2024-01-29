@@ -1,72 +1,73 @@
-const dayInput = document.querySelector('#day');
-const monthInput = document.querySelector('#month');
-const yearInput = document.querySelector('#year');
-const btnEnviar = document.querySelector('#submit');
 const data = new Date();
-const resultDays = document.querySelector('#resultDays');
-const resultMonths = document.querySelector('#resultMonths');
-const resultYears = document.querySelector('#resultYears');
+const resultDays = document.getElementById('resultDays');
+const resultMonths = document.getElementById('resultMonths');
+const resultYears = document.getElementById('resultYears');
+let formulario = document.getElementById('form');
 
-btnEnviar.addEventListener('click', function () {
-    document.getElementById('error__day').textContent = '';
-    document.getElementById('error__month').textContent = '';
-    document.getElementById('error__year').textContent = '';
-    exibeErro('Campo obrigatório');
-    validarData();
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let dayInput = document.getElementById('day').value;
+    let monthInput = document.getElementById('month').value;
+    let yearInput = document.getElementById('year').value;
+    exibeErro('This field is required', dayInput, monthInput, yearInput);
 });
 
-function exibeErro(mensagem) {
-    if (!dayInput.value) {
+function exibeErro(mensagem, dayInput, monthInput, yearInput) {
+    if (!dayInput) {
         document.getElementById('error__day').textContent = mensagem;
+    } else {
+        document.getElementById('error__day').textContent = '';
     }
-    if (!monthInput.value) {
+    if (!monthInput) {
         document.getElementById('error__month').textContent = mensagem;
+    } else {
+        document.getElementById('error__month').textContent = '';
     }
-    if (!yearInput.value) {
+    if (!yearInput) {
         document.getElementById('error__year').textContent = mensagem;
+    } else {
+        document.getElementById('error__year').textContent = '';
+    }
+    if (dayInput && monthInput && yearInput) {
+        validarData(dayInput, monthInput, yearInput);
     }
 }
 
-function validarData() {
+function validarData(dayInput, monthInput, yearInput) {
     const mensagem = 'Valor inválido';
 
-    if (monthInput.value < 1 || monthInput.value > 12) {
+    if (monthInput < 1 || monthInput > 12) {
         document.getElementById('error__month').textContent = mensagem;
     }
-
-    if ((monthInput.value == 1 || monthInput.value == 3 || monthInput.value == 5 || monthInput.value == 7 || monthInput.value == 8 || monthInput.value == 10 || monthInput.value == 12) && (dayInput.value < 1 || dayInput.value > 31)) {
+    else if ((monthInput == 1 || monthInput == 3 || monthInput == 5 || monthInput == 7 || monthInput == 8 || monthInput == 10 || monthInput == 12) && (dayInput < 1 || dayInput > 31)) {
         document.getElementById('error__day').textContent = mensagem;
     }
-
-    if ((monthInput.value == 4 || monthInput.value == 6 || monthInput.value == 9 || monthInput.value == 11) && (dayInput.value < 1 || dayInput.value > 30)) {
+    else if ((monthInput == 4 || monthInput == 6 || monthInput == 9 || monthInput == 11) && (dayInput < 1 || dayInput > 30)) {
         document.getElementById('error__day').textContent = mensagem;
     }
-    if (monthInput.value == 2) {
-        if ((yearInput.value % 4 == 0 && yearInput.value % 100 != 0) || yearInput.value % 400 == 0) {
-            if (dayInput.value < 1 || dayInput.value > 29) {
+    else if (monthInput == 2) {
+        if ((yearInput % 4 == 0 && yearInput % 100 != 0) || yearInput % 400 == 0) {
+            if (dayInput < 1 || dayInput > 29) {
                 document.getElementById('error__day').textContent = mensagem;
             }
         } else {
-            if (dayInput.value < 1 || dayInput.value > 28) {
+            if (dayInput < 1 || dayInput > 28) {
                 document.getElementById('error__day').textContent = mensagem;
             }
         }
     }
-    if (yearInput.value < 0 || yearInput.value > data.getFullYear()) {
+    else if (yearInput < 0 || yearInput > data.getFullYear()) {
         document.getElementById('error__year').textContent = mensagem;
-    } else {
-        calculo();
+    }
+    else {
+        calculo(dayInput, monthInput, yearInput);
     }
 }
 
-function calculo() {
-    let diaUser = parseInt(dayInput.value);
-    let mesUser = parseInt(monthInput.value);
-    let anoUser = parseInt(yearInput.value);
-
-    let difDia = data.getDate() - diaUser;
-    let difMes = data.getMonth() + 1 - mesUser;
-    let difAno = data.getFullYear() - anoUser;
+function calculo(dayInput, monthInput, yearInput) {
+    let difDia = data.getDate() - dayInput;
+    let difMes = data.getMonth() + 1 - monthInput;
+    let difAno = data.getFullYear() - yearInput;
 
     // Verifica si un día o mes de nacimento es posterior al día o mes actuales
     if (difDia < 0) {
