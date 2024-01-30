@@ -15,19 +15,20 @@ formulario.addEventListener("submit", (e) => {
     exibeErro('This field is required', dayInput, monthInput, yearInput);
 });
 
-function exibeErro(mensagem, dayInput, monthInput, yearInput) {
+function exibeErro(message, dayInput, monthInput, yearInput) {
+    // Verifica si los inputs están vacíos y muestra un mensaje de error, en caso contrario, queda vacío
     if (!dayInput) {
-        document.getElementById('error__day').textContent = mensagem;
+        document.getElementById('error__day').textContent = message;
     } else {
         document.getElementById('error__day').textContent = '';
     }
     if (!monthInput) {
-        document.getElementById('error__month').textContent = mensagem;
+        document.getElementById('error__month').textContent = message;
     } else {
         document.getElementById('error__month').textContent = '';
     }
     if (!yearInput) {
-        document.getElementById('error__year').textContent = mensagem;
+        document.getElementById('error__year').textContent = message;
     } else {
         document.getElementById('error__year').textContent = '';
     }
@@ -37,62 +38,78 @@ function exibeErro(mensagem, dayInput, monthInput, yearInput) {
 }
 
 function validarData(dayInput, monthInput, yearInput) {
-    let mensagem = 'Must be a valid date';
-
+    let message = 'Must be a valid date';
+    // Valida si el mes se sale del rango
     if (monthInput < 1 || monthInput > 12) {
-        mensagem = 'Must be a valid month';
-        document.getElementById('error__month').textContent = mensagem;
+        message = 'Must be a valid month';
+        document.getElementById('error__month').textContent = message;
     }
+    // Valida si los días de los meses con 31 días se salen de rango
     else if ((monthInput == 1 || monthInput == 3 || monthInput == 5 || monthInput == 7 || monthInput == 8 || monthInput == 10 || monthInput == 12) && (dayInput < 1 || dayInput > 31)) {
-        mensagem = 'Must be a valid day';
-        document.getElementById('error__day').textContent = mensagem;
+        message = 'Must be a valid day';
+        document.getElementById('error__day').textContent = message;
     }
-    else if ((monthInput == 4 || monthInput == 6 || monthInput == 9 || monthInput == 11) && (dayInput < 1 || dayInput > 31)) {
+    // Valida si los días de los meses con 30 días se salen de rango
+    else if ((monthInput == 4 || monthInput == 6 || monthInput == 9 || monthInput == 11) && (dayInput < 1 || dayInput > 30)) {
         if (dayInput === 31) {
-            document.getElementById('error__day').textContent = mensagem;
+            document.getElementById('error__day').textContent = message;
         } else {
-            mensagem = 'Must be a valid day';
-            document.getElementById('error__day').textContent = mensagem;
+            message = 'Must be a valid day';
+            document.getElementById('error__day').textContent = message;
         }
     }
+    // Valida si los días del mes de febrero se salen de rango
     else if (monthInput == 2) {
-        if ((yearInput % 4 == 0 && yearInput % 100 != 0) || yearInput % 400 == 0) {
-            if (dayInput < 1 || dayInput > 31) {
-                document.getElementById('error__day').textContent = mensagem;
-            } else if (dayInput > 29) {
-                mensagem = 'Must be a valid day';
-                document.getElementById('error__day').textContent = mensagem;
-            }
+        if (dayInput < 1 || dayInput > 31) {
+            message = 'Must be a valid day';
+            document.getElementById('error__day').textContent = message;
         } else {
-            if (dayInput < 1 || dayInput > 31) {
-                document.getElementById('error__day').textContent = mensagem;
-            } else if (dayInput > 28) {
-                mensagem = 'Must be a valid day';
-                document.getElementById('error__day').textContent = mensagem;
+            if ((yearInput % 4 == 0 && yearInput % 100 != 0) || yearInput % 400 == 0) {
+                if (dayInput > 29) {
+                    document.getElementById('error__day').textContent = message;
+                } else {
+                    calculo(dayInput, monthInput, yearInput); // Si todo es correcto, entonces calcula la edad
+                }
+            } else {
+                if (dayInput > 28) {
+                    document.getElementById('error__day').textContent = message;
+                } else {
+                    calculo(dayInput, monthInput, yearInput); // Si todo es correcto, entonces calcula la edad
+                }
             }
         }
     }
+    // Valida si los años son negativos
     else if (yearInput < 0) {
-        mensagem = 'Must be a valid year';
-        document.getElementById('error__year').textContent = mensagem;
+        message = 'Must be a valid year';
+        document.getElementById('error__year').textContent = message;
     }
+    // Valida si los años se exceden del año actual
     else if (yearInput > data.getFullYear()) {
-        mensagem = 'Must be in the past';
-        document.getElementById('error__year').textContent = mensagem;
+        message = 'Must be in the past';
+        document.getElementById('error__year').textContent = message;
     }
+    // Si todo es correcto, entonces calcula la edad
     else {
         calculo(dayInput, monthInput, yearInput);
     }
 }
 
 function calculo(dayInput, monthInput, yearInput) {
+    console.log(data.getDate());
+    console.log(data.getMonth());
+    console.log(data.getFullYear());
     let difDia = data.getDate() - dayInput;
-    let difMes = data.getMonth() + 1 - monthInput;
+    let difMes = data.getMonth() + 1 - monthInput; // Suma 1 porque empieza contando del mes 0
     let difAno = data.getFullYear() - yearInput;
+    console.log(difDia);
+    console.log(difMes);
+    console.log(difAno);
 
     // Verifica si un día o mes de nacimento es posterior al día o mes actuales
     if (difDia < 0) {
         const ultimoDiaMesAnterior = new Date(data.getFullYear(), data.getMonth(), 0).getDate();
+        console.log(ultimoDiaMesAnterior);
         difDia = ultimoDiaMesAnterior + difDia;
         difMes--;
     }
@@ -103,13 +120,7 @@ function calculo(dayInput, monthInput, yearInput) {
         difAno--;
     }
 
-    const resultado = {
-        dia: difDia < 10 ? '0' + difDia : difDia,
-        mes: difMes < 10 ? '0' + difMes : difMes,
-        ano: difAno
-    };
-
-    resultDays.textContent = resultado.dia;
-    resultMonths.textContent = resultado.mes;
-    resultYears.textContent = resultado.ano;
+    resultDays.textContent = difDia;
+    resultMonths.textContent = difMes;
+    resultYears.textContent = difAno;
 }
