@@ -9,13 +9,16 @@ formulario.addEventListener("submit", (e) => {
     let dayInput = document.getElementById('day').value;
     let monthInput = document.getElementById('month').value;
     let yearInput = document.getElementById('year').value;
-    resultDays.textContent = '--';
-    resultMonths.textContent = '--';
-    resultYears.textContent = '--';
-    exibeErro('This field is required', dayInput, monthInput, yearInput);
+    resultDays.textContent = '- -';
+    resultMonths.textContent = '- -';
+    resultYears.textContent = '- -';
+    validarDatos('This field is required', dayInput, monthInput, yearInput);
 });
 
-function exibeErro(message, dayInput, monthInput, yearInput) {
+function validarDatos(message, dayInput, monthInput, yearInput) {
+    let diaValido = false;
+    let mesValido = false;
+    let anioValido = false;
     // Verifica si los inputs están vacíos y muestra un mensaje de error, en caso contrario, queda vacío
     if (!dayInput) {
         document.getElementById('error__day').textContent = message;
@@ -32,20 +35,32 @@ function exibeErro(message, dayInput, monthInput, yearInput) {
     } else {
         document.getElementById('error__year').textContent = '';
     }
-    if (dayInput && monthInput && yearInput) {
-        validarData(dayInput, monthInput, yearInput);
+
+    if (dayInput) {
+        diaValido = validarDia(diaValido, dayInput, monthInput, yearInput);
     }
+    if (monthInput) {
+        mesValido = validarMes(mesValido, monthInput);
+    }
+    if (yearInput) {
+        anioValido = validarAnio(anioValido, yearInput);
+    }
+
+
+    if (diaValido && mesValido && anioValido) {
+        calculo(dayInput, monthInput, yearInput);
+    }
+
+    const validDay = document.getElementById('error__day').textContent;
+    const validMonth = document.getElementById('error__month').textContent;
+    const validYear = document.getElementById('error__year').textContent;
+    validarLabel(validDay, validMonth, validYear);
 }
 
-function validarData(dayInput, monthInput, yearInput) {
+function validarDia(diaValido, dayInput, monthInput, yearInput) {
     let message = 'Must be a valid date';
-    // Valida si el mes se sale del rango
-    if (monthInput < 1 || monthInput > 12) {
-        message = 'Must be a valid month';
-        document.getElementById('error__month').textContent = message;
-    }
-    // Valida si los días de los meses con 31 días se salen de rango
-    else if ((monthInput == 1 || monthInput == 3 || monthInput == 5 || monthInput == 7 || monthInput == 8 || monthInput == 10 || monthInput == 12) && (dayInput < 1 || dayInput > 31)) {
+    // Valida si el día se sale del rango
+    if (dayInput < 1 || dayInput > 31) {
         message = 'Must be a valid day';
         document.getElementById('error__day').textContent = message;
     }
@@ -60,27 +75,30 @@ function validarData(dayInput, monthInput, yearInput) {
     }
     // Valida si los días del mes de febrero se salen de rango
     else if (monthInput == 2) {
-        if (dayInput < 1 || dayInput > 31) {
-            message = 'Must be a valid day';
-            document.getElementById('error__day').textContent = message;
-        } else {
-            if ((yearInput % 4 == 0 && yearInput % 100 != 0) || yearInput % 400 == 0) {
-                if (dayInput > 29) {
-                    document.getElementById('error__day').textContent = message;
-                } else {
-                    calculo(dayInput, monthInput, yearInput); // Si todo es correcto, entonces calcula la edad
-                }
+        if ((yearInput % 4 == 0 && yearInput % 100 != 0) || yearInput % 400 == 0) {
+            if (dayInput > 29) {
+                document.getElementById('error__day').textContent = message;
             } else {
-                if (dayInput > 28) {
-                    document.getElementById('error__day').textContent = message;
-                } else {
-                    calculo(dayInput, monthInput, yearInput); // Si todo es correcto, entonces calcula la edad
-                }
+                mesValido = true;
+            }
+        } else {
+            if (dayInput > 28) {
+                document.getElementById('error__day').textContent = message;
+            } else {
+                mesValido = true;
             }
         }
     }
+    else {
+        diaValido = true;
+    }
+    return diaValido;
+}
+
+
+function validarAnio(anioValido, yearInput) {
     // Valida si los años son negativos
-    else if (yearInput < 0) {
+    if (yearInput < 0) {
         message = 'Must be a valid year';
         document.getElementById('error__year').textContent = message;
     }
@@ -88,28 +106,33 @@ function validarData(dayInput, monthInput, yearInput) {
     else if (yearInput > data.getFullYear()) {
         message = 'Must be in the past';
         document.getElementById('error__year').textContent = message;
+    } else {
+        anioValido = true;
     }
-    // Si todo es correcto, entonces calcula la edad
+    return anioValido;
+}
+
+function validarMes(mesValido, monthInput) {
+    // Valida si el mes se sale del rango
+    if (monthInput < 1 || monthInput > 12) {
+        message = 'Must be a valid month';
+        document.getElementById('error__month').textContent = message;
+    }
     else {
-        calculo(dayInput, monthInput, yearInput);
+        mesValido = true;
     }
+
+    return mesValido;
 }
 
 function calculo(dayInput, monthInput, yearInput) {
-    console.log(data.getDate());
-    console.log(data.getMonth());
-    console.log(data.getFullYear());
     let difDia = data.getDate() - dayInput;
     let difMes = data.getMonth() + 1 - monthInput; // Suma 1 porque empieza contando del mes 0
     let difAno = data.getFullYear() - yearInput;
-    console.log(difDia);
-    console.log(difMes);
-    console.log(difAno);
 
     // Verifica si un día o mes de nacimento es posterior al día o mes actuales
     if (difDia < 0) {
         const ultimoDiaMesAnterior = new Date(data.getFullYear(), data.getMonth(), 0).getDate();
-        console.log(ultimoDiaMesAnterior);
         difDia = ultimoDiaMesAnterior + difDia;
         difMes--;
     }
@@ -123,4 +146,34 @@ function calculo(dayInput, monthInput, yearInput) {
     resultDays.textContent = difDia;
     resultMonths.textContent = difMes;
     resultYears.textContent = difAno;
+}
+
+function validarLabel(dayTextError, monthLabel, yearLabel) {
+    const label = document.getElementsByClassName('data__label');
+    const input = document.getElementsByClassName('data__input');
+    let day = (dayTextError === 'This field is required' || dayTextError === 'Must be a valid date' || dayTextError === 'Must be a valid day') ? true : false;
+    let month = (monthLabel === 'This field is required' || monthLabel === 'Must be a valid date' || monthLabel === 'Must be a valid month') ? true : false;
+    let year = (yearLabel === 'This field is required' || yearLabel === 'Must be a valid date' || yearLabel === 'Must be a valid year' || yearLabel === 'Must be in the past') ? true : false;
+
+    if (day) {
+        label[0].classList.add('error__label');
+        input[0].classList.add('error__input');
+    } else {
+        label[0].classList.remove('error__label');
+        input[0].classList.remove('error__input');
+    }
+    if (month) {
+        label[1].classList.add('error__label');
+        input[1].classList.add('error__input');
+    } else {
+        label[1].classList.remove('error__label');
+        input[1].classList.remove('error__input');
+    }
+    if (year) {
+        label[2].classList.add('error__label');
+        input[2].classList.add('error__input');
+    } else {
+        label[2].classList.remove('error__label');
+        input[2].classList.remove('error__input');
+    }
 }

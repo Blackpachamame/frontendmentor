@@ -131,6 +131,14 @@ body {
   /* visibility: hidden; */
 }
 
+.error__label {
+  color: var(--light-red);
+}
+
+.error__input {
+  border-color: var(--light-red);
+}
+
 .submit {
   position: relative;
 }
