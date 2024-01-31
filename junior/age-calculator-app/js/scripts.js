@@ -79,13 +79,13 @@ function validarDia(diaValido, dayInput, monthInput, yearInput) {
             if (dayInput > 29) {
                 document.getElementById('error__day').textContent = message;
             } else {
-                mesValido = true;
+                diaValido = true;
             }
         } else {
             if (dayInput > 28) {
                 document.getElementById('error__day').textContent = message;
             } else {
-                mesValido = true;
+                diaValido = true;
             }
         }
     }
@@ -93,6 +93,19 @@ function validarDia(diaValido, dayInput, monthInput, yearInput) {
         diaValido = true;
     }
     return diaValido;
+}
+
+function validarMes(mesValido, monthInput) {
+    // Valida si el mes se sale del rango
+    if (monthInput < 1 || monthInput > 12) {
+        message = 'Must be a valid month';
+        document.getElementById('error__month').textContent = message;
+    }
+    else {
+        mesValido = true;
+    }
+
+    return mesValido;
 }
 
 
@@ -110,19 +123,6 @@ function validarAnio(anioValido, yearInput) {
         anioValido = true;
     }
     return anioValido;
-}
-
-function validarMes(mesValido, monthInput) {
-    // Valida si el mes se sale del rango
-    if (monthInput < 1 || monthInput > 12) {
-        message = 'Must be a valid month';
-        document.getElementById('error__month').textContent = message;
-    }
-    else {
-        mesValido = true;
-    }
-
-    return mesValido;
 }
 
 function calculo(dayInput, monthInput, yearInput) {
