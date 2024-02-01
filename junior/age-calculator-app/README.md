@@ -1,5 +1,3 @@
-# Frontend Mentor - Age calculator app
-
 <h1 align="center">Age calculator app</h1>
 
 <div align="center">
@@ -25,14 +23,13 @@
 
 ## Tabla de contenido
 
-- [Frontend Mentor - Age calculator app](#frontend-mentor---age-calculator-app)
-  - [Tabla de contenido](#tabla-de-contenido)
-  - [Descripción](#descripción)
-    - [Desafío](#desafío)
-  - [Mi Procedimiento](#mi-procedimiento)
-    - [Construido con](#construido-con)
-    - [Lo que aprendí](#lo-que-aprendí)
-  - [Autor](#autor)
+- [Tabla de contenido](#tabla-de-contenido)
+- [Descripción](#descripción)
+  - [Desafío](#desafío)
+- [Mi Procedimiento](#mi-procedimiento)
+  - [Construido con](#construido-con)
+  - [Lo que aprendí](#lo-que-aprendí)
+- [Autor](#autor)
 
 ## Descripción
 
