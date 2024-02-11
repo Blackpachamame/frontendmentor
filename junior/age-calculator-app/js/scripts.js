@@ -13,6 +13,9 @@ formulario.addEventListener("submit", (e) => {
     resultMonths.textContent = '- -';
     resultYears.textContent = '- -';
     validarDatos('This field is required', dayInput, monthInput, yearInput);
+    incEltNbr("resultYears");
+    incEltNbr("resultMonths");
+    incEltNbr("resultDays");
 });
 
 function validarDatos(message, dayInput, monthInput, yearInput) {
@@ -175,5 +178,25 @@ function validarLabel(dayTextError, monthLabel, yearLabel) {
     } else {
         label[2].classList.remove('error__label');
         input[2].classList.remove('error__input');
+    }
+}
+
+var speed = 50;
+
+/* Call this function with a string containing the ID name to
+ * the element containing the number you want to do a count animation on.*/
+function incEltNbr(id) {
+    elt = document.getElementById(id);
+    endNbr = (document.getElementById(id).innerHTML);
+    incNbrRec(0, endNbr, elt);
+}
+
+/*A recursive function to increase the number.*/
+function incNbrRec(i, endNbr, elt) {
+    if (i <= endNbr) {
+        elt.innerHTML = i;
+        setTimeout(function () {//Delay a bit before calling the function again.
+            incNbrRec(i + 1, endNbr, elt);
+        }, speed);
     }
 }
