@@ -58,6 +58,7 @@ Sus usuarios deberían poder:
 
 - HTML5
 - CSS3
+- JavaScript
 - Flexbox
 - Grid
 - BEM
