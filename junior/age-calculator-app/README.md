@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/age-calculator-app">
+    <a href="https://www.frontendmentor.io/solutions/age-calculator-app-G1QifVhMux">
       Solución
     </a>
    <span> | </span>
