@@ -85,6 +85,11 @@ body {
   padding: 4rem 3.9rem 3.6rem;
 }
 
+h1 {
+  position: absolute;
+  top: -1000px;
+}
+
 .data {
   color: var(--smokey-grey);
   font-weight: 700;
