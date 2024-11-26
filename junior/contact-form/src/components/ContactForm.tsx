@@ -1,141 +1,97 @@
-import { z } from "zod";
-
-const ContactFormSchema = z.object({
-  firstName: z.string().min(1, { message: "This field is required" }),
-  lastName: z.string().min(1, { message: "This field is required" }),
-  email: z
-    .string()
-    .email({ message: "Please enter a valid email address" })
-    .min(1, { message: "Email Address is required" }),
-  queryType: z.enum(["General Enquiry", "Support Request"], {
-    required_error: "Please select a query type",
-  }),
-  message: z.string().min(1, { message: "This field is required" }),
-  consent: z.literal(true, {
-    errorMap: () => ({
-      message: "To submit this form, please consent yo being contacted",
-    }),
-  }),
-});
+import { zodResolver } from "@hookform/resolvers/zod";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { FormValues, contactFormSchema } from "../models/form.model";
+import CustomInput from "./CustomInput";
+import TextareaInput from "./TextareaInput";
+import CheckboxInput from "./CheckboxInput";
+import RadioInput from "./RadioInput";
 
 const ContactForm = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const data = {
-      firstName: formData.get("firstName") as string,
-      lastName: formData.get("lastName") as string,
-      email: formData.get("email") as string,
-      queryType: formData.get("queryType") as
-        | "General Enquiry"
-        | "Support Request",
-      message: formData.get("message") as string,
-      consent: formData.get("consent") === "on",
-    };
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormValues>({
+    resolver: zodResolver(contactFormSchema),
+    mode: "onBlur",
+  });
 
-    try {
-      ContactFormSchema.parse(data);
-      console.log("Form submitted:", data);
-    } catch (error) {
-      console.error("Validation failed:", error);
-    }
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    console.log(data);
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white p-6 md:p-10 rounded-xl shadow-md max-w-[736px] mx-auto"
-    >
+    <section className="bg-white p-6 md:p-10 rounded-xl shadow-md max-w-[736px] mx-auto">
       <h1 className="text-2xl md:text-3xl font-bold mb-6 text-customGreen-900">
         Contact Us
       </h1>
-      <div className="grid grid-cols-1 gap-6">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="grid grid-cols-1 gap-6"
+      >
         <fieldset className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-4">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="firstName">
-              First Name <span className="text-customGreen-600">*</span>
-            </label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              className="h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500"
-            />
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="lastName">
-              Last Name <span className="text-customGreen-600">*</span>
-            </label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              className="h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500"
-            />
-          </div>
+          <CustomInput
+            name="firstName"
+            control={control}
+            label="First Name"
+            type="text"
+            error={errors.firstName}
+          />
+          <CustomInput
+            name="lastName"
+            control={control}
+            label="Last Name"
+            type="text"
+            error={errors.lastName}
+          />
         </fieldset>
 
-        <fieldset className="flex flex-col gap-2">
-          <label htmlFor="email">
-            Email Address <span className="text-customGreen-600">*</span>
-          </label>
-          <input
-            type="email"
-            id="email"
+        <fieldset>
+          <CustomInput
             name="email"
-            className="h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500"
+            control={control}
+            label="Email Address"
+            type="email"
+            error={errors.email}
           />
         </fieldset>
 
         <fieldset className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
-          <legend className="text-sm mb-2">
+          <legend className="mb-2">
             Query Type <span className="text-customGreen-600">*</span>
           </legend>
-          <label className="flex px-6 items-center h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500">
-            <input
-              type="radio"
-              name="queryType"
-              value="General Enquiry"
-              className="text-customGreen-500 focus:ring-customGreen-500 w-5 h-5"
-            />
-            <span className="ml-3">General Enquiry</span>
-          </label>
-
-          <label className="flex px-6 items-center h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500">
-            <input
-              type="radio"
-              name="queryType"
-              value="Support Request"
-              className="text-customGreen-500 focus:ring-customGreen-500 w-5 h-5"
-            />
-            <span className="ml-3">Support Request</span>
-          </label>
+          <RadioInput
+            name="queryType"
+            control={control}
+            label="General Enquiry"
+            value="General Enquiry"
+            error={errors.queryType}
+          />
+          <RadioInput
+            name="queryType"
+            control={control}
+            label="Support Request"
+            value="Support Request"
+            error={errors.queryType}
+          />
         </fieldset>
 
-        <fieldset className="flex flex-col gap-2">
-          <label htmlFor="message">
-            Message <span className="text-customGreen-600">*</span>
-          </label>
-          <textarea
-            id="message"
+        <fieldset>
+          <TextareaInput
             name="message"
-            rows={4}
-            className="w-full h-60 border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500"
-          ></textarea>
+            control={control}
+            label="Message"
+            error={errors.message}
+          />
         </fieldset>
 
         <fieldset className="grid grid-cols-[18px_auto] items-center px-2">
-          <input
-            type="checkbox"
-            id="consent"
+          <CheckboxInput
             name="consent"
-            className="w-[18px] h-[18px] text-customGreen-500 focus:ring-customGreen-500 appearance-none border-2 border-gray-400 checked:bg-customGreen-500"
+            control={control}
+            label="I consent to being contacted by the team"
+            error={errors.message}
           />
-          <label htmlFor="consent" className="ml-3">
-            I consent to being contacted by the team{" "}
-            <span className="text-customGreen-600">*</span>
-          </label>
         </fieldset>
 
         <button
@@ -144,8 +100,8 @@ const ContactForm = () => {
         >
           Submit
         </button>
-      </div>
-    </form>
+      </form>
+    </section>
   );
 };
 
