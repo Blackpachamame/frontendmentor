@@ -1,4 +1,4 @@
-import { Control, Controller, FieldError } from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
 import { OptionsFields, FormValues } from "../models/form.model";
 
 interface Props {
@@ -6,23 +6,16 @@ interface Props {
   control: Control<FormValues>; // Control de React Hook Form
   label: string; // Etiqueta para el radio
   value: string; // Valor específico para este radio
-  error?: FieldError; // Error si aplica
 }
 
-export default function RadioInput({
-  name,
-  control,
-  label,
-  value,
-  error,
-}: Props) {
+export default function RadioInput({ name, control, label, value }: Props) {
   return (
     <>
       <Controller
         name={name}
         control={control}
         render={({ field }) => (
-          <label className="flex px-6 items-center h-[50px] w-full border border-customGreen-900 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500">
+          <label className="flex px-6 items-center h-[50px] w-full border border-customGreen-900/50 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500">
             <input
               id={`${name}-${value}`} // ID único para accesibilidad
               type="radio"
@@ -36,7 +29,6 @@ export default function RadioInput({
           </label>
         )}
       />
-      {error && <p className="text-customRed text-sm">{error.message}</p>}
     </>
   );
 }

@@ -1,16 +1,15 @@
-import { Control, Controller, FieldError } from "react-hook-form";
-import { OptionsFields, FormValues } from "../models/form.model";
+import { Control, Controller } from "react-hook-form";
+import { FormValues } from "../models/form.model";
 
 interface Props {
-  name: keyof OptionsFields;
+  name: keyof FormValues;
   control: Control<FormValues>;
   label: string;
-  error?: FieldError;
 }
 
-export default function CheckboxInput({ name, control, label, error }: Props) {
+export default function CheckboxInput({ name, control, label }: Props) {
   return (
-    <>
+    <div className="grid grid-cols-[18px_auto] items-center px-2">
       <Controller
         name={name}
         control={control}
@@ -34,7 +33,6 @@ export default function CheckboxInput({ name, control, label, error }: Props) {
       <label htmlFor={name} className="ml-3">
         {label} <span className="text-customGreen-600">*</span>
       </label>
-      {error && <p className="text-customRed text-sm">{error.message}</p>}
-    </>
+    </div>
   );
 }

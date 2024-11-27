@@ -1,8 +1,8 @@
 import { Control, Controller, FieldError } from "react-hook-form";
-import { TextFields, FormValues } from "../models/form.model";
+import { FormValues } from "../models/form.model";
 
 interface Props {
-  name: keyof TextFields;
+  name: keyof FormValues;
   control: Control<FormValues>;
   label: string;
   type?: string;
@@ -29,13 +29,14 @@ export default function CustomInput({
             id={name}
             type={type}
             {...field}
-            className={`h-[50px] w-full border rounded-md ${
-              error ? "border-customRed" : "border-customGreen-900"
+            value={field.value === true ? "" : field.value}
+            className={`px-5 h-[50px] w-full border rounded-md ${
+              error ? "border-customRed" : "border-customGreen-900/50"
             }`}
           />
         )}
       />
-      {error && <p className="text-customRed">{error.message}</p>}
+      {error && <p className="text-customRed text-sm">{error.message}</p>}
     </div>
   );
 }

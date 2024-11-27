@@ -14,6 +14,12 @@ const ContactForm = () => {
   } = useForm<FormValues>({
     resolver: zodResolver(contactFormSchema),
     mode: "onBlur",
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      messageArea: "",
+    },
   });
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
@@ -56,42 +62,47 @@ const ContactForm = () => {
           />
         </fieldset>
 
-        <fieldset className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
+        <fieldset className="flex flex-col gap-2">
           <legend className="mb-2">
             Query Type <span className="text-customGreen-600">*</span>
           </legend>
-          <RadioInput
-            name="queryType"
-            control={control}
-            label="General Enquiry"
-            value="General Enquiry"
-            error={errors.queryType}
-          />
-          <RadioInput
-            name="queryType"
-            control={control}
-            label="Support Request"
-            value="Support Request"
-            error={errors.queryType}
-          />
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4">
+            <RadioInput
+              name="queryType"
+              control={control}
+              label="General Enquiry"
+              value="General Enquiry"
+            />
+            <RadioInput
+              name="queryType"
+              control={control}
+              label="Support Request"
+              value="Support Request"
+            />
+          </div>
+          {errors.queryType && (
+            <p className="text-customRed text-sm">{errors.queryType.message}</p>
+          )}
         </fieldset>
 
         <fieldset>
           <TextareaInput
-            name="message"
+            name="messageArea"
             control={control}
             label="Message"
-            error={errors.message}
+            error={errors.messageArea}
           />
         </fieldset>
 
-        <fieldset className="grid grid-cols-[18px_auto] items-center px-2">
+        <fieldset className="flex flex-col gap-2">
           <CheckboxInput
             name="consent"
             control={control}
             label="I consent to being contacted by the team"
-            error={errors.message}
           />
+          {errors.consent && (
+            <p className="text-customRed text-sm">{errors.consent.message}</p>
+          )}
         </fieldset>
 
         <button

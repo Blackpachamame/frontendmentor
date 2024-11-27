@@ -1,8 +1,8 @@
 import { Control, Controller, FieldError } from "react-hook-form";
-import { TextFields, FormValues } from "../models/form.model";
+import { FormValues } from "../models/form.model";
 
 interface Props {
-  name: keyof TextFields;
+  name: keyof FormValues;
   control: Control<FormValues>;
   label: string;
   error?: FieldError;
@@ -21,14 +21,15 @@ export default function TextareaInput({ name, control, label, error }: Props) {
           <textarea
             id={name}
             {...field}
+            value={field.value === true ? "" : field.value}
             rows={4}
-            className={`h-60 w-full border rounded-md ${
-              error ? "border-customRed" : "border-customGreen-900"
+            className={`px-5 py-2 h-60 w-full border rounded-md ${
+              error ? "border-customRed" : "border-customGreen-900/50"
             }`}
           ></textarea>
         )}
       />
-      {error && <p className="text-customRed">{error.message}</p>}
+      {error && <p className="text-customRed text-sm">{error.message}</p>}
     </div>
   );
 }

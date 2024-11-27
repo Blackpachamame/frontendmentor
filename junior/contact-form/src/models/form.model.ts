@@ -1,18 +1,13 @@
 import { z } from "zod";
 
-// Esquema para campos de texto
-export const textFieldsSchema = z.object({
+export const contactFormSchema = z.object({
   firstName: z.string().min(1, { message: "This field is required" }),
   lastName: z.string().min(1, { message: "This field is required" }),
   email: z
     .string()
-    .email({ message: "Please enter a valid email address" })
-    .min(1, { message: "Email Address is required" }),
-  message: z.string().min(1, { message: "This field is required" }),
-});
-
-// Esquema para campos de tipo checkbox o radio
-export const optionsSchema = z.object({
+    .min(1, { message: "Email Address is required" })
+    .email({ message: "Please enter a valid email address" }),
+  messageArea: z.string().min(1, { message: "This field is required" }),
   queryType: z.enum(["General Enquiry", "Support Request"], {
     required_error: "Please select a query type",
   }),
@@ -23,10 +18,4 @@ export const optionsSchema = z.object({
   }),
 });
 
-// Esquema combinado para validaciones completas
-export const contactFormSchema = textFieldsSchema.merge(optionsSchema);
-
-// Tipos separados para diferentes propósitos
-export type TextFields = z.infer<typeof textFieldsSchema>;
-export type OptionsFields = z.infer<typeof optionsSchema>;
 export type FormValues = z.infer<typeof contactFormSchema>;
