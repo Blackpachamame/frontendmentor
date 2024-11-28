@@ -22,3 +22,25 @@ body {
   display: grid;
   align-items: center;
 }
+
+/* Ocultamos el checkbox original */
+.checkbox-hidden {
+  display: none;
+}
+
+/* Estilo del cuadrado sin color y con borde */
+.checkbox-square {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc; /* Borde gris claro */
+  background-color: transparent;
+  transition: background-color 0.2s, background-image 0.2s;
+}
+
+/* Cuando el checkbox está marcado, cambiamos el fondo a la imagen del check */
+.checkbox-square.checked {
+  background-image: url("/assets/images/icon-checkbox-check.svg"); /* Imagen cuando está marcado */
+  background-size: cover;
+  background-color: transparent; /* Aseguramos que el fondo sea transparente */
+}

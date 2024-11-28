@@ -1,16 +1,19 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import { FormValues, contactFormSchema } from "../models/form.model";
 import CustomInput from "./CustomInput";
 import TextareaInput from "./TextareaInput";
 import CheckboxInput from "./CheckboxInput";
 import RadioInput from "./RadioInput";
+import { CustomToastSuccess } from "./CustomToast";
 
 const ContactForm = () => {
   const {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormValues>({
     resolver: zodResolver(contactFormSchema),
     mode: "onBlur",
@@ -24,6 +27,24 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     console.log(data);
+    toast(
+      <CustomToastSuccess
+        title="Message Sent!"
+        message="Thanks for completing the form. We'll be in touch soon!"
+      />,
+      {
+        position: "top-center",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: false,
+        closeButton: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
+    reset();
   };
 
   return (
