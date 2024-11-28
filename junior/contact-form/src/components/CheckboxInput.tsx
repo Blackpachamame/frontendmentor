@@ -9,7 +9,7 @@ interface Props {
 
 export default function CheckboxInput({ name, control, label }: Props) {
   return (
-    <div className="grid grid-cols-[18px_auto] items-center px-2">
+    <div className="grid grid-cols-[18px_auto] gap-5 items-center mt-3 px-1">
       <Controller
         name={name}
         control={control}
@@ -25,12 +25,11 @@ export default function CheckboxInput({ name, control, label }: Props) {
               {...field}
               checked={isChecked} // Controla el estado del checkbox
               value={undefined} // Elimina el value para evitar conflictos
-              className="w-[18px] h-[18px] text-customGreen-50 accent-customGreen-600"
             />
           );
         }}
       />
-      <label htmlFor={name} className="ml-3">
+      <label htmlFor={name}>
         {label} <span className="text-customGreen-600">*</span>
       </label>
     </div>

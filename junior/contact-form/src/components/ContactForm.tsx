@@ -34,7 +34,7 @@ const ContactForm = () => {
       />,
       {
         position: "top-center",
-        autoClose: false,
+        autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: false,
         closeButton: false,
@@ -102,7 +102,7 @@ const ContactForm = () => {
             />
           </div>
           {errors.queryType && (
-            <p className="text-customRed text-sm">{errors.queryType.message}</p>
+            <p className="text-customRed">{errors.queryType.message}</p>
           )}
         </fieldset>
 
@@ -122,13 +122,13 @@ const ContactForm = () => {
             label="I consent to being contacted by the team"
           />
           {errors.consent && (
-            <p className="text-customRed text-sm">{errors.consent.message}</p>
+            <p className="text-customRed">{errors.consent.message}</p>
           )}
         </fieldset>
 
         <button
           type="submit"
-          className="w-full h-[60px] bg-customGreen-600 text-white py-2 px-4 rounded-md shadow hover:bg-customGreen-900"
+          className="w-full mt-3 h-[60px] bg-customGreen-600 text-white py-2 px-4 rounded-md shadow hover:bg-customGreen-900"
         >
           Submit
         </button>

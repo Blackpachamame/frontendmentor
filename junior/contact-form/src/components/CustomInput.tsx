@@ -28,15 +28,16 @@ export default function CustomInput({
           <input
             id={name}
             type={type}
+            {...(type === "email" ? { autoComplete: "off" } : {})}
             {...field}
             value={field.value === true ? "" : field.value}
-            className={`px-5 h-[50px] w-full border rounded-md ${
-              error ? "border-customRed" : "border-customGreen-900/50"
+            className={`px-5 h-[50px] w-full border rounded-md hover:border-customGreen-600 focus-visible:outline-0 focus-visible:border-customGreen-600 ${
+              error ? "border-customRed" : "border-customGreen-500"
             }`}
           />
         )}
       />
-      {error && <p className="text-customRed text-sm">{error.message}</p>}
+      {error && <p className="text-customRed">{error.message}</p>}
     </div>
   );
 }

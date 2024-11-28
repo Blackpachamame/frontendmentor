@@ -1,11 +1,11 @@
 import { Control, Controller } from "react-hook-form";
-import { OptionsFields, FormValues } from "../models/form.model";
+import { FormValues } from "../models/form.model";
 
 interface Props {
-  name: keyof OptionsFields; // Nombre del campo (queryType, etc.)
-  control: Control<FormValues>; // Control de React Hook Form
-  label: string; // Etiqueta para el radio
-  value: string; // Valor específico para este radio
+  name: keyof FormValues;
+  control: Control<FormValues>;
+  label: string;
+  value: string;
 }
 
 export default function RadioInput({ name, control, label, value }: Props) {
@@ -15,15 +15,21 @@ export default function RadioInput({ name, control, label, value }: Props) {
         name={name}
         control={control}
         render={({ field }) => (
-          <label className="flex px-6 items-center h-[50px] w-full border border-customGreen-900/50 rounded-md focus:ring-customGreen-500 focus:border-customGreen-500">
+          <label
+            className={`flex px-6 items-center h-[50px] w-full border border-customGreen-500 rounded-md ${
+              field.value === value
+                ? "bg-customGreen-200 border-customGreen-600"
+                : ""
+            }`}
+          >
             <input
-              id={`${name}-${value}`} // ID único para accesibilidad
+              id={`${name}-${value}`}
               type="radio"
               {...field}
-              value={value} // Asignamos el valor del radio
-              checked={field.value === value} // Controla si el radio está seleccionado
-              onChange={(e) => field.onChange(e.target.value)} // Actualiza el valor en el formulario
-              className="w-[18px] h-[18px] text-customGreen-50 accent-customGreen-600"
+              value={value}
+              checked={field.value === value}
+              // onChange={(e) => field.onChange(e.target.value)}
+              className="w-5 h-5 text-customGreen-50 accent-customGreen-600"
             />
             <span className="ml-3">{label}</span>
           </label>

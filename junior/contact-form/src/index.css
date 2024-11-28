@@ -23,24 +23,33 @@ body {
   align-items: center;
 }
 
-/* Ocultamos el checkbox original */
-.checkbox-hidden {
-  display: none;
-}
-
-/* Estilo del cuadrado sin color y con borde */
-.checkbox-square {
-  display: inline-block;
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: none;
+  background-size: cover;
+  background-color: transparent;
   width: 18px;
   height: 18px;
-  border: 2px solid #ccc; /* Borde gris claro */
-  background-color: transparent;
-  transition: background-color 0.2s, background-image 0.2s;
+  border: 2px solid hsl(186, 15%, 59%);
+  border-radius: 2px;
 }
 
-/* Cuando el checkbox está marcado, cambiamos el fondo a la imagen del check */
-.checkbox-square.checked {
-  background-image: url("/assets/images/icon-checkbox-check.svg"); /* Imagen cuando está marcado */
+input[type="checkbox"]:checked {
+  border: none;
+  background-image: url("src/assets/images/icon-checkbox-check.svg");
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid rgba(128, 128, 128, 0.6);
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked {
+  border: none;
+  background-image: url("src/assets/images/icon-radio-selected.svg");
   background-size: cover;
-  background-color: transparent; /* Aseguramos que el fondo sea transparente */
 }
