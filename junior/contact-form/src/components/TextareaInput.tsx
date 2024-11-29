@@ -23,13 +23,25 @@ export default function TextareaInput({ name, control, label, error }: Props) {
             {...field}
             value={field.value === true ? "" : field.value}
             rows={4}
-            className={`px-5 py-2 h-60 w-full border rounded-md hover:border-customGreen-600 focus-visible:outline-0 focus-visible:border-customGreen-600 ${
+            className={`px-5 py-2 min-h-60 md:min-h-[105px] w-full border rounded-md hover:border-customGreen-600 focus-visible:outline-0 focus-visible:border-customGreen-600 ${
               error ? "border-customRed" : "border-customGreen-500"
             }`}
+            aria-required="true"
+            aria-labelledby={name} // Asocia el textarea con el label
+            aria-describedby={`${name}-error`} // Relaciona el mensaje de error con el textarea
           ></textarea>
         )}
       />
-      {error && <p className="text-customRed">{error.message}</p>}
+      {error && (
+        <p
+          id={`${name}-error`}
+          className="text-customRed"
+          role="alert"
+          aria-live="assertive"
+        >
+          {error.message}
+        </p>
+      )}
     </div>
   );
 }

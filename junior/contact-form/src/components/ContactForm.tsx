@@ -102,7 +102,9 @@ const ContactForm = () => {
             />
           </div>
           {errors.queryType && (
-            <p className="text-customRed">{errors.queryType.message}</p>
+            <p className="text-customRed" role="alert" aria-live="assertive">
+              {errors.queryType.message}
+            </p>
           )}
         </fieldset>
 
@@ -122,13 +124,16 @@ const ContactForm = () => {
             label="I consent to being contacted by the team"
           />
           {errors.consent && (
-            <p className="text-customRed">{errors.consent.message}</p>
+            <p className="text-customRed" role="alert" aria-live="assertive">
+              {errors.consent.message}
+            </p>
           )}
         </fieldset>
 
         <button
           type="submit"
           className="w-full mt-3 h-[60px] bg-customGreen-600 text-white py-2 px-4 rounded-md shadow hover:bg-customGreen-900"
+          aria-label="Submit the contact form"
         >
           Submit
         </button>

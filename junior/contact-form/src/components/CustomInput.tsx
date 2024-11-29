@@ -34,10 +34,22 @@ export default function CustomInput({
             className={`px-5 h-[50px] w-full border rounded-md hover:border-customGreen-600 focus-visible:outline-0 focus-visible:border-customGreen-600 ${
               error ? "border-customRed" : "border-customGreen-500"
             }`}
+            aria-required="true"
+            aria-labelledby={name}
+            aria-describedby={error ? `${name}-error` : undefined}
           />
         )}
       />
-      {error && <p className="text-customRed">{error.message}</p>}
+      {error && (
+        <p
+          id={`${name}-error`}
+          className="text-customRed"
+          role="alert"
+          aria-live="assertive"
+        >
+          {error.message}
+        </p>
+      )}
     </div>
   );
 }

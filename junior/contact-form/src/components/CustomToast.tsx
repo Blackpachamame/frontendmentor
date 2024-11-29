@@ -7,7 +7,10 @@ interface CustomToastProps {
 
 export const CustomToastSuccess = ({ title, message }: CustomToastProps) => {
   return (
-    <div className="bg-customGreen-900 text-white p-6 rounded-xl flex flex-col gap-2 max-w-max">
+    <div
+      className="bg-customGreen-900 text-white p-6 rounded-xl flex flex-col gap-2 max-w-max"
+      aria-live="polite"
+    >
       <h3 className="flex gap-2 text-lg font-bold items-center">
         <img src={IconCheck} alt="Success" />
         {title}

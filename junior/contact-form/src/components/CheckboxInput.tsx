@@ -14,7 +14,6 @@ export default function CheckboxInput({ name, control, label }: Props) {
         name={name}
         control={control}
         render={({ field }) => {
-          // Aseguramos que el campo maneje solo valores booleanos
           const isChecked =
             typeof field.value === "boolean" ? field.value : false;
 
@@ -23,13 +22,15 @@ export default function CheckboxInput({ name, control, label }: Props) {
               id={name}
               type="checkbox"
               {...field}
-              checked={isChecked} // Controla el estado del checkbox
+              checked={isChecked}
               value={undefined} // Elimina el value para evitar conflictos
+              aria-required="true"
+              aria-labelledby={`${name}-label`} // Asocia la etiqueta con el checkbox
             />
           );
         }}
       />
-      <label htmlFor={name}>
+      <label id={`${name}-label`} htmlFor={name}>
         {label} <span className="text-customGreen-600">*</span>
       </label>
     </div>
