@@ -5,6 +5,7 @@
 </div>
 <br>
 <div align="center">
+   <img src="./src/assets/design/desktop-preview.jpg"></img>
   <h3>
     <a href="https://contact-form-cyan-nine.vercel.app/">
       En Vivo
