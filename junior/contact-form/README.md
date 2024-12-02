@@ -66,6 +66,10 @@ Tus usuarios deberían ser capaces de:
 
 Aunque este desafío es sencillo, lo utilicé para darle un primer vistazo a **React Hook Form** con **Zod** y **React Toastify**. Fue una excelente oportunidad para practicar la validación de formularios y las notificaciones.
 
+### Recursos útiles
+
+- Gentleman Programming - [Curso REACT desde cero a experto]([https://github.com/Blackpachamame](https://www.youtube.com/watch?v=GMnWXlJnbNo))
+
 ## Autor
 
 - Github - [Blackpachamame](https://github.com/Blackpachamame)
