@@ -26,13 +26,10 @@ export default function RadioInput({ name, control, label, value }: Props) {
             {...field}
             value={value}
             checked={field.value === value}
-            className="w-5 h-5 text-customGreen-50 accent-customGreen-600"
+            className="w-5 h-5 text-customGreen-50 accent-customGreen-600 mr-3"
             aria-required="true"
-            aria-labelledby={`${name}-${value}-label`} // Relaciona el input con el texto del label
           />
-          <span id={`${name}-${value}-label`} className="ml-3">
-            {label}
-          </span>
+          {label}
         </label>
       )}
     />
