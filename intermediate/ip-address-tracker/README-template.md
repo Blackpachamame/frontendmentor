@@ -9,3 +9,7 @@ IP Address Tracker
   Timezone
   UTC <!-- add offset value dynamically using the API -->
   ISP
+
+
+  IP: https://geo.ipify.org/
+  MAP: https://leafletjs.com/

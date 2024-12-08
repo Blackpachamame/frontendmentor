@@ -1,5 +1,7 @@
+import Info from "./components/Info";
+
 function App() {
-  return <h1>Hola</h1>;
+  return <Info />;
 }
 
 export default App;
