@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { getGeoLocation } from "../services/geoIpify";
 
-// Definir un tipo para la estructura de los datos de location
 interface Location {
   country: string;
   region: string;
@@ -12,9 +11,8 @@ interface Location {
   timezone: string;
 }
 
-// El tipo del estado geoData ahora es `Location | null` en lugar de `any`
 export default function Info() {
-  const [geoData, setGeoData] = useState<Location | null>(null); // Aquí hemos definido el tipo
+  const [geoData, setGeoData] = useState<Location | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const ipAddress = "";
