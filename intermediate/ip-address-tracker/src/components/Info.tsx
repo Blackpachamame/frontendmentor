@@ -53,32 +53,32 @@ export default function Info() {
   const { region, city, timezone } = location;
 
   return (
-    <div className=" gap-5 p-5 text-center w-full h-full flex flex-col md:flex-row justify-between items-center bg-white rounded-xl">
-      <div className="flex flex-col gap-1">
-        <h2 className="font-bold uppercase text-dark-Gray text-[10px] tracking-[.2em]">
+    <div className="px-5 py-10 lg:divide-x text-center lg:text-start w-full lg:max-w-[1110px] lg:min-h-[160px] grid grid-cols-1 lg:grid-cols-[repeat(4,minmax(237px,1fr))] justify-between items-center lg:items-start bg-red-200 rounded-xl">
+      <div className="flex flex-col gap-1 lg:gap-2 px-5">
+        <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           IP Address
         </h2>
-        <p className="font-medium">{ip}</p>
+        <p className="font-medium lg:text-2xl">{ip}</p>
       </div>
-      <div className="flex flex-col gap-1">
-        <h2 className="font-bold uppercase text-dark-Gray text-[10px] tracking-[.2em]">
+      <div className="flex flex-col gap-1 lg:gap-2 px-5">
+        <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           Location
         </h2>
-        <p className="font-medium">
+        <p className="font-medium lg:text-2xl">
           {city}, {region}
         </p>
       </div>
-      <div className="flex flex-col gap-1">
-        <h2 className="font-bold uppercase text-dark-Gray text-[10px] tracking-[.2em]">
+      <div className="flex flex-col gap-1 lg:gap-2 px-5">
+        <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           Timezone
         </h2>
-        <p className="font-medium">UTC {timezone}</p>
+        <p className="font-medium lg:text-2xl">UTC {timezone}</p>
       </div>
-      <div className="flex flex-col gap-1">
-        <h2 className="font-bold uppercase text-dark-Gray text-[10px] tracking-[.2em]">
+      <div className="flex flex-col gap-1 lg:gap-2 px-5">
+        <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           ISP
         </h2>
-        <p className="font-medium">{isp}</p>
+        <p className="font-medium lg:text-2xl">{isp}</p>
       </div>
     </div>
   );

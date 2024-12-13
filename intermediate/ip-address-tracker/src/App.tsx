@@ -1,7 +1,11 @@
 import Info from "./components/Info";
 
 function App() {
-  return <Info />;
+  return (
+    <main className="text-very-Dark-Gray">
+      <Info />
+    </main>
+  );
 }
 
 export default App;
