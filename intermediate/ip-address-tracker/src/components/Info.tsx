@@ -53,7 +53,7 @@ export default function Info() {
   const { region, city, timezone } = location;
 
   return (
-    <div className="px-5 py-10 lg:divide-x text-center lg:text-start w-full lg:max-w-[1110px] lg:min-h-[160px] grid grid-cols-1 lg:grid-cols-[repeat(4,minmax(237px,1fr))] justify-between items-center lg:items-start bg-red-200 rounded-xl">
+    <div className="absolute transform translate-y-1/2 bottom-0 px-5 py-10 lg:divide-x text-center lg:text-start w-full max-w-[327px] lg:max-w-[1000px] min-[1112px]:max-w-[1110px] lg:min-h-[160px] grid grid-cols-1 lg:grid-cols-[repeat(4,minmax(237px,1fr))] justify-between items-center lg:items-start bg-white rounded-xl">
       <div className="flex flex-col gap-1 lg:gap-2 px-5">
         <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           IP Address

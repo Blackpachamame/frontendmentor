@@ -10,6 +10,14 @@ export default {
       fontFamily: {
         sans: ["Rubik", "sans-serif"],
       },
+      backgroundImage: {
+        "pattern-desktop": "url('/src/assets/images/pattern-bg-desktop.png')",
+        "pattern-mobile": "url('/src/assets/images/pattern-bg-mobile.png')",
+      },
+      screens: {
+        xs: "376px",
+        // => @media (min-width: 376px) { ... }
+      },
     },
   },
   plugins: [],
