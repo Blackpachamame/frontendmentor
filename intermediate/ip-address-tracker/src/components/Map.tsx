@@ -1,5 +1,7 @@
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
+import L from "leaflet";
 import { useEffect } from "react";
+import markerIcon from "../assets/images/icon-location.svg";
 
 interface MapProps {
   lat: number;
@@ -18,22 +20,28 @@ function RecenterMap({ lat, lng }: { lat: number; lng: number }) {
 }
 
 export default function Map({ lat, lng }: MapProps) {
+  const customIcon = L.divIcon({
+    className: "custom-marker",
+    html: `<div class="flex items-center justify-center">
+             <img src="${markerIcon}" alt="markerIcon" />
+           </div>`,
+    iconSize: [30, 30],
+    iconAnchor: [15, 15],
+  });
+
   return (
     <MapContainer
-      center={[lat, lng]} // Coordenadas iniciales del mapa
-      zoom={13} // Nivel de zoom inicial
-      style={{ height: "400px", width: "100%" }}
+      center={[lat, lng]}
+      zoom={18}
+      className="z-0 w-full h-[528px] lg:h-[520px]"
+      zoomControl={false} // Desactiva los botones de zoom
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={[lat, lng]}>
-        <Popup>
-          Ubicación del usuario: <br /> Latitud: {lat} <br /> Longitud: {lng}
-        </Popup>
-      </Marker>
-      <RecenterMap lat={lat} lng={lng} /> {/* Componente que mueve el mapa */}
+      <Marker position={[lat, lng]} icon={customIcon}></Marker>
+      <RecenterMap lat={lat} lng={lng} />
     </MapContainer>
   );
 }

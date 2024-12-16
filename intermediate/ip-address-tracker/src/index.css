@@ -9,3 +9,7 @@ body {
   font-size: 18px;
   min-height: 100svh;
 }
+
+.leaflet-marker-icon.custom-marker.leaflet-zoom-animated.leaflet-interactive {
+  @apply pointer-events-none;
+}
