@@ -32,7 +32,7 @@ export default function Map({ lat, lng }: MapProps) {
   return (
     <MapContainer
       center={[lat, lng]}
-      zoom={18}
+      zoom={15}
       className="z-0 w-full h-[528px] lg:h-[520px]"
       zoomControl={false} // Desactiva los botones de zoom
     >

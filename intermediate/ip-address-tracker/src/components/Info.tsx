@@ -1,66 +1,12 @@
-import { useState, useEffect } from "react";
-import { getGeoLocation } from "../services/geoIpify";
-
-interface GeoLocationResponse {
-  ip: string;
-  location: {
-    region: string;
-    city: string;
-    lat: number;
-    lng: number;
-    timezone: string;
-  };
-  isp: string;
-}
+import { GeoLocationResponse } from "../types/geoTypes";
 
 interface InfoProps {
-  setLat: (lat: number) => void;
-  setLng: (lng: number) => void;
+  info: GeoLocationResponse | null;
 }
 
-export default function Info({ setLat, setLng }: InfoProps) {
-  const [geoData, setGeoData] = useState<GeoLocationResponse | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  const ipAddress = ""; // Esto podría venir como prop o manejarse de otra forma.
-
-  useEffect(() => {
-    const fetchGeoData = async () => {
-      try {
-        setLoading(true);
-        const data = await getGeoLocation(ipAddress);
-        setGeoData(data);
-
-        // Actualizar los estados de lat y lng en el componente padre
-        if (data) {
-          setLat(data.location.lat);
-          setLng(data.location.lng);
-        }
-      } catch (err) {
-        console.error(err);
-        setError("No se pudo obtener la información de geolocalización");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchGeoData();
-  }, [ipAddress, setLat, setLng]);
-
-  if (loading) {
-    return <div>Cargando...</div>;
-  }
-
-  if (error) {
-    return <div>{error}</div>;
-  }
-
-  if (!geoData) {
-    return <div>No se encontró información de geolocalización</div>;
-  }
-
-  const { ip, location, isp } = geoData;
+export default function Info({ info }: InfoProps) {
+  if (!info) return <p>Cargando...</p>;
+  const { ip, location, isp } = info;
   const { region, city, timezone } = location;
 
   return (
