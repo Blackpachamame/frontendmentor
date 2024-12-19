@@ -34,7 +34,7 @@ function App() {
   }, [ip]);
 
   return (
-    <main className="text-very-Dark-Gray grid grid-rows-[300px_1fr] xs:grid-rows-[280px_1fr] min-h-svh">
+    <main className="text-very-Dark-Gray grid grid-rows-[300px_1fr] xs:grid-rows-[280px_1fr] min-h-svh w-full">
       <Header info={info} onIpSubmit={setIp} />
       <Map lat={lat} lng={lng} />
       {error && <div className="error">{error}</div>}
