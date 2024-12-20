@@ -10,7 +10,7 @@ export default function Info({ info }: InfoProps) {
   const { region, city, timezone } = location;
 
   return (
-    <div className="z-10 absolute transform translate-y-1/2 bottom-0 gap-5 lg:gap-0 p-6 lg:px-5 lg:py-8 lg:divide-x text-center lg:text-start w-[88%] max-w-[327px] lg:w-full xs:max-w-[555px] lg:max-w-[1000px] min-[1112px]:max-w-[1110px] lg:min-h-[160px] grid grid-cols-1 lg:grid-cols-[repeat(4,minmax(237px,1fr))] justify-between items-center lg:items-start bg-white rounded-xl">
+    <div className="z-10 absolute transform translate-y-[55%] lg:translate-y-1/2 bottom-0 gap-5 lg:gap-0 p-6 lg:px-5 lg:py-8 lg:divide-x text-center lg:text-start w-[88%] max-w-[327px] lg:w-full xs:max-w-[555px] lg:max-w-[1000px] min-[1112px]:max-w-[1110px] lg:min-h-[160px] grid grid-cols-1 lg:grid-cols-[repeat(4,minmax(237px,1fr))] justify-between items-center lg:items-start bg-white rounded-xl">
       <div className="flex flex-col gap-1 lg:gap-2 px-5 lg:h-24">
         <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           IP Address
