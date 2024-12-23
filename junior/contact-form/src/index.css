@@ -38,7 +38,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   border: none;
-  background-image: url("src/assets/images/icon-checkbox-check.svg");
+  background-image: url("icons/icon-checkbox-check.svg");
 }
 
 input[type="radio"] {
@@ -50,6 +50,6 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   border: none;
-  background-image: url("src/assets/images/icon-radio-selected.svg");
+  background-image: url("icons/icon-radio-selected.svg");
   background-size: cover;
 }
