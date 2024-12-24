@@ -38,7 +38,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   border: none;
-  background-image: url("icons/icon-checkbox-check.svg");
+  background-image: url("https://raw.githubusercontent.com/Blackpachamame/frontendmentor/df267d2c63f9b675a04b16aa34daf58d4d4daee2/junior/contact-form/src/assets/images/icon-checkbox-check.svg");
 }
 
 input[type="radio"] {
@@ -50,6 +50,6 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   border: none;
-  background-image: url("icons/icon-radio-selected.svg");
+  background-image: url("https://raw.githubusercontent.com/Blackpachamame/frontendmentor/df267d2c63f9b675a04b16aa34daf58d4d4daee2/junior/contact-form/src/assets/images/icon-radio-selected.svg");
   background-size: cover;
 }
