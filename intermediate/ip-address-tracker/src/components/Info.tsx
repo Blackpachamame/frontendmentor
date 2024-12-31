@@ -15,7 +15,9 @@ export default function Info({ info }: InfoProps) {
         <h2 className="font-bold uppercase text-dark-Gray text-[10px] lg:text-xs tracking-[.2em]">
           IP Address
         </h2>
-        <p className="font-medium lg:text-xl min-[1112px]:text-2xl">{ip}</p>
+        <p className="font-medium lg:text-xl min-[1112px]:text-2xl">
+          {ip === "" || null ? "N/A" : ip}
+        </p>
       </div>
 
       <div className="flex flex-col gap-1 lg:gap-2 px-5 lg:h-24">
@@ -23,7 +25,8 @@ export default function Info({ info }: InfoProps) {
           Location
         </h2>
         <p className="font-medium lg:text-xl min-[1112px]:text-2xl line-clamp-1 lg:line-clamp-2">
-          {city}, {region}
+          {city === "" || null ? "N/A" : city},{" "}
+          {region === "" || null ? "N/A" : region}
         </p>
       </div>
 
@@ -32,7 +35,7 @@ export default function Info({ info }: InfoProps) {
           Timezone
         </h2>
         <p className="font-medium lg:text-xl min-[1112px]:text-2xl">
-          UTC {timezone}
+          {timezone === "" || null ? "N/A" : "UTC " + timezone}
         </p>
       </div>
 
@@ -41,7 +44,7 @@ export default function Info({ info }: InfoProps) {
           ISP
         </h2>
         <p className="font-medium lg:text-xl min-[1112px]:text-2xl line-clamp-1 lg:line-clamp-2">
-          {isp === "" ? "N/A" : isp}
+          {isp === "" || null ? "N/A" : isp}
         </p>
       </div>
     </div>

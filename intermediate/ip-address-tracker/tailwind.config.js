@@ -6,6 +6,7 @@ export default {
       colors: {
         "very-Dark-Gray": "hsl(0, 0%, 17%)",
         "dark-Gray": "hsl(0, 0%, 59%)",
+        "custom-Error": "hsl(42, 100%, 56%)",
       },
       fontFamily: {
         sans: ["Rubik", "sans-serif"],

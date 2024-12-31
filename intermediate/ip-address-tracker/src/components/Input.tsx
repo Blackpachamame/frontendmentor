@@ -39,7 +39,7 @@ export default function Input({ onIpSubmit }: InputProps) {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           className={`border px-6 py-2 rounded-l-xl h-[58px] w-full ${
-            error ? "border-red-500" : ""
+            error ? "border-custom-Error" : ""
           }`}
         />
         <button
@@ -49,7 +49,9 @@ export default function Input({ onIpSubmit }: InputProps) {
           <img src={IconArrow} alt="Icon Arrow Submit" />
         </button>
       </div>
-      {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+      {error && (
+        <p className="text-custom-Error text-sm ms-2 mt-1 lg:mt-2">{error}</p>
+      )}
     </form>
   );
 }
