@@ -41,7 +41,7 @@ export default function Info({ info }: InfoProps) {
           ISP
         </h2>
         <p className="font-medium lg:text-xl min-[1112px]:text-2xl line-clamp-1 lg:line-clamp-2">
-          {isp}
+          {isp === "" ? "N/A" : isp}
         </p>
       </div>
     </div>
