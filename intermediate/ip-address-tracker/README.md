@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+<h1 align="center">IP Address Tracker</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+   Esta es una solución al desafío de <a href="https://www.frontendmentor.io/">frontendmentor.io</a>.
+</div>
+<br>
+<div align="center">
+   <img src="./src/assets/design/desktop-preview.jpg"></img>
+  <h3>
+    <a href="https://contact-form-cyan-nine.vercel.app/">
+      En Vivo
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/solutions/ip-address-tracker">
+      Solución
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0">
+      Desafío
+    </a>
+  </h3>
+</div>
 
-Currently, two official plugins are available:
+## Tabla de contenido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Tabla de contenido](#tabla-de-contenido)
+- [Descripción](#descripción)
+  - [Desafío](#desafío)
+- [Mi Procedimiento](#mi-procedimiento)
+  - [Construido con](#construido-con)
+  - [Lo que aprendí](#lo-que-aprendí)
+- [Autor](#autor)
 
-## Expanding the ESLint configuration
+## Descripción
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Desafío
 
-- Configure the top-level `parserOptions` property like this:
+Tu desafío es desarrollar esta aplicación de seguimiento de direcciones IP y lograr que se parezca lo más posible al diseño. Para obtener las ubicaciones de las direcciones IP, utilizarás la API de geolocalización de IP de IPify. Para generar el mapa, recomendamos usar LeafletJS.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Tus usuarios deberían ser capaces de:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Vea su propia dirección IP en el mapa en la carga inicial de la página.
+- Busque direcciones IP o dominios y vea la información clave y la ubicación.
+- Ver el diseño óptimo para la interfaz dependiendo del tamaño de pantalla de su dispositivo.
+- Ver los estados de focus y hover en todos los elementos interactivos de la página.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Mi Procedimiento
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Construido con
+
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- LeafletJS
+- Geo IPify
+
+### Lo que aprendí
+
+Este desafío lo use para repasar TypeScript.
+
+## Autor
+
+- Github - [Blackpachamame](https://github.com/Blackpachamame)
+- Frontend Mentor - [@Blackpachamame](https://www.frontendmentor.io/profile/Blackpachamame)
