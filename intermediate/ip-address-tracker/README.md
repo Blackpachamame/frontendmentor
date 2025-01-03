@@ -7,7 +7,7 @@
 <div align="center">
    <img src="./src/assets/design/desktop-preview.jpg"></img>
   <h3>
-    <a href="https://contact-form-cyan-nine.vercel.app/">
+    <a href="https://ip-address-tracker-nu-one.vercel.app/">
       En Vivo
     </a>
     <span> | </span>
@@ -57,7 +57,7 @@ Tus usuarios deberían ser capaces de:
 
 ### Lo que aprendí
 
-Este desafío lo use para repasar TypeScript.
+Este desafío lo use para repasar TypeScript. Además, aprendí cómo añadir el environment con la API Key para utilizar la API en el deploy de Vercel.
 
 ## Autor
 
