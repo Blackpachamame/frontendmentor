@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/contact-form-G1QifVhMux">
+    <a href="https://www.frontendmentor.io/solutions/contact-form-con-react-hook-form-y-zod-cYBVAzl3Xe">
       Solución
     </a>
     <span> | </span>
