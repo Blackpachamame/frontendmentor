@@ -69,7 +69,7 @@ Aunque este desafío es sencillo, lo utilicé para darle un primer vistazo a **R
 
 ### Recursos útiles
 
-- Gentleman Programming - [Curso REACT desde cero a experto]([https://github.com/Blackpachamame](https://www.youtube.com/watch?v=GMnWXlJnbNo))
+- Gentleman Programming - [Curso REACT desde cero a experto](https://www.youtube.com/watch?v=GMnWXlJnbNo)
 
 ## Autor
 
