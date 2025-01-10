@@ -1,0 +1,42 @@
+/* Aseguramos que el enlace ocupe el 100% de la tarjeta */
+.article {
+  position: relative;
+  /* Otros estilos de la tarjeta */
+}
+
+.article__link {
+  display: block;
+  text-decoration: none; /* Quitar el subrayado por defecto */
+  color: inherit; /* Para que el enlace tome el color de su contenedor */
+}
+
+.article__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.article__header-image {
+  width: 100%;
+  height: auto;
+  /* Otros estilos */
+}
+
+/* Usamos un pseudo-elemento para hacer toda la tarjeta clickeable */
+.article__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  pointer-events: none; /* Asegura que el pseudo-elemento no interfiera con el clic del enlace */
+}
+
+.article__title {
+  position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+}
+
+.article__link:hover::before {
+  background: rgba(0, 0, 0, 0.1); /* O algún efecto visual para el hover */
+}

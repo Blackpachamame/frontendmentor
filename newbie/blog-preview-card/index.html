@@ -12,25 +12,28 @@
 
 <body>
   <main class="main">
-    <article class="articulo">
-      <header class="articulo__cabecera">
-        <img src="./assets/images/illustration-article.svg" alt="Imagen de cabecera del artículo"
-          class="articulo__imagen-cabecera">
+    <article class="article">
+      <header class="article__header">
+        <img src="./assets/images/illustration-article.svg" alt="Article header image" class="article__header-image">
       </header>
 
-      <section class="articulo__informacion">
-        <p class="articulo__categoria">Learning</p>
-        <p class="articulo__fecha">Published 21 Dec 2023</p>
-        <h1 class="articulo__titulo">HTML & CSS foundations</h1>
-        <p class="articulo__descripcion">These languages are the backbone of every website, defining structure, content,
+      <section class="article__info">
+        <span class="article__category">Learning</span>
+        <p class="article__date">Published 21 Dec 2023</p>
+
+        <h1 class="article__title">
+          <a href="ruta/al/articulo" class="article__link">HTML & CSS foundations</a>
+        </h1>
+
+        <p class="article__description">These languages are the backbone of every website, defining structure, content,
           and presentation.</p>
       </section>
 
-      <footer class="articulo__autor">
-        <div class="articulo__autor-avatar">
-          <img src="./assets/images/image-avatar.webp" alt="Avatar del autor" class="articulo__avatar-img">
+      <footer class="article__author">
+        <div class="article__author-avatar">
+          <img src="./assets/images/image-avatar.webp" alt="Author avatar" class="article__avatar-image">
         </div>
-        <div class="articulo__autor-nombre">
+        <div class="article__author-name">
           <p>Greg Hooper</p>
         </div>
       </footer>
