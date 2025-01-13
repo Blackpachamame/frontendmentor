@@ -1,24 +1,118 @@
-/* Aseguramos que el enlace ocupe el 100% de la tarjeta */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--gray-950);
+  min-height: 100vh;
+  background-color: var(--yellow);
+  display: grid;
+  place-content: center;
+}
+
+img,
+svg,
+figure {
+  display: block;
+}
+
 .article {
   position: relative;
-  /* Otros estilos de la tarjeta */
+  background-color: var(--white);
+  padding: 23px;
+  margin: 25px;
+  max-width: 382px;
+  height: 520px;
+  border-radius: 18px;
+  border: 1px solid var(--gray-950);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.15rem;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.3s ease;
 }
 
-.article__link {
-  display: block;
-  text-decoration: none; /* Quitar el subrayado por defecto */
-  color: inherit; /* Para que el enlace tome el color de su contenedor */
+.article:hover {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
-.article__title {
-  font-size: 24px;
-  margin: 0;
+.article__header {
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .article__header-image {
   width: 100%;
-  height: auto;
-  /* Otros estilos */
+  height: 100%;
+  object-fit: cover;
+}
+
+.article__category,
+.article__author-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.article__category {
+  background-color: var(--yellow);
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.article__date {
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.article__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.article__title {
+  position: relative;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 1.7rem;
+}
+
+.article__description {
+  line-height: 1.5;
+  color: var(--gray-500);
+  margin-top: 1.7rem;
 }
 
 /* Usamos un pseudo-elemento para hacer toda la tarjeta clickeable */
@@ -30,13 +124,30 @@
   right: 0;
   bottom: 0;
   background: transparent;
-  pointer-events: none; /* Asegura que el pseudo-elemento no interfiera con el clic del enlace */
+  pointer-events: none;
 }
 
-.article__title {
-  position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+.article__author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.article__link:hover::before {
-  background: rgba(0, 0, 0, 0.1); /* O algún efecto visual para el hover */
+@media (max-width: 445px) {
+  .article {
+    height: 100%;
+  }
+
+  .article__title {
+    font-size: 2rem;
+  }
+
+  .article__description {
+    font-size: 1.4rem;
+  }
+
+  .article__category,
+  .article__date {
+    font-size: 1.3rem;
+  }
 }
