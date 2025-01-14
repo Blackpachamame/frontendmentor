@@ -33,7 +33,7 @@ body {
   font-weight: 500;
   font-size: 1.6rem;
   color: var(--gray-950);
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--yellow);
   display: grid;
   place-content: center;
@@ -59,7 +59,7 @@ figure {
   justify-content: space-between;
   gap: 2.15rem;
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .article:hover {
@@ -96,35 +96,38 @@ figure {
   margin-top: 1.4rem;
 }
 
-.article__link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
 .article__title {
-  position: relative;
   font-size: 2.4rem;
   font-weight: 800;
   margin-top: 1.7rem;
 }
 
-.article__description {
-  line-height: 1.5;
-  color: var(--gray-500);
-  margin-top: 1.7rem;
+.article__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Usamos un pseudo-elemento para hacer toda la tarjeta clickeable */
 .article__link::before {
   content: "";
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: transparent;
-  pointer-events: none;
+}
+
+.article__link:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.article__description {
+  line-height: 1.5;
+  color: var(--gray-500);
+  margin-top: 1.7rem;
 }
 
 .article__author {
@@ -135,7 +138,7 @@ figure {
 
 @media (max-width: 445px) {
   .article {
-    height: 100%;
+    height: auto;
   }
 
   .article__title {
