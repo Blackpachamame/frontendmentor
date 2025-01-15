@@ -7,14 +7,8 @@
 
 @font-face {
   font-family: "Figtree";
-  src: url("../assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Figtree";
-  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
+  src: url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500, 800;
 }
 
 * {
