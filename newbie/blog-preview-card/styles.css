@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: "Figtree", serif;
   font-weight: 500;
   font-size: 1.6rem;
   color: var(--gray-950);
