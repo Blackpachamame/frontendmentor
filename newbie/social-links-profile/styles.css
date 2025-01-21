@@ -1,0 +1,45 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Inter", serif;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 400, 600, 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--gray-950);
+  min-height: 100dvh;
+  background-color: var(--yellow);
+  display: grid;
+  place-content: center;
+}
+
+img,
+svg,
+figure {
+  display: block;
+}
+
+/* @media (max-width: 445px) {
+} */
