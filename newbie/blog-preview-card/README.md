@@ -65,7 +65,7 @@ Para hacer que toda la tarjeta sea clickeable sin necesidad de envolver todo el 
 
 ### Recursos útiles
 
-- A completar...
+- [Comunidad de Discord de Frontendmentor](https://discord.com/invite/UAfh3qzhYb)
 
 ## Autor
 
