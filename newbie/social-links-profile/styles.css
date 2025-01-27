@@ -8,8 +8,7 @@
 
 @font-face {
   font-family: "Inter", serif;
-  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
   font-weight: 400, 600, 700;
 }
 
@@ -137,5 +136,23 @@ figure {
 
   .profile__social-item {
     width: 279px;
+  }
+}
+
+@media (max-width: 374px) {
+  body {
+    justify-content: initial;
+  }
+
+  .profile {
+    padding: 0;
+  }
+
+  .profile__info {
+    border-radius: 0;
+  }
+
+  .profile__social-item {
+    width: 100%;
   }
 }
