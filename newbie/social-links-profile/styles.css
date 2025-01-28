@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
-  --green: hsl(75, 94%, 57%);
-  --green-border: hsla(75, 94%, 57%, 0.35);
-  --green-box: hsla(75, 94%, 57%, 0.2);
+  --green: hsl(156, 94%, 57%);
+  --green-border: hsla(156, 94%, 57%, 0.35);
+  --green-box: hsla(170, 94%, 57%, 0.2);
   --white: hsl(0, 0%, 100%);
   --gray-700: hsl(0, 0%, 20%);
   --gray-800: hsl(0, 0%, 12%);
   --gray-900: hsl(0, 0%, 8%);
+  --black: hsl(0, 20%, 2%);
 }
 
-@font-face {
+/* @font-face {
   font-family: "Inter", serif;
   src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
   font-weight: 400, 600, 700;
-}
+} */
 
 * {
   margin: 0;
@@ -54,7 +57,6 @@ figure {
 .profile__info {
   width: 100%;
   max-width: 384px;
-  /* background-color: var(--gray-800); */
   border-radius: 12px;
   padding: 40px;
   display: flex;
@@ -65,7 +67,7 @@ figure {
     circle 248px at center,
     var(--gray-800) 0%,
     var(--gray-900) 47%,
-    hsl(66.98deg 24.33% 2.02%) 100%
+    var(--black) 100%
   );
   border: 1px solid var(--green-border);
   box-shadow: var(--green-box) 0px 0px 5px;
@@ -114,7 +116,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -160,6 +162,7 @@ figure {
   }
 
   .profile__info {
+    min-height: 100dvh;
     border-radius: 0;
   }
 
