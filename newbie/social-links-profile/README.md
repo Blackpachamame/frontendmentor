@@ -54,7 +54,17 @@ Sus usuarios deberían poder:
 
 ### Lo que aprendí
 
-Este proyecto solo lo use para agilizar un poco.
+Es posible ver lo que ves en el localhost de tu computadora en tu celular, como requisito necesitamos que ambos dispositivos estén en la misma red Wi-Fi. Luego, puedes seguir estos pasos:
+
+1. **Encuentra la dirección IP de tu computadora**:
+   - En Windows: Abre la terminal (cmd) y escribe `ipconfig`. Busca la "Dirección IPv4".
+   - En Mac/Linux: Abre la terminal y escribe `ifconfig` o `ip a` y busca la dirección bajo "inet".
+
+2. **Asegúrate de que tu servidor local esté escuchando en todas las interfaces**:
+   - Si estás usando un servidor local, como por ejemplo un servidor web con Node.js o algún otro entorno de desarrollo, asegúrate de que esté configurado para aceptar conexiones desde cualquier dispositivo en la red. Esto generalmente se hace configurando el servidor para escuchar en `0.0.0.0` o en la dirección IP local de tu computadora.
+
+3. **Accede a tu aplicación desde el celular**:
+   - En el navegador de tu celular, ingresa la dirección IP de tu computadora seguida del puerto que esté utilizando tu servidor. Por ejemplo, si la dirección IP de tu computadora es `192.168.1.10` y el puerto es `3000`, ingresarías en el celular: `http://192.168.1.10:3000`.
 
 ## Autor
 
