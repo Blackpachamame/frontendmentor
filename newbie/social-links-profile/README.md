@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ">
+    <a href="https://www.frontendmentor.io/solutions/my-social-links-profile-grAmpsFLRg">
       Solución
     </a>
    <span> | </span>
