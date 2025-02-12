@@ -29,6 +29,7 @@
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Lo que aprendí](#lo-que-aprendí)
+- [Recursos](#recursos)
 - [Autor](#autor)
 
 ## Descripción
@@ -65,6 +66,10 @@ Es posible ver lo que ves en el localhost de tu computadora en tu celular, como 
 
 3. **Accede a tu aplicación desde el celular**:
    - En el navegador de tu celular, ingresa la dirección IP de tu computadora seguida del puerto que esté utilizando tu servidor. Por ejemplo, si la dirección IP de tu computadora es `192.168.1.10` y el puerto es `3000`, ingresarías en el celular: `http://192.168.1.10:3000`.
+
+## Recursos
+
+- [Coding2GO](https://www.youtube.com/watch?v=ezP4kbOvs_E): Learn CSS Border Animations in 6 Minutes
 
 ## Autor
 

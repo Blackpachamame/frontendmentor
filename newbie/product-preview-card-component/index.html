@@ -4,26 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Perfume Gabrielle Essence Eau De Parfum by CHANEL. A floral, solar, and voluptuous fragrance designed by Olivier Polge.">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
 <body>
-
   <main class="card">
 
-    <div class="card__image">
-      <figure class="image__figure-desktop">
-        <img class="image__img-desktop" src="images/image-product-desktop.jpg" alt="image-product">
-      </figure>
-      <figure class="image__figure-mobile">
-        <img class="image__img-mobile" src="images/image-product-mobile.jpg" alt="image-mobile-product">
-      </figure>
-    </div>
+    <picture class="card__image">
+      <source class="image__img-desktop" srcset="images/image-product-desktop.jpg" media="(min-width: 650px)" />
+      <source class="image__img-mobile" srcset="images/image-product-mobile.jpg" media="(max-width: 649px)" />
+      <img class="image__img-mobile" src="images/image-product-mobile.jpg"
+        alt="Perfume Gabrielle Essence Eau De Parfum" />
+    </picture>
 
     <div class="card__info">
-      <h2 class="info__h2">Perfume</h2>
+      <span class="info__span">Perfume</span>
       <h1 class="info__h1">Gabrielle Essence Eau De Parfum</h1>
       <p class="info__p">
         A floral, solar and voluptuous interpretation composed by Olivier Polge,
@@ -33,12 +32,11 @@
         <p class="price">$149.99</p>
         <p class="price-off">$169.99</p>
       </div>
-      <button class="info__button"><img class="button__img" src="images/icon-cart.svg" alt="icon-cart">Add to
+      <button class="info__button"><img class="button__img" src="images/icon-cart.svg" alt="Añadir al carrito">Add to
         Cart</button>
     </div>
 
   </main>
-
 </body>
 
 </html>
