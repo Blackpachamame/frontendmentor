@@ -29,6 +29,7 @@
 - [Mi Procedimiento](#mi-procedimiento)
   - [Construido con](#construido-con)
   - [Lo que aprendí](#lo-que-aprendí)
+- [Recursos](#recursos)
 - [Autor](#autor)
 
 ## Descripción
@@ -53,11 +54,17 @@ Tus usuarios deberían ser capaces de:
 - Tailwind CSS
 - Vite
 - LeafletJS
-- Geo IPify
+- ~~Geo IPify~~
+- IP Geolocation API (reemplazamos a Geo IPify por limitaciones en las llamadas)
 
 ### Lo que aprendí
 
 Este desafío lo use para repasar TypeScript. Además, aprendí cómo añadir el environment con la API Key para utilizar la API en el deploy de Vercel.
+
+## Recursos
+
+- [LeafletJS]([LeafletJS](https://leafletjs.com/))
+- [Documentación IP Geolocation API](https://ipgeolocation.io/ip-location-api.html#documentation-overview)
 
 ## Autor
 
