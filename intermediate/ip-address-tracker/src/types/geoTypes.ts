@@ -2,8 +2,8 @@ export interface Location {
   lat: number;
   lng: number;
   city: string;
-  region: string;
-  timezone: string;
+  country: string;
+  timezone: number;
 }
 
 export interface GeoLocationResponse {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Map from "./components/Map";
-import { getGeoLocation } from "./services/geoIpify";
+import { getGeoLocation } from "./services/geoIp";
 import { GeoLocationResponse } from "./types/geoTypes";
 
 function App() {

@@ -1,24 +1,11 @@
 import axios from "axios";
-
-interface Location {
-  region: string;
-  city: string;
-  lat: number;
-  lng: number;
-  timezone: string;
-}
-
-interface GeoLocationResponse {
-  ip: string;
-  location: Location;
-  isp: string;
-}
+import { GeoLocationResponse } from "../types/geoTypes";
 
 const API_KEY = import.meta.env.VITE_GEO_API_KEY;
-const BASE_URL = "https://geo.ipify.org/api/v2/country,city";
+const BASE_URL = "https://api.ipgeolocation.io/ipgeo";
 
 /**
- * Obtiene la información de geolocalización de una IP mediante la API de GeoIPify.
+ * Obtiene la información de geolocalización de una IP mediante la API de IPGeolocation.
  *
  * @param ipAddress - Dirección IP opcional para la consulta. Si no se proporciona, se usa la IP pública del cliente.
  * @returns Un objeto con `ip`, `location` y `isp` o lanza un error si la solicitud falla.
@@ -27,13 +14,26 @@ export const getGeoLocation = async (
   ipAddress?: string
 ): Promise<GeoLocationResponse | null> => {
   try {
-    const response = await axios.get<GeoLocationResponse>(BASE_URL, {
+    const response = await axios.get(BASE_URL, {
       params: {
         apiKey: API_KEY,
-        ipAddress, // Si ipAddress es proporcionada, será usada. Si no, la API usa la IP pública del cliente
+        ip: ipAddress,
       },
     });
-    return response.data || null;
+
+    const data = response.data;
+
+    return {
+      ip: data.ip,
+      location: {
+        country: data.country_name,
+        city: data.city,
+        lat: data.latitude,
+        lng: data.longitude,
+        timezone: data.time_zone.offset,
+      },
+      isp: data.isp,
+    };
   } catch (error) {
     console.error("Error al obtener la información de geolocalización", error);
     throw error;
