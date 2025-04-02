@@ -26,9 +26,9 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  color: var(--gray-950);
+  color: var(--stone-600);
   min-height: 100dvh;
-  background-color: var(--yellow);
+  background-color: var(--stone-100);
   display: grid;
   place-content: center;
 }
@@ -37,8 +37,27 @@ img,
 svg,
 figure {
   display: block;
+  max-width: 100%;
 }
 
 h1 {
   font-family: "Young Serif", serif;
+}
+
+.recipe {
+  background-color: var(--white);
+  max-width: 736px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.recipe__image {
+  border-radius: 12px;
+}
+
+.recipe__title {
+  font-size: 4rem;
+  color: var(--stone-900);
+  margin-block: 20px;
 }
