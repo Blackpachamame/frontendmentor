@@ -52,8 +52,7 @@ Puedes usar cualquier herramienta que te guste para ayudarte a completar el desa
 ### Recursos útiles
 
 - [List Markers and String Styles](https://css-tricks.com/list-markers-and-string-styles/)
-- [Everything You Need to Know About the Gap After the List Marker
-](https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/)
+- [Everything You Need to Know About the Gap After the List Marker](https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/)
 - [Comunidad de Discord de Frontendmentor](https://discord.com/invite/UAfh3qzhYb)
 
 ## Autor
