@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  line-height: 1.4;
 }
 
 body {
@@ -40,24 +41,147 @@ figure {
   max-width: 100%;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Young Serif", serif;
+}
+
+hr {
+  color: var(--stone-150);
+  background-color: var(--stone-150);
+  height: 1px;
+  border: none;
 }
 
 .recipe {
   background-color: var(--white);
-  max-width: 736px;
   width: 100%;
-  padding: 40px;
-  border-radius: 20px;
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recipe__image {
-  border-radius: 12px;
+  width: 100%;
+  max-width: 736px;
+}
+
+.recipe__body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .recipe__title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--stone-900);
+  line-height: 1;
+}
+
+h2.recipe__section-title {
+  font-size: 2.8rem;
+  color: var(--brown-800);
+}
+h3.recipe__section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--rose-800);
+}
+
+.recipe__preparation-time {
+  background-color: var(--rose-50);
+  padding: 24px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  padding: 20px 0 0 20px;
+}
+ul > li::marker,
+ol > li::marker {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+ul.recipe__time-list > li.recipe__time-item::marker {
+  color: var(--rose-800);
+}
+ul.recipe__ingredients-list > li.recipe__ingredient-item::marker {
+  color: var(--brown-800);
+}
+li {
+  padding-inline-start: 20px;
+}
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.recipe__time-label,
+.recipe__instruction-step {
+  font-weight: 700;
+}
+
+.recipe__nutrition-description {
   margin-block: 20px;
+}
+
+table.recipe__nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.recipe__nutrition-label,
+td.recipe__nutrition-value {
+  padding: 12px;
+  text-align: left;
+}
+
+th.recipe__nutrition-label {
+  padding-left: 30px;
+  width: 150px;
+}
+
+td.recipe__nutrition-value {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+tr.recipe__nutrition-row:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+@media (min-width: 736px) {
+  .recipe {
+    border-radius: 20px;
+    padding: 40px;
+    margin-block: 40px;
+    gap: 40px;
+  }
+
+  .recipe__image {
+    border-radius: 12px;
+  }
+
+  .recipe__body {
+    padding: 0;
+  }
+
+  .recipe__title {
+    font-size: 4rem;
+  }
+
+  .recipe__preparation-time {
+    padding: 30px;
+  }
+
+  th.recipe__nutrition-label {
+    width: 330px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 735px) {
+  th.recipe__nutrition-label {
+    width: initial;
+  }
 }
