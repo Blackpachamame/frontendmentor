@@ -48,7 +48,6 @@ main {
   overflow: hidden;
 }
 
-/* Updated header with fixed positioning and z-index */
 header {
   background-color: var(--white);
   width: 100%;
@@ -138,7 +137,6 @@ header {
 /* ------------------------------------------------------------
    MOBILE MENU OVERLAY
 -------------------------------------------------------------*/
-/* Updated mobile menu styling to match design */
 .mobile-menu {
   position: fixed;
   top: 64px;
@@ -201,13 +199,12 @@ button:hover,
 /* ------------------------------------------------------------
    HERO SECTION
 -------------------------------------------------------------*/
-/* Added margin-top to account for fixed header */
 .hero {
   width: 100%;
   position: relative;
   margin-top: 64px;
   display: grid;
-  grid-template-rows: 280px 340px;
+  grid-template-rows: 280px auto;
 }
 
 .hero__image-wrapper {
@@ -216,14 +213,8 @@ button:hover,
   background-image: url(./images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top -65px;
+  background-size: cover;
 }
-
-/* .hero__image-bg {
-  width: 100%;
-}
-.hero__image-bg-desktop {
-  display: none;
-} */
 
 .hero__image-mockups {
   position: absolute;
@@ -238,7 +229,7 @@ button:hover,
   align-items: center;
   flex-direction: column;
   gap: 1.6rem;
-  padding: 2.5rem 1.75rem;
+  padding: 2.5rem 1.75rem 4rem;
 }
 
 .hero__title {
@@ -392,8 +383,7 @@ button:hover,
 
 .footer__links {
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 
@@ -472,21 +462,9 @@ button:hover,
     background-image: url(./images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left 620px top -230px;
+    background-position: left 580px top -50px;
     background-attachment: fixed;
   }
-
-  /* .hero__image-bg {
-    display: none;
-  }
-
-  .hero__image-bg-desktop {
-    display: block;
-    position: absolute;
-    right: -465px;
-    top: -590px;
-    max-width: initial;
-  } */
 
   .hero__image-mockups {
     top: -160px;
@@ -573,7 +551,8 @@ button:hover,
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
-    gap: 1rem 7rem;
+    gap: 1.25rem 7rem;
+    text-align: end;
   }
 
   .footer__bottom {
@@ -585,7 +564,6 @@ button:hover,
   }
 }
 @media (min-width: 1024px) {
-  /* Show desktop navigation and hide mobile elements */
   .hamburger,
   .close-icon {
     display: none !important;
@@ -599,7 +577,6 @@ button:hover,
     display: block;
   }
 
-  /* Updated header padding for desktop */
   header {
     padding: 0 10vw;
   }
@@ -610,10 +587,18 @@ button:hover,
   }
 }
 
-/* Added larger desktop breakpoint for better layout */
 @media (min-width: 1200px) {
   header {
     padding: 0 11vw;
+  }
+
+  .hero__image-wrapper {
+    background-position: left 620px top -230px;
+  }
+
+  .hero__image-mockups {
+    width: 100%;
+    transform: translate(135px, -160px);
   }
 
   .why {
@@ -624,15 +609,19 @@ button:hover,
     padding: 5rem 11vw;
   }
 
-  /* Footer */
   .footer__inner {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto 2fr;
+    grid-template-rows: initial;
     align-items: start;
     text-align: left;
     padding: 3rem 11vw;
     gap: 8rem;
+  }
+
+  .footer__links {
+    text-align: start;
   }
 
   .footer__bottom {
