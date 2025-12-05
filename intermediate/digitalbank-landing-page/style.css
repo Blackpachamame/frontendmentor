@@ -34,10 +34,12 @@ a {
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
+  max-width: 1440px;
   background-color: var(--gray-50);
   color: var(--blue-950);
   display: grid;
   place-content: center;
+  margin: 0 auto;
 }
 
 main {
@@ -119,8 +121,11 @@ header {
 /* Added close icon styling and toggle behavior */
 .hamburger,
 .close-icon {
+  background: none;
+  border: none;
   cursor: pointer;
   z-index: 200;
+  padding: 0;
 }
 
 .close-icon {
@@ -139,6 +144,7 @@ header {
    MOBILE MENU OVERLAY
 -------------------------------------------------------------*/
 .mobile-menu {
+  text-align: center;
   position: fixed;
   top: 64px;
   left: 0;
@@ -252,7 +258,7 @@ header {
 .why {
   background: var(--gray-100);
   text-align: center;
-  padding: 4rem 1.75rem;
+  padding: 4rem 1.5rem;
 }
 
 .why__title {
@@ -330,7 +336,7 @@ header {
 
 .article__content {
   text-align: start;
-  padding: 1.5rem 1.75rem 1.75rem;
+  padding: 1.5rem 2.1rem 1.75rem;
 }
 
 .article__author {
@@ -346,6 +352,7 @@ header {
 }
 
 .article__title > a {
+  color: var(--blue-950);
   transition: color 0.3s;
 }
 .article__title > a:hover {
@@ -482,7 +489,7 @@ header {
   /* Why section */
   .why {
     text-align: left;
-    padding: 6rem 10vw;
+    padding: 5rem 10vw;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -631,7 +638,7 @@ header {
   }
 
   .why {
-    padding: 6rem 11vw;
+    padding: 5rem 11vw;
   }
 
   .why__title,
