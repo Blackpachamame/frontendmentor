@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://www.frontendmentor.io/solutions/recipe-page-using-css-ybm35CuPlA">
       Solución
     </a>
    <span> | </span>
