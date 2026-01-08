@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/digitalbank-landing-page">
+    <a href="https://www.frontendmentor.io/solutions/digitalbank-landing-page-E2LXymvB3m">
       Solución
     </a>
    <span> | </span>
