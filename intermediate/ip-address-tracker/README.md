@@ -11,7 +11,7 @@
       En Vivo
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/ip-address-tracker">
+    <a href="https://www.frontendmentor.io/solutions/ip-address-tracker-with-typescript-LgnA3hXcr-">
       Solución
     </a>
     <span> | </span>
